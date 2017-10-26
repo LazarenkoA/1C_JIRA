@@ -218,11 +218,56 @@
 							<Representation>StrongSeparation</Representation>
 							<ExtendedTooltip name="грДополнительноРасширеннаяПодсказка" id="201"/>
 							<ChildItems>
-								<Button name="ОткрытьФормуКонфликтов" id="202">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьФормуКонфликтов</CommandName>
-									<ExtendedTooltip name="ОткрытьФормуКонфликтовРасширеннаяПодсказка" id="203"/>
-								</Button>
+								<UsualGroup name="Группа4" id="335">
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="336"/>
+									<ChildItems>
+										<Button name="ОткрытьФормуКонфликтов" id="202">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьФормуКонфликтов</CommandName>
+											<ExtendedTooltip name="ОткрытьФормуКонфликтовРасширеннаяПодсказка" id="203"/>
+										</Button>
+										<PictureDecoration name="ДекорацияПредупреждениеКонфликтДат" id="337">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияПредупреждениеКонфликтДатКонтекстноеМеню" id="338"/>
+											<ExtendedTooltip name="ДекорацияПредупреждениеКонфликтДатРасширеннаяПодсказка" id="339"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа3" id="330">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="331"/>
+									<ChildItems>
+										<Button name="КорректировкаОценки" id="328">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.КорректировкаОценки</CommandName>
+											<ExtendedTooltip name="КорректировкаОценкиРасширеннаяПодсказка" id="329"/>
+										</Button>
+										<PictureDecoration name="ДекорацияПредупреждениеОценка" id="332">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияПредупреждениеОценкаКонтекстноеМеню" id="333"/>
+											<ExtendedTooltip name="ДекорацияПредупреждениеОценкаРасширеннаяПодсказка" id="334"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
 								<Button name="ОткрытьДиаграммы" id="204">
 									<Type>Hyperlink</Type>
 									<CommandName>Form.Command.ОткрытьДиаграммы</CommandName>
@@ -1256,6 +1301,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьСПолучениемИзменений</Action>
+		</Command>
+		<Command name="КорректировкаОценки" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка оценки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка оценки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КорректировкаОценки</Action>
 		</Command>
 	</Commands>
 </Form>

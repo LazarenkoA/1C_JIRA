@@ -12,6 +12,7 @@ b18dde47-52db-48a3-a5dd-a3a6931184c9:44103F321E8620245A45FCFCDA7EE90C:2:CommonFo
 68c402e2-6b10-4cdc-9baa-e47e17ac6c47:7222ED037F2A493FB88C67EB9F9A6D2D:2:CommonForms\ФормаНастроекЭлектроннойПочты.xml
 2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e:879446E887414DE5C7ED607882F57E29:2:CommonForms\ФормаПревышениеСроков.xml
 3c0730e4-6e95-4a93-9c2c-a596f1370097:AABECC443DA3C719FB89C223648B192B:2:CommonForms\ФормаРабСтол.xml
+520dd270-1917-4ead-9210-320f0978f9bd:E90884A1C33638248062059A50989E1A:2:CommonForms\ФормаРазницаОценкиОсновнойИСабтасков.xml
 ba082b88-9a47-4621-bc6a-59d210d2951c:09E098639952720CFD6E1F3849322391:2:CommonModules\ВзаимодействиеC_JIRA_КлиентСервер.xml
 b808e125-1bd7-4c9b-9295-a586e9583039:6B2057FD242B3CC0AEAB6A3350EED22E:2:CommonModules\ВзаимодействиеC_JIRA_Сервер.xml
 f5711c7e-d8d7-4457-a2ed-346912f2283d:8D3E71440A6091B62548B95E04D6355D:2:CommonModules\ГлобальныеНаСервере.xml
@@ -83,6 +84,7 @@ b18dde47-52db-48a3-a5dd-a3a6931184c9_Form.xml:C51D329C342D7122C9C9246A497BA8D2:4
 68c402e2-6b10-4cdc-9baa-e47e17ac6c47_Form.xml:C1F221E1B1BB59CCB7325EAFAFD5165E:4:CommonForms\ФормаНастроекЭлектроннойПочты\Ext\Form.xml
 2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e_Form.xml:FCAF2B7D8B3867B3396B6F73BC3A9810:4:CommonForms\ФормаПревышениеСроков\Ext\Form.xml
 3c0730e4-6e95-4a93-9c2c-a596f1370097_Form.xml:52525B2D727F504EFA57C6ED49C5EA30:4:CommonForms\ФормаРабСтол\Ext\Form.xml
+520dd270-1917-4ead-9210-320f0978f9bd_Form.xml:1D8DA501618AC4A6CC46F720200ABE96:4:CommonForms\ФормаРазницаОценкиОсновнойИСабтасков\Ext\Form.xml
 ba082b88-9a47-4621-bc6a-59d210d2951c_Module.bsl:31486BB3D1301A97DAF51618AF259EFD:4:CommonModules\ВзаимодействиеC_JIRA_КлиентСервер\Ext\Module.bsl
 b808e125-1bd7-4c9b-9295-a586e9583039_Module.bsl:F1DEECB02DB7A2F5C3F776BC5077492A:4:CommonModules\ВзаимодействиеC_JIRA_Сервер\Ext\Module.bsl
 f5711c7e-d8d7-4457-a2ed-346912f2283d_Module.bsl:93BE0011109691F16C2DF902E01DA937:4:CommonModules\ГлобальныеНаСервере\Ext\Module.bsl
@@ -139,6 +141,7 @@ b18dde47-52db-48a3-a5dd-a3a6931184c9_Form\Module.bsl:27768B414EA31105F98DC73AA13
 68c402e2-6b10-4cdc-9baa-e47e17ac6c47_Form\Module.bsl:694D5E2A41E7C0D6FF6B58625E9FFF68:5:CommonForms\ФормаНастроекЭлектроннойПочты\Ext\Form\Module.bsl
 2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e_Form\Module.bsl:30C16F5C87600C6231FDBA4CAD275AFC:5:CommonForms\ФормаПревышениеСроков\Ext\Form\Module.bsl
 3c0730e4-6e95-4a93-9c2c-a596f1370097_Form\Module.bsl:82A460164890442CDAAFAB09A2533F66:5:CommonForms\ФормаРабСтол\Ext\Form\Module.bsl
+520dd270-1917-4ead-9210-320f0978f9bd_Form\Module.bsl:FEB6906D169D442B5C535371D71E8B3A:5:CommonForms\ФормаРазницаОценкиОсновнойИСабтасков\Ext\Form\Module.bsl
 8f50e7a8-1f1d-4cc9-b672-d4cc41163bb8_Picture\Picture.png:533AA0061D3B8EE3A3242B31E3F18835:5:CommonPictures\ВажностьВажная\Ext\Picture\Picture.png
 be5e8661-f243-4f8b-ae3e-6f2f6e12097a_Picture\Picture.png:9C20415D8F22A68AD2019B05FA75681D:5:CommonPictures\Приоритеты\Ext\Picture\Picture.png
 7e7cd1aa-eb88-4105-8c01-386f35243455_Picture\Picture.png:47462FBCCEBD10752991C17D34FE526A:5:CommonPictures\Связь\Ext\Picture\Picture.png

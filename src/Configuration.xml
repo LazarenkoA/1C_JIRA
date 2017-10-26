@@ -178,6 +178,7 @@
 			<CommonForm>ФормаПревышениеСроков</CommonForm>
 			<CommonForm>ФормаДиаграмм</CommonForm>
 			<CommonForm>ФормаНастроекJIRA</CommonForm>
+			<CommonForm>ФормаРазницаОценкиОсновнойИСабтасков</CommonForm>
 			<Catalog>Приоритеты</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>ТипыЗадач</Catalog>
