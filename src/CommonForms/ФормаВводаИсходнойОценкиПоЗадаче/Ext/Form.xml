@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОК" id="9">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>Form.Command.ОК</CommandName>
+				<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="10"/>
+			</Button>
+			<Button name="ФормаОтмена" id="7">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="8"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="грДопДанные" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные данные</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр доп данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="грДопДанныеРасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<UsualGroup name="грОбщиеДанные" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие данные</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр общие данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="грОбщиеДанныеРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<UsualGroup name="грОценкаДата" id="88">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр оценка дата</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр оценка дата</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грОценкаДатаРасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<InputField name="Оценка" id="1">
+									<DataPath>ОценкаОбщая</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оценка</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОценкаКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ОценкаРасширеннаяПодсказка" id="3"/>
+									<Events>
+										<Event name="OnChange">ОценкаПриИзменении</Event>
+										<Event name="TextEditEnd">ОценкаОкончаниеВводаТекста</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="грДатаЗавершения1" id="100">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр дата завершения1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр дата завершения1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грДатаЗавершения1РасширеннаяПодсказка" id="101"/>
+									<ChildItems>
+										<InputField name="ДатаЗавершенияОбщая" id="59">
+											<DataPath>ДатаЗавершенияОбщая</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата завершения</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДатаЗавершенияОбщаяКонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="ДатаЗавершенияОбщаяРасширеннаяПодсказка" id="61"/>
+											<Events>
+												<Event name="OnChange">ДатаЗавершенияОбщаяПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="Декорация1" id="102">
+											<Visible>false</Visible>
+											<TextColor>#FF0000</TextColor>
+											<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дату установил автор задачи, менять запрещено</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="103"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="104"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="грБюджет" id="86">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр бюджет</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр бюджет</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грБюджетРасширеннаяПодсказка" id="87"/>
+							<ChildItems>
+								<InputField name="Бюджет" id="67">
+									<DataPath>БюджетОсновной</DataPath>
+									<ContextMenu name="БюджетКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="БюджетРасширеннаяПодсказка" id="69"/>
+									<Events>
+										<Event name="OnChange">БюджетПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="ОбновитьБюджеты" id="72">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОбновитьБюджеты</CommandName>
+									<ExtendedTooltip name="ОбновитьБюджетыРасширеннаяПодсказка" id="73"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="ОбновитьТолькоСтоимость" id="62">
+					<DataPath>ОбновитьТолькоОценку</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОбновитьТолькоСтоимостьКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ОбновитьТолькоСтоимостьРасширеннаяПодсказка" id="64"/>
+					<Events>
+						<Event name="OnChange">ОбновитьТолькоСтоимостьПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="грСвязь" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр связь</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр связь</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="грСвязьРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация2" id="22">
+							<Width>2</Width>
+							<Height>1</Height>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При включении связи общая оценка будет связана с оценками подзадач в пропорции 60/40 (60% разработка, 40% тестирование)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Связь</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="24"/>
+						</PictureDecoration>
+						<Button name="СвязьОценка" id="25">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.Связь</CommandName>
+							<ExtendedTooltip name="СвязьОценкаРасширеннаяПодсказка" id="26"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Сабтаски3" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Subtask</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сабтаски3</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="Сабтаски3РасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<UsualGroup name="грРазработка" id="76">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разработка</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр разработка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="грРазработкаРасширеннаяПодсказка" id="77"/>
+							<ChildItems>
+								<UsualGroup name="грРазработкаОценкаДата" id="90">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр разработка оценка дата</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр разработка оценка дата</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грРазработкаОценкаДатаРасширеннаяПодсказка" id="91"/>
+									<ChildItems>
+										<InputField name="ОценкаРазработка" id="14">
+											<DataPath>ОценкаРазработка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Оценка</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОценкаРазработкаКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="ОценкаРазработкаРасширеннаяПодсказка" id="16"/>
+											<Events>
+												<Event name="OnChange">ОценкаРазработкаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ДатаЗавершенияРазработка" id="53">
+											<DataPath>ДатаЗавершенияРазработка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата завершения</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДатаЗавершенияРазработкаКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="ДатаЗавершенияРазработкаРасширеннаяПодсказка" id="55"/>
+											<Events>
+												<Event name="OnChange">ДатаЗавершенияРазработкаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="БюджетРазработка" id="83">
+									<DataPath>БюджетРазработка</DataPath>
+									<ContextMenu name="БюджетРазработкаКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="БюджетРазработкаРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ИсполнительРазработка" id="94">
+									<DataPath>ИсполнительРазработка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исполнитель</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceParameters>
+										<app:item name="Отбор.Родитель">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.Пользователи.Разработка</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ИсполнительРазработкаКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ИсполнительРазработкаРасширеннаяПодсказка" id="96"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="грТестирование" id="78">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тестирование</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр тестирование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="грТестированиеРасширеннаяПодсказка" id="79"/>
+							<ChildItems>
+								<UsualGroup name="грТестированиеОценкаДата" id="92">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр тестирование оценка дата</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр тестирование оценка дата</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грТестированиеОценкаДатаРасширеннаяПодсказка" id="93"/>
+									<ChildItems>
+										<InputField name="ОценкаТестирования" id="17">
+											<DataPath>ОценкаТестирования</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Оценка</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОценкаТестированияКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ОценкаТестированияРасширеннаяПодсказка" id="19"/>
+											<Events>
+												<Event name="OnChange">ОценкаТестированияПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ДатаЗавершенияТестирование" id="56">
+											<DataPath>ДатаЗавершенияТестирование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата завершения</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДатаЗавершенияТестированиеКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="ДатаЗавершенияТестированиеРасширеннаяПодсказка" id="58"/>
+											<Events>
+												<Event name="OnChange">ДатаЗавершенияТестированиеПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="БюджетТестирования" id="80">
+									<DataPath>БюджетТестирования</DataPath>
+									<ContextMenu name="БюджетТестированияКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="БюджетТестированияРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ИсполнительТестирование" id="97">
+									<DataPath>ИсполнительТестирование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исполнитель</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceParameters>
+										<app:item name="Отбор.Родитель">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.Пользователи.Тестирование</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ИсполнительТестированиеКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ИсполнительТестированиеРасширеннаяПодсказка" id="99"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ОценкаОбщая" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОценкаРазработка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разработка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОценкаТестирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьСвязь" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть связь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаЗавершенияОбщая" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаЗавершенияРазработка" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разработка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаЗавершенияТестирование" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбновитьТолькоОценку" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить только оценку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БюджетОсновной" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БюджетыПУ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БюджетРазработка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БюджетыПУ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БюджетТестирования" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БюджетыПУ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсполнительРазработка" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель разработка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсполнительТестирование" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель тестирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+		<Command name="Отмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+		</Command>
+		<Command name="Связь" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Связь</Action>
+		</Command>
+		<Command name="ОбновитьБюджеты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить бюджеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить бюджеты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьБюджеты</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ДатаЗавершения">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Приоритет">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Приоритеты</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ОбновитьТолькоОценку">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Задача">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="БюджетПУ">
+			<Type>
+				<v8:Type>cfg:CatalogRef.БюджетыПУ</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ДатуЗавершенияУстановилАвтор">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>
