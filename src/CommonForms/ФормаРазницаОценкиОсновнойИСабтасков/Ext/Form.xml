@@ -77,6 +77,9 @@
 				<ContextMenu name="СписокЗадачУправлениеПоискомКонтекстноеМеню" id="46"/>
 				<ExtendedTooltip name="СписокЗадачУправлениеПоискомРасширеннаяПодсказка" id="47"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокЗадачВыбор</Event>
+			</Events>
 			<ChildItems>
 				<ColumnGroup name="Задача" id="60">
 					<Title>
