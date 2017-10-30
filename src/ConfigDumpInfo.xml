@@ -246,8 +246,8 @@
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета" id="ee3c76fb-601c-428a-96e9-1eb4590590b1" configVersion="f108bfca6dc0084e8f10c0eca4ac574900000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета.Form" id="ee3c76fb-601c-428a-96e9-1eb4590590b1.0" configVersion="f6f2de64f966744fa6371c39ddbcd5eb00000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.ObjectModule" id="e54f1bfc-2c30-4158-8f07-4df242c569fb.0" configVersion="ef5d9ffd368ae94c91bf469be79125b000000000"/>
-		<Metadata name="Report.ОтчетСписаноЗатрачено.Template.ОсновнаяСхемаКомпоновкиДанных" id="43e8a577-6f9b-4fac-9c6d-fa53af6b3a61" configVersion="c2e72a48fb0a0249b9f2ff99ed93ee6100000000"/>
-		<Metadata name="Report.ОтчетСписаноЗатрачено.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="43e8a577-6f9b-4fac-9c6d-fa53af6b3a61.0" configVersion="30d8789e8dda1641ac0de930f8da130100000000"/>
+		<Metadata name="Report.ОтчетСписаноЗатрачено.Template.ОсновнаяСхемаКомпоновкиДанных" id="43e8a577-6f9b-4fac-9c6d-fa53af6b3a61" configVersion="b63bcf331f33de419e1bdc9b24def7c200000000"/>
+		<Metadata name="Report.ОтчетСписаноЗатрачено.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="43e8a577-6f9b-4fac-9c6d-fa53af6b3a61.0" configVersion="7ed2ff0e6e7f674088ceb87f8085c26d00000000"/>
 		<Metadata name="ScheduledJob.ОповещениеПоЗадачам" id="31f079b7-178e-4af6-98f1-4c2be5a93259" configVersion="e09978a5847c7a44862ee2692416daff00000000"/>
 		<Metadata name="ScheduledJob.ОповещениеПоЗадачам.Schedule" id="31f079b7-178e-4af6-98f1-4c2be5a93259.0" configVersion="e947deb6f1862b468f22a2736705035600000000"/>
 		<Metadata name="ScheduledJob.ПолучениеЗадач" id="4065bb97-e136-4200-acd0-9c31244bd616" configVersion="ac0f1b329e9a32428924946a20bd48ca00000000"/>
