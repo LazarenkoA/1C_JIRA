@@ -28,7 +28,7 @@
 		<Metadata name="Catalog.ТипыЗадач" id="68d3c970-41bb-4d7e-943c-9ee23dbedfcc" configVersion="09e42d95f621cd4ba731ee364f5500a900000000"/>
 		<Metadata name="Catalog.ТипыЗадач.ManagerModule" id="68d3c970-41bb-4d7e-943c-9ee23dbedfcc.3" configVersion="a7f479c08d30b44cab1759c4e11b323600000000"/>
 		<Metadata name="Catalog.ТипыЗадач.Predefined" id="68d3c970-41bb-4d7e-943c-9ee23dbedfcc.1c" configVersion="838cb92673c8eb49bab68967d88b457800000000"/>
-		<Metadata name="Catalog.ШаблоныУведомлений" id="2df879cf-112f-413d-81f6-16a29c5004d7" configVersion="e24df136640e084cbe8efc5784afa6f800000000">
+		<Metadata name="Catalog.ШаблоныУведомлений" id="2df879cf-112f-413d-81f6-16a29c5004d7" configVersion="e3ee7080832ce54d9106a7194fb4a39500000000">
 			<Metadata name="Catalog.ШаблоныУведомлений.Attribute.ОтключитьУведомление" id="17453a6a-e545-4102-a020-b63dea9f585b"/>
 			<Metadata name="Catalog.ШаблоныУведомлений.Attribute.HTMLШаблон" id="296ce608-f9f8-49a7-b25b-da94641f8937"/>
 			<Metadata name="Catalog.ШаблоныУведомлений.Attribute.Тема" id="f6780f7c-2593-48ce-ab96-87bc0a885996"/>
@@ -37,7 +37,7 @@
 		<Metadata name="Catalog.ШаблоныУведомлений.Form.ФормаСписка.Form" id="94472209-3ba3-4cad-964c-b87e22c816a6.0" configVersion="79b62f909184574792bbafd7f16850a800000000"/>
 		<Metadata name="Catalog.ШаблоныУведомлений.Form.ФормаЭлемента" id="21f5bea6-79da-47cd-8c8b-f3ba9c60e64d" configVersion="abf3b3d8f789f244a29a304ea3d1e0e600000000"/>
 		<Metadata name="Catalog.ШаблоныУведомлений.Form.ФормаЭлемента.Form" id="21f5bea6-79da-47cd-8c8b-f3ba9c60e64d.0" configVersion="97fb79b8924a3e48bae6c2c26b03f7c000000000"/>
-		<Metadata name="Catalog.ШаблоныУведомлений.ManagerModule" id="2df879cf-112f-413d-81f6-16a29c5004d7.3" configVersion="9cbcb8301d047f4e9938e5c4c81f563100000000"/>
+		<Metadata name="Catalog.ШаблоныУведомлений.ManagerModule" id="2df879cf-112f-413d-81f6-16a29c5004d7.3" configVersion="307cb4250846d34ba1a621df621a7a3400000000"/>
 		<Metadata name="Catalog.ШаблоныУведомлений.ObjectModule" id="2df879cf-112f-413d-81f6-16a29c5004d7.0" configVersion="e969804bbe8c1f499ca72e0b539e9a8000000000"/>
 		<Metadata name="Catalog.ШаблоныУведомлений.Predefined" id="2df879cf-112f-413d-81f6-16a29c5004d7.1c" configVersion="0b3c68f0bac82343b1a37c507be65bfa00000000"/>
 		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615" configVersion="cd7bbb4e7abef444bb00684ee68070be00000000"/>
