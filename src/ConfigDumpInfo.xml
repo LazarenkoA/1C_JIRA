@@ -50,8 +50,8 @@
 		<Metadata name="CommonForm.ФормаНастроекГрафикаРаботы.Form" id="b18dde47-52db-48a3-a5dd-a3a6931184c9.0" configVersion="5dbe5f55dc0fa54a8d5fd07f3c0910bc00000000"/>
 		<Metadata name="CommonForm.ФормаНастроекЭлектроннойПочты" id="68c402e2-6b10-4cdc-9baa-e47e17ac6c47" configVersion="f2857060b0309f4396a96196fa7b137c00000000"/>
 		<Metadata name="CommonForm.ФормаНастроекЭлектроннойПочты.Form" id="68c402e2-6b10-4cdc-9baa-e47e17ac6c47.0" configVersion="6fa98cce1e0a1140943f760d5999154b00000000"/>
-		<Metadata name="CommonForm.ФормаПревышениеСроков" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e" configVersion="d2c2b71c9b3e0c4287183487a7ee1c0c00000000"/>
-		<Metadata name="CommonForm.ФормаПревышениеСроков.Form" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e.0" configVersion="0bce67422140f248b4e26a09c10cdbd000000000"/>
+		<Metadata name="CommonForm.ФормаПревышениеСроков" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e" configVersion="ddab4ce246761b4e987db99369014a3100000000"/>
+		<Metadata name="CommonForm.ФормаПревышениеСроков.Form" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e.0" configVersion="9f2e6044db30c24492533bb981a3c25300000000"/>
 		<Metadata name="CommonForm.ФормаРабСтол" id="3c0730e4-6e95-4a93-9c2c-a596f1370097" configVersion="2d919e14e2c59b48ae91c61a955570e900000000"/>
 		<Metadata name="CommonForm.ФормаРабСтол.Form" id="3c0730e4-6e95-4a93-9c2c-a596f1370097.0" configVersion="08677fab626fe64eaa9024ef861693df00000000"/>
 		<Metadata name="CommonForm.ФормаРазницаОценкиОсновнойИСабтасков" id="520dd270-1917-4ead-9210-320f0978f9bd" configVersion="0408cce8c9ae794ba883377b840077f800000000"/>
