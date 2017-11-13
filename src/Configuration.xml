@@ -186,6 +186,8 @@
 			<Catalog>БюджетыПУ</Catalog>
 			<Enum>ТипыЗадач</Enum>
 			<Report>ОтчетСписаноЗатрачено</Report>
+			<Report>СтатистинаНовыхЗадач</Report>
+			<Report>ОтчетПоКорректировкиСписаний</Report>
 			<DataProcessor>ИнструментыРазработчикаКонсольЗапросов</DataProcessor>
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<InformationRegister>Задачи</InformationRegister>

@@ -54,7 +54,9 @@ ba565b56-f770-4c08-a923-0bb69b68701d:A15C274477A0948F0FF76B9B00DFFA6C:2:Informat
 a83a9369-33f4-485b-8314-cb13ab37183e:17C666A456D4935EC4CDFDA7DC5D5DF8:2:InformationRegisters\ИсторияИзмененияСтатусов.xml
 593b750c-049c-474a-ad02-525c2ce9dfde:B2949DB4FB732A1F3A4402C8F5BBA450:2:InformationRegisters\СписаниеВремени.xml
 daabf7c0-df24-49a3-9b2a-e703407ae987:EFF946AA8AEEC303E5F7E565EA09C643:2:Languages\Русский.xml
+f1a9fac8-b58c-42bc-a000-8e1530db2b96:0923DBB6F5F6AE77FD03A845E1C5C07D:2:Reports\ОтчетПоКорректировкиСписаний.xml
 e54f1bfc-2c30-4158-8f07-4df242c569fb:819AB9CB0F91E478D1A63F80FA926F03:2:Reports\ОтчетСписаноЗатрачено.xml
+a9d62b51-75e1-4d56-a0b2-38e1a8bffc41:9A916FEB0B9EBC5E0B57DC09833A6C9C:2:Reports\СтатистинаНовыхЗадач.xml
 31f079b7-178e-4af6-98f1-4c2be5a93259:11411A366E965F3B4253184F67B8F773:2:ScheduledJobs\ОповещениеПоЗадачам.xml
 4065bb97-e136-4200-acd0-9c31244bd616:023AD76DD365BC9ADE4C42836B17FD8C:2:ScheduledJobs\ПолучениеЗадач.xml
 a63940b1-3195-4168-9104-418fbbca3894:1255C78A9BF7CAFDD1F07B7EB1E5E340:2:ScheduledJobs\ПолучениеИсторииИзменениеСтатусов.xml
@@ -125,9 +127,13 @@ a83a9369-33f4-485b-8314-cb13ab37183e_ManagerModule.bsl:5B917210F50EDD2984EFBE19C
 57b31ad6-0770-48a4-8c7a-1c27ac2b15b9:58CAB1330D741E3F52CF22C817A366B8:4:InformationRegisters\ИсторияИзмененияСтатусов\Forms\ФормаСписка.xml
 593b750c-049c-474a-ad02-525c2ce9dfde_ManagerModule.bsl:49C2449D052D65E7D1555F19B0F585F9:4:InformationRegisters\СписаниеВремени\Ext\ManagerModule.bsl
 a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a:CAA288F82747759DD211C450265905AA:4:InformationRegisters\СписаниеВремени\Forms\ФормаСписка.xml
+fb3ed2fb-c31e-4f85-87f1-3e154cdd5211:55D928289697EFAA350E812C98BDCF64:4:Reports\ОтчетПоКорректировкиСписаний\Forms\ФормаОтчета.xml
+97a31fc3-0e2f-4806-864c-ce2b064b9c38:9927BDDDDFEE21EA673964301E286E78:4:Reports\ОтчетПоКорректировкиСписаний\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 e54f1bfc-2c30-4158-8f07-4df242c569fb_ObjectModule.bsl:59B8744B2D73C67A4C253B6A61A41BD7:4:Reports\ОтчетСписаноЗатрачено\Ext\ObjectModule.bsl
 ee3c76fb-601c-428a-96e9-1eb4590590b1:F0906CF372BEE4F6F9998D659E91975F:4:Reports\ОтчетСписаноЗатрачено\Forms\ФормаОтчета.xml
 43e8a577-6f9b-4fac-9c6d-fa53af6b3a61:A0F6EB2D0603DD3F89C2AFBD6BCF36B3:4:Reports\ОтчетСписаноЗатрачено\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
+a848967f-3126-4852-8a2d-c3bbcc84ef73:B06E6D68CBF2537FDB9804B1E590EA12:4:Reports\СтатистинаНовыхЗадач\Forms\ФормаОтчета.xml
+1fe99126-0d98-445b-bb58-f0d7157b33b7:EE0558A338B989BFF6C420FB465C52D9:4:Reports\СтатистинаНовыхЗадач\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 31f079b7-178e-4af6-98f1-4c2be5a93259_Schedule.xml:30192BFEF7CE5D14463452DBF746DB73:4:ScheduledJobs\ОповещениеПоЗадачам\Ext\Schedule.xml
 4065bb97-e136-4200-acd0-9c31244bd616_Schedule.xml:6C1544915D65E8C9A8FB8081C40AEE6E:4:ScheduledJobs\ПолучениеЗадач\Ext\Schedule.xml
 a63940b1-3195-4168-9104-418fbbca3894_Schedule.xml:9095F433EB61EECE1CF4B14EB3CCB15B:4:ScheduledJobs\ПолучениеИсторииИзменениеСтатусов\Ext\Schedule.xml
@@ -168,8 +174,12 @@ d1ef11b2-8fb5-4b5e-b7c4-e095d82019d3_Template.xml:B3150F31A4EC5B9C2D13BC331B8B3A
 5d0d21d6-a70a-456a-8aac-3f7bc6af4b09_Form.xml:5F4ADB0C65D5AE236AB4C512E0AD4115:6:InformationRegisters\Задачи\Forms\ФормаСписка\Ext\Form.xml
 57b31ad6-0770-48a4-8c7a-1c27ac2b15b9_Form.xml:5815A377885BBEAD76A002B3D36920B8:6:InformationRegisters\ИсторияИзмененияСтатусов\Forms\ФормаСписка\Ext\Form.xml
 a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a_Form.xml:6055251784050A682B4DB7998CB4F105:6:InformationRegisters\СписаниеВремени\Forms\ФормаСписка\Ext\Form.xml
+fb3ed2fb-c31e-4f85-87f1-3e154cdd5211_Form.xml:962B518A3AF044B33EB3C1DD545A2503:6:Reports\ОтчетПоКорректировкиСписаний\Forms\ФормаОтчета\Ext\Form.xml
+97a31fc3-0e2f-4806-864c-ce2b064b9c38_Template.xml:355DA505F9C2572C114D2E0EC4CF0279:6:Reports\ОтчетПоКорректировкиСписаний\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 ee3c76fb-601c-428a-96e9-1eb4590590b1_Form.xml:6462994BA58220DA45A04E204A3F3C55:6:Reports\ОтчетСписаноЗатрачено\Forms\ФормаОтчета\Ext\Form.xml
 43e8a577-6f9b-4fac-9c6d-fa53af6b3a61_Template.xml:909ABA1B1C53B832471B4EEC91A75CA7:6:Reports\ОтчетСписаноЗатрачено\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
+a848967f-3126-4852-8a2d-c3bbcc84ef73_Form.xml:8F5348844332AFD049A68E61C3B5402C:6:Reports\СтатистинаНовыхЗадач\Forms\ФормаОтчета\Ext\Form.xml
+1fe99126-0d98-445b-bb58-f0d7157b33b7_Template.xml:9A07FBB347B874C478098DF2BD72D6D3:6:Reports\СтатистинаНовыхЗадач\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 12f994fa-fad3-457a-82ac-8157afaddf32_Form\Module.bsl:5AA5FCAC99D20EDD3C3FF523F1D36CA7:7:Catalogs\Пользователи\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 ae9e2429-001d-430e-b662-894232456d18_Form\Module.bsl:3C545DC6FA6E81DA72DDBBBC1F2FA37C:7:Catalogs\Приоритеты\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 21f5bea6-79da-47cd-8c8b-f3ba9c60e64d_Form\Module.bsl:79A3108BA43A03AC87AFAB5D5266A1C5:7:Catalogs\ШаблоныУведомлений\Forms\ФормаЭлемента\Ext\Form\Module.bsl
