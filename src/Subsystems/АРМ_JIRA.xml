@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="247771a8-2066-42a1-a506-b71f221c9e2e">
+		<Properties>
+			<Name>АРМ_JIRA</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АРМ JIRA</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Задачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.JIRA_JQL</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.JIRA_URL</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВажностьВажная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаНастроекJIRA</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРабСтол</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.JIRA_Cookies</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействиеC_JIRA_КлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ГлобальныеНаСервере</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаРегламентныхЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПолучениеЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Приоритеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Приоритеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.РабочаяНеделя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.РабочийДень</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПарольЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПользовательИсходящейПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СерверИсходящейПочтыSMTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПортSMTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИмяОтправителя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АдресЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОповещениеПоЗадачам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаНастроекЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаНастроекГрафикаРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазборФайловHTML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИнструментыРазработчикаКонсольЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Связь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаДиаграмм</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаПревышениеСроков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаВводаИсходнойОценкиПоЗадаче</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействиеC_JIRA_Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СписаниеВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсторияИзмененияСтатусов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПолучениеИсторииИзменениеСтатусов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПолучениеСписаниеВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныУведомлений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЖурналОтправкиУведомлений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УтилитыГлобальныеНаКлиенте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УведомленияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.БюджетыПУ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтроковыеФункцииКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентныеЗаданияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентныеЗаданияСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ГрафикРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПользовательНастроек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРазницаОценкиОсновнойИСабтасков</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Отчеты</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

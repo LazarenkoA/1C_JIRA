@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДеревоЗадачПревышениеСрока" id="1">
+			<Representation>Tree</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДеревоЗадачПревышениеСрока</DataPath>
+			<RowPictureDataPath>ДеревоЗадачПревышениеСрока.Картинка</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>HierarchicalList</ExcludedCommand>
+				<ExcludedCommand>List</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>Tree</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="ДеревоЗадачПревышениеСрокаКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДеревоЗадачПревышениеСрокаКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ДеревоЗадачПревышениеСрокаСохранить" id="35">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<DefaultItem>true</DefaultItem>
+						<CommandName>Form.Command.Сохранить</CommandName>
+						<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСохранитьРасширеннаяПодсказка" id="36"/>
+					</Button>
+					<Button name="ДеревоЗадачПревышениеСрокаЗакрыть" id="37">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Закрыть</CommandName>
+						<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаЗакрытьРасширеннаяПодсказка" id="38"/>
+					</Button>
+					<Button name="ДеревоЗадачПревышениеСрокаАвтоИсправления" id="44">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.АвтоИсправления</CommandName>
+						<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаАвтоИсправленияРасширеннаяПодсказка" id="45"/>
+					</Button>
+					<Button name="ДеревоЗадачПревышениеСрокаПоменятьДатуВВыделеныйСтроках" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоменятьДатуВВыделенныхСтроках</CommandName>
+						<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаПоменятьДатуВВыделеныйСтрокахРасширеннаяПодсказка" id="40"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДеревоЗадачПревышениеСрокаСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДеревоЗадачПревышениеСрока</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоЗадачПревышениеСрокаСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоЗадачПревышениеСрокаСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДеревоЗадачПревышениеСрока</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоЗадачПревышениеСрокаСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоЗадачПревышениеСрокаУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДеревоЗадачПревышениеСрока</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоЗадачПревышениеСрокаУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ДеревоЗадачПревышениеСрокаВыбор</Event>
+				<Event name="OnChange">ДеревоЗадачПревышениеСрокаПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДеревоЗадачПревышениеСрокаИсполнитель" id="46">
+					<DataPath>ДеревоЗадачПревышениеСрока.Исполнитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗадачПревышениеСрокаИсполнительКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаИсполнительРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершения" id="20">
+					<DataPath>ДеревоЗадачПревышениеСрока.ПлановаяДатаЗавершения</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияРасширеннаяПодсказка" id="22"/>
+					<Events>
+						<Event name="OnChange">ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДеревоЗадачПревышениеСрокаОценкаВРабДнях" id="26">
+					<DataPath>ДеревоЗадачПревышениеСрока.ОценкаВРабДнях</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗадачПревышениеСрокаОценкаВРабДняхКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаОценкаВРабДняхРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДат" id="29">
+					<DataPath>ДеревоЗадачПревышениеСрока.РазностьКалендарныхДат</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДатКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДатРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ДеревоЗадачПревышениеСрокаНомер" id="14">
+					<DataPath>ДеревоЗадачПревышениеСрока.Номер</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗадачПревышениеСрокаНомерКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаНомерРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ДеревоЗадачПревышениеСрокаЗаголовок" id="17">
+					<DataPath>ДеревоЗадачПревышениеСрока.Заголовок</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗадачПревышениеСрокаЗаголовокКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаЗаголовокРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ДеревоЗадачПревышениеСрокаАвтор" id="41">
+					<DataPath>ДеревоЗадачПревышениеСрока.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗадачПревышениеСрокаАвторКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаАвторРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<TextDocumentField name="Лог" id="32">
+			<DataPath>Лог</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ЛогКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="34"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДеревоЗадачПревышениеСрока" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево задач превышение срока</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номер" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Заголовок" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПлановаяДатаЗавершения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Плановая дата завершения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОценкаВРабДнях" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оценка в раб. днях</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>1</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазностьКалендарныхДат" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разность календарных дат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>1</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаИзменена" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата изменена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Автор" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исполнитель" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатуЗавершенияУстановилАвтор" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дату завершения установил автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПлановаяДатаЗавершенияВходящихВПериод" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Плановая дата завершения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Лог" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЗадачПревышениеСрока</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоЗадачПревышениеСрока.ДатаИзменена</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Salmon</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЗадачПревышениеСрока</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоЗадачПревышениеСрока.ДатуЗавершенияУстановилАвтор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Сохранить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="Закрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьФорму</Action>
+		</Command>
+		<Command name="ПоменятьДатуВВыделенныхСтроках" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять дату в выделенных строках</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять дату в выделенных строках</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоменятьДатуВВыделеныйСтроках</Action>
+		</Command>
+		<Command name="АвтоИсправления" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическое исправления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто исправления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АвтоИсправления</Action>
+		</Command>
+	</Commands>
+</Form>
