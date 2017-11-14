@@ -130,7 +130,13 @@
 							<ExtendedTooltip name="ДатаСозданияЗаписиРасширеннаяПодсказка" id="38"/>
 						</LabelField>
 						<LabelField name="ДатаОбновленияЗаписи" id="33">
-							<DataPath>Список.ДатаОбновленияЗаписи</DataPath>
+							<DataPath>Список.Period</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата обновления записи</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="ДатаОбновленияЗаписиКонтекстноеМеню" id="34"/>
 							<ExtendedTooltip name="ДатаОбновленияЗаписиРасширеннаяПодсказка" id="35"/>
 						</LabelField>

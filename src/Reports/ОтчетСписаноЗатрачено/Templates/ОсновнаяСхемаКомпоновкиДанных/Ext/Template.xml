@@ -146,6 +146,32 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСписания</dataPath>
+			<field>ДатаСписания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата списания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСозданияЗаписи</dataPath>
+			<field>ДатаСозданияЗаписи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОбновленияЗаписи</dataPath>
+			<field>ДатаОбновленияЗаписи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Задачи.Номер КАК НомерЗадачи,
@@ -159,11 +185,12 @@
 	Задачи.Тип КАК ТипЗадачи,
 	Задачи.Заголовок КАК ЗаголовокЗадачи,
 	Задачи.Бюджет КАК Бюджет,
-	СУММА(СписаниеВремени.Часы) КАК СписаноЧасов,
-	СписаниеВремени.Автор КАК АвторСписания
+	ВЫРАЗИТЬ(СУММА(СписаниеВремени.Часы) КАК ЧИСЛО(10, 2)) КАК СписаноЧасов,
+	СписаниеВремени.Автор КАК АвторСписания,
+	СписаниеВремени.Дата КАК ДатаСписания
 ИЗ
 	РегистрСведений.Задачи КАК Задачи
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СписаниеВремени КАК СписаниеВремени
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СписаниеВремени.СрезПоследних(, )КАК СписаниеВремени
 		ПО Задачи.Номер = СписаниеВремени.НомерЗадачи
 
 СГРУППИРОВАТЬ ПО
@@ -178,7 +205,8 @@
 	Задачи.ДатаСоздания,
 	Задачи.Автор,
 	Задачи.Заголовок,
-	СписаниеВремени.Автор</query>
+	СписаниеВремени.Автор,
+	СписаниеВремени.Дата</query>
 	</dataSet>
 	<dataSetLink>
 		<sourceDataSet>НаборДанных2</sourceDataSet>
@@ -212,6 +240,23 @@
 		<dataPath>СписаноЧасов</dataPath>
 		<expression>Сумма(СписаноЧасов)</expression>
 	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
@@ -277,6 +322,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ИсполнительЗадачи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаСписания</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
