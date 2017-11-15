@@ -64,7 +64,7 @@
 	МИНИМУМ(СписаниеВремени.Часы) КАК Часы
 ПОМЕСТИТЬ ГруппировкаМин
 ИЗ
-	РегистрСведений.СписаниеВремени.СрезПоследних(, ) КАК СписаниеВремени
+	РегистрСведений.СписаниеВремени КАК СписаниеВремени
 
 СГРУППИРОВАТЬ ПО
 	СписаниеВремени.ДатаСозданияЗаписи,
@@ -83,7 +83,7 @@
 	МАКСИМУМ(СписаниеВремени.Часы) КАК Часы
 ПОМЕСТИТЬ ГруппировкаМакс
 ИЗ
-	РегистрСведений.СписаниеВремени.СрезПоследних(, ) КАК СписаниеВремени
+	РегистрСведений.СписаниеВремени КАК СписаниеВремени
 
 СГРУППИРОВАТЬ ПО
 	СписаниеВремени.ДатаСозданияЗаписи,
@@ -123,7 +123,7 @@
 	Группировка.ПроцентРасхождений КАК ПроцентРасхождений
 ИЗ
 	Группировка КАК Группировка
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СписаниеВремени.СрезПоследних(, ) КАК СписаниеВремени
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СписаниеВремени КАК СписаниеВремени
 		ПО Группировка.ДатаСозданияЗаписи = СписаниеВремени.ДатаСозданияЗаписи
 			И Группировка.Автор = СписаниеВремени.Автор
 			И Группировка.НомерЗадачи = СписаниеВремени.НомерЗадачи</query>
@@ -154,23 +154,6 @@
 		</valueType>
 		<value xsi:type="xs:decimal">0</value>
 		<useRestriction>false</useRestriction>
-	</parameter>
-	<parameter>
-		<name>Период</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Период</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>true</useRestriction>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -240,7 +223,7 @@
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ДопустимыйПроцент</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">50</dcscor:value>
+					<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
 					<dcsset:userSettingID>e92bcb4f-1b3e-463c-8cbd-7041a08b4e9a</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
