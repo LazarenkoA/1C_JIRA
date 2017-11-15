@@ -245,8 +245,8 @@
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний" id="f1a9fac8-b58c-42bc-a000-8e1530db2b96" configVersion="976a5db199700c4281cefce70c6d7ce800000000"/>
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Form.ФормаОтчета" id="fb3ed2fb-c31e-4f85-87f1-3e154cdd5211" configVersion="c8ceb3cd76852349b6a4f54407d8a38400000000"/>
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Form.ФормаОтчета.Form" id="fb3ed2fb-c31e-4f85-87f1-3e154cdd5211.0" configVersion="bcaad7e458eba04db1978ab798a7d6e100000000"/>
-		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Template.ОсновнаяСхемаКомпоновкиДанных" id="97a31fc3-0e2f-4806-864c-ce2b064b9c38" configVersion="c8a855c56bb89f47922e9a8b4f8dbff200000000"/>
-		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="97a31fc3-0e2f-4806-864c-ce2b064b9c38.0" configVersion="0c3d06cb85b1d94b9256ce4af6cd806000000000"/>
+		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Template.ОсновнаяСхемаКомпоновкиДанных" id="97a31fc3-0e2f-4806-864c-ce2b064b9c38" configVersion="a22b24aa2caac94985e6413e5b352a3e00000000"/>
+		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="97a31fc3-0e2f-4806-864c-ce2b064b9c38.0" configVersion="9fdb24a656aecb4d812d3ade03b04ef900000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено" id="e54f1bfc-2c30-4158-8f07-4df242c569fb" configVersion="53f6df294357aa4584ef9e46f28ed48c00000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета" id="ee3c76fb-601c-428a-96e9-1eb4590590b1" configVersion="f108bfca6dc0084e8f10c0eca4ac574900000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета.Form" id="ee3c76fb-601c-428a-96e9-1eb4590590b1.0" configVersion="f6f2de64f966744fa6371c39ddbcd5eb00000000"/>

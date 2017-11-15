@@ -80,19 +80,10 @@
 	СписаниеВремени.ДатаСозданияЗаписи КАК ДатаСозданияЗаписи,
 	СписаниеВремени.Автор КАК Автор,
 	СписаниеВремени.НомерЗадачи КАК НомерЗадачи,
-	МАКСИМУМ(СписаниеВремени.Часы) КАК Часы
+	СписаниеВремени.Часы КАК Часы
 ПОМЕСТИТЬ ГруппировкаМакс
 ИЗ
-	РегистрСведений.СписаниеВремени КАК СписаниеВремени
-
-СГРУППИРОВАТЬ ПО
-	СписаниеВремени.ДатаСозданияЗаписи,
-	СписаниеВремени.Автор,
-	СписаниеВремени.НомерЗадачи
-
-ИМЕЮЩИЕ
-	КОЛИЧЕСТВО(*) &gt; 1 И
-	МАКСИМУМ(СписаниеВремени.Часы) &gt; 0
+	РегистрСведений.СписаниеВремени.СрезПоследних(, ) КАК СписаниеВремени
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -153,6 +144,23 @@
 			</v8:NumberQualifiers>
 		</valueType>
 		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<settingsVariant>
