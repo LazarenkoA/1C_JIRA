@@ -3,7 +3,7 @@
 	<ConfigVersions>
 		<Metadata name="Catalog.БюджетыПУ" id="066f724e-3d83-4830-8c7c-2583f019f381" configVersion="f1a4c973e7ea49498467380850f356d600000000"/>
 		<Metadata name="Catalog.БюджетыПУ.ManagerModule" id="066f724e-3d83-4830-8c7c-2583f019f381.3" configVersion="447f7a9aae76bc4fbbefea7b1707d82800000000"/>
-		<Metadata name="Catalog.Пользователи" id="567a1f5a-f4c9-4247-933a-0a89239a1b02" configVersion="0e1cec0ac09ed44db32aef37f6abde7000000000">
+		<Metadata name="Catalog.Пользователи" id="567a1f5a-f4c9-4247-933a-0a89239a1b02" configVersion="f3a4f1fa662cc54a8c6878427d2bae5300000000">
 			<Metadata name="Catalog.Пользователи.Attribute.ЛидГруппы" id="662aa3dc-5e16-47a2-b8a4-89ab24db6980"/>
 			<Metadata name="Catalog.Пользователи.Attribute.Аватар" id="73210adc-2a9c-4e5e-a6dd-10d89afbf4ff"/>
 			<Metadata name="Catalog.Пользователи.Attribute.БюджетПУПоУмолчанию" id="7cedb6a4-1100-4387-a2a2-7ecbee002082"/>
@@ -17,7 +17,7 @@
 		<Metadata name="Catalog.Пользователи.Form.ФормаГруппы.Form" id="8f853756-cf78-4e68-b967-e8136ba88fb1.0" configVersion="0f5f128d05056647ad0b2ba77353ce0d00000000"/>
 		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента" id="12f994fa-fad3-457a-82ac-8157afaddf32" configVersion="288930c42f54234fb4637e8318eb42c300000000"/>
 		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента.Form" id="12f994fa-fad3-457a-82ac-8157afaddf32.0" configVersion="e9226c2ca27ef942b6fa6fd01f6ddc4c00000000"/>
-		<Metadata name="Catalog.Пользователи.ManagerModule" id="567a1f5a-f4c9-4247-933a-0a89239a1b02.3" configVersion="0c6f661e80a71d47b515214b81edd34000000000"/>
+		<Metadata name="Catalog.Пользователи.ManagerModule" id="567a1f5a-f4c9-4247-933a-0a89239a1b02.3" configVersion="a1784a688f10ea4195642f3f681e344600000000"/>
 		<Metadata name="Catalog.Пользователи.Predefined" id="567a1f5a-f4c9-4247-933a-0a89239a1b02.1c" configVersion="38b728473e52764cabaf6914ae3d943e00000000"/>
 		<Metadata name="Catalog.Приоритеты" id="90aac90f-cd2f-4793-8b43-010b3c2efd6a" configVersion="f6c78fb500504247ac43ef6ef17db7fe00000000">
 			<Metadata name="Catalog.Приоритеты.Attribute.СрокРешения" id="a974e056-1131-4e58-94e9-f95c40618b30"/>
