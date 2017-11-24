@@ -693,21 +693,37 @@
 				</LabelField>
 			</ChildItems>
 		</Table>
-		<CheckBoxField name="ОтобратьЗадачиПроизводства" id="308">
-			<DataPath>ОтобратьЗадачиПроизводства</DataPath>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Задачи у которых исполнитель разработчик или аналитик</v8:content>
-				</v8:item>
-			</ToolTip>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ОтобратьЗадачиПроизводстваКонтекстноеМеню" id="309"/>
-			<ExtendedTooltip name="ОтобратьЗадачиПроизводстваРасширеннаяПодсказка" id="310"/>
-			<Events>
-				<Event name="OnChange">ОтобратьЗадачиПроизводстваПриИзменении</Event>
-			</Events>
-		</CheckBoxField>
+		<UsualGroup name="Группа5" id="340">
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="341"/>
+			<ChildItems>
+				<CheckBoxField name="ОтобратьЗадачиПроизводства" id="308">
+					<DataPath>ОтобратьЗадачиПроизводства</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задачи у которых исполнитель разработчик или аналитик</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтобратьЗадачиПроизводстваКонтекстноеМеню" id="309"/>
+					<ExtendedTooltip name="ОтобратьЗадачиПроизводстваРасширеннаяПодсказка" id="310"/>
+					<Events>
+						<Event name="OnChange">ОтобратьЗадачиПроизводстваПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ОтобратьНовые" id="342">
+					<DataPath>ОтобратьНовые</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтобратьНовыеКонтекстноеМеню" id="343"/>
+					<ExtendedTooltip name="ОтобратьНовыеРасширеннаяПодсказка" id="344"/>
+					<Events>
+						<Event name="OnChange">ОтобратьНовыеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="НаборКонстант" id="1">
@@ -980,7 +996,9 @@
 	Задачи.Статус = "Новый"
 	И Задачи.НомерРодительскойЗадачи = ""
 	И (НЕ &amp;ОтборЗадачПроизводства
-			ИЛИ Задачи.Исполнитель В ИЕРАРХИИ (&amp;ГруппаРазработки, &amp;ГруппаАналитики))</QueryText>
+			ИЛИ Задачи.Исполнитель В ИЕРАРХИИ (&amp;ГруппаРазработки, &amp;ГруппаАналитики))
+	И (НЕ &amp;ОтобратьНовые
+			ИЛИ Задачи.ЭтоНовая)</QueryText>
 				<MainTable>InformationRegister.Задачи</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -1032,6 +1050,17 @@
 					<v8:FractionDigits>2</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтобратьНовые" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобрать новые</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
