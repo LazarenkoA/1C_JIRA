@@ -132,6 +132,7 @@
 			<DefaultItem>true</DefaultItem>
 			<TitleLocation>None</TitleLocation>
 			<Width>100</Width>
+			<ShowHeaders>true</ShowHeaders>
 			<ContextMenu name="РезультатКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="7"/>
 		</SpreadSheetDocumentField>
