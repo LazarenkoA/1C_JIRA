@@ -350,7 +350,18 @@
 						</Button>
 						<Button name="ДеревоЗадачВРаботеОбновитьСПолучениемИзменений" id="269">
 							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
 							<CommandName>Form.Command.ОбновитьСПолучениемИзменений</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Получить новые задачи</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ДеревоЗадачВРаботеОбновитьСПолучениемИзмененийРасширеннаяПодсказка" id="270"/>
 						</Button>
 					</ChildItems>
@@ -1327,7 +1338,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить с получением изменений</v8:content>
+					<v8:content>Запуск регламентного задания на получение задач</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьСПолучениемИзменений</Action>
