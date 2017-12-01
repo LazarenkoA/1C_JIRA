@@ -203,7 +203,7 @@
 		</Metadata>
 		<Metadata name="InformationRegister.ЖурналОтправкиУведомлений.Form.ФормаСписка" id="0845ffb2-1a9c-4ad9-85a9-88f453f9f42c" configVersion="e590b7c562be4b43ba8fd5773eff8b3800000000"/>
 		<Metadata name="InformationRegister.ЖурналОтправкиУведомлений.Form.ФормаСписка.Form" id="0845ffb2-1a9c-4ad9-85a9-88f453f9f42c.0" configVersion="d27e68abc1bbdf42ba8df9689bb4d56500000000"/>
-		<Metadata name="InformationRegister.Задачи" id="11e28c1c-201b-405f-8435-d534685acfd4" configVersion="5c705035d415454695dd6c5293a0f46300000000">
+		<Metadata name="InformationRegister.Задачи" id="11e28c1c-201b-405f-8435-d534685acfd4" configVersion="fdab91de1d72254dad90ee5f22cc1a0a00000000">
 			<Metadata name="InformationRegister.Задачи.Resource.ЭтоНовая" id="0243824c-86c8-4d7d-b859-16cc6cc9edda"/>
 			<Metadata name="InformationRegister.Задачи.Resource.ДатаСоздания" id="0da82594-57d3-40c4-bbb7-750025416779"/>
 			<Metadata name="InformationRegister.Задачи.Dimension.НомерРодительскойЗадачи" id="18dc61ac-0e38-4804-a05e-8dc7dac2ea02"/>
@@ -221,7 +221,7 @@
 		</Metadata>
 		<Metadata name="InformationRegister.Задачи.Form.ФормаСписка" id="5d0d21d6-a70a-456a-8aac-3f7bc6af4b09" configVersion="17171f3bddf1ef4285f712d08b8b9e1800000000"/>
 		<Metadata name="InformationRegister.Задачи.Form.ФормаСписка.Form" id="5d0d21d6-a70a-456a-8aac-3f7bc6af4b09.0" configVersion="5a7f98566afdbb41b3fc8a88a895b12100000000"/>
-		<Metadata name="InformationRegister.Задачи.ManagerModule" id="11e28c1c-201b-405f-8435-d534685acfd4.2" configVersion="2bcc3a28c13899439deb0c22b02aef7800000000"/>
+		<Metadata name="InformationRegister.Задачи.ManagerModule" id="11e28c1c-201b-405f-8435-d534685acfd4.2" configVersion="ec888fd44cb3274684a527c178f6767c00000000"/>
 		<Metadata name="InformationRegister.ИсторияИзмененияСтатусов" id="a83a9369-33f4-485b-8314-cb13ab37183e" configVersion="59452eb94558944689ceb8af272ea19d00000000">
 			<Metadata name="InformationRegister.ИсторияИзмененияСтатусов.Dimension.НомерЗаписи" id="282df30c-d81a-4254-afad-9f606de74dd1"/>
 			<Metadata name="InformationRegister.ИсторияИзмененияСтатусов.Resource.ДатаСобытия" id="2eaf35c1-6960-4e72-87ba-85071255036a"/>
