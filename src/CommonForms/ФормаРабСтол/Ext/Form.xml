@@ -162,6 +162,44 @@
 								</PictureDecoration>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="грНастройкиСВ" id="352">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр настройки СВ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр настройки СВ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грНастройкиСВРасширеннаяПодсказка" id="353"/>
+							<ChildItems>
+								<Button name="РегистрацияВСистемеВзаимодействия" id="350">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.РегистрацияВСистемеВзаимодействия</CommandName>
+									<ExtendedTooltip name="РегистрацияВСистемеВзаимодействияРасширеннаяПодсказка" id="351"/>
+								</Button>
+								<PictureDecoration name="ДекорацияПредупреждениеСВ" id="354">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация предупреждение</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияПредупреждениеСВКонтекстноеМеню" id="355"/>
+									<ExtendedTooltip name="ДекорацияПредупреждениеСВРасширеннаяПодсказка" id="356"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа1" id="198">
@@ -348,22 +386,38 @@
 							<CommandName>Form.Command.Обновить</CommandName>
 							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="163"/>
 						</Button>
-						<Button name="ДеревоЗадачВРаботеОбновитьСПолучениемИзменений" id="269">
-							<Type>UsualButton</Type>
-							<Representation>PictureAndText</Representation>
-							<CommandName>Form.Command.ОбновитьСПолучениемИзменений</CommandName>
-							<Picture>
-								<xr:Ref>StdPicture.GenerateReport</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Обновить задачи из JIRA</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="ДеревоЗадачВРаботеОбновитьСПолучениемИзмененийРасширеннаяПодсказка" id="270"/>
-						</Button>
+						<UsualGroup name="Группа6" id="348">
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="349"/>
+							<ChildItems>
+								<Button name="ДеревоЗадачВРаботеОбновитьСПолучениемИзменений" id="269">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ОбновитьСПолучениемИзменений</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновить задачи из JIRA</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДеревоЗадачВРаботеОбновитьСПолучениемИзмененийРасширеннаяПодсказка" id="270"/>
+								</Button>
+								<ProgressBarField name="Прогресс" id="345">
+									<DataPath>Прогресс</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>19</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<ContextMenu name="ПрогрессКонтекстноеМеню" id="346"/>
+									<ExtendedTooltip name="ПрогрессРасширеннаяПодсказка" id="347"/>
+								</ProgressBarField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<Button name="ОткрытьСписокВJIRA" id="160">
@@ -1028,6 +1082,17 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Тип</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
 					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
@@ -1072,6 +1137,22 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Прогресс" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
@@ -1357,6 +1438,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КорректировкаОценки</Action>
+		</Command>
+		<Command name="РегистрацияВСистемеВзаимодействия" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрация в системе взаимодействия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрация в системе взаимодействия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РегистрацияВСистемеВзаимодействия</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -70,10 +70,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ГрафикРаботы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПользовательНастроек</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРазницаОценкиОсновнойИСабтасков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЧисткаУдаленныхЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Администратор</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>Отчеты</Subsystem>
+			<Subsystem>СистемаВзаимодействия</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

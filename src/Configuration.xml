@@ -140,6 +140,7 @@
 			<CommonPicture>Связь</CommonPicture>
 			<CommonPicture>ВажностьВажная</CommonPicture>
 			<SessionParameter>JIRA_Cookies</SessionParameter>
+			<Role>Администратор</Role>
 			<CommonModule>ВзаимодействиеC_JIRA_КлиентСервер</CommonModule>
 			<CommonModule>ВзаимодействиеC_JIRA_Сервер</CommonModule>
 			<CommonModule>ГлобальныеНаСервере</CommonModule>
@@ -171,6 +172,8 @@
 			<Constant>РабочаяНеделя</Constant>
 			<Constant>РабочийДень</Constant>
 			<Constant>СерверИсходящейПочтыSMTP</Constant>
+			<Constant>СВ_Сервер</Constant>
+			<Constant>СВ_АдресЭлектроннойПочты</Constant>
 			<CommonForm>ФормаРабСтол</CommonForm>
 			<CommonForm>ФормаНастроекГрафикаРаботы</CommonForm>
 			<CommonForm>ФормаНастроекЭлектроннойПочты</CommonForm>
@@ -179,6 +182,7 @@
 			<CommonForm>ФормаДиаграмм</CommonForm>
 			<CommonForm>ФормаНастроекJIRA</CommonForm>
 			<CommonForm>ФормаРазницаОценкиОсновнойИСабтасков</CommonForm>
+			<CommonForm>ФормаСистемаВзаимодействия</CommonForm>
 			<Catalog>Приоритеты</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>ТипыЗадач</Catalog>
