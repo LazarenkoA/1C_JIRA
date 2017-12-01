@@ -436,6 +436,38 @@
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="грДопНастройки" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные настройки</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр доп настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="грДопНастройкиРасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<CheckBoxField name="НеСоздаватьАналитику" id="107">
+							<DataPath>НеСоздаватьАналитику</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеСоздаватьАналитикуКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="НеСоздаватьАналитикуРасширеннаяПодсказка" id="109"/>
+						</CheckBoxField>
+						<CheckBoxField name="НеСоздаватьДокументирование" id="110">
+							<DataPath>НеСоздаватьДокументирование</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеСоздаватьДокументированиеКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="НеСоздаватьДокументированиеРасширеннаяПодсказка" id="112"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -607,6 +639,28 @@
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="НеСоздаватьАналитику" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не создавать аналитику</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеСоздаватьДокументирование" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не создавать документирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОК" id="1">
@@ -708,6 +762,16 @@
 		<Parameter name="ДатуЗавершенияУстановилАвтор">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="Статус">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 			<KeyParameter>true</KeyParameter>
 		</Parameter>
