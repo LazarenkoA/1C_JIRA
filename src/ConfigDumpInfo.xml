@@ -3,8 +3,9 @@
 	<ConfigVersions>
 		<Metadata name="Catalog.БюджетыПУ" id="066f724e-3d83-4830-8c7c-2583f019f381" configVersion="f1a4c973e7ea49498467380850f356d600000000"/>
 		<Metadata name="Catalog.БюджетыПУ.ManagerModule" id="066f724e-3d83-4830-8c7c-2583f019f381.3" configVersion="447f7a9aae76bc4fbbefea7b1707d82800000000"/>
-		<Metadata name="Catalog.Пользователи" id="567a1f5a-f4c9-4247-933a-0a89239a1b02" configVersion="f3a4f1fa662cc54a8c6878427d2bae5300000000">
+		<Metadata name="Catalog.Пользователи" id="567a1f5a-f4c9-4247-933a-0a89239a1b02" configVersion="6ecdaf99536dd843aa06990f7af5b89500000000">
 			<Metadata name="Catalog.Пользователи.Attribute.ЛидГруппы" id="662aa3dc-5e16-47a2-b8a4-89ab24db6980"/>
+			<Metadata name="Catalog.Пользователи.Attribute.ПользовательИБ" id="68298b98-e3d3-4012-a768-e374fee06047"/>
 			<Metadata name="Catalog.Пользователи.Attribute.Аватар" id="73210adc-2a9c-4e5e-a6dd-10d89afbf4ff"/>
 			<Metadata name="Catalog.Пользователи.Attribute.БюджетПУПоУмолчанию" id="7cedb6a4-1100-4387-a2a2-7ecbee002082"/>
 			<Metadata name="Catalog.Пользователи.Attribute.ОтслеживатьЗадачиНаРабочемСтоле" id="b12e4723-4ce7-4ad8-87d1-0bbd3fa137fb"/>
@@ -15,8 +16,8 @@
 		<Metadata name="Catalog.Пользователи.Form.ФормаВыбора.Form" id="a96bbde0-a8d3-4cfe-b72d-4b92ab76f5e8.0" configVersion="86f00ce93bd7ea4187677d7f2f3c70bd00000000"/>
 		<Metadata name="Catalog.Пользователи.Form.ФормаГруппы" id="8f853756-cf78-4e68-b967-e8136ba88fb1" configVersion="c28641a9d126c74aaeb7e51763a7ed1c00000000"/>
 		<Metadata name="Catalog.Пользователи.Form.ФормаГруппы.Form" id="8f853756-cf78-4e68-b967-e8136ba88fb1.0" configVersion="0f5f128d05056647ad0b2ba77353ce0d00000000"/>
-		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента" id="12f994fa-fad3-457a-82ac-8157afaddf32" configVersion="288930c42f54234fb4637e8318eb42c300000000"/>
-		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента.Form" id="12f994fa-fad3-457a-82ac-8157afaddf32.0" configVersion="e9226c2ca27ef942b6fa6fd01f6ddc4c00000000"/>
+		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента" id="12f994fa-fad3-457a-82ac-8157afaddf32" configVersion="409fffbf07c5594187e213fe2611edef00000000"/>
+		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента.Form" id="12f994fa-fad3-457a-82ac-8157afaddf32.0" configVersion="5a128110d16d35478fe942ea6a1bacc200000000"/>
 		<Metadata name="Catalog.Пользователи.ManagerModule" id="567a1f5a-f4c9-4247-933a-0a89239a1b02.3" configVersion="a1784a688f10ea4195642f3f681e344600000000"/>
 		<Metadata name="Catalog.Пользователи.Predefined" id="567a1f5a-f4c9-4247-933a-0a89239a1b02.1c" configVersion="38b728473e52764cabaf6914ae3d943e00000000"/>
 		<Metadata name="Catalog.Приоритеты" id="90aac90f-cd2f-4793-8b43-010b3c2efd6a" configVersion="f6c78fb500504247ac43ef6ef17db7fe00000000">
@@ -42,12 +43,12 @@
 		<Metadata name="Catalog.ШаблоныУведомлений.Predefined" id="2df879cf-112f-413d-81f6-16a29c5004d7.1c" configVersion="0b3c68f0bac82343b1a37c507be65bfa00000000"/>
 		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615" configVersion="533f414928210641ba442e4f4da1b46b00000000"/>
 		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче.Form" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615.0" configVersion="974b1f70cd567e4f88b5eb0d3d92147b00000000"/>
-		<Metadata name="CommonForm.ФормаДиаграмм" id="8b67967d-2cde-464a-9573-da7016d6cc6a" configVersion="021dba267762b34f897a690def22effe00000000"/>
-		<Metadata name="CommonForm.ФормаДиаграмм.Form" id="8b67967d-2cde-464a-9573-da7016d6cc6a.0" configVersion="2d2116df8800604a882f00875693a60d00000000"/>
+		<Metadata name="CommonForm.ФормаДиаграмм" id="8b67967d-2cde-464a-9573-da7016d6cc6a" configVersion="e2646c4e86fd734ea54b5ea31588b7ec00000000"/>
+		<Metadata name="CommonForm.ФормаДиаграмм.Form" id="8b67967d-2cde-464a-9573-da7016d6cc6a.0" configVersion="fa309861485d2e4b81726e011883353300000000"/>
 		<Metadata name="CommonForm.ФормаНастроекJIRA" id="626a74fe-ca34-4bd1-a865-e8e311a6fc45" configVersion="2b4f68f6e88ef741b2ad2b48c6c9975e00000000"/>
 		<Metadata name="CommonForm.ФормаНастроекJIRA.Form" id="626a74fe-ca34-4bd1-a865-e8e311a6fc45.0" configVersion="d1be14f9d1c6ea4c993da73f88fd0e3500000000"/>
-		<Metadata name="CommonForm.ФормаНастроекГрафикаРаботы" id="b18dde47-52db-48a3-a5dd-a3a6931184c9" configVersion="65504de00e781347a86c9298d1fa441800000000"/>
-		<Metadata name="CommonForm.ФормаНастроекГрафикаРаботы.Form" id="b18dde47-52db-48a3-a5dd-a3a6931184c9.0" configVersion="5dbe5f55dc0fa54a8d5fd07f3c0910bc00000000"/>
+		<Metadata name="CommonForm.ФормаНастроекГрафикаРаботы" id="b18dde47-52db-48a3-a5dd-a3a6931184c9" configVersion="9aa5b683d7d25e4d87901c181c591d7000000000"/>
+		<Metadata name="CommonForm.ФормаНастроекГрафикаРаботы.Form" id="b18dde47-52db-48a3-a5dd-a3a6931184c9.0" configVersion="e1092d1728d71b4880bb5396087e819b00000000"/>
 		<Metadata name="CommonForm.ФормаНастроекЭлектроннойПочты" id="68c402e2-6b10-4cdc-9baa-e47e17ac6c47" configVersion="f2857060b0309f4396a96196fa7b137c00000000"/>
 		<Metadata name="CommonForm.ФормаНастроекЭлектроннойПочты.Form" id="68c402e2-6b10-4cdc-9baa-e47e17ac6c47.0" configVersion="6fa98cce1e0a1140943f760d5999154b00000000"/>
 		<Metadata name="CommonForm.ФормаПревышениеСроков" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e" configVersion="ddab4ce246761b4e987db99369014a3100000000"/>
