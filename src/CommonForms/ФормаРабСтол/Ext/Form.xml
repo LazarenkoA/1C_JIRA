@@ -409,6 +409,7 @@
 								</Button>
 								<ProgressBarField name="Прогресс" id="345">
 									<DataPath>Прогресс</DataPath>
+									<Visible>false</Visible>
 									<TitleLocation>None</TitleLocation>
 									<Width>19</Width>
 									<HorizontalStretch>false</HorizontalStretch>

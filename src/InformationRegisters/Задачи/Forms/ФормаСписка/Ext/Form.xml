@@ -10,7 +10,14 @@
 		<ChildItems>
 			<Button name="СписокПолучитьЗадачи" id="37">
 				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<DefaultItem>true</DefaultItem>
 				<CommandName>Form.Command.ПолучитьЗадачи</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
 				<ExtendedTooltip name="СписокПолучитьЗадачиРасширеннаяПодсказка" id="38"/>
 			</Button>
 			<Popup name="грОбновить" id="56">
@@ -30,8 +37,6 @@
 				<ChildItems>
 					<Button name="ФормаОбновитьВыделенные" id="54">
 						<Type>CommandBarButton</Type>
-						<DefaultButton>true</DefaultButton>
-						<DefaultItem>true</DefaultItem>
 						<CommandName>Form.Command.ОбновитьВыделенные</CommandName>
 						<ExtendedTooltip name="ФормаОбновитьВыделенныеРасширеннаяПодсказка" id="55"/>
 					</Button>
@@ -64,6 +69,7 @@
 		</UsualGroup>
 		<InputField name="Часы" id="62">
 			<DataPath>Часы</DataPath>
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
