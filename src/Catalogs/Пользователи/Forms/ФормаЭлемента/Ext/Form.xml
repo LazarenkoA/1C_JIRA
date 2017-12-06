@@ -64,6 +64,11 @@
 							<ContextMenu name="ФИОКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="9"/>
 						</InputField>
+						<InputField name="РФК" id="30">
+							<DataPath>Объект.РФК</DataPath>
+							<ContextMenu name="РФККонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="РФКРасширеннаяПодсказка" id="32"/>
+						</InputField>
 						<InputField name="ПользовательИБ" id="27">
 							<DataPath>ПредставлениеПользователяИБ</DataPath>
 							<DropListButton>true</DropListButton>

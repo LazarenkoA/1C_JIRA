@@ -3,7 +3,8 @@
 	<ConfigVersions>
 		<Metadata name="Catalog.БюджетыПУ" id="066f724e-3d83-4830-8c7c-2583f019f381" configVersion="f1a4c973e7ea49498467380850f356d600000000"/>
 		<Metadata name="Catalog.БюджетыПУ.ManagerModule" id="066f724e-3d83-4830-8c7c-2583f019f381.3" configVersion="447f7a9aae76bc4fbbefea7b1707d82800000000"/>
-		<Metadata name="Catalog.Пользователи" id="567a1f5a-f4c9-4247-933a-0a89239a1b02" configVersion="6ecdaf99536dd843aa06990f7af5b89500000000">
+		<Metadata name="Catalog.Пользователи" id="567a1f5a-f4c9-4247-933a-0a89239a1b02" configVersion="c1a3715450da4545b1c06ac797b81f4c00000000">
+			<Metadata name="Catalog.Пользователи.Attribute.РФК" id="488d6983-75df-4b98-b06e-a438026f13dd"/>
 			<Metadata name="Catalog.Пользователи.Attribute.ЛидГруппы" id="662aa3dc-5e16-47a2-b8a4-89ab24db6980"/>
 			<Metadata name="Catalog.Пользователи.Attribute.ПользовательИБ" id="68298b98-e3d3-4012-a768-e374fee06047"/>
 			<Metadata name="Catalog.Пользователи.Attribute.Аватар" id="73210adc-2a9c-4e5e-a6dd-10d89afbf4ff"/>
@@ -16,8 +17,8 @@
 		<Metadata name="Catalog.Пользователи.Form.ФормаВыбора.Form" id="a96bbde0-a8d3-4cfe-b72d-4b92ab76f5e8.0" configVersion="86f00ce93bd7ea4187677d7f2f3c70bd00000000"/>
 		<Metadata name="Catalog.Пользователи.Form.ФормаГруппы" id="8f853756-cf78-4e68-b967-e8136ba88fb1" configVersion="c28641a9d126c74aaeb7e51763a7ed1c00000000"/>
 		<Metadata name="Catalog.Пользователи.Form.ФормаГруппы.Form" id="8f853756-cf78-4e68-b967-e8136ba88fb1.0" configVersion="0f5f128d05056647ad0b2ba77353ce0d00000000"/>
-		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента" id="12f994fa-fad3-457a-82ac-8157afaddf32" configVersion="409fffbf07c5594187e213fe2611edef00000000"/>
-		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента.Form" id="12f994fa-fad3-457a-82ac-8157afaddf32.0" configVersion="5a128110d16d35478fe942ea6a1bacc200000000"/>
+		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента" id="12f994fa-fad3-457a-82ac-8157afaddf32" configVersion="f8ba8bceb471d549a9d6b5d48fcd135400000000"/>
+		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента.Form" id="12f994fa-fad3-457a-82ac-8157afaddf32.0" configVersion="2c8aef35e3fd3e4ebd7cfb2d2d9248d300000000"/>
 		<Metadata name="Catalog.Пользователи.ManagerModule" id="567a1f5a-f4c9-4247-933a-0a89239a1b02.3" configVersion="a1784a688f10ea4195642f3f681e344600000000"/>
 		<Metadata name="Catalog.Пользователи.Predefined" id="567a1f5a-f4c9-4247-933a-0a89239a1b02.1c" configVersion="38b728473e52764cabaf6914ae3d943e00000000"/>
 		<Metadata name="Catalog.Приоритеты" id="90aac90f-cd2f-4793-8b43-010b3c2efd6a" configVersion="f6c78fb500504247ac43ef6ef17db7fe00000000">
