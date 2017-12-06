@@ -156,22 +156,6 @@
 				</v8:item>
 			</title>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ДатаСозданияЗаписи</dataPath>
-			<field>ДатаСозданияЗаписи</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Автор</dataPath>
-			<field>Автор</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ДатаОбновленияЗаписи</dataPath>
-			<field>ДатаОбновленияЗаписи</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Дата</dataPath>
-			<field>Дата</field>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Задачи.Номер КАК НомерЗадачи,
@@ -190,7 +174,7 @@
 	СписаниеВремени.Дата КАК ДатаСписания
 ИЗ
 	РегистрСведений.Задачи КАК Задачи
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СписаниеВремени.СрезПоследних(, )КАК СписаниеВремени
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СписаниеВремени КАК СписаниеВремени
 		ПО Задачи.Номер = СписаниеВремени.НомерЗадачи
 
 СГРУППИРОВАТЬ ПО

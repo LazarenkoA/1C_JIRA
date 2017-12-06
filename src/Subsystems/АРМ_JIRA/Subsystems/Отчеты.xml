@@ -17,7 +17,6 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетСписаноЗатрачено</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СтатистинаНовыхЗадач</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоКорректировкиСписаний</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

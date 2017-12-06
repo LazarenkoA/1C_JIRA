@@ -130,7 +130,7 @@
 							<ExtendedTooltip name="ДатаСозданияЗаписиРасширеннаяПодсказка" id="38"/>
 						</LabelField>
 						<LabelField name="ДатаОбновленияЗаписи" id="33">
-							<DataPath>Список.Period</DataPath>
+							<DataPath>Список.ДатаОбновленияЗаписи</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
