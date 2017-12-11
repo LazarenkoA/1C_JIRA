@@ -13,7 +13,10 @@
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
-			<Picture/>
+			<Picture>
+				<xr:Ref>CommonPicture.JIRA_Logo</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Задачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.JIRA_JQL</xr:Item>
@@ -72,6 +75,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРазницаОценкиОсновнойИСабтасков</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЧисткаУдаленныхЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Администратор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.JIRA_Logo</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

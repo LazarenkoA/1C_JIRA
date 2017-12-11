@@ -136,9 +136,11 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>АРМ_JIRA</Subsystem>
+			<Subsystem>СистемаСборок</Subsystem>
 			<CommonPicture>Приоритеты</CommonPicture>
 			<CommonPicture>Связь</CommonPicture>
 			<CommonPicture>ВажностьВажная</CommonPicture>
+			<CommonPicture>JIRA_Logo</CommonPicture>
 			<SessionParameter>JIRA_Cookies</SessionParameter>
 			<Role>Администратор</Role>
 			<CommonModule>ВзаимодействиеC_JIRA_КлиентСервер</CommonModule>
@@ -188,6 +190,7 @@
 			<Catalog>ТипыЗадач</Catalog>
 			<Catalog>ШаблоныУведомлений</Catalog>
 			<Catalog>БюджетыПУ</Catalog>
+			<Catalog>Релизы</Catalog>
 			<Enum>ТипыЗадач</Enum>
 			<Report>ОтчетСписаноЗатрачено</Report>
 			<Report>СтатистинаНовыхЗадач</Report>
