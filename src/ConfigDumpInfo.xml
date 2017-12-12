@@ -125,8 +125,8 @@
 		<Metadata name="CommonForm.ФормаНастроекЭлектроннойПочты.Form" id="68c402e2-6b10-4cdc-9baa-e47e17ac6c47.0" configVersion="6fa98cce1e0a1140943f760d5999154b00000000"/>
 		<Metadata name="CommonForm.ФормаПревышениеСроков" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e" configVersion="ddab4ce246761b4e987db99369014a3100000000"/>
 		<Metadata name="CommonForm.ФормаПревышениеСроков.Form" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e.0" configVersion="9f2e6044db30c24492533bb981a3c25300000000"/>
-		<Metadata name="CommonForm.ФормаРабСтол" id="3c0730e4-6e95-4a93-9c2c-a596f1370097" configVersion="6bd51b58e95dd64e89c557800b818eaa00000000"/>
-		<Metadata name="CommonForm.ФормаРабСтол.Form" id="3c0730e4-6e95-4a93-9c2c-a596f1370097.0" configVersion="2b9aac2d6c79134895da8f9f56fb533200000000"/>
+		<Metadata name="CommonForm.ФормаРабСтол" id="3c0730e4-6e95-4a93-9c2c-a596f1370097" configVersion="09d050c28be2d44dbc7399e1b46609e400000000"/>
+		<Metadata name="CommonForm.ФормаРабСтол.Form" id="3c0730e4-6e95-4a93-9c2c-a596f1370097.0" configVersion="942e095f83a9e84b89ae56cd41d95e3800000000"/>
 		<Metadata name="CommonForm.ФормаРазницаОценкиОсновнойИСабтасков" id="520dd270-1917-4ead-9210-320f0978f9bd" configVersion="0408cce8c9ae794ba883377b840077f800000000"/>
 		<Metadata name="CommonForm.ФормаРазницаОценкиОсновнойИСабтасков.Form" id="520dd270-1917-4ead-9210-320f0978f9bd.0" configVersion="2bec08a47b472847b1b2d6a8bd30a4c600000000"/>
 		<Metadata name="CommonForm.ФормаСистемаВзаимодействия" id="78f2bc1f-35b5-4088-82fa-a612c8fe6c4a" configVersion="56bedabac7036c47977b1bb18133454700000000"/>
