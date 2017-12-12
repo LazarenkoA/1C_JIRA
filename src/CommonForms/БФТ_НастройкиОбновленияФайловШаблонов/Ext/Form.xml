@@ -1,0 +1,1077 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Вкладки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вкладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вкладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ВкладкиРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<Page name="ИзFTP" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Из FTP</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Из FTP</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИзFTPРасширеннаяПодсказка" id="11"/>
+				</Page>
+				<Page name="ИзЛокальнойДиректории" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Из локальной директории</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Из локальной директории</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИзЛокальнойДиректорииРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<InputField name="ПутьКДиректории" id="1">
+							<DataPath>ПутьКДиректории</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПутьКДиректорииКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПутьКДиректорииРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="StartChoice">ПутьКДиректорииНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="НастройкаПодключенияКРепозиторию" id="116">
+							<DataPath>НастройкаПодключенияКРепозиторию</DataPath>
+							<ContextMenu name="НастройкаПодключенияКРепозиториюКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="НастройкаПодключенияКРепозиториюРасширеннаяПодсказка" id="118"/>
+						</InputField>
+						<UsualGroup name="НастройкиPerforce" id="42">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки perforce</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки perforce</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="НастройкиPerforceРасширеннаяПодсказка" id="43"/>
+							<ChildItems>
+								<InputField name="P4_ПутьКИсполняемомуФайлу" id="59">
+									<DataPath>P4_ПутьКИсполняемомуФайлу</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="P4_ПутьКИсполняемомуФайлуКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="P4_ПутьКИсполняемомуФайлуРасширеннаяПодсказка" id="61"/>
+									<Events>
+										<Event name="StartChoice">P4_ПутьКИсполняемомуФайлуНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="P4_ЛокальнаяДиректория" id="44">
+									<DataPath>P4_ЛокальнаяДиректория</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="P4_ЛокальнаяДиректорияКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="P4_ЛокальнаяДиректорияРасширеннаяПодсказка" id="46"/>
+									<Events>
+										<Event name="StartChoice">P4_ЛокальнаяДиректорияНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="Сервер" id="62">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сервер</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сервер</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="63"/>
+									<ChildItems>
+										<InputField name="P4_Сервер" id="67">
+											<DataPath>P4_Сервер</DataPath>
+											<ContextMenu name="P4_СерверКонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="P4_СерверРасширеннаяПодсказка" id="69"/>
+										</InputField>
+										<InputField name="P4_Порт" id="64">
+											<DataPath>P4_Порт</DataPath>
+											<ContextMenu name="P4_ПортКонтекстноеМеню" id="65"/>
+											<ExtendedTooltip name="P4_ПортРасширеннаяПодсказка" id="66"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="P4_WorkSpace" id="47">
+									<DataPath>P4_WorkSpace</DataPath>
+									<ContextMenu name="P4_WorkSpaceКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="P4_WorkSpaceРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="P4_Логин" id="50">
+									<DataPath>P4_Логин</DataPath>
+									<ContextMenu name="P4_ЛогинКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="P4_ЛогинРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="P4_Пароль" id="56">
+									<DataPath>P4_Пароль</DataPath>
+									<ContextMenu name="P4_ПарольКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="P4_ПарольРасширеннаяПодсказка" id="58"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="НастройкиSVN" id="73">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки SVN</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки SVN</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="НастройкиSVNРасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<InputField name="SVN_ПутьКИсполняемомуФайлу" id="75">
+									<DataPath>SVN_ПутьКИсполняемомуФайлу</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="SVN_ПутьКИсполняемомуФайлуКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="SVN_ПутьКИсполняемомуФайлуРасширеннаяПодсказка" id="77"/>
+									<Events>
+										<Event name="StartChoice">SVN_ПутьКИсполняемомуФайлуНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<RadioButtonField name="ПредварительноСинхронизировать" id="78">
+							<DataPath>ПредварительноСинхронизировать</DataPath>
+							<Visible>false</Visible>
+							<TitleLocation>Top</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Не синхронизировать</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Perforce</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>SVN</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПредварительноСинхронизироватьКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ПредварительноСинхронизироватьРасширеннаяПодсказка" id="80"/>
+							<Events>
+								<Event name="OnChange">ПредварительноСинхронизироватьПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Проверки" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверки</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ПроверкиРасширеннаяПодсказка" id="86"/>
+			<ChildItems>
+				<UsualGroup name="ВидыПроверок" id="114">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды проверок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды проверок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ВидыПроверокРасширеннаяПодсказка" id="115"/>
+					<ChildItems>
+						<UsualGroup name="грПраво" id="105">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр право</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр право</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грПравоРасширеннаяПодсказка" id="106"/>
+							<ChildItems>
+								<CheckBoxField name="ПроверкаНастроекШаблонов" id="119">
+									<DataPath>ПроверкаНастроекШаблонов</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроверкаНастроекШаблоновКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ПроверкаНастроекШаблоновРасширеннаяПодсказка" id="121"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПроверкаКодировки" id="90">
+									<DataPath>ПроверкаКодировкиФайла</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Будет проверяться что бы файл был в кодировке UTF-8</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроверкаКодировкиКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ПроверкаКодировкиРасширеннаяПодсказка" id="92"/>
+									<Events>
+										<Event name="OnChange">ПроверкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ПроверкаCDATA" id="102">
+									<DataPath>ПроверкаCDATA</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверка блока CDATA в шаблоне, должна указываться как &amp;lt;![CDATA[, а не &lt;![CDATA[
+</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроверкаCDATAКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ПроверкаCDATAРасширеннаяПодсказка" id="104"/>
+									<Events>
+										<Event name="OnChange">ПроверкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="грЛево" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Замедляющие скорость загрузки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр лево</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="грЛевоРасширеннаяПодсказка" id="108"/>
+							<ChildItems>
+								<CheckBoxField name="ПроверкаДиректив_include" id="99">
+									<DataPath>ПроверкаДиректив_include</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данная опция замедляет процесс обновления! Проверка что бы в директивах include/import не был указан абсолютный путь </v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроверкаДиректив_includeКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ПроверкаДиректив_includeРасширеннаяПодсказка" id="101"/>
+									<Events>
+										<Event name="OnChange">ПроверкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ПроверятьПереносСтрокиПространстваИмен" id="93">
+									<DataPath>ПроверкаПереносаСтрокиПространстваИмен</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данная опция замедляет процесс обновления! Если включена данная опция, будет производиться проверка, что бы пространство имен xmlns не было перенесено на новую строку</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроверятьПереносСтрокиПространстваИменКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ПроверятьПереносСтрокиПространстваИменРасширеннаяПодсказка" id="95"/>
+									<Events>
+										<Event name="OnChange">ПроверкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ПроверкаНаОпределениеПараметровВМакете" id="96">
+									<DataPath>ПроверкаНаОпределениеПараметровВМакете</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данная опция замедляет процесс обновления! Будет проверяться что бы определенные зарезервированные слова не использовались для объявление переменной</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроверкаНаОпределениеПараметровВМакетеКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ПроверкаНаОпределениеПараметровВМакетеРасширеннаяПодсказка" id="98"/>
+									<Events>
+										<Event name="OnChange">ПроверкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация1" id="111">
+			<TextColor>#FF0000</TextColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка будет долгой.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="112"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="113"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаКоманды" id="124">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="125"/>
+			<ChildItems>
+				<Button name="Обновить" id="4">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<DefaultItem>true</DefaultItem>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="5"/>
+				</Button>
+				<Button name="ПроверкаНастроекШаблоновКоманда" id="122">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПроверкаНастроекШаблонов</CommandName>
+					<ExtendedTooltip name="ПроверкаНастроекШаблоновКомандаРасширеннаяПодсказка" id="123"/>
+				</Button>
+				<InputField name="ОбластьДанных" id="126">
+					<DataPath>ОбластьДанных</DataPath>
+					<ContextMenu name="ОбластьДанныхКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="ОбластьДанныхРасширеннаяПодсказка" id="128"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ЛогЗагрузки" id="12">
+			<Representation>Tree</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ЛогЗагрузки</DataPath>
+			<RowPictureDataPath>ЛогЗагрузки.Картинка</RowPictureDataPath>
+			<ContextMenu name="ЛогЗагрузкиКонтекстноеМеню" id="13">
+				<ChildItems>
+					<Button name="ЛогЗагрузкиКонтекстноеМенюДобавитьВИсключение" id="129">
+						<Type>CommandBarButton</Type>
+						<UserVisible>
+							<xr:Common>false</xr:Common>
+						</UserVisible>
+						<CommandName>Form.Command.ДобавитьВИсключение</CommandName>
+						<ExtendedTooltip name="ЛогЗагрузкиКонтекстноеМенюДобавитьВИсключениеРасширеннаяПодсказка" id="130"/>
+					</Button>
+					<Button name="ЛогЗагрузкиКонтекстноеМенюОткрытьФайл" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьФайл</CommandName>
+						<ExtendedTooltip name="ЛогЗагрузкиКонтекстноеМенюОткрытьФайлРасширеннаяПодсказка" id="35"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="ЛогЗагрузкиКоманднаяПанель" id="14"/>
+			<ExtendedTooltip name="ЛогЗагрузкиРасширеннаяПодсказка" id="15"/>
+			<SearchStringAddition name="ЛогЗагрузкиСтрокаПоиска" id="16">
+				<AdditionSource>
+					<Item>ЛогЗагрузки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛогЗагрузкиСтрокаПоискаКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="ЛогЗагрузкиСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЛогЗагрузкиСостояниеПросмотра" id="19">
+				<AdditionSource>
+					<Item>ЛогЗагрузки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛогЗагрузкиСостояниеПросмотраКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ЛогЗагрузкиСостояниеПросмотраРасширеннаяПодсказка" id="21"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЛогЗагрузкиУправлениеПоиском" id="22">
+				<AdditionSource>
+					<Item>ЛогЗагрузки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛогЗагрузкиУправлениеПоискомКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="ЛогЗагрузкиУправлениеПоискомРасширеннаяПодсказка" id="24"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ЛогЗагрузкиВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ЛогЗагрузкиТекст" id="31">
+					<DataPath>ЛогЗагрузки.Текст</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогЗагрузкиТекстКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ЛогЗагрузкиТекстРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ЛогЗагрузкиИмяФайла" id="25">
+					<DataPath>ЛогЗагрузки.ИмяФайла</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогЗагрузкиИмяФайлаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ЛогЗагрузкиИмяФайлаРасширеннаяПодсказка" id="27"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<ProgressBarField name="Прогресс" id="36">
+			<DataPath>Прогресс</DataPath>
+			<ContextMenu name="ПрогрессКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ПрогрессРасширеннаяПодсказка" id="38"/>
+		</ProgressBarField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПутьКДиректории" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Директория</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ПутьКДиректории</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЛогЗагрузки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лог загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяФайла" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Текст" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДанныеОбъектов" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные объектов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДобавленВИсключения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлен в исключения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Прогресс" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="P4_ЛокальнаяДиректория" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Локальная директория для синхронизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>P4_ЛокальнаяДиректория</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="P4_Логин" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>P4_Логин</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="P4_Пароль" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>P4_Пароль</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="P4_WorkSpace" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Work space</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>P4_WorkSpace</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="P4_ПутьКИсполняемомуФайлу" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к исполняемому файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>P4_ПутьКИсполняемомуФайлу</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="P4_Сервер" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>P4_Сервер</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="P4_Порт" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>P4_Порт</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="SVN_ПутьКИсполняемомуФайлу" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к исполняемому файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>SVN_ПутьКИсполняемомуФайлу</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПредварительноСинхронизировать" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предварительно синхронизировать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ПредварительноСинхронизировать</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="БезПроверки" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Без проверки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаКодировкиФайла" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка кодировки файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаПереносаСтрокиПространстваИмен" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка переноса строки пространства имен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаНаОпределениеПараметровВМакете" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка на определение параметров в макете</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаДиректив_include" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка директив  include/import</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаCDATA" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка CDATA</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкаПодключенияКРепозиторию" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка подключения к репозиторию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БФТ_НастройкаПодключенияКРепозиторию</v8:Type>
+			</Type>
+			<Save>
+				<Field>НастройкаПодключенияКРепозиторию</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПроверкаНастроекШаблонов" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка настроек шаблонов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбластьДанных" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Область данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЛогЗагрузкиИмяФайла</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЛогЗагрузки.ИмяФайла</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЛогЗагрузкиТекст</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЛогЗагрузки.Текст</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЛогЗагрузкиИмяФайла</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЛогЗагрузки.ИмяФайла</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЛогЗагрузки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЛогЗагрузки.ДобавленВИсключения</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#C0C0C0</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="ОткрытьФайл" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФайл</Action>
+		</Command>
+		<Command name="ПроверкаНастроекШаблонов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка настроек шаблонов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка настроек шаблонов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаНастроекШаблонов</Action>
+		</Command>
+		<Command name="ДобавитьВИсключение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в исключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в исключение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВИсключение</Action>
+		</Command>
+	</Commands>
+</Form>

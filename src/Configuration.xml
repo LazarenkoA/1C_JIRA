@@ -136,13 +136,25 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>АРМ_JIRA</Subsystem>
-			<Subsystem>СистемаСборок</Subsystem>
+			<Subsystem>АРМ_Сборок</Subsystem>
 			<CommonPicture>Приоритеты</CommonPicture>
 			<CommonPicture>Связь</CommonPicture>
 			<CommonPicture>ВажностьВажная</CommonPicture>
 			<CommonPicture>JIRA_Logo</CommonPicture>
+			<CommonPicture>Важность</CommonPicture>
+			<CommonPicture>ВысокаяВажность</CommonPicture>
+			<CommonPicture>ЗагрузкаКонфигурации</CommonPicture>
+			<CommonPicture>КоллекцияКартинокСопоставлениеОбъектов</CommonPicture>
+			<CommonPicture>СинхронизацияДанных</CommonPicture>
+			<CommonPicture>СинхронизацияДанныхДлительнаяОперация49</CommonPicture>
+			<CommonPicture>СборкаЛого</CommonPicture>
+			<CommonPicture>ДлительныеОперации_Пес</CommonPicture>
 			<SessionParameter>JIRA_Cookies</SessionParameter>
 			<Role>Администратор</Role>
+			<CommonModule>БФТ_ДлительныеОперацииСервер</CommonModule>
+			<CommonModule>БФТ_ОбщиеМетодыАРМаСборокНаКлиенте</CommonModule>
+			<CommonModule>БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере</CommonModule>
+			<CommonModule>БФТ_ОбщиеМетодыАРМаСборокНаСервере</CommonModule>
 			<CommonModule>ВзаимодействиеC_JIRA_КлиентСервер</CommonModule>
 			<CommonModule>ВзаимодействиеC_JIRA_Сервер</CommonModule>
 			<CommonModule>ГлобальныеНаСервере</CommonModule>
@@ -158,11 +170,20 @@
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>УведомленияСервер</CommonModule>
 			<CommonModule>УтилитыГлобальныеНаКлиенте</CommonModule>
+			<CommonModule>УтилитыГлобальныеНаСервере</CommonModule>
+			<CommonModule>УтилитыDOM</CommonModule>
+			<CommonModule>УтилитыЧтенияXML</CommonModule>
+			<CommonModule>ДлительныеОперации</CommonModule>
+			<CommonModule>ДлительныеОперацииКлиент</CommonModule>
 			<ScheduledJob>ПолучениеЗадач</ScheduledJob>
 			<ScheduledJob>ОповещениеПоЗадачам</ScheduledJob>
 			<ScheduledJob>ПолучениеСписаниеВремени</ScheduledJob>
 			<ScheduledJob>ПолучениеИсторииИзменениеСтатусов</ScheduledJob>
 			<ScheduledJob>ЧисткаУдаленныхЗадач</ScheduledJob>
+			<ScheduledJob>БФТ_АнализИзмененийХранилища1С</ScheduledJob>
+			<ScheduledJob>БФТ_ВыгрузкаИзмененийИзSVN</ScheduledJob>
+			<ScheduledJob>БФТ_ЗагрузкаИзмененийВ_SVN</ScheduledJob>
+			<CommonCommand>БФТ_ОткрытьНастройкиПодключенияКХранилищу</CommonCommand>
 			<Constant>JIRA_JQL</Constant>
 			<Constant>JIRA_URL</Constant>
 			<Constant>АдресЭлектроннойПочты</Constant>
@@ -176,6 +197,9 @@
 			<Constant>СерверИсходящейПочтыSMTP</Constant>
 			<Constant>СВ_Сервер</Constant>
 			<Constant>СВ_АдресЭлектроннойПочты</Constant>
+			<Constant>БФТ_АдресХранилища</Constant>
+			<Constant>БФТ_ПарольХранилища</Constant>
+			<Constant>БФТ_ПользовательХранилища</Constant>
 			<CommonForm>ФормаРабСтол</CommonForm>
 			<CommonForm>ФормаНастроекГрафикаРаботы</CommonForm>
 			<CommonForm>ФормаНастроекЭлектроннойПочты</CommonForm>
@@ -185,23 +209,38 @@
 			<CommonForm>ФормаНастроекJIRA</CommonForm>
 			<CommonForm>ФормаРазницаОценкиОсновнойИСабтасков</CommonForm>
 			<CommonForm>ФормаСистемаВзаимодействия</CommonForm>
-			<Catalog>Приоритеты</Catalog>
-			<Catalog>Пользователи</Catalog>
+			<CommonForm>БФТ_НастройкиОбновленияФайловШаблонов</CommonForm>
+			<CommonForm>БФТ_НастройкиПодключенияКХранилищу</CommonForm>
 			<Catalog>ТипыЗадач</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>Приоритеты</Catalog>
 			<Catalog>ШаблоныУведомлений</Catalog>
 			<Catalog>БюджетыПУ</Catalog>
 			<Catalog>Релизы</Catalog>
+			<Catalog>БФТ_МетодыРаботыСРепозиторием</Catalog>
+			<Catalog>БФТ_НаборыИзменений</Catalog>
+			<Catalog>БФТ_НастройкаПодключенияКРепозиторию</Catalog>
+			<Catalog>БФТ_Сборки</Catalog>
 			<Enum>ТипыЗадач</Enum>
+			<Enum>БФТ_РежимВводаПараметра</Enum>
+			<Enum>БФТ_СтатусИзмененийРепозитория</Enum>
+			<Enum>БФТ_ТипИзменений</Enum>
 			<Report>ОтчетСписаноЗатрачено</Report>
 			<Report>СтатистинаНовыхЗадач</Report>
 			<Report>ОтчетПоКорректировкиСписаний</Report>
 			<DataProcessor>ИнструментыРазработчикаКонсольЗапросов</DataProcessor>
 			<DataProcessor>КонсольЗаданий</DataProcessor>
+			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>
+			<DataProcessor>БФТ_ПереносКонфигурации</DataProcessor>
 			<InformationRegister>Задачи</InformationRegister>
 			<InformationRegister>СписаниеВремени</InformationRegister>
 			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>
 			<InformationRegister>ЖурналОтправкиУведомлений</InformationRegister>
 			<InformationRegister>ГрафикРаботы</InformationRegister>
+			<InformationRegister>БФТ_ИзмененияРепозитория</InformationRegister>
+			<InformationRegister>БФТ_ОчередьВыгрузкиРевизийКонфигурации1С</InformationRegister>
+			<InformationRegister>БФТ_ПользовательскиеНастройкиПодключенияКРепозиторию</InformationRegister>
+			<InformationRegister>БФТ_ХранилищеМакетов</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

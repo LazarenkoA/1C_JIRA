@@ -357,80 +357,98 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа2" id="324">
-			<Group>Horizontal</Group>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="325"/>
 			<ChildItems>
-				<UsualGroup name="грОбновить" id="326">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Гр обновить</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Гр обновить</v8:content>
-						</v8:item>
-					</ToolTip>
+				<UsualGroup name="Группа7" id="360">
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="грОбновитьРасширеннаяПодсказка" id="327"/>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="361"/>
 					<ChildItems>
-						<Button name="Обновить" id="162">
-							<Type>UsualButton</Type>
-							<DefaultButton>true</DefaultButton>
-							<CommandName>Form.Command.Обновить</CommandName>
-							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="163"/>
-						</Button>
-						<UsualGroup name="Группа6" id="348">
-							<Group>Vertical</Group>
+						<UsualGroup name="грОбновить" id="326">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр обновить</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр обновить</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="349"/>
+							<ExtendedTooltip name="грОбновитьРасширеннаяПодсказка" id="327"/>
 							<ChildItems>
-								<Button name="ДеревоЗадачВРаботеОбновитьСПолучениемИзменений" id="269">
+								<Button name="Обновить" id="162">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
-									<CommandName>Form.Command.ОбновитьСПолучениемИзменений</CommandName>
-									<Picture>
-										<xr:Ref>StdPicture.GenerateReport</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Обновить задачи из JIRA</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ДеревоЗадачВРаботеОбновитьСПолучениемИзмененийРасширеннаяПодсказка" id="270"/>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.Обновить</CommandName>
+									<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="163"/>
 								</Button>
-								<ProgressBarField name="Прогресс" id="345">
-									<DataPath>Прогресс</DataPath>
-									<Visible>false</Visible>
-									<TitleLocation>None</TitleLocation>
-									<Width>19</Width>
-									<HorizontalStretch>false</HorizontalStretch>
-									<VerticalStretch>true</VerticalStretch>
-									<ContextMenu name="ПрогрессКонтекстноеМеню" id="346"/>
-									<ExtendedTooltip name="ПрогрессРасширеннаяПодсказка" id="347"/>
-								</ProgressBarField>
+								<UsualGroup name="Группа6" id="348">
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="349"/>
+									<ChildItems>
+										<Button name="ДеревоЗадачВРаботеОбновитьСПолучениемИзменений" id="269">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.ОбновитьСПолучениемИзменений</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обновить задачи из JIRA</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ДеревоЗадачВРаботеОбновитьСПолучениемИзмененийРасширеннаяПодсказка" id="270"/>
+										</Button>
+										<ProgressBarField name="Прогресс" id="345">
+											<DataPath>Прогресс</DataPath>
+											<Visible>false</Visible>
+											<TitleLocation>None</TitleLocation>
+											<Width>19</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ContextMenu name="ПрогрессКонтекстноеМеню" id="346"/>
+											<ExtendedTooltip name="ПрогрессРасширеннаяПодсказка" id="347"/>
+										</ProgressBarField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+						<Button name="ОткрытьСписокВJIRA" id="160">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОткрытьСписокВJIRA</CommandName>
+							<ExtendedTooltip name="ОткрытьСписокВJIRAРасширеннаяПодсказка" id="161"/>
+						</Button>
+						<Button name="ДеревоЗадачВРаботеИзменитьДатуЗавершения" id="221">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ИзменитьДанныеЗадачи</CommandName>
+							<ExtendedTooltip name="ДеревоЗадачВРаботеИзменитьДатуЗавершенияРасширеннаяПодсказка" id="222"/>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
-				<Button name="ОткрытьСписокВJIRA" id="160">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ОткрытьСписокВJIRA</CommandName>
-					<ExtendedTooltip name="ОткрытьСписокВJIRAРасширеннаяПодсказка" id="161"/>
-				</Button>
-				<Button name="ДеревоЗадачВРаботеИзменитьДатуЗавершения" id="221">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ИзменитьДанныеЗадачи</CommandName>
-					<ExtendedTooltip name="ДеревоЗадачВРаботеИзменитьДатуЗавершенияРасширеннаяПодсказка" id="222"/>
-				</Button>
+				<LabelField name="Пояснение" id="357">
+					<DataPath>Пояснение</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>19</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>#999999</TextColor>
+					<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ПояснениеКонтекстноеМеню" id="358"/>
+					<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="359"/>
+				</LabelField>
 			</ChildItems>
 		</UsualGroup>
 		<Pages name="Вкладки" id="311">
@@ -1154,6 +1172,21 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пояснение" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
