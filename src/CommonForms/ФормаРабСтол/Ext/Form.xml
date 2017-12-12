@@ -442,6 +442,15 @@
 				<LabelField name="Пояснение" id="357">
 					<DataPath>Пояснение</DataPath>
 					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>прнпрто
+асвав
+маваап
+</v8:content>
+						</v8:item>
+					</ToolTip>
 					<Width>19</Width>
 					<HorizontalStretch>true</HorizontalStretch>
 					<TextColor>#999999</TextColor>
