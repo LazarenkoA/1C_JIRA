@@ -442,7 +442,7 @@
 		<Metadata name="InformationRegister.ИсторияИзмененияСтатусов.Form.ФормаСписка" id="57b31ad6-0770-48a4-8c7a-1c27ac2b15b9" configVersion="246bc1677400b6418af1d2d79c7e1efc00000000"/>
 		<Metadata name="InformationRegister.ИсторияИзмененияСтатусов.Form.ФормаСписка.Form" id="57b31ad6-0770-48a4-8c7a-1c27ac2b15b9.0" configVersion="d6e152f071d853429a940ae2e11c605500000000"/>
 		<Metadata name="InformationRegister.ИсторияИзмененияСтатусов.ManagerModule" id="a83a9369-33f4-485b-8314-cb13ab37183e.2" configVersion="67af7775bb13114f9bbe799603b7b90b00000000"/>
-		<Metadata name="InformationRegister.СписаниеВремени" id="593b750c-049c-474a-ad02-525c2ce9dfde" configVersion="e97699ac97543949a2c7f656ea40908c00000000">
+		<Metadata name="InformationRegister.СписаниеВремени" id="593b750c-049c-474a-ad02-525c2ce9dfde" configVersion="2697c9aea412af4fa34cff9686e899b900000000">
 			<Metadata name="InformationRegister.СписаниеВремени.Dimension.Дата" id="04fbaaa8-9ab0-4a85-8558-b280f2c107b7"/>
 			<Metadata name="InformationRegister.СписаниеВремени.Dimension.НомерЗадачи" id="675dafa4-76d5-43c5-961c-50e4e12ba168"/>
 			<Metadata name="InformationRegister.СписаниеВремени.Dimension.ДатаСозданияЗаписи" id="73547c74-702c-479f-b7ca-4bdd6b2a82d6"/>
@@ -453,7 +453,7 @@
 		</Metadata>
 		<Metadata name="InformationRegister.СписаниеВремени.Form.ФормаСписка" id="a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a" configVersion="12853b568f02744895a5b6819c14320100000000"/>
 		<Metadata name="InformationRegister.СписаниеВремени.Form.ФормаСписка.Form" id="a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a.0" configVersion="4c0b13bb30b6814f94f6aeaeadbac67000000000"/>
-		<Metadata name="InformationRegister.СписаниеВремени.ManagerModule" id="593b750c-049c-474a-ad02-525c2ce9dfde.2" configVersion="0079a16609e1f148b891d16399f2863f00000000"/>
+		<Metadata name="InformationRegister.СписаниеВремени.ManagerModule" id="593b750c-049c-474a-ad02-525c2ce9dfde.2" configVersion="583b676fddbc8b46b5b620f5c95cc24c00000000"/>
 		<Metadata name="Language.Русский" id="daabf7c0-df24-49a3-9b2a-e703407ae987" configVersion="afad2bbb952e854abbfd759b377bcad800000000"/>
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний" id="f1a9fac8-b58c-42bc-a000-8e1530db2b96" configVersion="976a5db199700c4281cefce70c6d7ce800000000"/>
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Form.ФормаОтчета" id="fb3ed2fb-c31e-4f85-87f1-3e154cdd5211" configVersion="c8ceb3cd76852349b6a4f54407d8a38400000000"/>
