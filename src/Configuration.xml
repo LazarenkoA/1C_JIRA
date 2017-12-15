@@ -180,9 +180,8 @@
 			<ScheduledJob>ПолучениеСписаниеВремени</ScheduledJob>
 			<ScheduledJob>ПолучениеИсторииИзменениеСтатусов</ScheduledJob>
 			<ScheduledJob>ЧисткаУдаленныхЗадач</ScheduledJob>
-			<ScheduledJob>БФТ_АнализИзмененийХранилища1С</ScheduledJob>
-			<ScheduledJob>БФТ_ВыгрузкаИзмененийИзSVN</ScheduledJob>
-			<ScheduledJob>БФТ_ЗагрузкаИзмененийВ_SVN</ScheduledJob>
+			<ScheduledJob>АнализИзмененийХранилища1С</ScheduledJob>
+			<ScheduledJob>ВыгрузкаИзмененийИзSVN</ScheduledJob>
 			<CommonCommand>БФТ_ОткрытьНастройкиПодключенияКХранилищу</CommonCommand>
 			<Constant>JIRA_JQL</Constant>
 			<Constant>JIRA_URL</Constant>
@@ -232,6 +231,7 @@
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>
 			<DataProcessor>БФТ_ПереносКонфигурации</DataProcessor>
+			<DataProcessor>ВыгрузкаЗагрузкаПоставляемыхДанных</DataProcessor>
 			<InformationRegister>Задачи</InformationRegister>
 			<InformationRegister>СписаниеВремени</InformationRegister>
 			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>

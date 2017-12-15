@@ -39,7 +39,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.БФТ_ТипИзменений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.БФТ_СтатусИзмененийРепозитория</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.БФТ_ОчередьВыгрузкиРевизийКонфигурации1С</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.БФТ_АнализИзмененийХранилища1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.АнализИзмененийХранилища1С</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.БФТ_ПарольХранилища</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.БФТ_ПользовательХранилища</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.БФТ_АдресХранилища</xr:Item>
@@ -48,9 +48,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БФТ_ВыгрузкаКонфигурации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.БФТ_НастройкиОбновленияФайловШаблонов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">1500b094-7181-4fa8-8541-e021b422cda5</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.БФТ_ВыгрузкаИзмененийИзSVN</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.БФТ_ЗагрузкаИзмененийВ_SVN</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ВыгрузкаИзмененийИзSVN</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2357883c-ef6e-4de6-a9bc-acbcc24d90e4</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Релизы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СборкаЛого</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УтилитыГлобальныеНаСервере</xr:Item>
@@ -59,8 +58,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДлительныеОперации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УтилитыЧтенияXML</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УтилитыDOM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>ПоставляемыеДанные</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
