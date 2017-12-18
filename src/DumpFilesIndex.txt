@@ -10,9 +10,8 @@ be344122-af54-45af-a429-a0622a916dfa:557F40CCFE360C6FECC05A7D265DF2BF:2:Catalogs
 10f1768a-5779-4327-afb4-c1ead1e62f7d:7C29B8A85E0D45BD8CBFF70053D09F4C:2:Catalogs\Релизы.xml
 68d3c970-41bb-4d7e-943c-9ee23dbedfcc:C40E88601A502D6D2343CFF231ECDEAE:2:Catalogs\ТипыЗадач.xml
 2df879cf-112f-413d-81f6-16a29c5004d7:498F590F0FB8C0F79A5080D1587AFC03:2:Catalogs\ШаблоныУведомлений.xml
-2a626a3a-4040-4f78-bf48-c61d3716277d:3DCCA94C9A36B95936F73C731F1F92EC:2:CommonCommands\БФТ_ОткрытьНастройкиПодключенияКХранилищу.xml
-d0cdc1bc-da11-4645-b93b-f25f67660673:83486D6348F7FB00C8B12C1F395FDA89:2:CommonForms\БФТ_НастройкиОбновленияФайловШаблонов.xml
-0113348e-b0a3-4a90-8b62-cad58e41f91e:6E65B15A151016497174859D54AC40EB:2:CommonForms\БФТ_НастройкиПодключенияКХранилищу.xml
+2a626a3a-4040-4f78-bf48-c61d3716277d:9A502D3E3BD4726CFDD788A79E86CE0A:2:CommonCommands\ОткрытьНастройкиПодключенияКХранилищу.xml
+0113348e-b0a3-4a90-8b62-cad58e41f91e:3BA6849A912350E46B16A698F33AF9C0:2:CommonForms\НастройкиПодключенияКХранилищу.xml
 c84ef3b5-7448-41a2-a91f-a082ec9bf615:ECB64BC650DD3B110E0E2C599EFEA776:2:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче.xml
 8b67967d-2cde-464a-9573-da7016d6cc6a:E3F45CFF9BCC05B293240345C3C93E9A:2:CommonForms\ФормаДиаграмм.xml
 626a74fe-ca34-4bd1-a865-e8e311a6fc45:EE8B2AA814145E0D0CE29CCBF2840461:2:CommonForms\ФормаНастроекJIRA.xml
@@ -60,14 +59,14 @@ be5e8661-f243-4f8b-ae3e-6f2f6e12097a:9B9C75D964B7CC0ECF2294487B443714:2:CommonPi
 7f61e24c-d1a5-445b-b5c2-dfd9bb09590a:6BDC2B8BDF976D54235BDB1B566D998B:2:CommonPictures\СинхронизацияДанныхДлительнаяОперация49.xml
 0b9739e9-bd36-421f-aed5-696b48b3497e:22D99BD8CF65B764BCF961B71CFDDCD8:2:Constants\JIRA_JQL.xml
 7977d929-10f9-4148-9955-b94cd36a5e16:6E839811190EFD276C5B6BCDC84AFC13:2:Constants\JIRA_URL.xml
+2ddacea2-22ea-458f-81bb-6cc2efdcda1c:D4AB9949612BAD18E79367372E11F744:2:Constants\АдресХранилища.xml
 067a1c2a-4542-4cd0-82b2-dfff5155ca0f:C38301C56F793818ECC864EA8EEBF068:2:Constants\АдресЭлектроннойПочты.xml
-2ddacea2-22ea-458f-81bb-6cc2efdcda1c:83F5848EB93A984F49550D81E3CBF138:2:Constants\БФТ_АдресХранилища.xml
-5d810d5c-a2b4-44dc-880c-c46aefc382a0:0AC62A00A7CE9211A1D6612DF50DEF79:2:Constants\БФТ_ПарольХранилища.xml
-9b0b2dd8-7fad-4a8c-9e35-9872756db003:3C3523E61B4B6ED00F9D474AB48AF2AF:2:Constants\БФТ_ПользовательХранилища.xml
 7907fa2c-09eb-4ddc-80d4-d04a6935cf4b:9CE6D58C8650F409FA25F3C0A9F98750:2:Constants\ИмяОтправителя.xml
+5d810d5c-a2b4-44dc-880c-c46aefc382a0:37D3C3A09E5F081E058419F138CE5D9B:2:Constants\ПарольХранилища.xml
 010ece7c-6d0f-47de-b00e-a327788ad1a3:80734DF71B53EB90E2CE9708C9F49D45:2:Constants\ПарольЭлектроннойПочты.xml
 321f143a-e98a-4aa4-9fd9-cff49a5e4fc2:510DACBA04144ED884804561B5C6703F:2:Constants\ПользовательИсходящейПочты.xml
 3b6d4b2c-c27e-441a-a627-986b5f8dbc9b:7F9A61BA739CAB5C6E33AB23BA3BBE09:2:Constants\ПользовательНастроек.xml
+9b0b2dd8-7fad-4a8c-9e35-9872756db003:5B5560F25EEDD9B1DCD9E843D12F7288:2:Constants\ПользовательХранилища.xml
 729fe674-1454-47ab-8fc5-062a01686c36:28835789760C761DD608AD7274956A06:2:Constants\ПортSMTP.xml
 deb372e9-226b-4632-bcfb-d5bc58981378:2442DD2C3FCBBC4A80C0D9992FC70D0A:2:Constants\РабочаяНеделя.xml
 60222522-c67a-4626-afdf-10213f961fe6:A75B2ADE673FCC143E9A92F519229978:2:Constants\РабочийДень.xml
@@ -89,7 +88,6 @@ ed410b80-2b86-44ec-bc7b-044583b18515:B9B1088D05D87D949D803D42E0A97879:2:Enums\Б
 25e2be19-aa77-4533-af14-07c397374b74_SessionModule.bsl:CEBA51882B33AA0FF46DEA7A0F286A35:2:Ext\SessionModule.bsl
 070a034b-5f03-416d-95ac-835c10da2d8a:891F9F47FEC2BF9A1B903C8B1AF60742:2:InformationRegisters\БФТ_ИзмененияРепозитория.xml
 8474b336-a7f2-4014-88f3-27700ebd9447:9928CE657D408F2CEF7F1853A41223C5:2:InformationRegisters\БФТ_ОчередьВыгрузкиРевизийКонфигурации1С.xml
-4691d3f8-36b5-4623-bd36-4542d5166e79:2AF7B7A68E43FD8909FCE5EDF9A91D36:2:InformationRegisters\БФТ_ПользовательскиеНастройкиПодключенияКРепозиторию.xml
 56a475bb-c503-4bdf-b2fe-488317db9526:E61DEEDD7D6E8E1CDDD07926D392119B:2:InformationRegisters\БФТ_ХранилищеМакетов.xml
 ba565b56-f770-4c08-a923-0bb69b68701d:A15C274477A0948F0FF76B9B00DFFA6C:2:InformationRegisters\ГрафикРаботы.xml
 7b82a159-9841-4ee5-b752-2d533cffd958:3A95157C2A53D217B8F841F6AE6FC744:2:InformationRegisters\ЖурналОтправкиУведомлений.xml
@@ -150,9 +148,8 @@ ae9e2429-001d-430e-b662-894232456d18:D1F6BB5C0BC832F5674918F739980E07:4:Catalogs
 2df879cf-112f-413d-81f6-16a29c5004d7_Predefined.xml:28C11D613D3E85A0985DC88D33B0D2CA:4:Catalogs\ШаблоныУведомлений\Ext\Predefined.xml
 94472209-3ba3-4cad-964c-b87e22c816a6:3EE3C2FC79808A314D2FBDAAFF9B4358:4:Catalogs\ШаблоныУведомлений\Forms\ФормаСписка.xml
 21f5bea6-79da-47cd-8c8b-f3ba9c60e64d:F3555D79540C00AC72140359C47467AB:4:Catalogs\ШаблоныУведомлений\Forms\ФормаЭлемента.xml
-2a626a3a-4040-4f78-bf48-c61d3716277d_CommandModule.bsl:752BE794D5260A9036BFD0CD3395E1C8:4:CommonCommands\БФТ_ОткрытьНастройкиПодключенияКХранилищу\Ext\CommandModule.bsl
-d0cdc1bc-da11-4645-b93b-f25f67660673_Form.xml:E8219924345BCB45F1B940AEC4DD526F:4:CommonForms\БФТ_НастройкиОбновленияФайловШаблонов\Ext\Form.xml
-0113348e-b0a3-4a90-8b62-cad58e41f91e_Form.xml:427DC60A2879664F162A6A48764A6F5D:4:CommonForms\БФТ_НастройкиПодключенияКХранилищу\Ext\Form.xml
+2a626a3a-4040-4f78-bf48-c61d3716277d_CommandModule.bsl:4C60A9F70AF04DF20057DDC18521A5BE:4:CommonCommands\ОткрытьНастройкиПодключенияКХранилищу\Ext\CommandModule.bsl
+0113348e-b0a3-4a90-8b62-cad58e41f91e_Form.xml:66CAC92EC04FA197BBE52B3FA819BD37:4:CommonForms\НастройкиПодключенияКХранилищу\Ext\Form.xml
 c84ef3b5-7448-41a2-a91f-a082ec9bf615_Form.xml:1FD584454D9D4031C087BAF65DAFBBE7:4:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче\Ext\Form.xml
 8b67967d-2cde-464a-9573-da7016d6cc6a_Form.xml:1AB2B29982208AB01C69B1901082816F:4:CommonForms\ФормаДиаграмм\Ext\Form.xml
 626a74fe-ca34-4bd1-a865-e8e311a6fc45_Form.xml:3EFE45C874AACF4C13D97AC100607E3A:4:CommonForms\ФормаНастроекJIRA\Ext\Form.xml
@@ -229,8 +226,6 @@ c98d489c-1593-48ad-afd3-a6fbe6996e3f:6B0F8EDB9BB1D4F19EF2586628905AD7:4:Informat
 8474b336-a7f2-4014-88f3-27700ebd9447_ManagerModule.bsl:99AD191BA63E527EABD9CF09AB494DC2:4:InformationRegisters\БФТ_ОчередьВыгрузкиРевизийКонфигурации1С\Ext\ManagerModule.bsl
 575024f6-873e-4856-b93e-9f695daab9e3:48D1DD8763C014F1C5E4A95B803D2DF4:4:InformationRegisters\БФТ_ОчередьВыгрузкиРевизийКонфигурации1С\Forms\ФормаЗаписи.xml
 547d7b08-2f01-4355-9a60-987320f2a199:EF5C5F1D7A660C2FEDA4804053A5F002:4:InformationRegisters\БФТ_ОчередьВыгрузкиРевизийКонфигурации1С\Forms\ФормаСписка.xml
-4691d3f8-36b5-4623-bd36-4542d5166e79_ManagerModule.bsl:D37E2F692F3F06C3E318E3ACB0DE6D2E:4:InformationRegisters\БФТ_ПользовательскиеНастройкиПодключенияКРепозиторию\Ext\ManagerModule.bsl
-4c20ead0-0281-44ae-b778-63a747e8c4f0:BEEBEA758F1B2A754404E1895932D2A1:4:InformationRegisters\БФТ_ПользовательскиеНастройкиПодключенияКРепозиторию\Forms\ФормаСписка.xml
 a8fe7b72-14c5-48cb-a086-673a0ced47d8:651A4298A74E998437F90F7B17CE29F3:4:InformationRegisters\БФТ_ХранилищеМакетов\Forms\ФормаСписка.xml
 ba565b56-f770-4c08-a923-0bb69b68701d_ManagerModule.bsl:67F855410C88370477F7C267ECDE4E7C:4:InformationRegisters\ГрафикРаботы\Ext\ManagerModule.bsl
 0845ffb2-1a9c-4ad9-85a9-88f453f9f42c:836D09BB47F756D8CA63439B1A768731:4:InformationRegisters\ЖурналОтправкиУведомлений\Forms\ФормаСписка.xml
@@ -263,7 +258,7 @@ be344122-af54-45af-a429-a0622a916dfa_Help\ru.html:E5CC9ED20CBB128B27E8142EB602CF
 71bf0f06-f565-4aec-b7b8-aa95033c3975_Help\ru.html:FC5132F959F8A0076D3AE7375C23D626:5:Catalogs\БФТ_НаборыИзменений\Ext\Help\ru.html
 4eb7a997-cc19-4949-a55e-3aa78fe165a8_Help\ru.html:DA945393A8DF0D4BC72E0D73F16B0FAB:5:Catalogs\БФТ_НастройкаПодключенияКРепозиторию\Ext\Help\ru.html
 9f75ce71-ef70-4317-b940-f0c2cf7af959_Help\ru.html:224BD06601F5F07898642E4B03843AA3:5:Catalogs\БФТ_Сборки\Ext\Help\ru.html
-d0cdc1bc-da11-4645-b93b-f25f67660673_Form\Module.bsl:779B200B36F6C1E9A9597FCB2E684130:5:CommonForms\БФТ_НастройкиОбновленияФайловШаблонов\Ext\Form\Module.bsl
+0113348e-b0a3-4a90-8b62-cad58e41f91e_Form\Module.bsl:57146319ED4262AD20DA53D291ECC943:5:CommonForms\НастройкиПодключенияКХранилищу\Ext\Form\Module.bsl
 c84ef3b5-7448-41a2-a91f-a082ec9bf615_Form\Module.bsl:444192B3CB7A0D4A94760F2EBB860D28:5:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче\Ext\Form\Module.bsl
 8b67967d-2cde-464a-9573-da7016d6cc6a_Form\Module.bsl:9322AF32354684639A5F2A6915121425:5:CommonForms\ФормаДиаграмм\Ext\Form\Module.bsl
 626a74fe-ca34-4bd1-a865-e8e311a6fc45_Form\Module.bsl:2DB929A031CA3C24D3120B6E750BBC18:5:CommonForms\ФормаНастроекJIRA\Ext\Form\Module.bsl
@@ -336,7 +331,6 @@ c98d489c-1593-48ad-afd3-a6fbe6996e3f_Form.xml:E54E1914D8B74142F58947016372B213:6
 9bc306e6-ba75-472f-b909-b7d0da10e4d7_Form.xml:C5C56FF196124B16EECFAE863A3A6235:6:InformationRegisters\БФТ_ИзмененияРепозитория\Forms\ФормаСписка\Ext\Form.xml
 575024f6-873e-4856-b93e-9f695daab9e3_Form.xml:A6AE1BC879E15FCB270E670E2AD42DC2:6:InformationRegisters\БФТ_ОчередьВыгрузкиРевизийКонфигурации1С\Forms\ФормаЗаписи\Ext\Form.xml
 547d7b08-2f01-4355-9a60-987320f2a199_Form.xml:1F845E24DD84DCAEE312A52AF8116C3E:6:InformationRegisters\БФТ_ОчередьВыгрузкиРевизийКонфигурации1С\Forms\ФормаСписка\Ext\Form.xml
-4c20ead0-0281-44ae-b778-63a747e8c4f0_Form.xml:9EF1FC44F67E2824881A62BBDBC8D9DF:6:InformationRegisters\БФТ_ПользовательскиеНастройкиПодключенияКРепозиторию\Forms\ФормаСписка\Ext\Form.xml
 a8fe7b72-14c5-48cb-a086-673a0ced47d8_Form.xml:865F77D29FBFA991AEEAE19971D26105:6:InformationRegisters\БФТ_ХранилищеМакетов\Forms\ФормаСписка\Ext\Form.xml
 0845ffb2-1a9c-4ad9-85a9-88f453f9f42c_Form.xml:A8A62BE113490AB98E3F5D514C99FBCC:6:InformationRegisters\ЖурналОтправкиУведомлений\Forms\ФормаСписка\Ext\Form.xml
 5d0d21d6-a70a-456a-8aac-3f7bc6af4b09_Form.xml:5F4ADB0C65D5AE236AB4C512E0AD4115:6:InformationRegisters\Задачи\Forms\ФормаСписка\Ext\Form.xml

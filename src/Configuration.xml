@@ -182,7 +182,7 @@
 			<ScheduledJob>ЧисткаУдаленныхЗадач</ScheduledJob>
 			<ScheduledJob>АнализИзмененийХранилища1С</ScheduledJob>
 			<ScheduledJob>ВыгрузкаИзмененийИзSVN</ScheduledJob>
-			<CommonCommand>БФТ_ОткрытьНастройкиПодключенияКХранилищу</CommonCommand>
+			<CommonCommand>ОткрытьНастройкиПодключенияКХранилищу</CommonCommand>
 			<Constant>JIRA_JQL</Constant>
 			<Constant>JIRA_URL</Constant>
 			<Constant>АдресЭлектроннойПочты</Constant>
@@ -196,9 +196,9 @@
 			<Constant>СерверИсходящейПочтыSMTP</Constant>
 			<Constant>СВ_Сервер</Constant>
 			<Constant>СВ_АдресЭлектроннойПочты</Constant>
-			<Constant>БФТ_АдресХранилища</Constant>
-			<Constant>БФТ_ПарольХранилища</Constant>
-			<Constant>БФТ_ПользовательХранилища</Constant>
+			<Constant>АдресХранилища</Constant>
+			<Constant>ПарольХранилища</Constant>
+			<Constant>ПользовательХранилища</Constant>
 			<CommonForm>ФормаРабСтол</CommonForm>
 			<CommonForm>ФормаНастроекГрафикаРаботы</CommonForm>
 			<CommonForm>ФормаНастроекЭлектроннойПочты</CommonForm>
@@ -208,8 +208,7 @@
 			<CommonForm>ФормаНастроекJIRA</CommonForm>
 			<CommonForm>ФормаРазницаОценкиОсновнойИСабтасков</CommonForm>
 			<CommonForm>ФормаСистемаВзаимодействия</CommonForm>
-			<CommonForm>БФТ_НастройкиОбновленияФайловШаблонов</CommonForm>
-			<CommonForm>БФТ_НастройкиПодключенияКХранилищу</CommonForm>
+			<CommonForm>НастройкиПодключенияКХранилищу</CommonForm>
 			<Catalog>ТипыЗадач</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>Приоритеты</Catalog>
@@ -239,7 +238,6 @@
 			<InformationRegister>ГрафикРаботы</InformationRegister>
 			<InformationRegister>БФТ_ИзмененияРепозитория</InformationRegister>
 			<InformationRegister>БФТ_ОчередьВыгрузкиРевизийКонфигурации1С</InformationRegister>
-			<InformationRegister>БФТ_ПользовательскиеНастройкиПодключенияКРепозиторию</InformationRegister>
 			<InformationRegister>БФТ_ХранилищеМакетов</InformationRegister>
 		</ChildObjects>
 	</Configuration>

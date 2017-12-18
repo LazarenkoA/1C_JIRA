@@ -25,13 +25,12 @@
 			<ContextMenu name="АвторИзмененийКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="АвторИзмененийРасширеннаяПодсказка" id="12"/>
 		</InputField>
-		<InputField name="Комментарий" id="13">
+		<TextDocumentField name="Комментарий" id="13">
 			<DataPath>Запись.Комментарий</DataPath>
 			<ReadOnly>true</ReadOnly>
-			<MultiLine>true</MultiLine>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
-		</InputField>
+		</TextDocumentField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">

@@ -3,17 +3,21 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="КонстантыБФТ_АдресХранилища" id="1">
-			<DataPath>НаборКонстант.БФТ_АдресХранилища</DataPath>
+			<DataPath>НаборКонстант.АдресХранилища</DataPath>
 			<ContextMenu name="КонстантыБФТ_АдресХранилищаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КонстантыБФТ_АдресХранилищаРасширеннаяПодсказка" id="3"/>
 		</InputField>
 		<InputField name="КонстантыБФТ_ПользовательХранилища" id="4">
-			<DataPath>НаборКонстант.БФТ_ПользовательХранилища</DataPath>
+			<DataPath>НаборКонстант.ПользовательХранилища</DataPath>
 			<ContextMenu name="КонстантыБФТ_ПользовательХранилищаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="КонстантыБФТ_ПользовательХранилищаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="StartChoice">КонстантыБФТ_ПользовательХранилищаНачалоВыбора</Event>
+				<Event name="StartListChoice">КонстантыБФТ_ПользовательХранилищаНачалоВыбораИзСписка</Event>
+			</Events>
 		</InputField>
 		<InputField name="КонстантыБФТ_ПарольХранилища" id="7">
-			<DataPath>НаборКонстант.БФТ_ПарольХранилища</DataPath>
+			<DataPath>НаборКонстант.ПарольХранилища</DataPath>
 			<PasswordMode>true</PasswordMode>
 			<ContextMenu name="КонстантыБФТ_ПарольХранилищаКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="КонстантыБФТ_ПарольХранилищаРасширеннаяПодсказка" id="9"/>

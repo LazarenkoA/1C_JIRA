@@ -128,11 +128,6 @@
 					<ContextMenu name="АвторИзмененийКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="АвторИзмененийРасширеннаяПодсказка" id="27"/>
 				</LabelField>
-				<LabelField name="НаборИзменений" id="28">
-					<DataPath>Список.АвторИзменений</DataPath>
-					<ContextMenu name="НаборИзмененийКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="НаборИзмененийРасширеннаяПодсказка" id="30"/>
-				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
