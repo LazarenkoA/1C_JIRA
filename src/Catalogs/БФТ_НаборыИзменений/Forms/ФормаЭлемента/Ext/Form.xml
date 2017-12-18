@@ -80,7 +80,7 @@
 					<ExtendedTooltip name="ИзмененияНомерРевизииРасширеннаяПодсказка" id="25"/>
 				</LabelField>
 				<LabelField name="ИзмененияПериод" id="29">
-					<DataPath>СписокИзменений.Period</DataPath>
+					<DataPath>~СписокИзменений.Period</DataPath>
 					<ContextMenu name="ИзмененияПериодКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ИзмененияПериодРасширеннаяПодсказка" id="31"/>
 				</LabelField>
@@ -110,13 +110,17 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>СписокИзменений.ИзменениеКонфигурации</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	БФТ_ИзмененияРепозитория.НомерРевизии,
-	БФТ_ИзмененияРепозитория.АвторИзменений,
-	БФТ_ИзмененияРепозитория.Период
+	БФТ_ИзмененияРепозитория.НомерРевизии КАК НомерРевизии,
+	БФТ_ИзмененияРепозитория.АвторИзменений КАК АвторИзменений,
+	БФТ_ИзмененияРепозитория.Период КАК Период,
+	БФТ_ИзмененияРепозитория.ИзменениеКонфигурации КАК ИзменениеКонфигурации
 ИЗ
 	РегистрСведений.БФТ_ИзмененияРепозитория КАК БФТ_ИзмененияРепозитория
 ГДЕ
@@ -140,5 +144,27 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Изменения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокИзменений.ИзменениеКонфигурации</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:MistyRose</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 </Form>

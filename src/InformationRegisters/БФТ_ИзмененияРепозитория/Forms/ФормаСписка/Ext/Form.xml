@@ -118,7 +118,7 @@
 					<ExtendedTooltip name="НомерРевизииРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="Период" id="16">
-					<DataPath>Список.Period</DataPath>
+					<DataPath>Список.Период</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="ПериодКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="18"/>
@@ -137,14 +137,18 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ИзменениеКонфигурации</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	РегистрСведенийБФТ_ИзмененияРепозитория.Период,
-	РегистрСведенийБФТ_ИзмененияРепозитория.НомерРевизии,
-	РегистрСведенийБФТ_ИзмененияРепозитория.АвторИзменений,
-	РегистрСведенийБФТ_ИзмененияРепозитория.Комментарий
+	РегистрСведенийБФТ_ИзмененияРепозитория.Период КАК Период,
+	РегистрСведенийБФТ_ИзмененияРепозитория.НомерРевизии КАК НомерРевизии,
+	РегистрСведенийБФТ_ИзмененияРепозитория.АвторИзменений КАК АвторИзменений,
+	РегистрСведенийБФТ_ИзмененияРепозитория.Комментарий КАК Комментарий,
+	РегистрСведенийБФТ_ИзмененияРепозитория.ИзменениеКонфигурации КАК ИзменениеКонфигурации
 ИЗ
 	РегистрСведений.БФТ_ИзмененияРепозитория КАК РегистрСведенийБФТ_ИзмененияРепозитория
 ГДЕ
@@ -175,6 +179,28 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ИзменениеКонфигурации</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:MistyRose</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="Выбрать" id="1">

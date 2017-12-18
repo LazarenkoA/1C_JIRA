@@ -16,7 +16,7 @@
 			<Use>true</Use>
 			<Predefined>true</Predefined>
 			<RestartCountOnFailure>0</RestartCountOnFailure>
-			<RestartIntervalOnFailure>10</RestartIntervalOnFailure>
+			<RestartIntervalOnFailure>0</RestartIntervalOnFailure>
 		</Properties>
 	</ScheduledJob>
 </MetaDataObject>
