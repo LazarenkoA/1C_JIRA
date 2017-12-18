@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
 	<ConfigVersions>
-		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием" id="be344122-af54-45af-a429-a0622a916dfa" configVersion="0e71756d947c374fbe5e3f71ea59ab3600000000">
+		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием" id="be344122-af54-45af-a429-a0622a916dfa" configVersion="1e6f4bc02bb52149941635d2ef110f2f00000000">
 			<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Attribute.Комментарий" id="05119a7a-6321-447d-a978-9f465994e4d0"/>
 			<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.TabularSection.ПараметрыВыполнения.Attribute.ЗначениеПараметра" id="386efdd0-bbd0-418f-82c7-a03a7ca1a361"/>
 			<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.TabularSection.ПараметрыВыполнения.Attribute.РежимВводаПараметра" id="4116a497-d71a-4911-9cd8-9762c9cb0b02"/>
@@ -16,20 +16,21 @@
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Form.ФормаЭлемента" id="96eec220-808b-45b8-bbd8-c46be58fe81c" configVersion="311a4ec625ac2c4c8153393f95fc25a000000000"/>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Form.ФормаЭлемента.Form" id="96eec220-808b-45b8-bbd8-c46be58fe81c.0" configVersion="d8c44c057bc56146a77c82ffca7c1e6a00000000"/>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Help" id="be344122-af54-45af-a429-a0622a916dfa.1" configVersion="9cd3bb14389b824faeee344140cfc76600000000"/>
-		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.ManagerModule" id="be344122-af54-45af-a429-a0622a916dfa.3" configVersion="ca7c579877690f4e90261263817b1b2b00000000"/>
+		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.ManagerModule" id="be344122-af54-45af-a429-a0622a916dfa.3" configVersion="aca9f8cd3b80a94e92858ae8e76b3fff00000000"/>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.ObjectModule" id="be344122-af54-45af-a429-a0622a916dfa.0" configVersion="2d2f2ea4bcfe374fa2783e28607aee3e00000000"/>
-		<Metadata name="Catalog.БФТ_НаборыИзменений" id="71bf0f06-f565-4aec-b7b8-aa95033c3975" configVersion="588744a7a3aae340a2053c6762cbc10d00000000">
+		<Metadata name="Catalog.БФТ_НаборыИзменений" id="71bf0f06-f565-4aec-b7b8-aa95033c3975" configVersion="d5ab76bafc47344a8479def181ddf22400000000">
 			<Metadata name="Catalog.БФТ_НаборыИзменений.TabularSection.НаборИзменений.Attribute.НомерРевизии" id="0497d871-705f-4136-b18d-3acc9f6c2181"/>
 			<Metadata name="Catalog.БФТ_НаборыИзменений.Command.СвязанныеНаборыИзменений" id="4ce32fda-5353-4a54-b43f-a1770545d25e"/>
+			<Metadata name="Catalog.БФТ_НаборыИзменений.TabularSection.НаборИзменений.Attribute.ИзменениеКонфигурации" id="a038bdae-4b80-4eb5-9417-aefca094ac29"/>
 			<Metadata name="Catalog.БФТ_НаборыИзменений.TabularSection.НаборИзменений" id="d612c185-2867-43fb-911c-f5032f4724b5"/>
 		</Metadata>
 		<Metadata name="Catalog.БФТ_НаборыИзменений.Command.СвязанныеНаборыИзменений.CommandModule" id="4ce32fda-5353-4a54-b43f-a1770545d25e.2" configVersion="67eafd321ae82a4c96e89a0fb7fcc99200000000"/>
 		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаВыбора" id="c8bbf394-7140-4fd3-b815-587659a55470" configVersion="0897f3a336ab2546ac45176cb039762000000000"/>
 		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаВыбора.Form" id="c8bbf394-7140-4fd3-b815-587659a55470.0" configVersion="1c68c0803376da4ebf246a59feb15f7f00000000"/>
-		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаСписка" id="71f93e50-a195-4a8a-84a4-9b731f55e5db" configVersion="16aa1ab9a1d4824daa523f1de341369500000000"/>
-		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаСписка.Form" id="71f93e50-a195-4a8a-84a4-9b731f55e5db.0" configVersion="4c8ec452e825f848bcc5bd72cdcce47e00000000"/>
-		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаЭлемента" id="ac0b2070-0fa2-487e-83b6-031cf4618050" configVersion="cc334a739b9ea549a4c59b92c5bfca4f00000000"/>
-		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаЭлемента.Form" id="ac0b2070-0fa2-487e-83b6-031cf4618050.0" configVersion="50aa1ac753b29841bf1f309f76d0610200000000"/>
+		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаСписка" id="71f93e50-a195-4a8a-84a4-9b731f55e5db" configVersion="735ed0f795aaa844910e6146f5d3aad900000000"/>
+		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаСписка.Form" id="71f93e50-a195-4a8a-84a4-9b731f55e5db.0" configVersion="81bc4fe4752bf047a91d32e4dc11610d00000000"/>
+		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаЭлемента" id="ac0b2070-0fa2-487e-83b6-031cf4618050" configVersion="c4bb336298deb04d9fb2e983ac5cd66300000000"/>
+		<Metadata name="Catalog.БФТ_НаборыИзменений.Form.ФормаЭлемента.Form" id="ac0b2070-0fa2-487e-83b6-031cf4618050.0" configVersion="e12efd88e3833f46a11994b4f5e71ed700000000"/>
 		<Metadata name="Catalog.БФТ_НаборыИзменений.Help" id="71bf0f06-f565-4aec-b7b8-aa95033c3975.1" configVersion="b15aba1282650b44a3bd4c3877336a1500000000"/>
 		<Metadata name="Catalog.БФТ_НаборыИзменений.ManagerModule" id="71bf0f06-f565-4aec-b7b8-aa95033c3975.3" configVersion="696ba110bc7eeb4ba6a295d27dbe72ab00000000"/>
 		<Metadata name="Catalog.БФТ_НаборыИзменений.ObjectModule" id="71bf0f06-f565-4aec-b7b8-aa95033c3975.0" configVersion="026f6fec8e1fa54ba7ed5834ed0df48400000000"/>
@@ -142,8 +143,8 @@
 		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаКлиенте.Module" id="8b57a466-8d50-4ae4-8fb5-63b8a07ff489.0" configVersion="1aa63e272d87c045bfcd86d00d9313b500000000"/>
 		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере" id="115b091f-f022-4823-98fd-cc87b966e440" configVersion="9c3c3e67556b8d43a6c9efd5d022a0be00000000"/>
 		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере.Module" id="115b091f-f022-4823-98fd-cc87b966e440.0" configVersion="83cc8e8464f6c44c83bea5c488a2729d00000000"/>
-		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере" id="82552372-90db-4a19-8d15-1151262ab757" configVersion="c3c10de679f444499f1eb9ccfd27231b00000000"/>
-		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере.Module" id="82552372-90db-4a19-8d15-1151262ab757.0" configVersion="cdcf93b6839afb4d9dabdba2519233fc00000000"/>
+		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере" id="82552372-90db-4a19-8d15-1151262ab757" configVersion="73212b88faea184b8fde4a9ba768cff800000000"/>
+		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере.Module" id="82552372-90db-4a19-8d15-1151262ab757.0" configVersion="58d8d6fbfd41f14da1ef8fc1e552e21800000000"/>
 		<Metadata name="CommonModule.ВзаимодействиеC_JIRA_КлиентСервер" id="ba082b88-9a47-4621-bc6a-59d210d2951c" configVersion="919a16cd940ceb43b0124ceeff2e966a00000000"/>
 		<Metadata name="CommonModule.ВзаимодействиеC_JIRA_КлиентСервер.Module" id="ba082b88-9a47-4621-bc6a-59d210d2951c.0" configVersion="5e309accb2d0cd47acaf44d8d1aba34300000000"/>
 		<Metadata name="CommonModule.ВзаимодействиеC_JIRA_Сервер" id="b808e125-1bd7-4c9b-9295-a586e9583039" configVersion="6fb0e6f4ff16c34eb5573689ff237e2200000000"/>
