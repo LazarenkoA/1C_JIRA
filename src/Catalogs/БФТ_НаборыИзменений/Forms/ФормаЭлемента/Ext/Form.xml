@@ -80,7 +80,7 @@
 					<ExtendedTooltip name="ИзмененияНомерРевизииРасширеннаяПодсказка" id="25"/>
 				</LabelField>
 				<LabelField name="ИзмененияПериод" id="29">
-					<DataPath>~СписокИзменений.Period</DataPath>
+					<DataPath>СписокИзменений.Период</DataPath>
 					<ContextMenu name="ИзмененияПериодКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ИзмененияПериодРасширеннаяПодсказка" id="31"/>
 				</LabelField>

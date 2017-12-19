@@ -18,6 +18,12 @@
 					<xr:Ref>StdPicture.GenerateReport</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновить все</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="СписокПолучитьЗадачиРасширеннаяПодсказка" id="38"/>
 			</Button>
 			<Popup name="грОбновить" id="56">
@@ -265,7 +271,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Получить задачи</v8:content>
+					<v8:content>Будет обновлены все задачи не закрытые, списание времени и переходы по ним</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьЗадачи</Action>
