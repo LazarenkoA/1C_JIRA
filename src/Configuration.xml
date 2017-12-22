@@ -149,6 +149,8 @@
 			<CommonPicture>СинхронизацияДанныхДлительнаяОперация49</CommonPicture>
 			<CommonPicture>СборкаЛого</CommonPicture>
 			<CommonPicture>ДлительныеОперации_Пес</CommonPicture>
+			<CommonPicture>ТипыРевизий</CommonPicture>
+			<CommonPicture>ИконкиРелизов</CommonPicture>
 			<SessionParameter>JIRA_Cookies</SessionParameter>
 			<Role>Администратор</Role>
 			<CommonModule>БФТ_ДлительныеОперацииСервер</CommonModule>
@@ -219,6 +221,7 @@
 			<Catalog>БФТ_НаборыИзменений</Catalog>
 			<Catalog>БФТ_НастройкаПодключенияКРепозиторию</Catalog>
 			<Catalog>БФТ_Сборки</Catalog>
+			<Catalog>Задачи</Catalog>
 			<Enum>ТипыЗадач</Enum>
 			<Enum>БФТ_РежимВводаПараметра</Enum>
 			<Enum>БФТ_СтатусИзмененийРепозитория</Enum>
@@ -231,7 +234,6 @@
 			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>
 			<DataProcessor>БФТ_ПереносКонфигурации</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаПоставляемыхДанных</DataProcessor>
-			<InformationRegister>Задачи</InformationRegister>
 			<InformationRegister>СписаниеВремени</InformationRegister>
 			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>
 			<InformationRegister>ЖурналОтправкиУведомлений</InformationRegister>

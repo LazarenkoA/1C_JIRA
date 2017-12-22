@@ -296,10 +296,10 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.Релизы.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultObjectForm>Catalog.Релизы.Form.ФормаРелиза</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm>Catalog.Релизы.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm/>
+			<DefaultChoiceForm>Catalog.Релизы.Form.ФормаВыбора</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -327,7 +327,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата релиза</v8:content>
+							<v8:content>Плановая дата выпуска релиза</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -336,6 +336,46 @@
 						<v8:DateQualifiers>
 							<v8:DateFractions>Date</v8:DateFractions>
 						</v8:DateQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ee2f9b7b-8320-419b-bdec-7f68d1dc2642">
+				<Properties>
+					<Name>РелизВыпущен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Релиз выпущен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -364,8 +404,10 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаЭлемента</Form>
+			<Form>ФормаРелиза</Form>
 			<Form>ФормаСписка</Form>
+			<Form>ФормаПатча</Form>
+			<Form>ФормаВыбора</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

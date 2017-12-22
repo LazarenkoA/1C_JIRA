@@ -688,7 +688,6 @@
 				<ExcludedCommand>Choose</ExcludedCommand>
 				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Create</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
 				<ExcludedCommand>Find</ExcludedCommand>
 				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
 				<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
@@ -1072,8 +1071,8 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	Задачи.Номер КАК Номер,
-	Задачи.Заголовок КАК Заголовок,
+	Задачи.Код КАК Номер,
+	Задачи.Наименование КАК Заголовок,
 	Задачи.Тип КАК Тип,
 	Задачи.ДатаСоздания КАК ДатаСоздания,
 	Задачи.Автор КАК Автор,
@@ -1084,15 +1083,16 @@
 	Задачи.ДатуЗавершенияУстановилАвтор КАК ДатуЗавершенияУстановилАвтор,
 	Задачи.ПлановаяДатаЗавершения КАК ПлановаяДатаЗавершения
 ИЗ
-	РегистрСведений.Задачи КАК Задачи
+	Справочник.Задачи КАК Задачи
 ГДЕ
 	Задачи.Статус = "Новый"
-	И Задачи.НомерРодительскойЗадачи = ""
+	И НЕ Задачи.ПометкаУдаления
+	И Задачи.Родитель = ЗНАЧЕНИЕ(Справочник.Задачи.ПустаяСсылка)
 	И (НЕ &amp;ОтборЗадачПроизводства
 			ИЛИ Задачи.Исполнитель В ИЕРАРХИИ (&amp;ГруппаРазработки, &amp;ГруппаАналитики))
 	И (НЕ &amp;ОтобратьНовые
 			ИЛИ Задачи.ЭтоНовая)</QueryText>
-				<MainTable>InformationRegister.Задачи</MainTable>
+				<MainTable>Catalog.Задачи</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

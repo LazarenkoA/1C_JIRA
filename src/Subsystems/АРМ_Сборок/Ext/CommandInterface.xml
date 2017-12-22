@@ -1,24 +1,49 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<CommandsVisibility>
-		<Command name="Catalog.БФТ_Сборки.StandardCommand.OpenList">
+		<Command name="Catalog.Релизы.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 	</CommandsVisibility>
 	<CommandsPlacement>
-		<Command name="Catalog.БФТ_Сборки.StandardCommand.OpenList">
+		<Command name="Catalog.Релизы.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
 	</CommandsPlacement>
 	<CommandsOrder>
-		<Command name="Catalog.БФТ_Сборки.StandardCommand.OpenList">
+		<Command name="Catalog.Релизы.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.БФТ_ИзмененияРепозитория.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.БФТ_МетодыРаботыСРепозиторием.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.БФТ_НаборыИзменений.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.БФТ_НастройкаПодключенияКРепозиторию.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОткрытьНастройкиПодключенияКХранилищу">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.БФТ_ОчередьВыгрузкиРевизийКонфигурации1С.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.БФТ_ХранилищеМакетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.БФТ_Сборки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
 	</GroupsOrder>
 </CommandInterface>

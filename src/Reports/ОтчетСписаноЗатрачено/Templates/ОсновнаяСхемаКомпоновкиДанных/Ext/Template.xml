@@ -7,20 +7,16 @@
 	<dataSet xsi:type="DataSetObject">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>НомерЗадачи</dataPath>
-			<field>НомерЗадачи</field>
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Номер задачи</v8:content>
+					<v8:content>Задача</v8:content>
 				</v8:item>
 			</title>
 			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Задачи</v8:Type>
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
@@ -46,13 +42,6 @@
 	</dataSet>
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных2</name>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>НомерРодительскойЗадачи</dataPath>
-			<field>НомерРодительскойЗадачи</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Бюджет</dataPath>
 			<field>Бюджет</field>
@@ -92,19 +81,6 @@
 					<v8:content>Заголовок задачи</v8:content>
 				</v8:item>
 			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>НомерЗадачи</dataPath>
-			<field>НомерЗадачи</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Номер задачи</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ТипЗадачи</dataPath>
@@ -156,10 +132,24 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	Задачи.Номер КАК НомерЗадачи,
-	Задачи.НомерРодительскойЗадачи КАК НомерРодительскойЗадачи,
+	Задачи.Ссылка КАК Задача,
+	Задачи.Родитель КАК Родитель,
 	Задачи.Оценка КАК Оценка,
 	Задачи.ПлановаяДатаЗавершения КАК ПлановаяДатаЗавершения,
 	Задачи.ДатаСоздания КАК ДатаСоздания,
@@ -167,15 +157,17 @@
 	Задачи.Исполнитель КАК ИсполнительЗадачи,
 	Задачи.Статус КАК Статус,
 	Задачи.Тип КАК ТипЗадачи,
-	Задачи.Заголовок КАК ЗаголовокЗадачи,
+	Задачи.Наименование КАК ЗаголовокЗадачи,
 	Задачи.Бюджет КАК Бюджет,
 	ВЫРАЗИТЬ(СУММА(СписаниеВремени.Часы) КАК ЧИСЛО(10, 2)) КАК СписаноЧасов,
 	СписаниеВремени.Автор КАК АвторСписания,
 	СписаниеВремени.Дата КАК ДатаСписания
 ИЗ
-	РегистрСведений.Задачи КАК Задачи
+	Справочник.Задачи КАК Задачи
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СписаниеВремени КАК СписаниеВремени
-		ПО Задачи.Номер = СписаниеВремени.НомерЗадачи
+		ПО Задачи.Ссылка = СписаниеВремени.Задача
+ГДЕ
+	НЕ Задачи.ПометкаУдаления
 
 СГРУППИРОВАТЬ ПО
 	Задачи.Исполнитель,
@@ -183,20 +175,20 @@
 	Задачи.Статус,
 	Задачи.Тип,
 	Задачи.Бюджет,
-	Задачи.Номер,
-	Задачи.НомерРодительскойЗадачи,
+	Задачи.Ссылка,
+	Задачи.Родитель,
 	Задачи.ПлановаяДатаЗавершения,
 	Задачи.ДатаСоздания,
 	Задачи.Автор,
-	Задачи.Заголовок,
+	Задачи.Наименование,
 	СписаниеВремени.Автор,
 	СписаниеВремени.Дата</query>
 	</dataSet>
 	<dataSetLink>
 		<sourceDataSet>НаборДанных2</sourceDataSet>
 		<destinationDataSet>НаборДанных1</destinationDataSet>
-		<sourceExpression>НомерЗадачи</sourceExpression>
-		<destinationExpression>НомерЗадачи</destinationExpression>
+		<sourceExpression>Задача</sourceExpression>
+		<destinationExpression>Задача</destinationExpression>
 	</dataSetLink>
 	<calculatedField>
 		<dataPath>ДнейВРаботе</dataPath>
@@ -251,7 +243,7 @@
 					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>НомерЗадачи</dcsset:field>
+					<dcsset:field>Задача</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ЗаголовокЗадачи</dcsset:field>

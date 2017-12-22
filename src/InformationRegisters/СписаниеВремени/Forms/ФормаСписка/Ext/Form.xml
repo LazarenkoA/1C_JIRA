@@ -92,11 +92,10 @@
 				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 			</Events>
 			<ChildItems>
-				<LabelField name="НомерЗадачи" id="16">
-					<DataPath>Список.НомерЗадачи</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="НомерЗадачиКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="НомерЗадачиРасширеннаяПодсказка" id="18"/>
+				<LabelField name="Задача" id="41">
+					<DataPath>Список.Задача</DataPath>
+					<ContextMenu name="ЗадачаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="43"/>
 				</LabelField>
 				<ColumnGroup name="Даты" id="39">
 					<Title>

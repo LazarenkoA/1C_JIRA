@@ -30,9 +30,10 @@
 	КОЛИЧЕСТВО(*) КАК КоличествоЗадач,
 	Задачи.Тип КАК Тип
 ИЗ
-	РегистрСведений.Задачи КАК Задачи
+	Справочник.Задачи КАК Задачи
 ГДЕ
-	Задачи.НомерРодительскойЗадачи = ""
+	Задачи.Родитель = ЗНАЧЕНИЕ(Справочник.Задачи.ПустаяСсылка)
+	И НЕ Задачи.ПометкаУдаления
 	И Задачи.ДатаСоздания МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
 
 СГРУППИРОВАТЬ ПО
@@ -98,7 +99,7 @@
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ДатаНачала</dcscor:parameter>
 					<dcscor:value xsi:type="v8:StandardBeginningDate">
-						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisYear</v8:variant>
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisQuarter</v8:variant>
 					</dcscor:value>
 					<dcsset:userSettingID>4bbd8382-6398-4838-87c4-45c110c9a9b8</dcsset:userSettingID>
 				</dcscor:item>

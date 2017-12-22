@@ -18,7 +18,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Задачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">11e28c1c-201b-405f-8435-d534685acfd4</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.JIRA_JQL</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.JIRA_URL</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВажностьВажная</xr:Item>
@@ -76,6 +76,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЧисткаУдаленныхЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Администратор</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.JIRA_Logo</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Задачи</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

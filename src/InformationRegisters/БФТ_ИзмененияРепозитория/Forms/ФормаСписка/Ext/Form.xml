@@ -58,7 +58,11 @@
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
-			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<RowPictureDataPath>Список.Картинка</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ТипыРевизий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
 			<CommandSet>
 				<ExcludedCommand>Change</ExcludedCommand>
 				<ExcludedCommand>Copy</ExcludedCommand>
@@ -138,7 +142,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>Список.ИзменениеКонфигурации</Field>
+				<Field>~Список.ИзменениеКонфигурации</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -148,7 +152,11 @@
 	РегистрСведенийБФТ_ИзмененияРепозитория.НомерРевизии КАК НомерРевизии,
 	РегистрСведенийБФТ_ИзмененияРепозитория.АвторИзменений КАК АвторИзменений,
 	РегистрСведенийБФТ_ИзмененияРепозитория.Комментарий КАК Комментарий,
-	РегистрСведенийБФТ_ИзмененияРепозитория.ИзменениеКонфигурации КАК ИзменениеКонфигурации
+	ВЫБОР
+		КОГДА РегистрСведенийБФТ_ИзмененияРепозитория.ИзменениеКонфигурации
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК Картинка
 ИЗ
 	РегистрСведений.БФТ_ИзмененияРепозитория КАК РегистрСведенийБФТ_ИзмененияРепозитория
 ГДЕ
@@ -181,6 +189,7 @@
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
 						<dcsset:field>Список</dcsset:field>

@@ -20,6 +20,9 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -40,7 +43,11 @@
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
-			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<RowPictureDataPath>Список.Картинка</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ИконкиРелизов</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
 			<CommandSet>
 				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Create</ExcludedCommand>
@@ -100,21 +107,15 @@
 				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 			</Events>
 			<ChildItems>
-				<LabelField name="Наименование" id="16">
-					<DataPath>Список.Description</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				<LabelField name="Наименование" id="37">
+					<DataPath>Список.Наименование</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="39"/>
 				</LabelField>
 				<LabelField name="ДатаРелиза" id="24">
 					<DataPath>Список.ДатаРелиза</DataPath>
 					<ContextMenu name="ДатаРелизаКонтекстноеМеню" id="25"/>
 					<ExtendedTooltip name="ДатаРелизаРасширеннаяПодсказка" id="26"/>
-				</LabelField>
-				<LabelField name="Код" id="19">
-					<DataPath>Список.Code</DataPath>
-					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -125,9 +126,36 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ВыпускРелизаПросрочен</Field>
+				<Field>Список.ДатаРелиза</Field>
+				<Field>Список.РелизВыпущен</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникРелизы.Ссылка КАК Ссылка,
+	СправочникРелизы.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникРелизы.Родитель КАК Родитель,
+	СправочникРелизы.Код КАК Код,
+	СправочникРелизы.Наименование КАК Наименование,
+	СправочникРелизы.ДатаРелиза КАК ДатаРелиза,
+	СправочникРелизы.РелизВыпущен КАК РелизВыпущен,
+	СправочникРелизы.Предопределенный КАК Предопределенный,
+	СправочникРелизы.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ВЫБОР
+		КОГДА СправочникРелизы.Родитель = ЗНАЧЕНИЕ(Справочник.Релизы.ПустаяСсылка)
+			ТОГДА ВЫБОР
+					КОГДА СправочникРелизы.РелизВыпущен
+						ТОГДА 1
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ 2
+	КОНЕЦ КАК Картинка,
+	СправочникРелизы.ДатаРелиза &lt; &amp;ТекДата КАК ВыпускРелизаПросрочен
+ИЗ
+	Справочник.Релизы КАК СправочникРелизы</QueryText>
 				<MainTable>Catalog.Релизы</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -151,6 +179,40 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Список.ВыпускРелизаПросрочен</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Список.РелизВыпущен</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Список.ДатаРелиза</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Pink</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ЗагрузитьИзJIRA" id="1">

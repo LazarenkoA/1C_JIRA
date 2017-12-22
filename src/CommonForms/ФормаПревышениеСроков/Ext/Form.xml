@@ -9,6 +9,7 @@
 	<ChildItems>
 		<Table name="ДеревоЗадачПревышениеСрока" id="1">
 			<Representation>Tree</Representation>
+			<ReadOnly>true</ReadOnly>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>

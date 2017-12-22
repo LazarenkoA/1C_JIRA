@@ -72,10 +72,10 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="НомерЗадачи" id="25">
-					<DataPath>Список.НомерЗадачи</DataPath>
-					<ContextMenu name="НомерЗадачиКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="НомерЗадачиРасширеннаяПодсказка" id="27"/>
+				<LabelField name="Задача" id="28">
+					<DataPath>Список.Задача</DataPath>
+					<ContextMenu name="ЗадачаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="ШаблонУведомления" id="16">
 					<DataPath>Список.ШаблонУведомления</DataPath>
