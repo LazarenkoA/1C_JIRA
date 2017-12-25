@@ -77,14 +77,12 @@ deb372e9-226b-4632-bcfb-d5bc58981378:2442DD2C3FCBBC4A80C0D9992FC70D0A:2:Constant
 5d9aefd9-bdd6-4555-b893-bd72239ea527:078974AE9AAF83B29C96F5D3E30E17AD:2:Constants\СВ_Сервер.xml
 a1b9374b-90a9-4602-b54b-2d2ae78f9de3:EE5D96958B67F016D5C581C6CE968CB5:2:Constants\СерверИсходящейПочтыSMTP.xml
 82feab8f-54b9-4ca6-904f-cdf96bf2b290:66D6584BB8051A15AB979DC5F77244B1:2:DataProcessors\БФТ_ВыгрузкаКонфигурации.xml
-07871ea3-b017-4316-a97a-260c4674afdd:D3621F49ECC19B878DB63741FCC4675D:2:DataProcessors\БФТ_ПереносКонфигурации.xml
 d990c83f-0224-47f3-a18c-8a7d501fdace:2111566D7B78E3D120C5E09DF8985EB9:2:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных.xml
 52fad43e-568b-47b3-bd1c-13e5879f106b:73101309BC2BD6E09D1F8A48229B9C05:2:DataProcessors\ИнструментыРазработчикаКонсольЗапросов.xml
 76a5e179-32a3-4973-97d0-2d0522316957:3ED85C76A735F29D3D09A9860C1581A6:2:DataProcessors\КонсольЗаданий.xml
 e1aa58f3-1c9f-4943-a185-b6529e9ac9ba:C934BE91C505F28E08C6A8E7771E84AE:2:Enums\БФТ_РежимВводаПараметра.xml
 ed410b80-2b86-44ec-bc7b-044583b18515:B9B1088D05D87D949D803D42E0A97879:2:Enums\БФТ_СтатусИзмененийРепозитория.xml
 35196f89-6e39-49c1-a7ca-a9891e66ea02:6D150CDF963E8E2D620331DCB54FEDE5:2:Enums\БФТ_ТипИзменений.xml
-138dfa50-8b6d-4fd4-99c2-b956e19c655d:AEB53C698BD78369A07273C5BF5102FF:2:Enums\ТипыЗадач.xml
 25e2be19-aa77-4533-af14-07c397374b74_ClientApplicationInterface.xml:6862D02B97F7FD46CB6227034ECACC45:2:Ext\ClientApplicationInterface.xml
 25e2be19-aa77-4533-af14-07c397374b74_HomePageWorkArea.xml:D2BF4CF8682316F4CF7FB6470223F545:2:Ext\HomePageWorkArea.xml
 25e2be19-aa77-4533-af14-07c397374b74_ManagedApplicationModule.bsl:09DFD557F9A06D0041661E0DB6740E08:2:Ext\ManagedApplicationModule.bsl
@@ -207,9 +205,6 @@ be5e8661-f243-4f8b-ae3e-6f2f6e12097a_Picture.xml:2B266A91EADC4A54A8FED6315045A7A
 82feab8f-54b9-4ca6-904f-cdf96bf2b290_ObjectModule.bsl:D4A0D85571FA5CEA119691EAD934BD5E:4:DataProcessors\БФТ_ВыгрузкаКонфигурации\Ext\ObjectModule.bsl
 b73b572c-9573-4d86-92f8-d1e2e8b70b83:34CFF2A52A3DEBD1B694072ACF3DDEAB:4:DataProcessors\БФТ_ВыгрузкаКонфигурации\Forms\Форма.xml
 05a39961-7e99-4df5-b1db-7b1749d92ad2:D38CE487D13D3340B7212A4AFD47EF15:4:DataProcessors\БФТ_ВыгрузкаКонфигурации\Templates\НастройкиОбъединенияКонфигурации.xml
-07871ea3-b017-4316-a97a-260c4674afdd_Help.xml:D171C9BD29A1E9EB0F47E7716EE6B82F:4:DataProcessors\БФТ_ПереносКонфигурации\Ext\Help.xml
-6df06624-3913-4c2a-a7e2-5ccac993325a:DA5B91724968691971129B7272979109:4:DataProcessors\БФТ_ПереносКонфигурации\Forms\Форма.xml
-d98fa165-1336-46c5-82df-4d0cdb931e54:0C18F58E97C8906DF6999BFE3189232D:4:DataProcessors\БФТ_ПереносКонфигурации\Templates\Настройки.xml
 d990c83f-0224-47f3-a18c-8a7d501fdace_Help.xml:1E7903D556DA36898BEBD9796FAD3DAD:4:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Ext\Help.xml
 d990c83f-0224-47f3-a18c-8a7d501fdace_ObjectModule.bsl:462C96279A79E6B642100673625ADEAD:4:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Ext\ObjectModule.bsl
 a0b64c66-6092-4b17-820a-6b7d35e74911:9A239492E5855B06F4224A982C7836B9:4:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\ВыборИзЗапроса.xml
@@ -290,7 +285,6 @@ be5e8661-f243-4f8b-ae3e-6f2f6e12097a_Picture\Picture.png:9C20415D8F22A68AD2019B0
 691de4c7-f63f-431a-9a5a-38a5fea3b6db_Picture\Picture.png:48FC0E98B3A61180EB9E14EC41AA0D21:5:CommonPictures\СинхронизацияДанных\Ext\Picture\Picture.png
 7f61e24c-d1a5-445b-b5c2-dfd9bb09590a_Picture\Picture.gif:6E52FE7CA06FE6FD5BC499DB1AA5AF4D:5:CommonPictures\СинхронизацияДанныхДлительнаяОперация49\Ext\Picture\Picture.gif
 70ffe57e-b2a7-455c-a46e-26d48d3cce66_Picture\Picture.png:A7095855C41A4AC174CC1316D721ACD4:5:CommonPictures\ТипыРевизий\Ext\Picture\Picture.png
-07871ea3-b017-4316-a97a-260c4674afdd_Help\ru.html:C6FC7A3D228A37C71132D213F3B5F2E8:5:DataProcessors\БФТ_ПереносКонфигурации\Ext\Help\ru.html
 d990c83f-0224-47f3-a18c-8a7d501fdace_Help\ru.html:59F19C84E28FA923A7C95E63346A96E9:5:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Ext\Help\ru.html
 52fad43e-568b-47b3-bd1c-13e5879f106b_Help\ru.html:A7CE837673D00033E07D0CD3207AB9F4:5:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Ext\Help\ru.html
 e83d2f8a-b1b6-4b55-bffd-d0a2b652fcd0_Form.xml:E6F440EAAD58BEC6EE8E62093B8DD796:6:Catalogs\БФТ_МетодыРаботыСРепозиторием\Forms\ФормаВыводаРезультатаТеста\Ext\Form.xml
@@ -319,9 +313,6 @@ abc3bc78-48ed-4c44-aabe-0059a60455d7_Form.xml:9A0070AB70165697CA165CF626AACDBB:6
 b73b572c-9573-4d86-92f8-d1e2e8b70b83_Form.xml:1585E17EFD4332A394D9A0021B4E1B2C:6:DataProcessors\БФТ_ВыгрузкаКонфигурации\Forms\Форма\Ext\Form.xml
 b73b572c-9573-4d86-92f8-d1e2e8b70b83_Help.xml:2A54656DCFBD9FA1F42C921CF04C9280:6:DataProcessors\БФТ_ВыгрузкаКонфигурации\Forms\Форма\Ext\Help.xml
 05a39961-7e99-4df5-b1db-7b1749d92ad2_Template.txt:EE560E298E0B67EE853971968B2E2FC3:6:DataProcessors\БФТ_ВыгрузкаКонфигурации\Templates\НастройкиОбъединенияКонфигурации\Ext\Template.txt
-6df06624-3913-4c2a-a7e2-5ccac993325a_Form.xml:807906D5FA1C446F7267F9061A51E5A1:6:DataProcessors\БФТ_ПереносКонфигурации\Forms\Форма\Ext\Form.xml
-6df06624-3913-4c2a-a7e2-5ccac993325a_Help.xml:0D10BCACA2DE8AA1EB341CB56A50306D:6:DataProcessors\БФТ_ПереносКонфигурации\Forms\Форма\Ext\Help.xml
-d98fa165-1336-46c5-82df-4d0cdb931e54_Template.txt:3BDB615E352F1C5A23B9776C81FD2329:6:DataProcessors\БФТ_ПереносКонфигурации\Templates\Настройки\Ext\Template.txt
 a0b64c66-6092-4b17-820a-6b7d35e74911_Form.xml:4226CFAC56B32ADDCAA4C56492B4E485:6:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\ВыборИзЗапроса\Ext\Form.xml
 a0b64c66-6092-4b17-820a-6b7d35e74911_Help.xml:EF9BAE8845FECEF3524A3A1DE6219F00:6:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\ВыборИзЗапроса\Ext\Help.xml
 46445aa7-6866-42d5-ab00-7623e7582976_Form.xml:45B81A0100C86A80AEE06F88C2A5CBA7:6:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\НастройкиКонсолиЗапросов\Ext\Form.xml
@@ -374,8 +365,6 @@ abc3bc78-48ed-4c44-aabe-0059a60455d7_Form\Module.bsl:645788D5D71F2CEFBC1D36DA046
 21f5bea6-79da-47cd-8c8b-f3ba9c60e64d_Form\Module.bsl:79A3108BA43A03AC87AFAB5D5266A1C5:7:Catalogs\ШаблоныУведомлений\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 b73b572c-9573-4d86-92f8-d1e2e8b70b83_Form\Module.bsl:5240F03D9218E89B57929A2069338D6E:7:DataProcessors\БФТ_ВыгрузкаКонфигурации\Forms\Форма\Ext\Form\Module.bsl
 b73b572c-9573-4d86-92f8-d1e2e8b70b83_Help\ru.html:AB7E648E6D28D73954A2B72C2BFA193F:7:DataProcessors\БФТ_ВыгрузкаКонфигурации\Forms\Форма\Ext\Help\ru.html
-6df06624-3913-4c2a-a7e2-5ccac993325a_Form\Module.bsl:8D4F9CDC02B955CF6896AA9CA588F53D:7:DataProcessors\БФТ_ПереносКонфигурации\Forms\Форма\Ext\Form\Module.bsl
-6df06624-3913-4c2a-a7e2-5ccac993325a_Help\ru.html:D00B69FA9150036989289F032C4F8D1B:7:DataProcessors\БФТ_ПереносКонфигурации\Forms\Форма\Ext\Help\ru.html
 a0b64c66-6092-4b17-820a-6b7d35e74911_Form\Module.bsl:924DEA69E8DCEF8398D18CBA94F017C6:7:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\ВыборИзЗапроса\Ext\Form\Module.bsl
 a0b64c66-6092-4b17-820a-6b7d35e74911_Help\ru.html:121C3784050A59156BFB9A0B34EE3D42:7:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\ВыборИзЗапроса\Ext\Help\ru.html
 46445aa7-6866-42d5-ab00-7623e7582976_Form\Module.bsl:F45667B5240EA310664FCE6EF64BFD0E:7:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\НастройкиКонсолиЗапросов\Ext\Form\Module.bsl
@@ -398,5 +387,4 @@ a8fe7b72-14c5-48cb-a086-673a0ced47d8_Form\Module.bsl:47B343445BBB6C45D94DC5B040B
 57b31ad6-0770-48a4-8c7a-1c27ac2b15b9_Form\Module.bsl:E7259D6D1EACCE29F65B1473E87C62CD:7:InformationRegisters\ИсторияИзмененияСтатусов\Forms\ФормаСписка\Ext\Form\Module.bsl
 a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a_Form\Module.bsl:E77D63C271E094DE9DFFC76E7FEC8258:7:InformationRegisters\СписаниеВремени\Forms\ФормаСписка\Ext\Form\Module.bsl
 b73b572c-9573-4d86-92f8-d1e2e8b70b83_Form\Items\ПолучитьКонфигурацию\Picture.png:5E01ECB8FE1833DE06149E53E5B13BE4:9:DataProcessors\БФТ_ВыгрузкаКонфигурации\Forms\Форма\Ext\Form\Items\ПолучитьКонфигурацию\Picture.png
-6df06624-3913-4c2a-a7e2-5ccac993325a_Form\Items\ПолучитьКонфигурацию\Picture.png:AAEB0EFEC9060B9B01EAE3750F86675A:9:DataProcessors\БФТ_ПереносКонфигурации\Forms\Форма\Ext\Form\Items\ПолучитьКонфигурацию\Picture.png
 863040f4-ee81-4169-a7ad-c306f66e8287_Form\Items\ДеревоМетаданных\RowsPicture.png:5E35D21918AF8F988399B133FC18AD02:9:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\Форма\Ext\Form\Items\ДеревоМетаданных\RowsPicture.png

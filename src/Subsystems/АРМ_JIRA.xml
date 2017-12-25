@@ -58,7 +58,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПолучениеИсторииИзменениеСтатусов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПолучениеСписаниеВремени</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">138dfa50-8b6d-4fd4-99c2-b956e19c655d</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныУведомлений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЖурналОтправкиУведомлений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УтилитыГлобальныеНаКлиенте</xr:Item>

@@ -21,6 +21,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -101,16 +102,13 @@
 								</InputField>
 								<InputField name="ДатаРелиза" id="7">
 									<DataPath>Объект.ДатаРелиза</DataPath>
-									<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
-									<WarningOnEdit>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Даты всех последующих релизов будет изменена</v8:content>
-										</v8:item>
-									</WarningOnEdit>
+									<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ДатаРелизаКонтекстноеМеню" id="8"/>
 									<ExtendedTooltip name="ДатаРелизаРасширеннаяПодсказка" id="9"/>
+									<Events>
+										<Event name="OnChange">ДатаРелизаПриИзменении</Event>
+									</Events>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -128,6 +126,9 @@
 								</v8:item>
 							</ToolTip>
 							<ExtendedTooltip name="ВкладкиРасширеннаяПодсказка" id="25"/>
+							<Events>
+								<Event name="OnCurrentPageChange">ВкладкиПриСменеСтраницы</Event>
+							</Events>
 							<ChildItems>
 								<Page name="грЗадачи" id="58">
 									<Title>
@@ -208,6 +209,8 @@
 										</UsualGroup>
 										<Table name="ЗадачиПопавшиеВРелиз" id="33">
 											<Representation>Tree</Representation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
 											<UseAlternationRowColor>true</UseAlternationRowColor>
 											<InitialTreeView>ExpandTopLevel</InitialTreeView>
 											<EnableStartDrag>true</EnableStartDrag>
@@ -260,6 +263,9 @@
 												<ContextMenu name="ЗадачиПопавшиеВРелизУправлениеПоискомКонтекстноеМеню" id="44"/>
 												<ExtendedTooltip name="ЗадачиПопавшиеВРелизУправлениеПоискомРасширеннаяПодсказка" id="45"/>
 											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">ЗадачиПопавшиеВРелизВыбор</Event>
+											</Events>
 											<ChildItems>
 												<LabelField name="ЗадачиПопавшиеВРелизВерсия" id="65">
 													<DataPath>ЗадачиПопавшиеВРелиз.Версия</DataPath>
@@ -280,6 +286,57 @@
 										</Table>
 									</ChildItems>
 								</Page>
+								<Page name="грReleaseNote" id="28">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание задач</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр release note</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="грReleaseNoteРасширеннаяПодсказка" id="29"/>
+									<ChildItems>
+										<Button name="ДеревоЗадачВРаботеОбновитьСПолучениемИзменений" id="91">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.ОбновитьСПолучениемИзменений</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обновить задачи из JIRA</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ДеревоЗадачВРаботеОбновитьСПолучениемИзмененийРасширеннаяПодсказка" id="92"/>
+										</Button>
+										<LabelDecoration name="Пояснение" id="88">
+											<TextColor>#999999</TextColor>
+											<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Рекомендуется обновить данные задач</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеКонтекстноеМеню" id="89"/>
+											<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="90"/>
+										</LabelDecoration>
+										<TextDocumentField name="ReleaseNote" id="30">
+											<DataPath>ReleaseNote</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="ReleaseNoteКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ReleaseNoteРасширеннаяПодсказка" id="32"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
 								<Page name="грПроцесс" id="26">
 									<Title>
 										<v8:item>
@@ -295,35 +352,87 @@
 									</ToolTip>
 									<ExtendedTooltip name="грПроцессРасширеннаяПодсказка" id="27"/>
 									<ChildItems>
-										<TextDocumentField name="ПроцессСборкиРелиза" id="21">
-											<DataPath>ПроцессСборкиРелиза</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<ContextMenu name="ПроцессСборкиРелизаКонтекстноеМеню" id="22"/>
-											<ExtendedTooltip name="ПроцессСборкиРелизаРасширеннаяПодсказка" id="23"/>
-										</TextDocumentField>
-									</ChildItems>
-								</Page>
-								<Page name="грReleaseNote" id="28">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Release note</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Гр release note</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="грReleaseNoteРасширеннаяПодсказка" id="29"/>
-									<ChildItems>
-										<HTMLDocumentField name="ReleaseNote" id="30">
-											<DataPath>ReleaseNote</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<ContextMenu name="ReleaseNoteКонтекстноеМеню" id="31"/>
-											<ExtendedTooltip name="ReleaseNoteРасширеннаяПодсказка" id="32"/>
-										</HTMLDocumentField>
+										<InputField name="ПутьККаталогуСРелизом" id="121">
+											<DataPath>ПутьККаталогуСРелизом</DataPath>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="ПутьККаталогуСРелизомКонтекстноеМеню" id="122"/>
+											<ExtendedTooltip name="ПутьККаталогуСРелизомРасширеннаяПодсказка" id="123"/>
+										</InputField>
+										<Table name="Задания" id="93">
+											<Representation>Tree</Representation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<InitialTreeView>ExpandTopLevel</InitialTreeView>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Задания</DataPath>
+											<RowPictureDataPath>Задания.Картинка</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Ref>CommonPicture.ЗагрузкаКонфигурации</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</RowsPicture>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>HierarchicalList</ExcludedCommand>
+												<ExcludedCommand>List</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>OutputList</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>SortListAsc</ExcludedCommand>
+												<ExcludedCommand>SortListDesc</ExcludedCommand>
+												<ExcludedCommand>Tree</ExcludedCommand>
+											</CommandSet>
+											<ContextMenu name="ЗаданияКонтекстноеМеню" id="94"/>
+											<AutoCommandBar name="ЗаданияКоманднаяПанель" id="95"/>
+											<ExtendedTooltip name="ЗаданияРасширеннаяПодсказка" id="96"/>
+											<SearchStringAddition name="ЗаданияСтрокаПоиска" id="97">
+												<AdditionSource>
+													<Item>Задания</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаданияСтрокаПоискаКонтекстноеМеню" id="98"/>
+												<ExtendedTooltip name="ЗаданияСтрокаПоискаРасширеннаяПодсказка" id="99"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ЗаданияСостояниеПросмотра" id="100">
+												<AdditionSource>
+													<Item>Задания</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаданияСостояниеПросмотраКонтекстноеМеню" id="101"/>
+												<ExtendedTooltip name="ЗаданияСостояниеПросмотраРасширеннаяПодсказка" id="102"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ЗаданияУправлениеПоиском" id="103">
+												<AdditionSource>
+													<Item>Задания</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаданияУправлениеПоискомКонтекстноеМеню" id="104"/>
+												<ExtendedTooltip name="ЗаданияУправлениеПоискомРасширеннаяПодсказка" id="105"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="ЗаданияКомментарий" id="106">
+													<DataPath>Задания.Комментарий</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЗаданияКомментарийКонтекстноеМеню" id="107"/>
+													<ExtendedTooltip name="ЗаданияКомментарийРасширеннаяПодсказка" id="108"/>
+												</InputField>
+												<InputField name="ЗаданияТекстОшибки" id="118">
+													<DataPath>Задания.ТекстОшибки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЗаданияТекстОшибкиКонтекстноеМеню" id="119"/>
+													<ExtendedTooltip name="ЗаданияТекстОшибкиРасширеннаяПодсказка" id="120"/>
+												</InputField>
+											</ChildItems>
+										</Table>
 									</ChildItems>
 								</Page>
 							</ChildItems>
@@ -370,21 +479,6 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="ПроцессСборкиРелиза" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Процесс сборки релиза</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="ЗадачиПопавшиеВРелиз" id="3">
 			<Title>
 				<v8:item>
@@ -395,14 +489,19 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>ЗадачиПопавшиеВРелиз.Номер</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	Задачи.Ссылка КАК Задача,
+	Задачи.Родитель КАК Родитель,
+	Задачи.Код КАК Номер,
 	Задачи.Статус КАК Статус,
 	ЗадачиВерсии.Версия КАК Версия,
-	Коммиты.ЕстьКоммит КАК ЕстьКоммит
+	НЕ Коммиты.Задача ЕСТЬ NULL КАК ЕстьКоммит
 ИЗ
 	Справочник.Задачи КАК Задачи
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
@@ -411,7 +510,6 @@
 					ТОГДА Задачи.Ссылка
 				ИНАЧЕ Задачи.Родитель
 			КОНЕЦ КАК Задача,
-			МАКСИМУМ(НЕ НаборыИзменений.Код ЕСТЬ NULL) КАК ЕстьКоммит,
 			МАКСИМУМ(БФТ_ИзмененияРепозитория.Период) КАК ДатаКоммита
 		ИЗ
 			Справочник.Задачи КАК Задачи
@@ -431,17 +529,19 @@
 					ТОГДА Задачи.Ссылка
 				ИНАЧЕ Задачи.Родитель
 			КОНЕЦ) КАК Коммиты
-			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Задачи.Версии КАК ЗадачиВерсии
-			ПО Коммиты.Задача = ЗадачиВерсии.Ссылка
-		ПО Коммиты.Задача = Задачи.Ссылка
+		ПО (Коммиты.Задача = Задачи.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Задачи.Версии КАК ЗадачиВерсии
+		ПО Задачи.Ссылка = ЗадачиВерсии.Ссылка
 ГДЕ
 	(ЗадачиВерсии.Версия = &amp;ТекРелиз
-			ИЛИ Коммиты.ЕстьКоммит
-				И (Коммиты.ДатаКоммита МЕЖДУ &amp;НачалоРелиза И &amp;ОкончаниеРелиза))
+			ИЛИ НЕ Коммиты.Задача ЕСТЬ NULL
+				И (Коммиты.ДатаКоммита МЕЖДУ &amp;НачалоРелиза И &amp;ОкончаниеРелиза)
+				И НЕ &amp;ТекРелизВыпущен)
 	И (&amp;ПрименитьОтбор
-				И НЕ Коммиты.ЕстьКоммит
+				И Коммиты.Задача ЕСТЬ NULL
 				И ЗадачиВерсии.Версия = &amp;ТекРелиз
 				И НЕ Задачи.Статус В (&amp;КонечныеСтатусы)
+				И НЕ &amp;ТекРелизВыпущен
 			ИЛИ НЕ &amp;ПрименитьОтбор)</QueryText>
 				<MainTable>Catalog.Задачи</MainTable>
 				<ListSettings>
@@ -508,6 +608,150 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаРелизаДоИзменений" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата релиза до изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Задания" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторЗадания" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор задания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Метод" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метод</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстОшибки" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбратныйМетод" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обратный метод</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="АдресХранилища" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес хранилища</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПутьККаталогуСРелизом" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к каталогу с релизом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
@@ -578,6 +822,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПеренестиЗадачиВДругуюВерсию</Action>
+		</Command>
+		<Command name="ОбновитьСПолучениемИзменений" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить с получением изменений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запуск регламентного задания на получение задач</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСПолучениемИзменений</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -30,7 +30,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Важность</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.БФТ_ХранилищеМакетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.БФТ_ПереносКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">07871ea3-b017-4316-a97a-260c4674afdd</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БФТ_ДлительныеОперацииСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗагрузкаКонфигурации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СинхронизацияДанныхДлительнаяОперация49</xr:Item>
