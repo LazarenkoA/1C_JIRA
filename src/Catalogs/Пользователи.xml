@@ -61,7 +61,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.Пользователи.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm>Catalog.Пользователи.Form.ФормаГруппы</DefaultFolderForm>
-			<DefaultListForm/>
+			<DefaultListForm>Catalog.Пользователи.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm>Catalog.Пользователи.Form.ФормаВыбора</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -374,7 +374,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="488d6983-75df-4b98-b06e-a438026f13dd">
+			<Attribute uuid="2216f434-a4a4-4d44-812d-7fcb54e8825c">
 				<Properties>
 					<Name>РФК</Name>
 					<Synonym>
@@ -385,11 +385,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>100</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>cfg:CatalogRef.РФК</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -402,7 +398,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
+					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -421,6 +417,7 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаГруппы</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

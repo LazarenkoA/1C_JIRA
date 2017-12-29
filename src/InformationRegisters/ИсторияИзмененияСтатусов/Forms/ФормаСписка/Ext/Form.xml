@@ -40,7 +40,6 @@
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<CommandSet>
 				<ExcludedCommand>Change</ExcludedCommand>
-				<ExcludedCommand>Choose</ExcludedCommand>
 				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Create</ExcludedCommand>
 				<ExcludedCommand>Delete</ExcludedCommand>

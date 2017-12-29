@@ -64,10 +64,10 @@
 							<ContextMenu name="ФИОКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="9"/>
 						</InputField>
-						<InputField name="РФК" id="30">
+						<InputField name="РФК" id="33">
 							<DataPath>Объект.РФК</DataPath>
-							<ContextMenu name="РФККонтекстноеМеню" id="31"/>
-							<ExtendedTooltip name="РФКРасширеннаяПодсказка" id="32"/>
+							<ContextMenu name="РФККонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="РФКРасширеннаяПодсказка" id="35"/>
 						</InputField>
 						<InputField name="ПользовательИБ" id="27">
 							<DataPath>ПредставлениеПользователяИБ</DataPath>

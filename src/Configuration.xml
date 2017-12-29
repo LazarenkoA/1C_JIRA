@@ -130,7 +130,7 @@
 			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
-			<CompatibilityMode>Version8_3_10</CompatibilityMode>
+			<CompatibilityMode>Version8_3_11</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
@@ -184,6 +184,7 @@
 			<ScheduledJob>ЧисткаУдаленныхЗадач</ScheduledJob>
 			<ScheduledJob>АнализИзмененийХранилища1С</ScheduledJob>
 			<ScheduledJob>ВыгрузкаИзмененийИзSVN</ScheduledJob>
+			<ScheduledJob>ОбновитьИсториюДанных</ScheduledJob>
 			<CommonCommand>ОткрытьНастройкиПодключенияКХранилищу</CommonCommand>
 			<Constant>JIRA_JQL</Constant>
 			<Constant>JIRA_URL</Constant>
@@ -222,6 +223,7 @@
 			<Catalog>БФТ_НастройкаПодключенияКРепозиторию</Catalog>
 			<Catalog>БФТ_Сборки</Catalog>
 			<Catalog>Задачи</Catalog>
+			<Catalog>РФК</Catalog>
 			<Enum>БФТ_РежимВводаПараметра</Enum>
 			<Enum>БФТ_СтатусИзмененийРепозитория</Enum>
 			<Enum>БФТ_ТипИзменений</Enum>

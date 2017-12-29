@@ -146,6 +146,16 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ставка</dataPath>
+			<field>Ставка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Задачи.Ссылка КАК Задача,
@@ -161,10 +171,15 @@
 	Задачи.Бюджет КАК Бюджет,
 	ВЫРАЗИТЬ(СУММА(СписаниеВремени.Часы) КАК ЧИСЛО(10, 2)) КАК СписаноЧасов,
 	СписаниеВремени.Автор КАК АвторСписания,
-	СписаниеВремени.Дата КАК ДатаСписания
+	СписаниеВремени.Дата КАК ДатаСписания,
+	ВЫРАЗИТЬ(СУММА(СпрРФК.Ставка) КАК ЧИСЛО(10, 2)) КАК Ставка
 ИЗ
 	Справочник.Задачи КАК Задачи
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СписаниеВремени КАК СписаниеВремени
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Пользователи КАК Пользователи
+				ЛЕВОЕ СОЕДИНЕНИЕ Справочник.РФК КАК СпрРФК
+				ПО Пользователи.РФК = СпрРФК.Ссылка
+			ПО СписаниеВремени.Автор = Пользователи.Ссылка
 		ПО Задачи.Ссылка = СписаниеВремени.Задача
 ГДЕ
 	НЕ Задачи.ПометкаУдаления
@@ -215,6 +230,10 @@
 	<totalField>
 		<dataPath>СписаноЧасов</dataPath>
 		<expression>Сумма(СписаноЧасов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Ставка</dataPath>
+		<expression>Сумма(Ставка)</expression>
 	</totalField>
 	<parameter>
 		<name>Период</name>
@@ -301,6 +320,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ДатаСписания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ставка</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>

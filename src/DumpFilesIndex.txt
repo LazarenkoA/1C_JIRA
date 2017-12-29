@@ -9,6 +9,7 @@ be344122-af54-45af-a429-a0622a916dfa:557F40CCFE360C6FECC05A7D265DF2BF:2:Catalogs
 567a1f5a-f4c9-4247-933a-0a89239a1b02:9CBE463736EB9D6B14C9BE94F7919D4D:2:Catalogs\Пользователи.xml
 90aac90f-cd2f-4793-8b43-010b3c2efd6a:3E2514688FC0225416BD2E75D278DD49:2:Catalogs\Приоритеты.xml
 10f1768a-5779-4327-afb4-c1ead1e62f7d:7C29B8A85E0D45BD8CBFF70053D09F4C:2:Catalogs\Релизы.xml
+5ff9e8b8-4631-44e8-835d-2dfa9423046b:50D91CA9FF581E515393166FB00CFD68:2:Catalogs\РФК.xml
 68d3c970-41bb-4d7e-943c-9ee23dbedfcc:C40E88601A502D6D2343CFF231ECDEAE:2:Catalogs\ТипыЗадач.xml
 2df879cf-112f-413d-81f6-16a29c5004d7:498F590F0FB8C0F79A5080D1587AFC03:2:Catalogs\ШаблоныУведомлений.xml
 2a626a3a-4040-4f78-bf48-c61d3716277d:9A502D3E3BD4726CFDD788A79E86CE0A:2:CommonCommands\ОткрытьНастройкиПодключенияКХранилищу.xml
@@ -101,6 +102,7 @@ a9d62b51-75e1-4d56-a0b2-38e1a8bffc41:9A916FEB0B9EBC5E0B57DC09833A6C9C:2:Reports\
 dcfb1b84-df82-48c5-ae69-fd107a2307c0:FDB53D0711E2A0143C678DD64E40F14E:2:Roles\Администратор.xml
 51d2fa7d-89b7-43a0-95fc-57196810e475:129DDDF441A6DCD376AD26C8D747AB81:2:ScheduledJobs\АнализИзмененийХранилища1С.xml
 e38f4c8d-b060-44dc-8293-0bc5bae9a84f:10CECC457FE53D876700CA4D47E86A44:2:ScheduledJobs\ВыгрузкаИзмененийИзSVN.xml
+9b65fe51-0db8-4585-a192-35a57e9ed47a:434CFE60A9912D2F99AF504E3C15DACE:2:ScheduledJobs\ОбновитьИсториюДанных.xml
 31f079b7-178e-4af6-98f1-4c2be5a93259:11411A366E965F3B4253184F67B8F773:2:ScheduledJobs\ОповещениеПоЗадачам.xml
 4065bb97-e136-4200-acd0-9c31244bd616:023AD76DD365BC9ADE4C42836B17FD8C:2:ScheduledJobs\ПолучениеЗадач.xml
 a63940b1-3195-4168-9104-418fbbca3894:1255C78A9BF7CAFDD1F07B7EB1E5E340:2:ScheduledJobs\ПолучениеИсторииИзменениеСтатусов.xml
@@ -138,6 +140,7 @@ f6129a5f-5e41-4de9-a43b-37db791aa32f:55C90EAF68ADFC9045792536830AC8F6:4:Catalogs
 567a1f5a-f4c9-4247-933a-0a89239a1b02_Predefined.xml:E3308B80A129771D3A5D74F0505D61CE:4:Catalogs\Пользователи\Ext\Predefined.xml
 a96bbde0-a8d3-4cfe-b72d-4b92ab76f5e8:37FBE1F3F4669B43987FC833E8653664:4:Catalogs\Пользователи\Forms\ФормаВыбора.xml
 8f853756-cf78-4e68-b967-e8136ba88fb1:E30000A930CF105C6E935D3EF256B89E:4:Catalogs\Пользователи\Forms\ФормаГруппы.xml
+89a11c5d-f8bc-4bfc-879a-96dfa6806398:3677816210E12E7812E5C4CB8C835154:4:Catalogs\Пользователи\Forms\ФормаСписка.xml
 12f994fa-fad3-457a-82ac-8157afaddf32:B22F1E0C3B075CA858DA7F0FB22A35EB:4:Catalogs\Пользователи\Forms\ФормаЭлемента.xml
 90aac90f-cd2f-4793-8b43-010b3c2efd6a_ManagerModule.bsl:C751A9E905592864F1285E757315D3C2:4:Catalogs\Приоритеты\Ext\ManagerModule.bsl
 ae9e2429-001d-430e-b662-894232456d18:D1F6BB5C0BC832F5674918F739980E07:4:Catalogs\Приоритеты\Forms\ФормаЭлемента.xml
@@ -248,6 +251,7 @@ a848967f-3126-4852-8a2d-c3bbcc84ef73:B06E6D68CBF2537FDB9804B1E590EA12:4:Reports\
 dcfb1b84-df82-48c5-ae69-fd107a2307c0_Rights.xml:2102C25C4766F057FA61856DEB18E434:4:Roles\Администратор\Ext\Rights.xml
 51d2fa7d-89b7-43a0-95fc-57196810e475_Schedule.xml:92671B1C06C12E01D4C7BEDFE51A09EF:4:ScheduledJobs\АнализИзмененийХранилища1С\Ext\Schedule.xml
 e38f4c8d-b060-44dc-8293-0bc5bae9a84f_Schedule.xml:8A5245865BE455248525E4D807C00D02:4:ScheduledJobs\ВыгрузкаИзмененийИзSVN\Ext\Schedule.xml
+9b65fe51-0db8-4585-a192-35a57e9ed47a_Schedule.xml:C24B7698A2A0AC31A91001A75191301F:4:ScheduledJobs\ОбновитьИсториюДанных\Ext\Schedule.xml
 31f079b7-178e-4af6-98f1-4c2be5a93259_Schedule.xml:30192BFEF7CE5D14463452DBF746DB73:4:ScheduledJobs\ОповещениеПоЗадачам\Ext\Schedule.xml
 4065bb97-e136-4200-acd0-9c31244bd616_Schedule.xml:6C1544915D65E8C9A8FB8081C40AEE6E:4:ScheduledJobs\ПолучениеЗадач\Ext\Schedule.xml
 a63940b1-3195-4168-9104-418fbbca3894_Schedule.xml:9095F433EB61EECE1CF4B14EB3CCB15B:4:ScheduledJobs\ПолучениеИсторииИзменениеСтатусов\Ext\Schedule.xml
@@ -302,6 +306,7 @@ e6b02722-a5bd-4dea-93fd-c9b2dd81b76d_Form.xml:E596353F491A5B4F0965B17C29FCF5A4:6
 f6129a5f-5e41-4de9-a43b-37db791aa32f_Form.xml:7E58D9654BE15C5687B71DF0B9DBBDBA:6:Catalogs\Задачи\Forms\ФормаЭлемента\Ext\Form.xml
 a96bbde0-a8d3-4cfe-b72d-4b92ab76f5e8_Form.xml:6E6B7BE8B8EB260054C43B4B6C780D01:6:Catalogs\Пользователи\Forms\ФормаВыбора\Ext\Form.xml
 8f853756-cf78-4e68-b967-e8136ba88fb1_Form.xml:5539AC61D44F858BBDAF31B06CE3257E:6:Catalogs\Пользователи\Forms\ФормаГруппы\Ext\Form.xml
+89a11c5d-f8bc-4bfc-879a-96dfa6806398_Form.xml:5F6BE8590E3CB35D94946DF32CD4486E:6:Catalogs\Пользователи\Forms\ФормаСписка\Ext\Form.xml
 12f994fa-fad3-457a-82ac-8157afaddf32_Form.xml:B20105DFAB81AE54F4F89E28E9FA0685:6:Catalogs\Пользователи\Forms\ФормаЭлемента\Ext\Form.xml
 ae9e2429-001d-430e-b662-894232456d18_Form.xml:8121325E3C49F2B45AFC1F16CA75298C:6:Catalogs\Приоритеты\Forms\ФормаЭлемента\Ext\Form.xml
 8d33f080-07d7-481c-8f2e-b3e9b9c19244_Form.xml:473EBF279203040C9EB9E6668BC45F9F:6:Catalogs\Релизы\Forms\ФормаВыбора\Ext\Form.xml
