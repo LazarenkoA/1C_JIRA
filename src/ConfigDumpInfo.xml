@@ -421,8 +421,8 @@
 		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Command.СвязанныеНаборыИзменений.CommandModule" id="cc1437db-6f42-483e-a540-7aeeb5d9eaac.2" configVersion="d2afb73c19a30247a788aca1639451f900000000"/>
 		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаЗаписи" id="c98d489c-1593-48ad-afd3-a6fbe6996e3f" configVersion="480e797061f6e844bcc1598146b62fdb00000000"/>
 		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаЗаписи.Form" id="c98d489c-1593-48ad-afd3-a6fbe6996e3f.0" configVersion="16878c316c90f444bdca4ef8e7a5e60200000000"/>
-		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаСписка" id="9bc306e6-ba75-472f-b909-b7d0da10e4d7" configVersion="dd86f2e0b053bb4ca8ca9ebf6271468c00000000"/>
-		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаСписка.Form" id="9bc306e6-ba75-472f-b909-b7d0da10e4d7.0" configVersion="3933caceb9590746a86932b6213eb30900000000"/>
+		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаСписка" id="9bc306e6-ba75-472f-b909-b7d0da10e4d7" configVersion="cfc76cac4644d042a6a68671c085a30a00000000"/>
+		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаСписка.Form" id="9bc306e6-ba75-472f-b909-b7d0da10e4d7.0" configVersion="7d078abac7d0f04ba459497136617c2900000000"/>
 		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.ManagerModule" id="070a034b-5f03-416d-95ac-835c10da2d8a.2" configVersion="9b81a6a48356e6469d282f32caf6a05600000000"/>
 		<Metadata name="InformationRegister.БФТ_ОчередьВыгрузкиРевизийКонфигурации1С" id="8474b336-a7f2-4014-88f3-27700ebd9447" configVersion="ef4ad26d980b094599167bc4b4502f9a00000000">
 			<Metadata name="InformationRegister.БФТ_ОчередьВыгрузкиРевизийКонфигурации1С.Dimension.ДатаИзменений" id="0111397f-7466-4afd-9ac5-912098af651b"/>
