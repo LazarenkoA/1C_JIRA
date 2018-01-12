@@ -18,9 +18,15 @@
 				<CommandName>Form.Command.ДобавитьПатч</CommandName>
 				<ExtendedTooltip name="ФормаДобавитьПатчРасширеннаяПодсказка" id="30"/>
 			</Button>
+			<Button name="ФормаЗаполнитьГрафикВыпуска" id="43">
+				<Type>CommandBarHyperlink</Type>
+				<CommandName>Form.Command.ЗаполнитьГрафикВыпуска</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьГрафикВыпускаРасширеннаяПодсказка" id="44"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -132,6 +138,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
+				<Field>Список.АктуальныйРелиз</Field>
 				<Field>Список.ВыпускРелизаПросрочен</Field>
 				<Field>Список.ДатаРелиза</Field>
 				<Field>Список.РелизВыпущен</Field>
@@ -159,7 +166,8 @@
 		ИНАЧЕ 2
 	КОНЕЦ КАК Картинка,
 	СправочникРелизы.ДатаРелиза &lt; &amp;ТекДата КАК ВыпускРелизаПросрочен,
-	СправочникРелизы.ДатаНачала КАК ДатаНачала
+	СправочникРелизы.ДатаНачала КАК ДатаНачала,
+	&amp;ТекДата МЕЖДУ СправочникРелизы.ДатаНачала И СправочникРелизы.ДатаРелиза КАК АктуальныйРелиз
 ИЗ
 	Справочник.Релизы КАК СправочникРелизы</QueryText>
 				<MainTable>Catalog.Релизы</MainTable>
@@ -218,6 +226,26 @@
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.АктуальныйРелиз</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
@@ -265,6 +293,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьПатч</Action>
+		</Command>
+		<Command name="ЗаполнитьГрафикВыпуска" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить график выпуска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить график выпуска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьГрафикВыпуска</Action>
 		</Command>
 	</Commands>
 </Form>
