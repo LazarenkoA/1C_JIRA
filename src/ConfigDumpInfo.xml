@@ -128,8 +128,8 @@
 		<Metadata name="Catalog.Релизы.Form.ФормаЗаполненияГрафика.Form" id="4f7d5a75-366d-4b34-ab8a-0ae59330a55c.0" configVersion="3f3101f00e657b479c7d65b853fd27ae00000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаПатча" id="abc3bc78-48ed-4c44-aabe-0059a60455d7" configVersion="35b22eeefc26224e86ca3407e7659cbc00000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаПатча.Form" id="abc3bc78-48ed-4c44-aabe-0059a60455d7.0" configVersion="e27351f5b3c55e438a09eb548f70edea00000000"/>
-		<Metadata name="Catalog.Релизы.Form.ФормаРелиза" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5" configVersion="f8c0d725b97ae348acb783ef1623bbb900000000"/>
-		<Metadata name="Catalog.Релизы.Form.ФормаРелиза.Form" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5.0" configVersion="158d07878db7134ca904b692890a608800000000"/>
+		<Metadata name="Catalog.Релизы.Form.ФормаРелиза" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5" configVersion="6dccf55562a5d743bca89ab1ced170e300000000"/>
+		<Metadata name="Catalog.Релизы.Form.ФормаРелиза.Form" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5.0" configVersion="4a436eef04a074479f593c9c3206efe100000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6" configVersion="fc45f8e53dbc2e409d320963ba7666d600000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка.Form" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6.0" configVersion="8fbede139b705a4194e92a91f63cba7d00000000"/>
 		<Metadata name="Catalog.Релизы.ManagerModule" id="10f1768a-5779-4327-afb4-c1ead1e62f7d.3" configVersion="b0fb5af52ab4de4a894c3c306fa369b300000000"/>
