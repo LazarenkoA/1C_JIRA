@@ -131,6 +131,7 @@
 					<ChildItems>
 						<InputField name="ДатаНачала" id="83">
 							<DataPath>Объект.ДатаНачала</DataPath>
+							<ReadOnly>true</ReadOnly>
 							<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="84"/>
 							<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="85"/>
 							<Events>
@@ -139,6 +140,7 @@
 						</InputField>
 						<InputField name="ДатаРелиза" id="7">
 							<DataPath>Объект.ДатаРелиза</DataPath>
+							<ReadOnly>true</ReadOnly>
 							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ДатаРелизаКонтекстноеМеню" id="8"/>
@@ -940,7 +942,27 @@
 				</dcsset:selection>
 				<dcsset:filter>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ОтборПрименен</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОтборСборкаПрименен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОтборЗадач1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ОтборВыпускПрименен</dcsset:left>
 						<dcsset:comparisonType>Equal</dcsset:comparisonType>
 						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 					</dcsset:item>
