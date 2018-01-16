@@ -187,6 +187,11 @@
 								</Button>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="Релиз" id="113">
+							<DataPath>Релиз</DataPath>
+							<ContextMenu name="РелизКонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="РелизРасширеннаяПодсказка" id="115"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<CheckBoxField name="ОбновитьТолькоСтоимость" id="62">
@@ -659,6 +664,17 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Релиз" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Релиз</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Релизы</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

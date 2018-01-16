@@ -66,8 +66,11 @@ be5e8661-f243-4f8b-ae3e-6f2f6e12097a:9B9C75D964B7CC0ECF2294487B443714:2:CommonPi
 2ddacea2-22ea-458f-81bb-6cc2efdcda1c:D4AB9949612BAD18E79367372E11F744:2:Constants\АдресХранилища.xml
 067a1c2a-4542-4cd0-82b2-dfff5155ca0f:C38301C56F793818ECC864EA8EEBF068:2:Constants\АдресЭлектроннойПочты.xml
 7907fa2c-09eb-4ddc-80d4-d04a6935cf4b:9CE6D58C8650F409FA25F3C0A9F98750:2:Constants\ИмяОтправителя.xml
+bf7b3cbe-4ef8-41b8-8094-d010ad5dcecb:09D4F474086FD320F72D37C4E8275724:2:Constants\КоличествоДнейДляПроверкиРелиза.xml
+da5bd42d-fb48-4c53-9dc6-4ce5bead956e:79151D5CD66EBC14C7A9E95B6A802907:2:Constants\ПарольБазыПроверкиРезиза.xml
 5d810d5c-a2b4-44dc-880c-c46aefc382a0:37D3C3A09E5F081E058419F138CE5D9B:2:Constants\ПарольХранилища.xml
 010ece7c-6d0f-47de-b00e-a327788ad1a3:80734DF71B53EB90E2CE9708C9F49D45:2:Constants\ПарольЭлектроннойПочты.xml
+0a4ec009-990d-42b3-ae0c-91769cfa70d8:15853AFCCB1AEC957054B10D49BB6AC2:2:Constants\ПользовательБазыПроверкиРезиза.xml
 321f143a-e98a-4aa4-9fd9-cff49a5e4fc2:510DACBA04144ED884804561B5C6703F:2:Constants\ПользовательИсходящейПочты.xml
 3b6d4b2c-c27e-441a-a627-986b5f8dbc9b:7F9A61BA739CAB5C6E33AB23BA3BBE09:2:Constants\ПользовательНастроек.xml
 9b0b2dd8-7fad-4a8c-9e35-9872756db003:5B5560F25EEDD9B1DCD9E843D12F7288:2:Constants\ПользовательХранилища.xml
@@ -78,6 +81,7 @@ deb372e9-226b-4632-bcfb-d5bc58981378:2442DD2C3FCBBC4A80C0D9992FC70D0A:2:Constant
 9a456e35-223b-4100-a307-79e612be16a8:23A525ED1DF4BBD8DA935109AF6742DD:2:Constants\СВ_АдресЭлектроннойПочты.xml
 5d9aefd9-bdd6-4555-b893-bd72239ea527:078974AE9AAF83B29C96F5D3E30E17AD:2:Constants\СВ_Сервер.xml
 a1b9374b-90a9-4602-b54b-2d2ae78f9de3:EE5D96958B67F016D5C581C6CE968CB5:2:Constants\СерверИсходящейПочтыSMTP.xml
+4dc4fd19-8879-413d-bd02-63ddc82cd4d5:21ABEE191FEE6B67629B432070A7ACB4:2:Constants\СтрокаПодключенияКБазеПроверкиРезиза.xml
 82feab8f-54b9-4ca6-904f-cdf96bf2b290:66D6584BB8051A15AB979DC5F77244B1:2:DataProcessors\БФТ_ВыгрузкаКонфигурации.xml
 d990c83f-0224-47f3-a18c-8a7d501fdace:2111566D7B78E3D120C5E09DF8985EB9:2:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных.xml
 52fad43e-568b-47b3-bd1c-13e5879f106b:73101309BC2BD6E09D1F8A48229B9C05:2:DataProcessors\ИнструментыРазработчикаКонсольЗапросов.xml
@@ -146,6 +150,7 @@ a96bbde0-a8d3-4cfe-b72d-4b92ab76f5e8:37FBE1F3F4669B43987FC833E8653664:4:Catalogs
 90aac90f-cd2f-4793-8b43-010b3c2efd6a_ManagerModule.bsl:C751A9E905592864F1285E757315D3C2:4:Catalogs\Приоритеты\Ext\ManagerModule.bsl
 ae9e2429-001d-430e-b662-894232456d18:D1F6BB5C0BC832F5674918F739980E07:4:Catalogs\Приоритеты\Forms\ФормаЭлемента.xml
 10f1768a-5779-4327-afb4-c1ead1e62f7d_ManagerModule.bsl:8C47FFE4AC41C1112DBCDDB663104FCE:4:Catalogs\Релизы\Ext\ManagerModule.bsl
+10f1768a-5779-4327-afb4-c1ead1e62f7d_ObjectModule.bsl:AF263B32598C581B30DCA4EE9A47E788:4:Catalogs\Релизы\Ext\ObjectModule.bsl
 8d33f080-07d7-481c-8f2e-b3e9b9c19244:3E603CB988F3012B7DB5A366CFC5ED29:4:Catalogs\Релизы\Forms\ФормаВыбора.xml
 4f7d5a75-366d-4b34-ab8a-0ae59330a55c:8D7D77F21AC1816A2446640F1E7F6210:4:Catalogs\Релизы\Forms\ФормаЗаполненияГрафика.xml
 abc3bc78-48ed-4c44-aabe-0059a60455d7:C98355A8FD11E5F009FB1408D7355401:4:Catalogs\Релизы\Forms\ФормаПатча.xml

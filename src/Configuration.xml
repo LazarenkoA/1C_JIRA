@@ -203,6 +203,10 @@
 			<Constant>ПарольХранилища</Constant>
 			<Constant>ПользовательХранилища</Constant>
 			<Constant>ПутьККаталогуСФайламиРасширений</Constant>
+			<Constant>СтрокаПодключенияКБазеПроверкиРезиза</Constant>
+			<Constant>ПользовательБазыПроверкиРезиза</Constant>
+			<Constant>ПарольБазыПроверкиРезиза</Constant>
+			<Constant>КоличествоДнейДляПроверкиРелиза</Constant>
 			<CommonForm>ФормаРабСтол</CommonForm>
 			<CommonForm>ФормаНастроекГрафикаРаботы</CommonForm>
 			<CommonForm>ФормаНастроекЭлектроннойПочты</CommonForm>
