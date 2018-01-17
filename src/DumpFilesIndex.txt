@@ -50,6 +50,7 @@ aff5a943-a311-400c-a703-1dfee2484891:ECBDB32B87DD191EC6D13F367DDEE119:2:CommonMo
 a95ec01f-8f13-451f-ac05-5c1ec84786f5:F40483AB255D1E023894FF4213B8AFF9:2:CommonPictures\JIRA_Logo.xml
 2e7e34bd-242c-4f4c-99e4-7c1f738f76ff:568362196F7E86DF60013227E55D94E4:2:CommonPictures\Важность.xml
 8f50e7a8-1f1d-4cc9-b672-d4cc41163bb8:08CC556989FE00D8AED209A8C4AB65F6:2:CommonPictures\ВажностьВажная.xml
+30b67092-4616-40e7-8a0e-66c862a18741:688FC50A71CA7714E05371C3DAB7B7B3:2:CommonPictures\ВажностьСтрок.xml
 6132abb8-a715-4136-9889-6bb2e1c95485:1F211BA8BB48080FAD4B699C04444E84:2:CommonPictures\ВысокаяВажность.xml
 9efdba8d-fa55-4ae4-9d32-ab8b4356f6d4:35A32724300225877A4E2C33F3D0CF37:2:CommonPictures\ДлительныеОперации_Пес.xml
 81917d07-6f23-4b94-8ea2-ac3fe8b5a43d:F0D00176343CB0A6F8F2A4133066997C:2:CommonPictures\ЗагрузкаКонфигурации.xml
@@ -201,6 +202,7 @@ aff5a943-a311-400c-a703-1dfee2484891_Module.bsl:FE14438A970A726C41C1817CB6F0C19B
 a95ec01f-8f13-451f-ac05-5c1ec84786f5_Picture.xml:7592FE00E0EB46E24AAD1C0E0481924D:4:CommonPictures\JIRA_Logo\Ext\Picture.xml
 2e7e34bd-242c-4f4c-99e4-7c1f738f76ff_Picture.xml:9374B8C3A7CEE9CF7B288371ADF9BECA:4:CommonPictures\Важность\Ext\Picture.xml
 8f50e7a8-1f1d-4cc9-b672-d4cc41163bb8_Picture.xml:A1C1274062BF808483F0BE9523A431EA:4:CommonPictures\ВажностьВажная\Ext\Picture.xml
+30b67092-4616-40e7-8a0e-66c862a18741_Picture.xml:765CCEE4487D94D6DFAA714634F386F4:4:CommonPictures\ВажностьСтрок\Ext\Picture.xml
 6132abb8-a715-4136-9889-6bb2e1c95485_Picture.xml:06ED741CE4C0068681F1F353D985C7B0:4:CommonPictures\ВысокаяВажность\Ext\Picture.xml
 9efdba8d-fa55-4ae4-9d32-ab8b4356f6d4_Picture.xml:1413F6BB8ECB1FD7E803D3E4717A1E12:4:CommonPictures\ДлительныеОперации_Пес\Ext\Picture.xml
 81917d07-6f23-4b94-8ea2-ac3fe8b5a43d_Picture.xml:DAD0E9F9D4866886C6B235FF5A8196B8:4:CommonPictures\ЗагрузкаКонфигурации\Ext\Picture.xml
@@ -285,6 +287,7 @@ b18dde47-52db-48a3-a5dd-a3a6931184c9_Form\Module.bsl:27768B414EA31105F98DC73AA13
 a95ec01f-8f13-451f-ac05-5c1ec84786f5_Picture\Picture.png:BC38876E9B228EA4FBAACCE4D6CF0316:5:CommonPictures\JIRA_Logo\Ext\Picture\Picture.png
 2e7e34bd-242c-4f4c-99e4-7c1f738f76ff_Picture\Picture.png:846FED48DF901BE10940862DF4C15654:5:CommonPictures\Важность\Ext\Picture\Picture.png
 8f50e7a8-1f1d-4cc9-b672-d4cc41163bb8_Picture\Picture.png:533AA0061D3B8EE3A3242B31E3F18835:5:CommonPictures\ВажностьВажная\Ext\Picture\Picture.png
+30b67092-4616-40e7-8a0e-66c862a18741_Picture\Picture.png:AC77511EF96A0C531910C48CDB8EC1A0:5:CommonPictures\ВажностьСтрок\Ext\Picture\Picture.png
 6132abb8-a715-4136-9889-6bb2e1c95485_Picture\Picture.png:4F18DF5B00E11C93FC1DDF7B22FC872C:5:CommonPictures\ВысокаяВажность\Ext\Picture\Picture.png
 9efdba8d-fa55-4ae4-9d32-ab8b4356f6d4_Picture\Picture.gif:E7E4518B6DB89FB8BC3A642B5F97D6F3:5:CommonPictures\ДлительныеОперации_Пес\Ext\Picture\Picture.gif
 81917d07-6f23-4b94-8ea2-ac3fe8b5a43d_Picture\Picture.gif:4A69D8EA7268739347003ECC58B3B937:5:CommonPictures\ЗагрузкаКонфигурации\Ext\Picture\Picture.gif

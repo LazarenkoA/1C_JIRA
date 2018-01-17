@@ -151,6 +151,7 @@
 			<CommonPicture>ДлительныеОперации_Пес</CommonPicture>
 			<CommonPicture>ТипыРевизий</CommonPicture>
 			<CommonPicture>ИконкиРелизов</CommonPicture>
+			<CommonPicture>ВажностьСтрок</CommonPicture>
 			<SessionParameter>JIRA_Cookies</SessionParameter>
 			<Role>Администратор</Role>
 			<CommonModule>БФТ_ДлительныеОперацииСервер</CommonModule>
