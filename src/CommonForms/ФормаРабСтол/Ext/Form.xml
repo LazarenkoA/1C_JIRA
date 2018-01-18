@@ -22,298 +22,343 @@
 				</v8:item>
 			</ToolTip>
 			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
-			<Group>Vertical</Group>
+			<Group>Horizontal</Group>
 			<VerticalAlign>Bottom</VerticalAlign>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="грОсновноеРасширеннаяПодсказка" id="197"/>
 			<ChildItems>
-				<UsualGroup name="грНастройки" id="179">
+				<UsualGroup name="грЛево" id="362">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Настройки</v8:content>
+							<v8:content>Гр лево</v8:content>
 						</v8:item>
 					</Title>
-					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Настройки</v8:content>
+							<v8:content>Гр лево</v8:content>
 						</v8:item>
 					</ToolTip>
-					<Representation>StrongSeparation</Representation>
-					<ExtendedTooltip name="грНастройкиРасширеннаяПодсказка" id="180"/>
+					<Width>100</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<GroupVerticalAlign>Top</GroupVerticalAlign>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="грЛевоРасширеннаяПодсказка" id="363"/>
 					<ChildItems>
-						<UsualGroup name="грНастройкиJIRA" id="3">
+						<UsualGroup name="грНастройки" id="179">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Настройки JIRA</v8:content>
+									<v8:content>Настройки</v8:content>
 								</v8:item>
 							</Title>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Гр настройки JIRA</v8:content>
+									<v8:content>Настройки</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="грНастройкиРасширеннаяПодсказка" id="180"/>
+							<ChildItems>
+								<UsualGroup name="грНастройкиJIRA" id="3">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки JIRA</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр настройки JIRA</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грНастройкиJIRAРасширеннаяПодсказка" id="4"/>
+									<ChildItems>
+										<Button name="ОткрытьНастройкиJIRA" id="1">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьНастройкиJIRA</CommandName>
+											<ExtendedTooltip name="ОткрытьНастройкиJIRAРасширеннаяПодсказка" id="2"/>
+										</Button>
+										<PictureDecoration name="ДекорацияПредупреждение" id="5">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияПредупреждениеКонтекстноеМеню" id="6"/>
+											<ExtendedTooltip name="ДекорацияПредупреждениеРасширеннаяПодсказка" id="7"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="грНастройкиГрафика" id="172">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки графика</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр настройки JIRA</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грНастройкиГрафикаРасширеннаяПодсказка" id="173"/>
+									<ChildItems>
+										<Button name="ОткрытьНастройкиГрафика" id="174">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьНастройкиГрафика</CommandName>
+											<ExtendedTooltip name="ОткрытьНастройкиГрафикаРасширеннаяПодсказка" id="175"/>
+										</Button>
+										<PictureDecoration name="ДекорацияПредупреждениеГрафик" id="176">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияПредупреждениеГрафикКонтекстноеМеню" id="177"/>
+											<ExtendedTooltip name="ДекорацияПредупреждениеГрафикРасширеннаяПодсказка" id="178"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="грНастройкиЭлектроннойПочты" id="185">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр настройки электронной почты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр настройки электронной почты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грНастройкиЭлектроннойПочтыРасширеннаяПодсказка" id="186"/>
+									<ChildItems>
+										<Button name="ОткрытьНастройкиЭлектроннойПочты" id="181">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьНастройкиЭлектроннойПочты</CommandName>
+											<ExtendedTooltip name="ОткрытьНастройкиЭлектроннойПочтыРасширеннаяПодсказка" id="182"/>
+										</Button>
+										<PictureDecoration name="ДекорацияПредупреждениеПочта" id="187">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияПредупреждениеПочтаКонтекстноеМеню" id="188"/>
+											<ExtendedTooltip name="ДекорацияПредупреждениеПочтаРасширеннаяПодсказка" id="189"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="грНастройкиСВ" id="352">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр настройки СВ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр настройки СВ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грНастройкиСВРасширеннаяПодсказка" id="353"/>
+									<ChildItems>
+										<Button name="РегистрацияВСистемеВзаимодействия" id="350">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.РегистрацияВСистемеВзаимодействия</CommandName>
+											<ExtendedTooltip name="РегистрацияВСистемеВзаимодействияРасширеннаяПодсказка" id="351"/>
+										</Button>
+										<PictureDecoration name="ДекорацияПредупреждениеСВ" id="354">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияПредупреждениеСВКонтекстноеМеню" id="355"/>
+											<ExtendedTooltip name="ДекорацияПредупреждениеСВРасширеннаяПодсказка" id="356"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="198">
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="грНастройкиJIRAРасширеннаяПодсказка" id="4"/>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="199"/>
 							<ChildItems>
-								<Button name="ОткрытьНастройкиJIRA" id="1">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьНастройкиJIRA</CommandName>
-									<ExtendedTooltip name="ОткрытьНастройкиJIRAРасширеннаяПодсказка" id="2"/>
-								</Button>
-								<PictureDecoration name="ДекорацияПредупреждение" id="5">
-									<Title formatted="false">
+								<UsualGroup name="грБыстрыеФильтры" id="190">
+									<Visible>false</Visible>
+									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Декорация предупреждение</v8:content>
+											<v8:content>Быстрые фильтры</v8:content>
 										</v8:item>
 									</Title>
-									<Picture>
-										<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<ContextMenu name="ДекорацияПредупреждениеКонтекстноеМеню" id="6"/>
-									<ExtendedTooltip name="ДекорацияПредупреждениеРасширеннаяПодсказка" id="7"/>
-								</PictureDecoration>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="грНастройкиГрафика" id="172">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Настройки графика</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Гр настройки JIRA</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="грНастройкиГрафикаРасширеннаяПодсказка" id="173"/>
-							<ChildItems>
-								<Button name="ОткрытьНастройкиГрафика" id="174">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьНастройкиГрафика</CommandName>
-									<ExtendedTooltip name="ОткрытьНастройкиГрафикаРасширеннаяПодсказка" id="175"/>
-								</Button>
-								<PictureDecoration name="ДекорацияПредупреждениеГрафик" id="176">
-									<Title formatted="false">
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Декорация предупреждение</v8:content>
+											<v8:content>Гр быстрые фильтры</v8:content>
 										</v8:item>
-									</Title>
-									<Picture>
-										<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<ContextMenu name="ДекорацияПредупреждениеГрафикКонтекстноеМеню" id="177"/>
-									<ExtendedTooltip name="ДекорацияПредупреждениеГрафикРасширеннаяПодсказка" id="178"/>
-								</PictureDecoration>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="грНастройкиЭлектроннойПочты" id="185">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Гр настройки электронной почты</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Гр настройки электронной почты</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="грНастройкиЭлектроннойПочтыРасширеннаяПодсказка" id="186"/>
-							<ChildItems>
-								<Button name="ОткрытьНастройкиЭлектроннойПочты" id="181">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьНастройкиЭлектроннойПочты</CommandName>
-									<ExtendedTooltip name="ОткрытьНастройкиЭлектроннойПочтыРасширеннаяПодсказка" id="182"/>
-								</Button>
-								<PictureDecoration name="ДекорацияПредупреждениеПочта" id="187">
-									<Title formatted="false">
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="грБыстрыеФильтрыРасширеннаяПодсказка" id="191"/>
+									<ChildItems>
+										<Button name="ВРаботеУРазработки" id="192">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ВРаботеУРазработки</CommandName>
+											<ExtendedTooltip name="ВРаботеУРазработкиРасширеннаяПодсказка" id="193"/>
+										</Button>
+										<Button name="ВРаботеУТестирования" id="194">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ВРаботеУТестирования</CommandName>
+											<ExtendedTooltip name="ВРаботеУТестированияРасширеннаяПодсказка" id="195"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="грДополнительно" id="200">
+									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Декорация предупреждение</v8:content>
+											<v8:content>Дополнительно</v8:content>
 										</v8:item>
 									</Title>
-									<Picture>
-										<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<ContextMenu name="ДекорацияПредупреждениеПочтаКонтекстноеМеню" id="188"/>
-									<ExtendedTooltip name="ДекорацияПредупреждениеПочтаРасширеннаяПодсказка" id="189"/>
-								</PictureDecoration>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="грНастройкиСВ" id="352">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Гр настройки СВ</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Гр настройки СВ</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="грНастройкиСВРасширеннаяПодсказка" id="353"/>
-							<ChildItems>
-								<Button name="РегистрацияВСистемеВзаимодействия" id="350">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.РегистрацияВСистемеВзаимодействия</CommandName>
-									<ExtendedTooltip name="РегистрацияВСистемеВзаимодействияРасширеннаяПодсказка" id="351"/>
-								</Button>
-								<PictureDecoration name="ДекорацияПредупреждениеСВ" id="354">
-									<Title formatted="false">
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Декорация предупреждение</v8:content>
+											<v8:content>Гр дополнительно</v8:content>
 										</v8:item>
-									</Title>
-									<Picture>
-										<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<ContextMenu name="ДекорацияПредупреждениеСВКонтекстноеМеню" id="355"/>
-									<ExtendedTooltip name="ДекорацияПредупреждениеСВРасширеннаяПодсказка" id="356"/>
-								</PictureDecoration>
+									</ToolTip>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="грДополнительноРасширеннаяПодсказка" id="201"/>
+									<ChildItems>
+										<UsualGroup name="Группа4" id="335">
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="336"/>
+											<ChildItems>
+												<Button name="ОткрытьФормуКонфликтов" id="202">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ОткрытьФормуКонфликтов</CommandName>
+													<ExtendedTooltip name="ОткрытьФормуКонфликтовРасширеннаяПодсказка" id="203"/>
+												</Button>
+												<PictureDecoration name="ДекорацияПредупреждениеКонфликтДат" id="337">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация предупреждение</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияПредупреждениеКонфликтДатКонтекстноеМеню" id="338"/>
+													<ExtendedTooltip name="ДекорацияПредупреждениеКонфликтДатРасширеннаяПодсказка" id="339"/>
+												</PictureDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа3" id="330">
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="331"/>
+											<ChildItems>
+												<Button name="КорректировкаОценки" id="328">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.КорректировкаОценки</CommandName>
+													<ExtendedTooltip name="КорректировкаОценкиРасширеннаяПодсказка" id="329"/>
+												</Button>
+												<PictureDecoration name="ДекорацияПредупреждениеОценка" id="332">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация предупреждение</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияПредупреждениеОценкаКонтекстноеМеню" id="333"/>
+													<ExtendedTooltip name="ДекорацияПредупреждениеОценкаРасширеннаяПодсказка" id="334"/>
+												</PictureDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<Button name="ОткрытьДиаграммы" id="204">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьДиаграммы</CommandName>
+											<ExtendedTooltip name="ОткрытьДиаграммыРасширеннаяПодсказка" id="205"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="Группа1" id="198">
-					<Group>Horizontal</Group>
-					<Representation>None</Representation>
+				<UsualGroup name="грПраво" id="364">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр право</v8:content>
+						</v8:item>
+					</ToolTip>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="199"/>
+					<ExtendedTooltip name="грПравоРасширеннаяПодсказка" id="365"/>
 					<ChildItems>
-						<UsualGroup name="грБыстрыеФильтры" id="190">
-							<Visible>false</Visible>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Быстрые фильтры</v8:content>
-								</v8:item>
-							</Title>
-							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Гр быстрые фильтры</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
-							<Representation>StrongSeparation</Representation>
-							<ExtendedTooltip name="грБыстрыеФильтрыРасширеннаяПодсказка" id="191"/>
-							<ChildItems>
-								<Button name="ВРаботеУРазработки" id="192">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ВРаботеУРазработки</CommandName>
-									<ExtendedTooltip name="ВРаботеУРазработкиРасширеннаяПодсказка" id="193"/>
-								</Button>
-								<Button name="ВРаботеУТестирования" id="194">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ВРаботеУТестирования</CommandName>
-									<ExtendedTooltip name="ВРаботеУТестированияРасширеннаяПодсказка" id="195"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="грДополнительно" id="200">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Дополнительно</v8:content>
-								</v8:item>
-							</Title>
-							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Гр дополнительно</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Representation>StrongSeparation</Representation>
-							<ExtendedTooltip name="грДополнительноРасширеннаяПодсказка" id="201"/>
-							<ChildItems>
-								<UsualGroup name="Группа4" id="335">
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="336"/>
-									<ChildItems>
-										<Button name="ОткрытьФормуКонфликтов" id="202">
-											<Type>Hyperlink</Type>
-											<CommandName>Form.Command.ОткрытьФормуКонфликтов</CommandName>
-											<ExtendedTooltip name="ОткрытьФормуКонфликтовРасширеннаяПодсказка" id="203"/>
-										</Button>
-										<PictureDecoration name="ДекорацияПредупреждениеКонфликтДат" id="337">
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Декорация предупреждение</v8:content>
-												</v8:item>
-											</Title>
-											<Picture>
-												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ContextMenu name="ДекорацияПредупреждениеКонфликтДатКонтекстноеМеню" id="338"/>
-											<ExtendedTooltip name="ДекорацияПредупреждениеКонфликтДатРасширеннаяПодсказка" id="339"/>
-										</PictureDecoration>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="Группа3" id="330">
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="331"/>
-									<ChildItems>
-										<Button name="КорректировкаОценки" id="328">
-											<Type>Hyperlink</Type>
-											<CommandName>Form.Command.КорректировкаОценки</CommandName>
-											<ExtendedTooltip name="КорректировкаОценкиРасширеннаяПодсказка" id="329"/>
-										</Button>
-										<PictureDecoration name="ДекорацияПредупреждениеОценка" id="332">
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Декорация предупреждение</v8:content>
-												</v8:item>
-											</Title>
-											<Picture>
-												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ContextMenu name="ДекорацияПредупреждениеОценкаКонтекстноеМеню" id="333"/>
-											<ExtendedTooltip name="ДекорацияПредупреждениеОценкаРасширеннаяПодсказка" id="334"/>
-										</PictureDecoration>
-									</ChildItems>
-								</UsualGroup>
-								<Button name="ОткрытьДиаграммы" id="204">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьДиаграммы</CommandName>
-									<ExtendedTooltip name="ОткрытьДиаграммыРасширеннаяПодсказка" id="205"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
+						<SpreadSheetDocumentField name="СписаниеПоДням" id="366">
+							<DataPath>СписаниеПоДням</DataPath>
+							<ContextMenu name="СписаниеПоДнямКонтекстноеМеню" id="367"/>
+							<ExtendedTooltip name="СписаниеПоДнямРасширеннаяПодсказка" id="368"/>
+						</SpreadSheetDocumentField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -1195,6 +1240,17 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписаниеПоДням" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание по дням</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

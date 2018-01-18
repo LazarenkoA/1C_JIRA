@@ -236,6 +236,7 @@
 			<Report>ОтчетСписаноЗатрачено</Report>
 			<Report>СтатистинаНовыхЗадач</Report>
 			<Report>ОтчетПоКорректировкиСписаний</Report>
+			<Report>СписаниеПоСотрудникам</Report>
 			<DataProcessor>ИнструментыРазработчикаКонсольЗапросов</DataProcessor>
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>

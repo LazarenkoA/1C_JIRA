@@ -541,6 +541,9 @@
 									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ПутьККаталогуСРелизомКонтекстноеМеню" id="122"/>
 									<ExtendedTooltip name="ПутьККаталогуСРелизомРасширеннаяПодсказка" id="123"/>
+									<Events>
+										<Event name="StartChoice">ПутьККаталогуСРелизомНачалоВыбора</Event>
+									</Events>
 								</InputField>
 								<LabelField name="НаборКонстантСтрокаПодключенияКБазеПроверкиРезиза" id="136">
 									<DataPath>СтрокаПодключенияКБазеПроверкиРезиза</DataPath>
