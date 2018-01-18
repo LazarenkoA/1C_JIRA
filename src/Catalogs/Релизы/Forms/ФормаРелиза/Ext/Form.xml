@@ -614,6 +614,16 @@
 										<ExtendedTooltip name="ЗаданияУправлениеПоискомРасширеннаяПодсказка" id="105"/>
 									</SearchControlAddition>
 									<ChildItems>
+										<CheckBoxField name="ЗаданияНеВыполнять" id="186">
+											<DataPath>Задания.НеВыполнять</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗаданияНеВыполнятьКонтекстноеМеню" id="187"/>
+											<ExtendedTooltip name="ЗаданияНеВыполнятьРасширеннаяПодсказка" id="188"/>
+											<Events>
+												<Event name="OnChange">ЗаданияНеВыполнятьПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
 										<InputField name="ЗаданияКомментарий" id="106">
 											<DataPath>Задания.Комментарий</DataPath>
 											<ReadOnly>true</ReadOnly>
@@ -926,6 +936,17 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="НеВыполнять" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не выполнять</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ПутьККаталогуСРелизом" id="8">
@@ -1099,6 +1120,26 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>Шрифт</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Задания</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Задания.НеВыполнять</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#C0C0C0</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
