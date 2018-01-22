@@ -253,6 +253,7 @@
 												</Button>
 												<Button name="ИгнорироватьПредупреждения" id="139">
 													<Type>Hyperlink</Type>
+													<Visible>false</Visible>
 													<CommandName>Form.Command.ИгнорироватьПредупреждения</CommandName>
 													<ExtendedTooltip name="ИгнорироватьПредупрежденияРасширеннаяПодсказка" id="140"/>
 												</Button>
