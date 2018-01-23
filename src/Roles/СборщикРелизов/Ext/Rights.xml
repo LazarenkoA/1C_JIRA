@@ -24,10 +24,6 @@
 			<value>false</value>
 		</right>
 		<right>
-			<name>DataAdministration</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>UpdateDataBaseConfiguration</name>
 			<value>false</value>
 		</right>
