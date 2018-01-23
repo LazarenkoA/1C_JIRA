@@ -154,6 +154,7 @@
 			<CommonPicture>ВажностьСтрок</CommonPicture>
 			<SessionParameter>JIRA_Cookies</SessionParameter>
 			<Role>Администратор</Role>
+			<Role>СборщикРелизов</Role>
 			<CommonModule>БФТ_ДлительныеОперацииСервер</CommonModule>
 			<CommonModule>БФТ_ОбщиеМетодыАРМаСборокНаКлиенте</CommonModule>
 			<CommonModule>БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере</CommonModule>

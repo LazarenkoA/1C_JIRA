@@ -107,6 +107,7 @@ e54f1bfc-2c30-4158-8f07-4df242c569fb:819AB9CB0F91E478D1A63F80FA926F03:2:Reports\
 898b1109-d8d9-4e35-8fdc-a562a06ce273:5CA0B36493EE7334C8E5E660C67C89EE:2:Reports\СписаниеПоСотрудникам.xml
 a9d62b51-75e1-4d56-a0b2-38e1a8bffc41:9A916FEB0B9EBC5E0B57DC09833A6C9C:2:Reports\СтатистинаНовыхЗадач.xml
 dcfb1b84-df82-48c5-ae69-fd107a2307c0:FDB53D0711E2A0143C678DD64E40F14E:2:Roles\Администратор.xml
+72ddc45f-36fc-4d8e-88bb-6a3569ddb335:AF4989E8EC6851177D8693C6457ACBA0:2:Roles\СборщикРелизов.xml
 51d2fa7d-89b7-43a0-95fc-57196810e475:129DDDF441A6DCD376AD26C8D747AB81:2:ScheduledJobs\АнализИзмененийХранилища1С.xml
 e38f4c8d-b060-44dc-8293-0bc5bae9a84f:10CECC457FE53D876700CA4D47E86A44:2:ScheduledJobs\ВыгрузкаИзмененийИзSVN.xml
 9b65fe51-0db8-4585-a192-35a57e9ed47a:434CFE60A9912D2F99AF504E3C15DACE:2:ScheduledJobs\ОбновитьИсториюДанных.xml
@@ -260,6 +261,7 @@ ee3c76fb-601c-428a-96e9-1eb4590590b1:F0906CF372BEE4F6F9998D659E91975F:4:Reports\
 a848967f-3126-4852-8a2d-c3bbcc84ef73:B06E6D68CBF2537FDB9804B1E590EA12:4:Reports\СтатистинаНовыхЗадач\Forms\ФормаОтчета.xml
 1fe99126-0d98-445b-bb58-f0d7157b33b7:EE0558A338B989BFF6C420FB465C52D9:4:Reports\СтатистинаНовыхЗадач\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 dcfb1b84-df82-48c5-ae69-fd107a2307c0_Rights.xml:2102C25C4766F057FA61856DEB18E434:4:Roles\Администратор\Ext\Rights.xml
+72ddc45f-36fc-4d8e-88bb-6a3569ddb335_Rights.xml:88BDFDA9C049D3FD7005DE29FAE8E47C:4:Roles\СборщикРелизов\Ext\Rights.xml
 51d2fa7d-89b7-43a0-95fc-57196810e475_Schedule.xml:92671B1C06C12E01D4C7BEDFE51A09EF:4:ScheduledJobs\АнализИзмененийХранилища1С\Ext\Schedule.xml
 e38f4c8d-b060-44dc-8293-0bc5bae9a84f_Schedule.xml:8A5245865BE455248525E4D807C00D02:4:ScheduledJobs\ВыгрузкаИзмененийИзSVN\Ext\Schedule.xml
 9b65fe51-0db8-4585-a192-35a57e9ed47a_Schedule.xml:C24B7698A2A0AC31A91001A75191301F:4:ScheduledJobs\ОбновитьИсториюДанных\Ext\Schedule.xml

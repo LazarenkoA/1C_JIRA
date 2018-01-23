@@ -7,6 +7,15 @@
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.СборщикРелизов">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>Catalog.Релизы.Form.ФормаСписка</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">false</xr:Value>
 			</Visibility>
 		</Item>
 	</Column>
