@@ -517,6 +517,7 @@
 								</Table>
 								<TextDocumentField name="ReleaseNote_Детализация" id="183">
 									<DataPath>ReleaseNote_Детализация</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<ContextMenu name="ReleaseNote_ДетализацияКонтекстноеМеню" id="184"/>
 									<ExtendedTooltip name="ReleaseNote_ДетализацияРасширеннаяПодсказка" id="185"/>
 								</TextDocumentField>

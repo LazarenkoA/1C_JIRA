@@ -318,7 +318,7 @@
 			<Explanation/>
 			<CreateOnInput>Use</CreateOnInput>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-			<DataHistory>DontUse</DataHistory>
+			<DataHistory>Use</DataHistory>
 		</Properties>
 		<ChildObjects>
 			<Attribute uuid="f0bca508-db8f-460f-a844-321b9a70a37a">

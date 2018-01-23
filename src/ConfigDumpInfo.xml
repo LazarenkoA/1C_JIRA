@@ -117,7 +117,7 @@
 		<Metadata name="Catalog.РФК" id="5ff9e8b8-4631-44e8-835d-2dfa9423046b" configVersion="ec56d7d7f9c47641a14f029da98ade9c00000000">
 			<Metadata name="Catalog.РФК.Attribute.Ставка" id="fa53c6ba-2ab0-4d83-8aeb-5b9a44a88435"/>
 		</Metadata>
-		<Metadata name="Catalog.Релизы" id="10f1768a-5779-4327-afb4-c1ead1e62f7d" configVersion="1008f76c9aa10c458d1d0cb9cebb3f0f00000000">
+		<Metadata name="Catalog.Релизы" id="10f1768a-5779-4327-afb4-c1ead1e62f7d" configVersion="2d15e982d1ba334790668a6a5cfe441200000000">
 			<Metadata name="Catalog.Релизы.Attribute.ДатаНачала" id="4182d4d3-4dd7-40ab-9e80-df8feace62df"/>
 			<Metadata name="Catalog.Релизы.Attribute.РелизСобран" id="65ea2e54-b8b8-4b5b-9f97-9ba13b70ab60"/>
 			<Metadata name="Catalog.Релизы.Attribute.РелизВыпущен" id="ee2f9b7b-8320-419b-bdec-7f68d1dc2642"/>
@@ -129,8 +129,8 @@
 		<Metadata name="Catalog.Релизы.Form.ФормаЗаполненияГрафика.Form" id="4f7d5a75-366d-4b34-ab8a-0ae59330a55c.0" configVersion="d0a67bff4b9c744a9bffd8be123b7dcf00000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаПатча" id="abc3bc78-48ed-4c44-aabe-0059a60455d7" configVersion="35b22eeefc26224e86ca3407e7659cbc00000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаПатча.Form" id="abc3bc78-48ed-4c44-aabe-0059a60455d7.0" configVersion="e27351f5b3c55e438a09eb548f70edea00000000"/>
-		<Metadata name="Catalog.Релизы.Form.ФормаРелиза" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5" configVersion="d06e1579636a1e4090b57e18be31d84e00000000"/>
-		<Metadata name="Catalog.Релизы.Form.ФормаРелиза.Form" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5.0" configVersion="e768b8ad6c5fe547b142c48e84b9982e00000000"/>
+		<Metadata name="Catalog.Релизы.Form.ФормаРелиза" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5" configVersion="dc9bfae68ed4a34a98057f814c23832b00000000"/>
+		<Metadata name="Catalog.Релизы.Form.ФормаРелиза.Form" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5.0" configVersion="3c68d1440f17ea43957119db33e4c71000000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6" configVersion="62e978897f9cf34d9d53a0882eb3d8cf00000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка.Form" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6.0" configVersion="05e9659b816e2e439188e398c32c51b100000000"/>
 		<Metadata name="Catalog.Релизы.ManagerModule" id="10f1768a-5779-4327-afb4-c1ead1e62f7d.3" configVersion="0a81a24c65a1094a82a1e7766e58671700000000"/>
