@@ -547,6 +547,129 @@
 										<Event name="StartChoice">ПутьККаталогуСРелизомНачалоВыбора</Event>
 									</Events>
 								</InputField>
+								<UsualGroup name="грАвтоОбновление" id="189">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр авто обновление</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр авто обновление</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грАвтоОбновлениеРасширеннаяПодсказка" id="190"/>
+									<ChildItems>
+										<CheckBoxField name="АвтоматическиОбновлятьБазы" id="191">
+											<DataPath>АвтоматическиОбновлятьБазы</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АвтоматическиОбновлятьБазыКонтекстноеМеню" id="192"/>
+											<ExtendedTooltip name="АвтоматическиОбновлятьБазыРасширеннаяПодсказка" id="193"/>
+											<Events>
+												<Event name="OnChange">АвтоматическиОбновлятьБазыПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="Группа5" id="213">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Базы для обновления</v8:content>
+												</v8:item>
+											</Title>
+											<Behavior>Collapsible</Behavior>
+											<Collapsed>true</Collapsed>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="214"/>
+											<ChildItems>
+												<Table name="БазыДляОбновления" id="194">
+													<ChangeRowOrder>false</ChangeRowOrder>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>Объект.БазыДляОбновления</DataPath>
+													<CommandSet>
+														<ExcludedCommand>CancelSearch</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>Find</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>OutputList</ExcludedCommand>
+														<ExcludedCommand>SelectAll</ExcludedCommand>
+														<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+														<ExcludedCommand>SortListAsc</ExcludedCommand>
+														<ExcludedCommand>SortListDesc</ExcludedCommand>
+													</CommandSet>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="БазыДляОбновленияКонтекстноеМеню" id="195"/>
+													<AutoCommandBar name="БазыДляОбновленияКоманднаяПанель" id="196"/>
+													<ExtendedTooltip name="БазыДляОбновленияРасширеннаяПодсказка" id="197"/>
+													<SearchStringAddition name="БазыДляОбновленияСтрокаПоиска" id="198">
+														<AdditionSource>
+															<Item>БазыДляОбновления</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="БазыДляОбновленияСтрокаПоискаКонтекстноеМеню" id="199"/>
+														<ExtendedTooltip name="БазыДляОбновленияСтрокаПоискаРасширеннаяПодсказка" id="200"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="БазыДляОбновленияСостояниеПросмотра" id="201">
+														<AdditionSource>
+															<Item>БазыДляОбновления</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="БазыДляОбновленияСостояниеПросмотраКонтекстноеМеню" id="202"/>
+														<ExtendedTooltip name="БазыДляОбновленияСостояниеПросмотраРасширеннаяПодсказка" id="203"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="БазыДляОбновленияУправлениеПоиском" id="204">
+														<AdditionSource>
+															<Item>БазыДляОбновления</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="БазыДляОбновленияУправлениеПоискомКонтекстноеМеню" id="205"/>
+														<ExtendedTooltip name="БазыДляОбновленияУправлениеПоискомРасширеннаяПодсказка" id="206"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="OnChange">БазыДляОбновленияПриИзменении</Event>
+													</Events>
+													<ChildItems>
+														<LabelField name="БазыДляОбновленияНомерСтроки" id="207">
+															<DataPath>Объект.БазыДляОбновления.LineNumber</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="БазыДляОбновленияНомерСтрокиКонтекстноеМеню" id="208"/>
+															<ExtendedTooltip name="БазыДляОбновленияНомерСтрокиРасширеннаяПодсказка" id="209"/>
+														</LabelField>
+														<InputField name="БазыДляОбновленияСтрокаПодключения" id="210">
+															<DataPath>Объект.БазыДляОбновления.СтрокаПодключения</DataPath>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пример строки подкключения "ServerName\BaseName@User:Pass" или "ServerName:Port\BaseName@User:Pass"</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+															<EditMode>EnterOnInput</EditMode>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ServerName\BaseName@User:Pass</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="БазыДляОбновленияСтрокаПодключенияКонтекстноеМеню" id="211"/>
+															<ExtendedTooltip name="БазыДляОбновленияСтрокаПодключенияРасширеннаяПодсказка" id="212"/>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
 								<LabelField name="НаборКонстантСтрокаПодключенияКБазеПроверкиРезиза" id="136">
 									<DataPath>СтрокаПодключенияКБазеПроверкиРезиза</DataPath>
 									<Title>
@@ -1086,6 +1209,17 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоматическиОбновлятьБазы" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически обновлять базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
