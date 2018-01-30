@@ -18,7 +18,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетСписаноЗатрачено</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СтатистинаНовыхЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СписаниеПоСотрудникам</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Report.ДиаграммаПоБюджетам</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

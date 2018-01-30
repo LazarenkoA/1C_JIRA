@@ -63,7 +63,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПарольБазыПроверкиРезиза</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.КоличествоДнейДляПроверкиРелиза</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВажностьСтрок</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОграничениеПоБюджетам</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

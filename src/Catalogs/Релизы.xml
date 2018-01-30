@@ -560,7 +560,6 @@
 			<Form>ФормаПатча</Form>
 			<Form>ФормаВыбора</Form>
 			<Form>ФормаЗаполненияГрафика</Form>
-			<Form>ФормаРаспределенияЗадачПоВерсиям</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
