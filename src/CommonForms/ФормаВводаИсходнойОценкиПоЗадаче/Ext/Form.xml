@@ -492,7 +492,6 @@
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="ОценкаРазработка" id="2">
 			<Title>
@@ -677,7 +676,6 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.Релизы</v8:Type>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="Задача" id="17">
 			<Title>
