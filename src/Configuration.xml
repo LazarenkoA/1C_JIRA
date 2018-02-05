@@ -219,18 +219,19 @@
 			<CommonForm>ФормаРазницаОценкиОсновнойИСабтасков</CommonForm>
 			<CommonForm>ФормаСистемаВзаимодействия</CommonForm>
 			<CommonForm>НастройкиПодключенияКХранилищу</CommonForm>
-			<Catalog>ТипыЗадач</Catalog>
-			<Catalog>Пользователи</Catalog>
-			<Catalog>Приоритеты</Catalog>
-			<Catalog>ШаблоныУведомлений</Catalog>
-			<Catalog>БюджетыПУ</Catalog>
-			<Catalog>Релизы</Catalog>
 			<Catalog>БФТ_МетодыРаботыСРепозиторием</Catalog>
 			<Catalog>БФТ_НаборыИзменений</Catalog>
 			<Catalog>БФТ_НастройкаПодключенияКРепозиторию</Catalog>
 			<Catalog>БФТ_Сборки</Catalog>
+			<Catalog>БюджетыПУ</Catalog>
 			<Catalog>Задачи</Catalog>
+			<Catalog>ОграничениеПоБюджетам</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>Приоритеты</Catalog>
+			<Catalog>Релизы</Catalog>
 			<Catalog>РФК</Catalog>
+			<Catalog>ТипыЗадач</Catalog>
+			<Catalog>ШаблоныУведомлений</Catalog>
 			<Enum>БФТ_РежимВводаПараметра</Enum>
 			<Enum>БФТ_СтатусИзмененийРепозитория</Enum>
 			<Enum>БФТ_ТипИзменений</Enum>
@@ -242,13 +243,13 @@
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаПоставляемыхДанных</DataProcessor>
-			<InformationRegister>СписаниеВремени</InformationRegister>
-			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>
-			<InformationRegister>ЖурналОтправкиУведомлений</InformationRegister>
-			<InformationRegister>ГрафикРаботы</InformationRegister>
 			<InformationRegister>БФТ_ИзмененияРепозитория</InformationRegister>
 			<InformationRegister>БФТ_ОчередьВыгрузкиРевизийКонфигурации1С</InformationRegister>
 			<InformationRegister>БФТ_ХранилищеМакетов</InformationRegister>
+			<InformationRegister>ГрафикРаботы</InformationRegister>
+			<InformationRegister>ЖурналОтправкиУведомлений</InformationRegister>
+			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>
+			<InformationRegister>СписаниеВремени</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
