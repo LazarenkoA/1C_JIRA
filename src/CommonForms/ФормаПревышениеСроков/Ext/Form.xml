@@ -7,151 +7,271 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<Table name="ДеревоЗадачПревышениеСрока" id="1">
-			<Representation>Tree</Representation>
-			<ReadOnly>true</ReadOnly>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>ДеревоЗадачПревышениеСрока</DataPath>
-			<RowPictureDataPath>ДеревоЗадачПревышениеСрока.Картинка</RowPictureDataPath>
-			<RowsPicture>
-				<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</RowsPicture>
-			<CommandSet>
-				<ExcludedCommand>Add</ExcludedCommand>
-				<ExcludedCommand>Change</ExcludedCommand>
-				<ExcludedCommand>Copy</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
-				<ExcludedCommand>EndEdit</ExcludedCommand>
-				<ExcludedCommand>HierarchicalList</ExcludedCommand>
-				<ExcludedCommand>List</ExcludedCommand>
-				<ExcludedCommand>MoveDown</ExcludedCommand>
-				<ExcludedCommand>MoveUp</ExcludedCommand>
-				<ExcludedCommand>OutputList</ExcludedCommand>
-				<ExcludedCommand>SelectAll</ExcludedCommand>
-				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-				<ExcludedCommand>SortListAsc</ExcludedCommand>
-				<ExcludedCommand>SortListDesc</ExcludedCommand>
-				<ExcludedCommand>Tree</ExcludedCommand>
-			</CommandSet>
-			<ContextMenu name="ДеревоЗадачПревышениеСрокаКонтекстноеМеню" id="2"/>
-			<AutoCommandBar name="ДеревоЗадачПревышениеСрокаКоманднаяПанель" id="3">
-				<ChildItems>
-					<Button name="ДеревоЗадачПревышениеСрокаСохранить" id="35">
-						<Type>CommandBarButton</Type>
-						<DefaultButton>true</DefaultButton>
-						<DefaultItem>true</DefaultItem>
-						<CommandName>Form.Command.Сохранить</CommandName>
-						<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСохранитьРасширеннаяПодсказка" id="36"/>
-					</Button>
-					<Button name="ДеревоЗадачПревышениеСрокаЗакрыть" id="37">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.Закрыть</CommandName>
-						<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаЗакрытьРасширеннаяПодсказка" id="38"/>
-					</Button>
-					<Button name="ДеревоЗадачПревышениеСрокаАвтоИсправления" id="44">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.АвтоИсправления</CommandName>
-						<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаАвтоИсправленияРасширеннаяПодсказка" id="45"/>
-					</Button>
-					<Button name="ДеревоЗадачПревышениеСрокаПоменятьДатуВВыделеныйСтроках" id="39">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ПоменятьДатуВВыделенныхСтроках</CommandName>
-						<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаПоменятьДатуВВыделеныйСтрокахРасширеннаяПодсказка" id="40"/>
-					</Button>
-				</ChildItems>
-			</AutoCommandBar>
-			<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаРасширеннаяПодсказка" id="4"/>
-			<SearchStringAddition name="ДеревоЗадачПревышениеСрокаСтрокаПоиска" id="5">
-				<AdditionSource>
-					<Item>ДеревоЗадачПревышениеСрока</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ДеревоЗадачПревышениеСрокаСтрокаПоискаКонтекстноеМеню" id="6"/>
-				<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ДеревоЗадачПревышениеСрокаСостояниеПросмотра" id="8">
-				<AdditionSource>
-					<Item>ДеревоЗадачПревышениеСрока</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ДеревоЗадачПревышениеСрокаСостояниеПросмотраКонтекстноеМеню" id="9"/>
-				<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ДеревоЗадачПревышениеСрокаУправлениеПоиском" id="11">
-				<AdditionSource>
-					<Item>ДеревоЗадачПревышениеСрока</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ДеревоЗадачПревышениеСрокаУправлениеПоискомКонтекстноеМеню" id="12"/>
-				<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="Selection">ДеревоЗадачПревышениеСрокаВыбор</Event>
-				<Event name="OnChange">ДеревоЗадачПревышениеСрокаПриИзменении</Event>
-			</Events>
+		<Pages name="Вкладки" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вкладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вкладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ВкладкиРасширеннаяПодсказка" id="50"/>
 			<ChildItems>
-				<InputField name="ДеревоЗадачПревышениеСрокаИсполнитель" id="46">
-					<DataPath>ДеревоЗадачПревышениеСрока.Исполнитель</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоЗадачПревышениеСрокаИсполнительКонтекстноеМеню" id="47"/>
-					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаИсполнительРасширеннаяПодсказка" id="48"/>
-				</InputField>
-				<InputField name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершения" id="20">
-					<DataPath>ДеревоЗадачПревышениеСрока.ПлановаяДатаЗавершения</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияРасширеннаяПодсказка" id="22"/>
-					<Events>
-						<Event name="OnChange">ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ДеревоЗадачПревышениеСрокаОценкаВРабДнях" id="26">
-					<DataPath>ДеревоЗадачПревышениеСрока.ОценкаВРабДнях</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоЗадачПревышениеСрокаОценкаВРабДняхКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаОценкаВРабДняхРасширеннаяПодсказка" id="28"/>
-				</InputField>
-				<InputField name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДат" id="29">
-					<DataPath>ДеревоЗадачПревышениеСрока.РазностьКалендарныхДат</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДатКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДатРасширеннаяПодсказка" id="31"/>
-				</InputField>
-				<InputField name="ДеревоЗадачПревышениеСрокаНомер" id="14">
-					<DataPath>ДеревоЗадачПревышениеСрока.Номер</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоЗадачПревышениеСрокаНомерКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаНомерРасширеннаяПодсказка" id="16"/>
-				</InputField>
-				<InputField name="ДеревоЗадачПревышениеСрокаЗаголовок" id="17">
-					<DataPath>ДеревоЗадачПревышениеСрока.Заголовок</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоЗадачПревышениеСрокаЗаголовокКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаЗаголовокРасширеннаяПодсказка" id="19"/>
-				</InputField>
-				<InputField name="ДеревоЗадачПревышениеСрокаАвтор" id="41">
-					<DataPath>ДеревоЗадачПревышениеСрока.Автор</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоЗадачПревышениеСрокаАвторКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаАвторРасширеннаяПодсказка" id="43"/>
-				</InputField>
+				<Page name="грПоДатам" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Превышение датам</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр по датам</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грПоДатамРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Table name="ДеревоЗадачПревышениеСрока" id="1">
+							<Representation>Tree</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоЗадачПревышениеСрока</DataPath>
+							<RowPictureDataPath>ДеревоЗадачПревышениеСрока.Картинка</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</RowsPicture>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="ДеревоЗадачПревышениеСрокаКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ДеревоЗадачПревышениеСрокаКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="ДеревоЗадачПревышениеСрокаСохранить" id="35">
+										<Type>CommandBarButton</Type>
+										<DefaultButton>true</DefaultButton>
+										<DefaultItem>true</DefaultItem>
+										<CommandName>Form.Command.Сохранить</CommandName>
+										<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСохранитьРасширеннаяПодсказка" id="36"/>
+									</Button>
+									<Button name="ДеревоЗадачПревышениеСрокаЗакрыть" id="37">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Закрыть</CommandName>
+										<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаЗакрытьРасширеннаяПодсказка" id="38"/>
+									</Button>
+									<Button name="ДеревоЗадачПревышениеСрокаАвтоИсправления" id="44">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.АвтоИсправления</CommandName>
+										<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаАвтоИсправленияРасширеннаяПодсказка" id="45"/>
+									</Button>
+									<Button name="ДеревоЗадачПревышениеСрокаПоменятьДатуВВыделеныйСтроках" id="39">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПоменятьДатуВВыделенныхСтроках</CommandName>
+										<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаПоменятьДатуВВыделеныйСтрокахРасширеннаяПодсказка" id="40"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ДеревоЗадачПревышениеСрокаСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ДеревоЗадачПревышениеСрока</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЗадачПревышениеСрокаСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоЗадачПревышениеСрокаСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ДеревоЗадачПревышениеСрока</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЗадачПревышениеСрокаСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоЗадачПревышениеСрокаУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ДеревоЗадачПревышениеСрока</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЗадачПревышениеСрокаУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДеревоЗадачПревышениеСрокаВыбор</Event>
+								<Event name="OnChange">ДеревоЗадачПревышениеСрокаПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ДеревоЗадачПревышениеСрокаИсполнитель" id="46">
+									<DataPath>ДеревоЗадачПревышениеСрока.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеСрокаИсполнительКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаИсполнительРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершения" id="20">
+									<DataPath>ДеревоЗадачПревышениеСрока.ПлановаяДатаЗавершения</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияРасширеннаяПодсказка" id="22"/>
+									<Events>
+										<Event name="OnChange">ДеревоЗадачПревышениеСрокаПлановаяДатаЗавершенияПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеСрокаОценкаВРабДнях" id="26">
+									<DataPath>ДеревоЗадачПревышениеСрока.ОценкаВРабДнях</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеСрокаОценкаВРабДняхКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаОценкаВРабДняхРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДат" id="29">
+									<DataPath>ДеревоЗадачПревышениеСрока.РазностьКалендарныхДат</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДатКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаРазностьКалендарныхДатРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеСрокаНомер" id="14">
+									<DataPath>ДеревоЗадачПревышениеСрока.Номер</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеСрокаНомерКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаНомерРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеСрокаЗаголовок" id="17">
+									<DataPath>ДеревоЗадачПревышениеСрока.Заголовок</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеСрокаЗаголовокКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаЗаголовокРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеСрокаАвтор" id="41">
+									<DataPath>ДеревоЗадачПревышениеСрока.Автор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеСрокаАвторКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеСрокаАвторРасширеннаяПодсказка" id="43"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<TextDocumentField name="Лог" id="32">
+							<DataPath>Лог</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ЛогКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="34"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="грПоВерсиям" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Превышение по версиям</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр по версиям</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грПоВерсиямРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<Table name="ДеревоЗадачПревышениеПоБюджетамВВерсии" id="55">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ЗадачиПревышениеПоБюджетамВВерсии</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииКонтекстноеМеню" id="56"/>
+							<AutoCommandBar name="ДеревоЗадачПревышениеПоБюджетамВВерсииКоманднаяПанель" id="57"/>
+							<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииРасширеннаяПодсказка" id="58"/>
+							<SearchStringAddition name="ДеревоЗадачПревышениеПоБюджетамВВерсииСтрокаПоиска" id="59">
+								<AdditionSource>
+									<Item>ДеревоЗадачПревышениеПоБюджетамВВерсии</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииСтрокаПоискаКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоЗадачПревышениеПоБюджетамВВерсииСостояниеПросмотра" id="62">
+								<AdditionSource>
+									<Item>ДеревоЗадачПревышениеПоБюджетамВВерсии</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииСостояниеПросмотраКонтекстноеМеню" id="63"/>
+								<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоЗадачПревышениеПоБюджетамВВерсииУправлениеПоиском" id="65">
+								<AdditionSource>
+									<Item>ДеревоЗадачПревышениеПоБюджетамВВерсии</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииУправлениеПоискомКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ДеревоЗадачПревышениеПоБюджетамВВерсииВерсия" id="80">
+									<DataPath>ЗадачиПревышениеПоБюджетамВВерсии.Версия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииВерсияКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииВерсияРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеПоБюджетамВВерсииБюджет" id="71">
+									<DataPath>ЗадачиПревышениеПоБюджетамВВерсии.Бюджет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииБюджетКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииБюджетРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеПоБюджетамВВерсииРФК" id="83">
+									<DataPath>ЗадачиПревышениеПоБюджетамВВерсии.РФК</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииРФККонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииРФКРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеПоБюджетамВВерсииЗаложеноВБюджет" id="74">
+									<DataPath>ЗадачиПревышениеПоБюджетамВВерсии.ЗаложеноВБюджет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииЗаложеноВБюджетКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииЗаложеноВБюджетРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="ДеревоЗадачПревышениеПоБюджетамВВерсииФактЧасов" id="77">
+									<DataPath>ЗадачиПревышениеПоБюджетамВВерсии.ФактЧасов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоЗадачПревышениеПоБюджетамВВерсииФактЧасовКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ДеревоЗадачПревышениеПоБюджетамВВерсииФактЧасовРасширеннаяПодсказка" id="79"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</Table>
-		<TextDocumentField name="Лог" id="32">
-			<DataPath>Лог</DataPath>
-			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="ЛогКонтекстноеМеню" id="33"/>
-			<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="34"/>
-		</TextDocumentField>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="ДеревоЗадачПревышениеСрока" id="1">
@@ -325,6 +445,84 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиПревышениеПоБюджетамВВерсии" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи превышение по бюджетам в версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Бюджет" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бюджет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.БюджетыПУ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗаложеноВБюджет" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заложено в бюджет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФактЧасов" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Факт часов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Версия" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Релизы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РФК" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РФК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РФК</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
