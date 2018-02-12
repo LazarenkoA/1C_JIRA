@@ -191,6 +191,9 @@
 							<DataPath>Релиз</DataPath>
 							<ContextMenu name="РелизКонтекстноеМеню" id="114"/>
 							<ExtendedTooltip name="РелизРасширеннаяПодсказка" id="115"/>
+							<Events>
+								<Event name="OnChange">РелизПриИзменении</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>

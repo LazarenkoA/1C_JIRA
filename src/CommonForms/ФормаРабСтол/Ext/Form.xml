@@ -766,6 +766,11 @@
 						<CommandName>Form.Command.ОткрытьСписокВJIRA_Новые</CommandName>
 						<ExtendedTooltip name="ДеревоЗадачНовыеОткрытьСписокВJIRA_НовыеРасширеннаяПодсказка" id="264"/>
 					</Button>
+					<Button name="НовыеЗадачиРаспределитьЗадачиПоВерсиям" id="369">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РаспределитьЗадачиПоВерсиям</CommandName>
+						<ExtendedTooltip name="НовыеЗадачиРаспределитьЗадачиПоВерсиямРасширеннаяПодсказка" id="370"/>
+					</Button>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="НовыеЗадачиРасширеннаяПодсказка" id="274"/>
@@ -1551,6 +1556,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>РегистрацияВСистемеВзаимодействия</Action>
+		</Command>
+		<Command name="РаспределитьЗадачиПоВерсиям" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить задачи по версиям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить задачи по версиям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РаспределитьЗадачиПоВерсиям</Action>
 		</Command>
 	</Commands>
 </Form>
