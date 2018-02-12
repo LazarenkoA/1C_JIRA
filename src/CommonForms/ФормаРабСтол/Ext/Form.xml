@@ -549,6 +549,7 @@
 							<ReadOnly>true</ReadOnly>
 							<SelectionMode>SingleRow</SelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ДеревоЗадачВРаботе</DataPath>
@@ -1111,6 +1112,7 @@
 			<UseAlways>
 				<Field>~НовыеЗадачи.Бюджет</Field>
 				<Field>НовыеЗадачи.БюджетПУ</Field>
+				<Field>НовыеЗадачи.Версия</Field>
 				<Field>НовыеЗадачи.ДатуЗавершенияУстановилАвтор</Field>
 				<Field>НовыеЗадачи.Картинка</Field>
 				<Field>НовыеЗадачи.ПлановаяДатаЗавершения</Field>
@@ -1120,6 +1122,18 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
+	ЗадачиВерсии.Ссылка КАК Ссылка,
+	МАКСИМУМ(ЗадачиВерсии.Версия.ДатаНачала) КАК ВерсияДатаНачала
+ПОМЕСТИТЬ ЗадачиВерсии
+ИЗ
+	Справочник.Задачи.Версии КАК ЗадачиВерсии
+
+СГРУППИРОВАТЬ ПО
+	ЗадачиВерсии.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
 	Задачи.Код КАК Номер,
 	Задачи.Наименование КАК Заголовок,
 	Задачи.Тип КАК Тип,
@@ -1130,9 +1144,15 @@
 	Задачи.Исполнитель КАК Исполнитель,
 	Задачи.Бюджет КАК БюджетПУ,
 	Задачи.ДатуЗавершенияУстановилАвтор КАК ДатуЗавершенияУстановилАвтор,
-	Задачи.ПлановаяДатаЗавершения КАК ПлановаяДатаЗавершения
+	Задачи.ПлановаяДатаЗавершения КАК ПлановаяДатаЗавершения,
+	ЗадачиВерсииТЧ.Версия КАК Версия
 ИЗ
 	Справочник.Задачи КАК Задачи
+		ЛЕВОЕ СОЕДИНЕНИЕ ЗадачиВерсии КАК ЗадачиВерсии
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Задачи.Версии КАК ЗадачиВерсииТЧ
+			ПО ЗадачиВерсии.Ссылка = ЗадачиВерсииТЧ.Ссылка
+				И ЗадачиВерсии.ВерсияДатаНачала = ЗадачиВерсииТЧ.Версия.ДатаНачала
+		ПО (ЗадачиВерсии.Ссылка = Задачи.Ссылка)
 ГДЕ
 	Задачи.Статус = "Новый"
 	И НЕ Задачи.ПометкаУдаления
@@ -1162,13 +1182,24 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Тип</dcsset:field>
+								<dcsset:field>Версия</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Тип</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+						</dcsset:item>
 					</dcsset:item>
 					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
