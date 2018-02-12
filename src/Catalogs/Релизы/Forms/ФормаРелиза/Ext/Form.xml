@@ -794,6 +794,13 @@
 				</Pages>
 			</ChildItems>
 		</UsualGroup>
+		<CheckBoxField name="РелизСобран" id="218">
+			<DataPath>Объект.РелизСобран</DataPath>
+			<Visible>false</Visible>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РелизСобранКонтекстноеМеню" id="219"/>
+			<ExtendedTooltip name="РелизСобранРасширеннаяПодсказка" id="220"/>
+		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

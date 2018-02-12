@@ -159,6 +159,7 @@ ae9e2429-001d-430e-b662-894232456d18:D1F6BB5C0BC832F5674918F739980E07:4:Catalogs
 8d33f080-07d7-481c-8f2e-b3e9b9c19244:3E603CB988F3012B7DB5A366CFC5ED29:4:Catalogs\Релизы\Forms\ФормаВыбора.xml
 4f7d5a75-366d-4b34-ab8a-0ae59330a55c:8D7D77F21AC1816A2446640F1E7F6210:4:Catalogs\Релизы\Forms\ФормаЗаполненияГрафика.xml
 abc3bc78-48ed-4c44-aabe-0059a60455d7:C98355A8FD11E5F009FB1408D7355401:4:Catalogs\Релизы\Forms\ФормаПатча.xml
+23ae4f00-d24a-42fb-8665-2c58b676d7b7:733CECC67934792F4AB939E3AF61B76D:4:Catalogs\Релизы\Forms\ФормаРаспределенияЗадачПоВерсиям.xml
 89ea4664-86cb-4406-bf5c-cb5ff30a58c5:8DBA5798BAC08CEFF1EAE163C054F127:4:Catalogs\Релизы\Forms\ФормаРелиза.xml
 2bb302ad-c207-4e9c-b687-6de8e36e24b6:9799FFDCCCD01C637C4A7BE22F623511:4:Catalogs\Релизы\Forms\ФормаСписка.xml
 68d3c970-41bb-4d7e-943c-9ee23dbedfcc_ManagerModule.bsl:FD874C46ACA9A0665113BEDCDDB3739F:4:Catalogs\ТипыЗадач\Ext\ManagerModule.bsl
@@ -329,6 +330,7 @@ ae9e2429-001d-430e-b662-894232456d18_Form.xml:8121325E3C49F2B45AFC1F16CA75298C:6
 8d33f080-07d7-481c-8f2e-b3e9b9c19244_Form.xml:473EBF279203040C9EB9E6668BC45F9F:6:Catalogs\Релизы\Forms\ФормаВыбора\Ext\Form.xml
 4f7d5a75-366d-4b34-ab8a-0ae59330a55c_Form.xml:B34F6DF261713783385453EAE87B5840:6:Catalogs\Релизы\Forms\ФормаЗаполненияГрафика\Ext\Form.xml
 abc3bc78-48ed-4c44-aabe-0059a60455d7_Form.xml:9A0070AB70165697CA165CF626AACDBB:6:Catalogs\Релизы\Forms\ФормаПатча\Ext\Form.xml
+23ae4f00-d24a-42fb-8665-2c58b676d7b7_Form.xml:8303EB56938F8032E214ACF213A1B49D:6:Catalogs\Релизы\Forms\ФормаРаспределенияЗадачПоВерсиям\Ext\Form.xml
 89ea4664-86cb-4406-bf5c-cb5ff30a58c5_Form.xml:708E4284AB8FE69B51E014F1CB3064FB:6:Catalogs\Релизы\Forms\ФормаРелиза\Ext\Form.xml
 2bb302ad-c207-4e9c-b687-6de8e36e24b6_Form.xml:93F962DB25C0479E456DA10A6B25CC8F:6:Catalogs\Релизы\Forms\ФормаСписка\Ext\Form.xml
 94472209-3ba3-4cad-964c-b87e22c816a6_Form.xml:67C7115BBBD521D664CF2C2FA7C6044F:6:Catalogs\ШаблоныУведомлений\Forms\ФормаСписка\Ext\Form.xml
@@ -385,6 +387,7 @@ ae9e2429-001d-430e-b662-894232456d18_Form\Module.bsl:3C545DC6FA6E81DA72DDBBBC1F2
 8d33f080-07d7-481c-8f2e-b3e9b9c19244_Form\Module.bsl:BF739D5A0EF0AFD80C5BF615FDB15B45:7:Catalogs\Релизы\Forms\ФормаВыбора\Ext\Form\Module.bsl
 4f7d5a75-366d-4b34-ab8a-0ae59330a55c_Form\Module.bsl:0CAE4F0685DD473DDA6F090826D77AE2:7:Catalogs\Релизы\Forms\ФормаЗаполненияГрафика\Ext\Form\Module.bsl
 abc3bc78-48ed-4c44-aabe-0059a60455d7_Form\Module.bsl:645788D5D71F2CEFBC1D36DA04622334:7:Catalogs\Релизы\Forms\ФормаПатча\Ext\Form\Module.bsl
+23ae4f00-d24a-42fb-8665-2c58b676d7b7_Form\Module.bsl:C18D7AFF95F2A2F8A3BC14CD1E09E100:7:Catalogs\Релизы\Forms\ФормаРаспределенияЗадачПоВерсиям\Ext\Form\Module.bsl
 89ea4664-86cb-4406-bf5c-cb5ff30a58c5_Form\Module.bsl:403C0BAA2328F696BD72DB72FEB94C20:7:Catalogs\Релизы\Forms\ФормаРелиза\Ext\Form\Module.bsl
 2bb302ad-c207-4e9c-b687-6de8e36e24b6_Form\Module.bsl:49185D18FF65B45C077EC6E040B29F9D:7:Catalogs\Релизы\Forms\ФормаСписка\Ext\Form\Module.bsl
 21f5bea6-79da-47cd-8c8b-f3ba9c60e64d_Form\Module.bsl:79A3108BA43A03AC87AFAB5D5266A1C5:7:Catalogs\ШаблоныУведомлений\Forms\ФормаЭлемента\Ext\Form\Module.bsl
