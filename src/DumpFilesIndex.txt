@@ -15,6 +15,7 @@ be344122-af54-45af-a429-a0622a916dfa:557F40CCFE360C6FECC05A7D265DF2BF:2:Catalogs
 2df879cf-112f-413d-81f6-16a29c5004d7:498F590F0FB8C0F79A5080D1587AFC03:2:Catalogs\ШаблоныУведомлений.xml
 2a626a3a-4040-4f78-bf48-c61d3716277d:9A502D3E3BD4726CFDD788A79E86CE0A:2:CommonCommands\ОткрытьНастройкиПодключенияКХранилищу.xml
 0113348e-b0a3-4a90-8b62-cad58e41f91e:3BA6849A912350E46B16A698F33AF9C0:2:CommonForms\НастройкиПодключенияКХранилищу.xml
+106bb8b6-f6f8-4687-aa22-4fd44415f6cd:A716FA50F9BD4674786D478252D59317:2:CommonForms\ФормаАнализДополнительныхКоммитов.xml
 c84ef3b5-7448-41a2-a91f-a082ec9bf615:ECB64BC650DD3B110E0E2C599EFEA776:2:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче.xml
 8b67967d-2cde-464a-9573-da7016d6cc6a:E3F45CFF9BCC05B293240345C3C93E9A:2:CommonForms\ФормаДиаграмм.xml
 626a74fe-ca34-4bd1-a865-e8e311a6fc45:EE8B2AA814145E0D0CE29CCBF2840461:2:CommonForms\ФормаНастроекJIRA.xml
@@ -103,6 +104,7 @@ ba565b56-f770-4c08-a923-0bb69b68701d:A15C274477A0948F0FF76B9B00DFFA6C:2:Informat
 a83a9369-33f4-485b-8314-cb13ab37183e:17C666A456D4935EC4CDFDA7DC5D5DF8:2:InformationRegisters\ИсторияИзмененияСтатусов.xml
 593b750c-049c-474a-ad02-525c2ce9dfde:B2949DB4FB732A1F3A4402C8F5BBA450:2:InformationRegisters\СписаниеВремени.xml
 daabf7c0-df24-49a3-9b2a-e703407ae987:EFF946AA8AEEC303E5F7E565EA09C643:2:Languages\Русский.xml
+221c8542-42f4-4dcc-b0ea-2703840db4a1:F57489126DD5BBE8130F4D5323F5803F:2:Reports\ДиаграммаПоБюджетам.xml
 f1a9fac8-b58c-42bc-a000-8e1530db2b96:0923DBB6F5F6AE77FD03A845E1C5C07D:2:Reports\ОтчетПоКорректировкиСписаний.xml
 e54f1bfc-2c30-4158-8f07-4df242c569fb:819AB9CB0F91E478D1A63F80FA926F03:2:Reports\ОтчетСписаноЗатрачено.xml
 898b1109-d8d9-4e35-8fdc-a562a06ce273:5CA0B36493EE7334C8E5E660C67C89EE:2:Reports\СписаниеПоСотрудникам.xml
@@ -171,6 +173,7 @@ abc3bc78-48ed-4c44-aabe-0059a60455d7:C98355A8FD11E5F009FB1408D7355401:4:Catalogs
 21f5bea6-79da-47cd-8c8b-f3ba9c60e64d:F3555D79540C00AC72140359C47467AB:4:Catalogs\ШаблоныУведомлений\Forms\ФормаЭлемента.xml
 2a626a3a-4040-4f78-bf48-c61d3716277d_CommandModule.bsl:4C60A9F70AF04DF20057DDC18521A5BE:4:CommonCommands\ОткрытьНастройкиПодключенияКХранилищу\Ext\CommandModule.bsl
 0113348e-b0a3-4a90-8b62-cad58e41f91e_Form.xml:66CAC92EC04FA197BBE52B3FA819BD37:4:CommonForms\НастройкиПодключенияКХранилищу\Ext\Form.xml
+106bb8b6-f6f8-4687-aa22-4fd44415f6cd_Form.xml:93316067212C464C0B8758F090E3354C:4:CommonForms\ФормаАнализДополнительныхКоммитов\Ext\Form.xml
 c84ef3b5-7448-41a2-a91f-a082ec9bf615_Form.xml:1FD584454D9D4031C087BAF65DAFBBE7:4:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче\Ext\Form.xml
 8b67967d-2cde-464a-9573-da7016d6cc6a_Form.xml:1AB2B29982208AB01C69B1901082816F:4:CommonForms\ФормаДиаграмм\Ext\Form.xml
 626a74fe-ca34-4bd1-a865-e8e311a6fc45_Form.xml:3EFE45C874AACF4C13D97AC100607E3A:4:CommonForms\ФормаНастроекJIRA\Ext\Form.xml
@@ -255,6 +258,7 @@ a83a9369-33f4-485b-8314-cb13ab37183e_ManagerModule.bsl:5B917210F50EDD2984EFBE19C
 57b31ad6-0770-48a4-8c7a-1c27ac2b15b9:58CAB1330D741E3F52CF22C817A366B8:4:InformationRegisters\ИсторияИзмененияСтатусов\Forms\ФормаСписка.xml
 593b750c-049c-474a-ad02-525c2ce9dfde_ManagerModule.bsl:49C2449D052D65E7D1555F19B0F585F9:4:InformationRegisters\СписаниеВремени\Ext\ManagerModule.bsl
 a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a:CAA288F82747759DD211C450265905AA:4:InformationRegisters\СписаниеВремени\Forms\ФормаСписка.xml
+e1ebdc25-95b9-4344-8d72-c86c98ceb125:462AC0BD8376C857BEEFF51B71449EE9:4:Reports\ДиаграммаПоБюджетам\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 fb3ed2fb-c31e-4f85-87f1-3e154cdd5211:55D928289697EFAA350E812C98BDCF64:4:Reports\ОтчетПоКорректировкиСписаний\Forms\ФормаОтчета.xml
 97a31fc3-0e2f-4806-864c-ce2b064b9c38:9927BDDDDFEE21EA673964301E286E78:4:Reports\ОтчетПоКорректировкиСписаний\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 e54f1bfc-2c30-4158-8f07-4df242c569fb_ObjectModule.bsl:59B8744B2D73C67A4C253B6A61A41BD7:4:Reports\ОтчетСписаноЗатрачено\Ext\ObjectModule.bsl
@@ -282,6 +286,7 @@ be344122-af54-45af-a429-a0622a916dfa_Help\ru.html:E5CC9ED20CBB128B27E8142EB602CF
 4eb7a997-cc19-4949-a55e-3aa78fe165a8_Help\ru.html:DA945393A8DF0D4BC72E0D73F16B0FAB:5:Catalogs\БФТ_НастройкаПодключенияКРепозиторию\Ext\Help\ru.html
 9f75ce71-ef70-4317-b940-f0c2cf7af959_Help\ru.html:224BD06601F5F07898642E4B03843AA3:5:Catalogs\БФТ_Сборки\Ext\Help\ru.html
 0113348e-b0a3-4a90-8b62-cad58e41f91e_Form\Module.bsl:57146319ED4262AD20DA53D291ECC943:5:CommonForms\НастройкиПодключенияКХранилищу\Ext\Form\Module.bsl
+106bb8b6-f6f8-4687-aa22-4fd44415f6cd_Form\Module.bsl:AACD1183704DEEA46069EB76457FDDD5:5:CommonForms\ФормаАнализДополнительныхКоммитов\Ext\Form\Module.bsl
 c84ef3b5-7448-41a2-a91f-a082ec9bf615_Form\Module.bsl:444192B3CB7A0D4A94760F2EBB860D28:5:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче\Ext\Form\Module.bsl
 8b67967d-2cde-464a-9573-da7016d6cc6a_Form\Module.bsl:9322AF32354684639A5F2A6915121425:5:CommonForms\ФормаДиаграмм\Ext\Form\Module.bsl
 626a74fe-ca34-4bd1-a865-e8e311a6fc45_Form\Module.bsl:2DB929A031CA3C24D3120B6E750BBC18:5:CommonForms\ФормаНастроекJIRA\Ext\Form\Module.bsl
@@ -365,6 +370,7 @@ a8fe7b72-14c5-48cb-a086-673a0ced47d8_Form.xml:865F77D29FBFA991AEEAE19971D26105:6
 0845ffb2-1a9c-4ad9-85a9-88f453f9f42c_Form.xml:A8A62BE113490AB98E3F5D514C99FBCC:6:InformationRegisters\ЖурналОтправкиУведомлений\Forms\ФормаСписка\Ext\Form.xml
 57b31ad6-0770-48a4-8c7a-1c27ac2b15b9_Form.xml:5815A377885BBEAD76A002B3D36920B8:6:InformationRegisters\ИсторияИзмененияСтатусов\Forms\ФормаСписка\Ext\Form.xml
 a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a_Form.xml:6055251784050A682B4DB7998CB4F105:6:InformationRegisters\СписаниеВремени\Forms\ФормаСписка\Ext\Form.xml
+e1ebdc25-95b9-4344-8d72-c86c98ceb125_Template.xml:0DEA8C2AC5A4EB23011086EF47A110AD:6:Reports\ДиаграммаПоБюджетам\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 fb3ed2fb-c31e-4f85-87f1-3e154cdd5211_Form.xml:962B518A3AF044B33EB3C1DD545A2503:6:Reports\ОтчетПоКорректировкиСписаний\Forms\ФормаОтчета\Ext\Form.xml
 97a31fc3-0e2f-4806-864c-ce2b064b9c38_Template.xml:355DA505F9C2572C114D2E0EC4CF0279:6:Reports\ОтчетПоКорректировкиСписаний\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 ee3c76fb-601c-428a-96e9-1eb4590590b1_Form.xml:6462994BA58220DA45A04E204A3F3C55:6:Reports\ОтчетСписаноЗатрачено\Forms\ФормаОтчета\Ext\Form.xml

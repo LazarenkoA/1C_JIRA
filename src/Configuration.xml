@@ -219,6 +219,7 @@
 			<CommonForm>ФормаРазницаОценкиОсновнойИСабтасков</CommonForm>
 			<CommonForm>ФормаСистемаВзаимодействия</CommonForm>
 			<CommonForm>НастройкиПодключенияКХранилищу</CommonForm>
+			<CommonForm>ФормаАнализДополнительныхКоммитов</CommonForm>
 			<Catalog>БФТ_МетодыРаботыСРепозиторием</Catalog>
 			<Catalog>БФТ_НаборыИзменений</Catalog>
 			<Catalog>БФТ_НастройкаПодключенияКРепозиторию</Catalog>
@@ -239,6 +240,7 @@
 			<Report>СтатистинаНовыхЗадач</Report>
 			<Report>ОтчетПоКорректировкиСписаний</Report>
 			<Report>СписаниеПоСотрудникам</Report>
+			<Report>ДиаграммаПоБюджетам</Report>
 			<DataProcessor>ИнструментыРазработчикаКонсольЗапросов</DataProcessor>
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>
