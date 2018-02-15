@@ -573,6 +573,21 @@
 												<Event name="OnChange">АвтоматическиОбновлятьБазыПриИзменении</Event>
 											</Events>
 										</CheckBoxField>
+										<CheckBoxField name="ПереноситьОграничения" id="215">
+											<DataPath>ПереноситьОграничения</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Если опция включена в следующую версию будут перенесены ограничение по бюджетам из текущей версии</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПереноситьОграниченияКонтекстноеМеню" id="216"/>
+											<ExtendedTooltip name="ПереноситьОграниченияРасширеннаяПодсказка" id="217"/>
+											<Events>
+												<Event name="OnChange">ПереноситьОграниченияПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
 										<UsualGroup name="Группа5" id="213">
 											<Title>
 												<v8:item>
@@ -779,6 +794,13 @@
 				</Pages>
 			</ChildItems>
 		</UsualGroup>
+		<CheckBoxField name="РелизСобран" id="218">
+			<DataPath>Объект.РелизСобран</DataPath>
+			<Visible>false</Visible>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РелизСобранКонтекстноеМеню" id="219"/>
+			<ExtendedTooltip name="РелизСобранРасширеннаяПодсказка" id="220"/>
+		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -1221,6 +1243,20 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ПереноситьОграничения" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переносить ограничения бюджетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПереноситьОграничения</Field>
+			</Save>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>

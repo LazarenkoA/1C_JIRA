@@ -326,6 +326,32 @@
 												</PictureDecoration>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="Группа8" id="371">
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="372"/>
+											<ChildItems>
+												<Button name="КоммитыПослеВыпуска" id="373">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.КоммитыПослеВыпуска</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Коммиты после выпуска</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="КоммитыПослеВыпускаРасширеннаяПодсказка" id="374"/>
+												</Button>
+												<PictureDecoration name="ДекорацияПредупреждениеКоммиты" id="375">
+													<Picture>
+														<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияПредупреждениеКоммитыКонтекстноеМеню" id="376"/>
+													<ExtendedTooltip name="ДекорацияПредупреждениеКоммитыРасширеннаяПодсказка" id="377"/>
+												</PictureDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<Button name="ОткрытьДиаграммы" id="204">
 											<Type>Hyperlink</Type>
 											<CommandName>Form.Command.ОткрытьДиаграммы</CommandName>
@@ -431,12 +457,6 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="грОбновитьРасширеннаяПодсказка" id="327"/>
 							<ChildItems>
-								<Button name="Обновить" id="162">
-									<Type>UsualButton</Type>
-									<DefaultButton>true</DefaultButton>
-									<CommandName>Form.Command.Обновить</CommandName>
-									<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="163"/>
-								</Button>
 								<UsualGroup name="Группа6" id="348">
 									<Group>Vertical</Group>
 									<ShowTitle>false</ShowTitle>
@@ -445,6 +465,8 @@
 										<Button name="ДеревоЗадачВРаботеОбновитьСПолучениемИзменений" id="269">
 											<Type>UsualButton</Type>
 											<Representation>PictureAndText</Representation>
+											<DefaultButton>true</DefaultButton>
+											<DefaultItem>true</DefaultItem>
 											<CommandName>Form.Command.ОбновитьСПолучениемИзменений</CommandName>
 											<Picture>
 												<xr:Ref>StdPicture.GenerateReport</xr:Ref>
@@ -472,16 +494,6 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
-						<Button name="ОткрытьСписокВJIRA" id="160">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ОткрытьСписокВJIRA</CommandName>
-							<ExtendedTooltip name="ОткрытьСписокВJIRAРасширеннаяПодсказка" id="161"/>
-						</Button>
-						<Button name="ДеревоЗадачВРаботеИзменитьДатуЗавершения" id="221">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ИзменитьДанныеЗадачи</CommandName>
-							<ExtendedTooltip name="ДеревоЗадачВРаботеИзменитьДатуЗавершенияРасширеннаяПодсказка" id="222"/>
-						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<LabelField name="Пояснение" id="357">
@@ -547,8 +559,11 @@
 						<Table name="ДеревоЗадачВРаботе" id="55">
 							<Representation>Tree</Representation>
 							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
 							<SelectionMode>SingleRow</SelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ДеревоЗадачВРаботе</DataPath>
@@ -557,6 +572,7 @@
 								<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</RowsPicture>
+							<Shortcut>F5</Shortcut>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
 								<ExcludedCommand>Change</ExcludedCommand>
@@ -573,11 +589,36 @@
 							<ContextMenu name="ДеревоЗадачВРаботеКонтекстноеМеню" id="56"/>
 							<AutoCommandBar name="ДеревоЗадачВРаботеКоманднаяПанель" id="57">
 								<ChildItems>
-									<Button name="Сохранить" id="164">
+									<Button name="Обновить" id="378">
 										<Type>CommandBarButton</Type>
-										<Visible>false</Visible>
-										<CommandName>Form.Command.Сохранить</CommandName>
-										<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="165"/>
+										<Representation>Picture</Representation>
+										<Width>3</Width>
+										<CommandName>Form.Command.Обновить</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Refresh</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="379"/>
+									</Button>
+									<Button name="ОткрытьСписокВJIRA" id="160">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ОткрытьСписокВJIRA</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Magnifier</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ОткрытьСписокВJIRAРасширеннаяПодсказка" id="161"/>
+									</Button>
+									<Button name="ДеревоЗадачВРаботеИзменитьДатуЗавершения" id="221">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ИзменитьДанныеЗадачи</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Change</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ДеревоЗадачВРаботеИзменитьДатуЗавершенияРасширеннаяПодсказка" id="222"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -763,8 +804,18 @@
 					</Button>
 					<Button name="ДеревоЗадачНовыеОткрытьСписокВJIRA_Новые" id="263">
 						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
 						<CommandName>Form.Command.ОткрытьСписокВJIRA_Новые</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Magnifier</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
 						<ExtendedTooltip name="ДеревоЗадачНовыеОткрытьСписокВJIRA_НовыеРасширеннаяПодсказка" id="264"/>
+					</Button>
+					<Button name="НовыеЗадачиРаспределитьЗадачиПоВерсиям" id="369">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РаспределитьЗадачиПоВерсиям</CommandName>
+						<ExtendedTooltip name="НовыеЗадачиРаспределитьЗадачиПоВерсиямРасширеннаяПодсказка" id="370"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
@@ -1106,6 +1157,7 @@
 			<UseAlways>
 				<Field>~НовыеЗадачи.Бюджет</Field>
 				<Field>НовыеЗадачи.БюджетПУ</Field>
+				<Field>НовыеЗадачи.Версия</Field>
 				<Field>НовыеЗадачи.ДатуЗавершенияУстановилАвтор</Field>
 				<Field>НовыеЗадачи.Картинка</Field>
 				<Field>НовыеЗадачи.ПлановаяДатаЗавершения</Field>
@@ -1115,6 +1167,18 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
+	ЗадачиВерсии.Ссылка КАК Ссылка,
+	МАКСИМУМ(ЗадачиВерсии.Версия.ДатаНачала) КАК ВерсияДатаНачала
+ПОМЕСТИТЬ ЗадачиВерсии
+ИЗ
+	Справочник.Задачи.Версии КАК ЗадачиВерсии
+
+СГРУППИРОВАТЬ ПО
+	ЗадачиВерсии.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
 	Задачи.Код КАК Номер,
 	Задачи.Наименование КАК Заголовок,
 	Задачи.Тип КАК Тип,
@@ -1125,9 +1189,15 @@
 	Задачи.Исполнитель КАК Исполнитель,
 	Задачи.Бюджет КАК БюджетПУ,
 	Задачи.ДатуЗавершенияУстановилАвтор КАК ДатуЗавершенияУстановилАвтор,
-	Задачи.ПлановаяДатаЗавершения КАК ПлановаяДатаЗавершения
+	Задачи.ПлановаяДатаЗавершения КАК ПлановаяДатаЗавершения,
+	ЗадачиВерсииТЧ.Версия КАК Версия
 ИЗ
 	Справочник.Задачи КАК Задачи
+		ЛЕВОЕ СОЕДИНЕНИЕ ЗадачиВерсии КАК ЗадачиВерсии
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Задачи.Версии КАК ЗадачиВерсииТЧ
+			ПО ЗадачиВерсии.Ссылка = ЗадачиВерсииТЧ.Ссылка
+				И ЗадачиВерсии.ВерсияДатаНачала = ЗадачиВерсииТЧ.Версия.ДатаНачала
+		ПО (ЗадачиВерсии.Ссылка = Задачи.Ссылка)
 ГДЕ
 	Задачи.Статус = "Новый"
 	И НЕ Задачи.ПометкаУдаления
@@ -1157,13 +1227,24 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Тип</dcsset:field>
+								<dcsset:field>Версия</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Тип</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+						</dcsset:item>
 					</dcsset:item>
 					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
@@ -1340,7 +1421,9 @@
 					<v8:content>Обновить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>F5</Shortcut>
 			<Action>Обновить</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 		<Command name="Сохранить" id="4">
 			<Title>
@@ -1532,7 +1615,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Корректировка оценки</v8:content>
+					<v8:content>Открыть список задач оценка в сабтаске которых отличается от основной</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КорректировкаОценки</Action>
@@ -1551,6 +1634,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>РегистрацияВСистемеВзаимодействия</Action>
+		</Command>
+		<Command name="РаспределитьЗадачиПоВерсиям" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить задачи по версиям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить задачи по версиям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РаспределитьЗадачиПоВерсиям</Action>
+		</Command>
+		<Command name="КоммитыПослеВыпуска" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коммиты после выпуска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список коммитов которые были сделаны после выпуска версий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоммитыПослеВыпуска</Action>
 		</Command>
 	</Commands>
 </Form>

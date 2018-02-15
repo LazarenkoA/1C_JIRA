@@ -113,37 +113,22 @@
 				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 			</Events>
 			<ChildItems>
-				<ColumnGroup name="Группа1" id="48">
+				<LabelField name="Наименование" id="37">
+					<DataPath>Список.Наименование</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="Оценка" id="45">
+					<DataPath>Список.Оценка</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Версия</v8:content>
+							<v8:content>Объем задач (в часах)</v8:content>
 						</v8:item>
 					</Title>
-					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-					<Group>Horizontal</Group>
-					<TitleBackColor>style:ReportHeaderBackColor</TitleBackColor>
-					<ShowInHeader>true</ShowInHeader>
-					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="49"/>
-					<ChildItems>
-						<LabelField name="Наименование" id="37">
-							<DataPath>Список.Наименование</DataPath>
-							<ContextMenu name="НаименованиеКонтекстноеМеню" id="38"/>
-							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="39"/>
-						</LabelField>
-						<LabelField name="Оценка" id="45">
-							<DataPath>Список.Оценка</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Объем задач (в часах)</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ОценкаКонтекстноеМеню" id="46"/>
-							<ExtendedTooltip name="ОценкаРасширеннаяПодсказка" id="47"/>
-						</LabelField>
-					</ChildItems>
-				</ColumnGroup>
+					<ContextMenu name="ОценкаКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ОценкаРасширеннаяПодсказка" id="47"/>
+				</LabelField>
 				<LabelField name="ДатаНачала" id="40">
 					<DataPath>Список.ДатаНачала</DataPath>
 					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="41"/>
@@ -167,6 +152,7 @@
 				<Field>Список.АктуальныйРелиз</Field>
 				<Field>Список.ВыпускРелизаПросрочен</Field>
 				<Field>Список.ДатаРелиза</Field>
+				<Field>Список.Картинка</Field>
 				<Field>Список.РелизВыпущен</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
