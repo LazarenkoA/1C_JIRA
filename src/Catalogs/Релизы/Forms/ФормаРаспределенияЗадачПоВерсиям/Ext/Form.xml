@@ -306,10 +306,8 @@
 										<ExtendedTooltip name="ВерсииУправлениеПоискомРасширеннаяПодсказка" id="63"/>
 									</SearchControlAddition>
 									<Events>
-										<Event name="DragCheck">ВерсииПроверкаПеретаскивания</Event>
 										<Event name="Selection">ВерсииВыбор</Event>
 										<Event name="Drag">ВерсииПеретаскивание</Event>
-										<Event name="DragEnd">ВерсииОкончаниеПеретаскивания</Event>
 									</Events>
 									<ChildItems>
 										<InputField name="ВерсииВерсия" id="64">
@@ -504,6 +502,17 @@
 			</Title>
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

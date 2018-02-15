@@ -78,6 +78,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РФК</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбновитьИсториюДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаАнализДополнительныхКоммитов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДлительнаяОперация48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ДлительнаяОперация</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

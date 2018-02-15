@@ -152,6 +152,7 @@
 			<CommonPicture>ТипыРевизий</CommonPicture>
 			<CommonPicture>ИконкиРелизов</CommonPicture>
 			<CommonPicture>ВажностьСтрок</CommonPicture>
+			<CommonPicture>ДлительнаяОперация48</CommonPicture>
 			<SessionParameter>JIRA_Cookies</SessionParameter>
 			<Role>Администратор</Role>
 			<Role>СборщикРелизов</Role>
@@ -220,6 +221,7 @@
 			<CommonForm>ФормаСистемаВзаимодействия</CommonForm>
 			<CommonForm>НастройкиПодключенияКХранилищу</CommonForm>
 			<CommonForm>ФормаАнализДополнительныхКоммитов</CommonForm>
+			<CommonForm>ДлительнаяОперация</CommonForm>
 			<Catalog>БФТ_МетодыРаботыСРепозиторием</Catalog>
 			<Catalog>БФТ_НаборыИзменений</Catalog>
 			<Catalog>БФТ_НастройкаПодключенияКРепозиторию</Catalog>
