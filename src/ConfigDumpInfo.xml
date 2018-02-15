@@ -165,8 +165,8 @@
 		<Metadata name="CommonCommand.ОткрытьНастройкиПодключенияКХранилищу.CommandModule" id="2a626a3a-4040-4f78-bf48-c61d3716277d.2" configVersion="658a6041850f464eb1947e2997e7479f00000000"/>
 		<Metadata name="CommonForm.НастройкиПодключенияКХранилищу" id="0113348e-b0a3-4a90-8b62-cad58e41f91e" configVersion="3b13d49a08930944874f47698912fc7500000000"/>
 		<Metadata name="CommonForm.НастройкиПодключенияКХранилищу.Form" id="0113348e-b0a3-4a90-8b62-cad58e41f91e.0" configVersion="bb2263c4b0565f4b93b0387c5e9061f300000000"/>
-		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd" configVersion="0897e147f5d22443afb8810c03ee223b00000000"/>
-		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов.Form" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd.0" configVersion="f3f516063449ed4ea9f9974b64e44f5c00000000"/>
+		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd" configVersion="dcb6939b24cce4478f4f0ef0199570d400000000"/>
+		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов.Form" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd.0" configVersion="171f81d5442da34896ca2bd702a1ad7700000000"/>
 		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615" configVersion="575cb2158e98094599c8ac4a2c9489c000000000"/>
 		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче.Form" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615.0" configVersion="29c52671cba7904284364f7ba0510a8b00000000"/>
 		<Metadata name="CommonForm.ФормаДиаграмм" id="8b67967d-2cde-464a-9573-da7016d6cc6a" configVersion="9b793bfd37c12d49a9f78bc60d0fa02900000000"/>
