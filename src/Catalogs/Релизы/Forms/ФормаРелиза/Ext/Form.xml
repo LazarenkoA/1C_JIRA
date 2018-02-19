@@ -366,7 +366,20 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
-									<ContextMenu name="ЗадачиПопавшиеВРелизКонтекстноеМеню" id="34"/>
+									<ContextMenu name="ЗадачиПопавшиеВРелизКонтекстноеМеню" id="34">
+										<ChildItems>
+											<Button name="ЗадачиПопавшиеВРелизКонтекстноеМенюОткрытьЗадачиВБраузере" id="221">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.ОткрытьЗадачиВБраузере</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.Magnifier</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ЗадачиПопавшиеВРелизКонтекстноеМенюОткрытьЗадачиВБраузереРасширеннаяПодсказка" id="222"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
 									<AutoCommandBar name="ЗадачиПопавшиеВРелизКоманднаяПанель" id="35"/>
 									<ExtendedTooltip name="ЗадачиПопавшиеВРелизРасширеннаяПодсказка" id="36"/>
 									<SearchStringAddition name="ЗадачиПопавшиеВРелизСтрокаПоиска" id="37">
@@ -869,6 +882,10 @@
 				И (Коммиты.ДатаКоммита МЕЖДУ &amp;НачалоРелиза И &amp;ОкончаниеРелиза)
 				И НЕ &amp;ТекРелизСобран
 				И НЕ &amp;ТекРелизВыпущен)
+	И (Задачи.Статус = &amp;ОтборСтатус
+			ИЛИ &amp;ОтборСтатус = "")
+	И (ЗадачиВерсии.Версия = &amp;ОтборВерсия
+			ИЛИ &amp;ОтборВерсия = Неопределено)
 	И (&amp;ПрименитьОтборСборка
 				И Коммиты.Задача ЕСТЬ NULL
 				И ЗадачиВерсии.Версия = &amp;ТекРелиз
@@ -1441,6 +1458,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтборЗадачВыпуск</Action>
+		</Command>
+		<Command name="ОткрытьЗадачиВБраузере" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть задачи в браузере</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть задачи в браузере</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьЗадачиВБраузере</Action>
 		</Command>
 	</Commands>
 </Form>
