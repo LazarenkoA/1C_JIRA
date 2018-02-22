@@ -4,10 +4,15 @@
 		<ChildItems>
 			<Button name="ФормаЗакрыть" id="26">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
-				<DefaultItem>true</DefaultItem>
 				<CommandName>Form.Command.Закрыть</CommandName>
 				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="27"/>
+			</Button>
+			<Button name="ФормаПеренестиЗадачу" id="37">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>Form.Command.ПеренестиЗадачу</CommandName>
+				<ExtendedTooltip name="ФормаПеренестиЗадачуРасширеннаяПодсказка" id="38"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -28,6 +33,20 @@
 			</Title>
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="29"/>
 			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="30"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация2" id="31">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>#999999</TextColor>
+			<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Что бы задача пропала из данного списка, нужно в JIRA к задаче добавить нужную версию. Версия должна быть +1 к той в период, которой попал коммит. т.е. если коммит был в периоде с 01.01-14.01 и по графику выпуска версий это версия 7, но в задачу нужно добавлять 8, т.к. в этом периоде 7 была на тестировании, а в разработке 8</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="33"/>
 		</LabelDecoration>
 		<Table name="Список" id="1">
 			<Representation>Tree</Representation>
@@ -98,6 +117,12 @@
 					<ContextMenu name="СписокРелизВЗадачеКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="СписокРелизВЗадачеРасширеннаяПодсказка" id="19"/>
 				</InputField>
+				<InputField name="СписокРелизКоммита" id="34">
+					<DataPath>Список.РелизКоммита</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокРелизКоммитаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="СписокРелизКоммитаРасширеннаяПодсказка" id="36"/>
+				</InputField>
 				<InputField name="СписокДатаКоммита" id="23">
 					<DataPath>Список.ДатаКоммита</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -155,6 +180,17 @@
 						</v8:DateQualifiers>
 					</Type>
 				</Column>
+				<Column name="РелизКоммита" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коммит был в релизе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Релизы</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 	</Attributes>
@@ -173,6 +209,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>_Закрыть</Action>
+		</Command>
+		<Command name="ПеренестиЗадачу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести задачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести задачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиЗадачу</Action>
 		</Command>
 	</Commands>
 </Form>
