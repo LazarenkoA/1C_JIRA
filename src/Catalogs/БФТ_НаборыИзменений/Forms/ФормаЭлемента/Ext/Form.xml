@@ -28,7 +28,6 @@
 			<DataPath>СписокИзменений</DataPath>
 			<RowPictureDataPath>СписокИзменений.DefaultPicture</RowPictureDataPath>
 			<CommandSet>
-				<ExcludedCommand>Change</ExcludedCommand>
 				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Create</ExcludedCommand>
 				<ExcludedCommand>Delete</ExcludedCommand>
