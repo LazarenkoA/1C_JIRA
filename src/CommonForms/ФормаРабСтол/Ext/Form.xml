@@ -352,11 +352,6 @@
 												</PictureDecoration>
 											</ChildItems>
 										</UsualGroup>
-										<Button name="ОткрытьДиаграммы" id="204">
-											<Type>Hyperlink</Type>
-											<CommandName>Form.Command.ОткрытьДиаграммы</CommandName>
-											<ExtendedTooltip name="ОткрытьДиаграммыРасширеннаяПодсказка" id="205"/>
-										</Button>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -619,6 +614,16 @@
 											<xr:LoadTransparent>true</xr:LoadTransparent>
 										</Picture>
 										<ExtendedTooltip name="ДеревоЗадачВРаботеИзменитьДатуЗавершенияРасширеннаяПодсказка" id="222"/>
+									</Button>
+									<Button name="ОткрытьДиаграммы" id="204">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ОткрытьДиаграммы</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Chart</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ОткрытьДиаграммыРасширеннаяПодсказка" id="205"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
