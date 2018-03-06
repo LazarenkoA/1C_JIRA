@@ -187,14 +187,25 @@
 								</Button>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Релиз" id="113">
-							<DataPath>Релиз</DataPath>
-							<ContextMenu name="РелизКонтекстноеМеню" id="114"/>
-							<ExtendedTooltip name="РелизРасширеннаяПодсказка" id="115"/>
-							<Events>
-								<Event name="OnChange">РелизПриИзменении</Event>
-							</Events>
-						</InputField>
+						<UsualGroup name="Группа1" id="116">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="117"/>
+							<ChildItems>
+								<InputField name="Релиз" id="113">
+									<DataPath>Релиз</DataPath>
+									<ContextMenu name="РелизКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="РелизРасширеннаяПодсказка" id="115"/>
+									<Events>
+										<Event name="OnChange">РелизПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ИнфоПоЗагрузке" id="118">
+									<ContextMenu name="ИнфоПоЗагрузкеКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ИнфоПоЗагрузкеРасширеннаяПодсказка" id="120"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<CheckBoxField name="ОбновитьТолькоСтоимость" id="62">
