@@ -169,8 +169,8 @@
 		<Metadata name="CommonForm.НастройкиПодключенияКХранилищу.Form" id="0113348e-b0a3-4a90-8b62-cad58e41f91e.0" configVersion="bb2263c4b0565f4b93b0387c5e9061f300000000"/>
 		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd" configVersion="8e62c72ae02c7142870033a48b8dbc3400000000"/>
 		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов.Form" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd.0" configVersion="7e080ce0b3e7d84bb0aa9240ee9e738900000000"/>
-		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615" configVersion="f2d4cb35be20cb45b27442829a06e4de00000000"/>
-		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче.Form" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615.0" configVersion="fc499dc62e023d4fa891f1628969cd9200000000"/>
+		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615" configVersion="b5e23aa595f91d4c8b0a31222d8235f500000000"/>
+		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче.Form" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615.0" configVersion="8b034abf05e0fa4091726de4291e3eb800000000"/>
 		<Metadata name="CommonForm.ФормаДиаграмм" id="8b67967d-2cde-464a-9573-da7016d6cc6a" configVersion="9b793bfd37c12d49a9f78bc60d0fa02900000000"/>
 		<Metadata name="CommonForm.ФормаДиаграмм.Form" id="8b67967d-2cde-464a-9573-da7016d6cc6a.0" configVersion="e95c8c5ee4dfdc4aab04ba7a8308ff9700000000"/>
 		<Metadata name="CommonForm.ФормаНастроекJIRA" id="626a74fe-ca34-4bd1-a865-e8e311a6fc45" configVersion="2b4f68f6e88ef741b2ad2b48c6c9975e00000000"/>
