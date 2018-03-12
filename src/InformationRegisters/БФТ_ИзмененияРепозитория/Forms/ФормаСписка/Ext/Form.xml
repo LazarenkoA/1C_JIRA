@@ -62,11 +62,6 @@
 				<xr:Ref>CommonPicture.ТипыРевизий</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</RowsPicture>
-			<CommandSet>
-				<ExcludedCommand>Copy</ExcludedCommand>
-				<ExcludedCommand>Create</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
-			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>

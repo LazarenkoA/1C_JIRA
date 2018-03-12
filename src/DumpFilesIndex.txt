@@ -94,6 +94,7 @@ d990c83f-0224-47f3-a18c-8a7d501fdace:2111566D7B78E3D120C5E09DF8985EB9:2:DataProc
 e1aa58f3-1c9f-4943-a185-b6529e9ac9ba:C934BE91C505F28E08C6A8E7771E84AE:2:Enums\БФТ_РежимВводаПараметра.xml
 ed410b80-2b86-44ec-bc7b-044583b18515:B9B1088D05D87D949D803D42E0A97879:2:Enums\БФТ_СтатусИзмененийРепозитория.xml
 35196f89-6e39-49c1-a7ca-a9891e66ea02:6D150CDF963E8E2D620331DCB54FEDE5:2:Enums\БФТ_ТипИзменений.xml
+34f48042-74f7-4b84-b1a6-d13b5ad5238c:391015570F1E338C6F139AB006CA708E:2:Enums\ТипИзмененийОбъекта.xml
 25e2be19-aa77-4533-af14-07c397374b74_ClientApplicationInterface.xml:6862D02B97F7FD46CB6227034ECACC45:2:Ext\ClientApplicationInterface.xml
 25e2be19-aa77-4533-af14-07c397374b74_HomePageWorkArea.xml:D2BF4CF8682316F4CF7FB6470223F545:2:Ext\HomePageWorkArea.xml
 25e2be19-aa77-4533-af14-07c397374b74_ManagedApplicationModule.bsl:09DFD557F9A06D0041661E0DB6740E08:2:Ext\ManagedApplicationModule.bsl
@@ -103,6 +104,7 @@ ed410b80-2b86-44ec-bc7b-044583b18515:B9B1088D05D87D949D803D42E0A97879:2:Enums\Б
 56a475bb-c503-4bdf-b2fe-488317db9526:E61DEEDD7D6E8E1CDDD07926D392119B:2:InformationRegisters\БФТ_ХранилищеМакетов.xml
 ba565b56-f770-4c08-a923-0bb69b68701d:A15C274477A0948F0FF76B9B00DFFA6C:2:InformationRegisters\ГрафикРаботы.xml
 7b82a159-9841-4ee5-b752-2d533cffd958:3A95157C2A53D217B8F841F6AE6FC744:2:InformationRegisters\ЖурналОтправкиУведомлений.xml
+acbfbc2e-d466-4a58-8c99-4f5b79184cbe:6B806463ACB96E415E5A7D8AE429FDB9:2:InformationRegisters\ИзмененияРевизии.xml
 a83a9369-33f4-485b-8314-cb13ab37183e:17C666A456D4935EC4CDFDA7DC5D5DF8:2:InformationRegisters\ИсторияИзмененияСтатусов.xml
 593b750c-049c-474a-ad02-525c2ce9dfde:B2949DB4FB732A1F3A4402C8F5BBA450:2:InformationRegisters\СписаниеВремени.xml
 daabf7c0-df24-49a3-9b2a-e703407ae987:EFF946AA8AEEC303E5F7E565EA09C643:2:Languages\Русский.xml
@@ -421,6 +423,7 @@ f32cafc5-e192-411f-8671-3d6329eebdd8_Form\Module.bsl:A89DD69E354620FC825F9C9D706
 480b57f1-10f3-4483-befd-21bdad68bb29_Form\Module.bsl:3DC5EC5A6C50428F3A706DBF2B3D8C31:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\Форма\Ext\Form\Module.bsl
 08c8ca3c-14c7-4a67-b5c0-d857e2a180c2_Form\Module.bsl:5B11A4ECD7AD2F8AE432D4F5E571FD3D:7:DataProcessors\КонсольЗаданий\Forms\Форма\Ext\Form\Module.bsl
 6478c023-a376-425d-bcd2-fd9c882c5361_Form\Module.bsl:6BA63327175C683C145FB91C76544F3B:7:DataProcessors\КонсольЗаданий\Forms\ФормаРегламентногоЗадания\Ext\Form\Module.bsl
+c98d489c-1593-48ad-afd3-a6fbe6996e3f_Form\Module.bsl:394B00AE5ACFD50A4E4E3EBBC955BBD9:7:InformationRegisters\БФТ_ИзмененияРепозитория\Forms\ФормаЗаписи\Ext\Form\Module.bsl
 9bc306e6-ba75-472f-b909-b7d0da10e4d7_Form\Module.bsl:30A3271D9F2324C72A543DC8986CC615:7:InformationRegisters\БФТ_ИзмененияРепозитория\Forms\ФормаСписка\Ext\Form\Module.bsl
 a8fe7b72-14c5-48cb-a086-673a0ced47d8_Form\Module.bsl:47B343445BBB6C45D94DC5B040B2A7E6:7:InformationRegisters\БФТ_ХранилищеМакетов\Forms\ФормаСписка\Ext\Form\Module.bsl
 0845ffb2-1a9c-4ad9-85a9-88f453f9f42c_Form\Module.bsl:5787AD13007608DB8936C301FC5A25DD:7:InformationRegisters\ЖурналОтправкиУведомлений\Forms\ФормаСписка\Ext\Form\Module.bsl

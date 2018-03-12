@@ -238,6 +238,7 @@
 			<Enum>БФТ_РежимВводаПараметра</Enum>
 			<Enum>БФТ_СтатусИзмененийРепозитория</Enum>
 			<Enum>БФТ_ТипИзменений</Enum>
+			<Enum>ТипИзмененийОбъекта</Enum>
 			<Report>ОтчетСписаноЗатрачено</Report>
 			<Report>СтатистинаНовыхЗадач</Report>
 			<Report>ОтчетПоКорректировкиСписаний</Report>
@@ -254,6 +255,7 @@
 			<InformationRegister>ЖурналОтправкиУведомлений</InformationRegister>
 			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>
 			<InformationRegister>СписаниеВремени</InformationRegister>
+			<InformationRegister>ИзмененияРевизии</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
