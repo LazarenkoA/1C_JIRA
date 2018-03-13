@@ -327,6 +327,7 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="Группа8" id="371">
+											<Visible>false</Visible>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="372"/>
