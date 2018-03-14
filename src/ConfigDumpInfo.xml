@@ -452,8 +452,8 @@
 			<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Resource.ТипИзменений" id="de7cc10f-fa98-44b5-b0d2-7fdbcb1c0671"/>
 		</Metadata>
 		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Command.СвязанныеНаборыИзменений.CommandModule" id="cc1437db-6f42-483e-a540-7aeeb5d9eaac.2" configVersion="d2afb73c19a30247a788aca1639451f900000000"/>
-		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаЗаписи" id="c98d489c-1593-48ad-afd3-a6fbe6996e3f" configVersion="239d4e86a0e9994a841818e86a77f46100000000"/>
-		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаЗаписи.Form" id="c98d489c-1593-48ad-afd3-a6fbe6996e3f.0" configVersion="351aade6eec0f24b819a78cbc2227b5600000000"/>
+		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаЗаписи" id="c98d489c-1593-48ad-afd3-a6fbe6996e3f" configVersion="451044e926478a478ed5b8b45747e7e700000000"/>
+		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаЗаписи.Form" id="c98d489c-1593-48ad-afd3-a6fbe6996e3f.0" configVersion="a98b8dba29878a4783c938c63eadd00300000000"/>
 		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаСписка" id="9bc306e6-ba75-472f-b909-b7d0da10e4d7" configVersion="09cd61d336d03b4891366bc3b14fc11600000000"/>
 		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.Form.ФормаСписка.Form" id="9bc306e6-ba75-472f-b909-b7d0da10e4d7.0" configVersion="309469c50069ea42adede9df82e7f99200000000"/>
 		<Metadata name="InformationRegister.БФТ_ИзмененияРепозитория.ManagerModule" id="070a034b-5f03-416d-95ac-835c10da2d8a.2" configVersion="9b81a6a48356e6469d282f32caf6a05600000000"/>

@@ -93,12 +93,14 @@
 				</LabelField>
 			</ChildItems>
 		</Table>
-		<TextDocumentField name="Комментарий" id="13">
+		<InputField name="Комментарий" id="13">
 			<DataPath>Запись.Комментарий</DataPath>
 			<ReadOnly>true</ReadOnly>
+			<Width>50</Width>
+			<MultiLine>true</MultiLine>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
-		</TextDocumentField>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">
