@@ -18,7 +18,7 @@
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Help" id="be344122-af54-45af-a429-a0622a916dfa.1" configVersion="9cd3bb14389b824faeee344140cfc76600000000"/>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.ManagerModule" id="be344122-af54-45af-a429-a0622a916dfa.3" configVersion="aca9f8cd3b80a94e92858ae8e76b3fff00000000"/>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.ObjectModule" id="be344122-af54-45af-a429-a0622a916dfa.0" configVersion="2d2f2ea4bcfe374fa2783e28607aee3e00000000"/>
-		<Metadata name="Catalog.БФТ_НаборыИзменений" id="71bf0f06-f565-4aec-b7b8-aa95033c3975" configVersion="d5ab76bafc47344a8479def181ddf22400000000">
+		<Metadata name="Catalog.БФТ_НаборыИзменений" id="71bf0f06-f565-4aec-b7b8-aa95033c3975" configVersion="12f560a6fdfb6a409dc00bac11358e0000000000">
 			<Metadata name="Catalog.БФТ_НаборыИзменений.TabularSection.НаборИзменений.Attribute.НомерРевизии" id="0497d871-705f-4136-b18d-3acc9f6c2181"/>
 			<Metadata name="Catalog.БФТ_НаборыИзменений.Command.СвязанныеНаборыИзменений" id="4ce32fda-5353-4a54-b43f-a1770545d25e"/>
 			<Metadata name="Catalog.БФТ_НаборыИзменений.TabularSection.НаборИзменений.Attribute.ИзменениеКонфигурации" id="a038bdae-4b80-4eb5-9417-aefca094ac29"/>
@@ -193,8 +193,8 @@
 		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаКлиенте.Module" id="8b57a466-8d50-4ae4-8fb5-63b8a07ff489.0" configVersion="4bd3e757049ef14d99a40e5c76aad04200000000"/>
 		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере" id="115b091f-f022-4823-98fd-cc87b966e440" configVersion="a230a41b995b5040a6f28b82d311018200000000"/>
 		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере.Module" id="115b091f-f022-4823-98fd-cc87b966e440.0" configVersion="5669cbc20645c94b8d18b127821f0ad600000000"/>
-		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере" id="82552372-90db-4a19-8d15-1151262ab757" configVersion="0efaaf955cd8fe488a2472d7b5c2993b00000000"/>
-		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере.Module" id="82552372-90db-4a19-8d15-1151262ab757.0" configVersion="8140fc1944b02f4bb3dbc0420e77a43500000000"/>
+		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере" id="82552372-90db-4a19-8d15-1151262ab757" configVersion="e4efbb4d82486d48a31cc2b6f243e2cb00000000"/>
+		<Metadata name="CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере.Module" id="82552372-90db-4a19-8d15-1151262ab757.0" configVersion="0ab2c3036b970842b976c9bd2ecdc75d00000000"/>
 		<Metadata name="CommonModule.ВзаимодействиеC_JIRA_КлиентСервер" id="ba082b88-9a47-4621-bc6a-59d210d2951c" configVersion="4a11264f1ec9304390d55df6836d09c400000000"/>
 		<Metadata name="CommonModule.ВзаимодействиеC_JIRA_КлиентСервер.Module" id="ba082b88-9a47-4621-bc6a-59d210d2951c.0" configVersion="a99bb0a997a63e41b8b05f3ec7b670f200000000"/>
 		<Metadata name="CommonModule.ВзаимодействиеC_JIRA_Сервер" id="b808e125-1bd7-4c9b-9295-a586e9583039" configVersion="6f6660b600fb2f4d817ea6dd18f8ae9f00000000"/>
@@ -267,7 +267,7 @@
 		<Metadata name="CommonPicture.СинхронизацияДанныхДлительнаяОперация49.Picture" id="7f61e24c-d1a5-445b-b5c2-dfd9bb09590a.0" configVersion="a460136ca8fdb641949ee87b98b55e6500000000"/>
 		<Metadata name="CommonPicture.ТипыРевизий" id="70ffe57e-b2a7-455c-a46e-26d48d3cce66" configVersion="70932e2bff2bad45a065b85318583e5900000000"/>
 		<Metadata name="CommonPicture.ТипыРевизий.Picture" id="70ffe57e-b2a7-455c-a46e-26d48d3cce66.0" configVersion="4a00d41e4c86c64cab5d744cbe66611000000000"/>
-		<Metadata name="Configuration.АРМ_JIRA" id="25e2be19-aa77-4533-af14-07c397374b74" configVersion="d00186e5b3f1db4db1961ec469e6526300000000"/>
+		<Metadata name="Configuration.АРМ_JIRA" id="25e2be19-aa77-4533-af14-07c397374b74" configVersion="3813649f93446f47a22cc97ef676add000000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.ClientApplicationInterface" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.b" configVersion="10d7963b3d53e64e8df8ad66586955db00000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.HomePageWorkArea" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.8" configVersion="01f97a3b34371a4b91902a1457e9116b00000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.ManagedApplicationModule" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.6" configVersion="46dbd76a0b426f4fb0b7efb2034fb2d900000000"/>
@@ -531,6 +531,11 @@
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Form.ФормаОтчета.Form" id="fb3ed2fb-c31e-4f85-87f1-3e154cdd5211.0" configVersion="bcaad7e458eba04db1978ab798a7d6e100000000"/>
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Template.ОсновнаяСхемаКомпоновкиДанных" id="97a31fc3-0e2f-4806-864c-ce2b064b9c38" configVersion="a22b24aa2caac94985e6413e5b352a3e00000000"/>
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="97a31fc3-0e2f-4806-864c-ce2b064b9c38.0" configVersion="9fdb24a656aecb4d812d3ade03b04ef900000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу" id="aa50de0a-cbc3-4847-a27f-acc5708647e7" configVersion="879cbfee2ec5b344a9656ea519b420a500000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу.Form.ФормаОтчета" id="091e0fea-7b37-40b5-b876-7cf392cfb82b" configVersion="2c6f3b51e6b3c04797f3d96ab379f6b600000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу.Form.ФормаОтчета.Form" id="091e0fea-7b37-40b5-b876-7cf392cfb82b.0" configVersion="023c672da492f94ebe5b1bc808acaa2b00000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу.Template.ОсновнаяСхемаКомпоновкиДанных" id="860350b3-5a75-486e-be51-eda0c729ecb1" configVersion="884d355147042b4190a71977f06d512100000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="860350b3-5a75-486e-be51-eda0c729ecb1.0" configVersion="57d065c7e852c944960ec5bdb1ca6ea700000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено" id="e54f1bfc-2c30-4158-8f07-4df242c569fb" configVersion="4f3daabcd5b45c40a8b34d356cb1e09a00000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета" id="ee3c76fb-601c-428a-96e9-1eb4590590b1" configVersion="477a0b38ce3b3042b0bf4fe7611f9b8200000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета.Form" id="ee3c76fb-601c-428a-96e9-1eb4590590b1.0" configVersion="9e830a678a148040b9d3f543165450a700000000"/>
@@ -569,7 +574,7 @@
 		<Metadata name="Subsystem.АРМ_JIRA" id="247771a8-2066-42a1-a506-b71f221c9e2e" configVersion="77edb28f173bac47a400f776fbdfde5c00000000"/>
 		<Metadata name="Subsystem.АРМ_JIRA.Subsystem.Отчеты" id="6b3339a1-c52e-466c-b022-b810a16974ee" configVersion="a7c4318f0c1bf64c98e27d3d4c3d2afe00000000"/>
 		<Metadata name="Subsystem.АРМ_JIRA.Subsystem.СистемаВзаимодействия" id="d65b923f-2aca-47c3-8d96-23a2ac8b5e18" configVersion="858479d5211778499a50ffddb893646a00000000"/>
-		<Metadata name="Subsystem.АРМ_Сборок" id="fe063888-0dc3-4702-9b66-d8bd4f176251" configVersion="2649c0851aaf8540b17a48e062521a1f00000000"/>
+		<Metadata name="Subsystem.АРМ_Сборок" id="fe063888-0dc3-4702-9b66-d8bd4f176251" configVersion="ea253769f7b61c4c96c8404e74e46c4200000000"/>
 		<Metadata name="Subsystem.АРМ_Сборок.CommandInterface" id="fe063888-0dc3-4702-9b66-d8bd4f176251.1" configVersion="491e34c80b17964695ec5673cdd17dcc00000000"/>
 		<Metadata name="Subsystem.АРМ_Сборок.Subsystem.ПоставляемыеДанные" id="6a6211ed-54c3-47c0-ac10-c2212c529172" configVersion="c7bb127c32e46f4cb810dfacb2cf813600000000"/>
 	</ConfigVersions>

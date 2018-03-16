@@ -110,6 +110,7 @@ a83a9369-33f4-485b-8314-cb13ab37183e:17C666A456D4935EC4CDFDA7DC5D5DF8:2:Informat
 daabf7c0-df24-49a3-9b2a-e703407ae987:EFF946AA8AEEC303E5F7E565EA09C643:2:Languages\Русский.xml
 221c8542-42f4-4dcc-b0ea-2703840db4a1:F57489126DD5BBE8130F4D5323F5803F:2:Reports\ДиаграммаПоБюджетам.xml
 f1a9fac8-b58c-42bc-a000-8e1530db2b96:0923DBB6F5F6AE77FD03A845E1C5C07D:2:Reports\ОтчетПоКорректировкиСписаний.xml
+aa50de0a-cbc3-4847-a27f-acc5708647e7:3E133F70696478831AE76B9ED4E7EAE5:2:Reports\ОтчетПоХранилищу.xml
 e54f1bfc-2c30-4158-8f07-4df242c569fb:819AB9CB0F91E478D1A63F80FA926F03:2:Reports\ОтчетСписаноЗатрачено.xml
 898b1109-d8d9-4e35-8fdc-a562a06ce273:5CA0B36493EE7334C8E5E660C67C89EE:2:Reports\СписаниеПоСотрудникам.xml
 a9d62b51-75e1-4d56-a0b2-38e1a8bffc41:9A916FEB0B9EBC5E0B57DC09833A6C9C:2:Reports\СтатистинаНовыхЗадач.xml
@@ -267,6 +268,8 @@ a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a:CAA288F82747759DD211C450265905AA:4:Informat
 e1ebdc25-95b9-4344-8d72-c86c98ceb125:462AC0BD8376C857BEEFF51B71449EE9:4:Reports\ДиаграммаПоБюджетам\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 fb3ed2fb-c31e-4f85-87f1-3e154cdd5211:55D928289697EFAA350E812C98BDCF64:4:Reports\ОтчетПоКорректировкиСписаний\Forms\ФормаОтчета.xml
 97a31fc3-0e2f-4806-864c-ce2b064b9c38:9927BDDDDFEE21EA673964301E286E78:4:Reports\ОтчетПоКорректировкиСписаний\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
+091e0fea-7b37-40b5-b876-7cf392cfb82b:E7C0D2A2B7D52DEA50562D71CECAE85C:4:Reports\ОтчетПоХранилищу\Forms\ФормаОтчета.xml
+860350b3-5a75-486e-be51-eda0c729ecb1:414EB48BEB4B39D727AF8DB73ADFFDD7:4:Reports\ОтчетПоХранилищу\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 e54f1bfc-2c30-4158-8f07-4df242c569fb_ObjectModule.bsl:59B8744B2D73C67A4C253B6A61A41BD7:4:Reports\ОтчетСписаноЗатрачено\Ext\ObjectModule.bsl
 ee3c76fb-601c-428a-96e9-1eb4590590b1:F0906CF372BEE4F6F9998D659E91975F:4:Reports\ОтчетСписаноЗатрачено\Forms\ФормаОтчета.xml
 43e8a577-6f9b-4fac-9c6d-fa53af6b3a61:A0F6EB2D0603DD3F89C2AFBD6BCF36B3:4:Reports\ОтчетСписаноЗатрачено\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
@@ -381,6 +384,8 @@ a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a_Form.xml:6055251784050A682B4DB7998CB4F105:6
 e1ebdc25-95b9-4344-8d72-c86c98ceb125_Template.xml:0DEA8C2AC5A4EB23011086EF47A110AD:6:Reports\ДиаграммаПоБюджетам\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 fb3ed2fb-c31e-4f85-87f1-3e154cdd5211_Form.xml:962B518A3AF044B33EB3C1DD545A2503:6:Reports\ОтчетПоКорректировкиСписаний\Forms\ФормаОтчета\Ext\Form.xml
 97a31fc3-0e2f-4806-864c-ce2b064b9c38_Template.xml:355DA505F9C2572C114D2E0EC4CF0279:6:Reports\ОтчетПоКорректировкиСписаний\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
+091e0fea-7b37-40b5-b876-7cf392cfb82b_Form.xml:99ABCC905057BE21F9807E8B3D3692E6:6:Reports\ОтчетПоХранилищу\Forms\ФормаОтчета\Ext\Form.xml
+860350b3-5a75-486e-be51-eda0c729ecb1_Template.xml:5D49C55D769E816D615C085A2B503FBF:6:Reports\ОтчетПоХранилищу\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 ee3c76fb-601c-428a-96e9-1eb4590590b1_Form.xml:6462994BA58220DA45A04E204A3F3C55:6:Reports\ОтчетСписаноЗатрачено\Forms\ФормаОтчета\Ext\Form.xml
 43e8a577-6f9b-4fac-9c6d-fa53af6b3a61_Template.xml:909ABA1B1C53B832471B4EEC91A75CA7:6:Reports\ОтчетСписаноЗатрачено\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 4d84163c-c1e1-42f5-b604-099416fac615_Template.xml:8D2E04BF92D8F8472CB0AE9F376A0032:6:Reports\СписаниеПоСотрудникам\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml

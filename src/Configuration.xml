@@ -244,6 +244,7 @@
 			<Report>ОтчетПоКорректировкиСписаний</Report>
 			<Report>СписаниеПоСотрудникам</Report>
 			<Report>ДиаграммаПоБюджетам</Report>
+			<Report>ОтчетПоХранилищу</Report>
 			<DataProcessor>ИнструментыРазработчикаКонсольЗапросов</DataProcessor>
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>
