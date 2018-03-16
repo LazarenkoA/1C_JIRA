@@ -491,7 +491,7 @@
 		</Metadata>
 		<Metadata name="InformationRegister.ЖурналОтправкиУведомлений.Form.ФормаСписка" id="0845ffb2-1a9c-4ad9-85a9-88f453f9f42c" configVersion="f7170f3d1e9318438394b14b52bd99d100000000"/>
 		<Metadata name="InformationRegister.ЖурналОтправкиУведомлений.Form.ФормаСписка.Form" id="0845ffb2-1a9c-4ad9-85a9-88f453f9f42c.0" configVersion="05cc28ca124f93418615a2f3a48ae33200000000"/>
-		<Metadata name="InformationRegister.ИзмененияРевизии" id="acbfbc2e-d466-4a58-8c99-4f5b79184cbe" configVersion="af49fe4313ee2c4cb645ed0852e1e1e600000000">
+		<Metadata name="InformationRegister.ИзмененияРевизии" id="acbfbc2e-d466-4a58-8c99-4f5b79184cbe" configVersion="a91e9ab1422ff64989179bd97308ced000000000">
 			<Metadata name="InformationRegister.ИзмененияРевизии.Dimension.Тип" id="9009a1f6-db7c-46de-9781-a8b98cbd854e"/>
 			<Metadata name="InformationRegister.ИзмененияРевизии.Resource.Объект" id="94f3410c-9865-49e7-beae-bf549ebd1bd6"/>
 			<Metadata name="InformationRegister.ИзмененияРевизии.Dimension.НомерРевизии" id="bf3a202f-666e-4ffb-b394-971f814d32c0"/>
@@ -531,9 +531,9 @@
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Form.ФормаОтчета.Form" id="fb3ed2fb-c31e-4f85-87f1-3e154cdd5211.0" configVersion="bcaad7e458eba04db1978ab798a7d6e100000000"/>
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Template.ОсновнаяСхемаКомпоновкиДанных" id="97a31fc3-0e2f-4806-864c-ce2b064b9c38" configVersion="a22b24aa2caac94985e6413e5b352a3e00000000"/>
 		<Metadata name="Report.ОтчетПоКорректировкиСписаний.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="97a31fc3-0e2f-4806-864c-ce2b064b9c38.0" configVersion="9fdb24a656aecb4d812d3ade03b04ef900000000"/>
-		<Metadata name="Report.ОтчетПоХранилищу" id="aa50de0a-cbc3-4847-a27f-acc5708647e7" configVersion="879cbfee2ec5b344a9656ea519b420a500000000"/>
-		<Metadata name="Report.ОтчетПоХранилищу.Form.ФормаОтчета" id="091e0fea-7b37-40b5-b876-7cf392cfb82b" configVersion="2c6f3b51e6b3c04797f3d96ab379f6b600000000"/>
-		<Metadata name="Report.ОтчетПоХранилищу.Form.ФормаОтчета.Form" id="091e0fea-7b37-40b5-b876-7cf392cfb82b.0" configVersion="023c672da492f94ebe5b1bc808acaa2b00000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу" id="aa50de0a-cbc3-4847-a27f-acc5708647e7" configVersion="5f25e07a1fd63d499d916bf2fc490f0200000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу.Form.ФормаОтчета" id="c91832a2-a36a-41dd-a100-38add15485bb" configVersion="53146eabde07cc4783a70987de44ef0b00000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу.Form.ФормаОтчета.Form" id="c91832a2-a36a-41dd-a100-38add15485bb.0" configVersion="fb1cf29053b81c4b96a34a6afd58b2a900000000"/>
 		<Metadata name="Report.ОтчетПоХранилищу.Template.ОсновнаяСхемаКомпоновкиДанных" id="860350b3-5a75-486e-be51-eda0c729ecb1" configVersion="884d355147042b4190a71977f06d512100000000"/>
 		<Metadata name="Report.ОтчетПоХранилищу.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="860350b3-5a75-486e-be51-eda0c729ecb1.0" configVersion="57d065c7e852c944960ec5bdb1ca6ea700000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено" id="e54f1bfc-2c30-4158-8f07-4df242c569fb" configVersion="4f3daabcd5b45c40a8b34d356cb1e09a00000000"/>
