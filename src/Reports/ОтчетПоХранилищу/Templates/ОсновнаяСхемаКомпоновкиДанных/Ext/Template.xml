@@ -45,14 +45,25 @@
 			<dataPath>ТипИзменений</dataPath>
 			<field>ТипИзменений</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоИзменений</dataPath>
+			<field>КоличествоИзменений</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество изменений</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ИзмененияРевизии.Объект КАК Объект,
 	ИзмененияРевизии.Тип КАК Тип,
 	БФТ_НаборыИзменений.Код КАК НомерЗадачи,
-	БФТ_ИзмененияРепозитория.Период КАК ДатаКоммита,
+	НАЧАЛОПЕРИОДА(БФТ_ИзмененияРепозитория.Период, ДЕНЬ) КАК ДатаКоммита,
 	БФТ_ИзмененияРепозитория.АвторИзменений КАК АвторИзменений,
-	БФТ_ИзмененияРепозитория.ТипИзменений КАК ТипИзменений
+	БФТ_ИзмененияРепозитория.ТипИзменений КАК ТипИзменений,
+	1 КАК КоличествоИзменений
 ИЗ
 	РегистрСведений.БФТ_ИзмененияРепозитория КАК БФТ_ИзмененияРепозитория
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ИзмененияРевизии КАК ИзмененияРевизии
@@ -67,6 +78,10 @@
 	(БФТ_НаборыИзменений.Код = &amp;Код),
 	(БФТ_ИзмененияРепозитория.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания)}</query>
 	</dataSet>
+	<totalField>
+		<dataPath>КоличествоИзменений</dataPath>
+		<expression>Сумма(КоличествоИзменений)</expression>
+	</totalField>
 	<parameter>
 		<name>ДатаНачала</name>
 		<title xsi:type="v8:LocalStringType">
@@ -141,6 +156,15 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ТипИзменений</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоИзменений</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоИзменений.ПроцентОбщий</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоИзменений.ПроцентВГруппе</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>

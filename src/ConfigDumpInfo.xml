@@ -534,8 +534,8 @@
 		<Metadata name="Report.ОтчетПоХранилищу" id="aa50de0a-cbc3-4847-a27f-acc5708647e7" configVersion="5f25e07a1fd63d499d916bf2fc490f0200000000"/>
 		<Metadata name="Report.ОтчетПоХранилищу.Form.ФормаОтчета" id="c91832a2-a36a-41dd-a100-38add15485bb" configVersion="53146eabde07cc4783a70987de44ef0b00000000"/>
 		<Metadata name="Report.ОтчетПоХранилищу.Form.ФормаОтчета.Form" id="c91832a2-a36a-41dd-a100-38add15485bb.0" configVersion="fb1cf29053b81c4b96a34a6afd58b2a900000000"/>
-		<Metadata name="Report.ОтчетПоХранилищу.Template.ОсновнаяСхемаКомпоновкиДанных" id="860350b3-5a75-486e-be51-eda0c729ecb1" configVersion="884d355147042b4190a71977f06d512100000000"/>
-		<Metadata name="Report.ОтчетПоХранилищу.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="860350b3-5a75-486e-be51-eda0c729ecb1.0" configVersion="57d065c7e852c944960ec5bdb1ca6ea700000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу.Template.ОсновнаяСхемаКомпоновкиДанных" id="860350b3-5a75-486e-be51-eda0c729ecb1" configVersion="cc55ff0c8420294b9ac17e2f09613deb00000000"/>
+		<Metadata name="Report.ОтчетПоХранилищу.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="860350b3-5a75-486e-be51-eda0c729ecb1.0" configVersion="7ad94242a46f304aa55e4aace62077e600000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено" id="e54f1bfc-2c30-4158-8f07-4df242c569fb" configVersion="4f3daabcd5b45c40a8b34d356cb1e09a00000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета" id="ee3c76fb-601c-428a-96e9-1eb4590590b1" configVersion="477a0b38ce3b3042b0bf4fe7611f9b8200000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета.Form" id="ee3c76fb-601c-428a-96e9-1eb4590590b1.0" configVersion="9e830a678a148040b9d3f543165450a700000000"/>
