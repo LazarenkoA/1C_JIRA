@@ -67,6 +67,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИзмененияРевизии</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипИзмененийОбъекта</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоХранилищу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДиаграммаОбъектПользователь</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
