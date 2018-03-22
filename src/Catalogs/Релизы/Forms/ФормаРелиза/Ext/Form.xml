@@ -805,6 +805,12 @@
 						</Page>
 					</ChildItems>
 				</Pages>
+				<CheckBoxField name="НеобходимаПередачаВФАП" id="223">
+					<DataPath>Объект.НеобходимаПередачаВФАП</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеобходимаПередачаВФАПКонтекстноеМеню" id="224"/>
+					<ExtendedTooltip name="НеобходимаПередачаВФАПРасширеннаяПодсказка" id="225"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<CheckBoxField name="РелизСобран" id="218">

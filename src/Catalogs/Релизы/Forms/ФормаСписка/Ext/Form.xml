@@ -153,6 +153,7 @@
 				<Field>Список.ВыпускРелизаПросрочен</Field>
 				<Field>Список.ДатаРелиза</Field>
 				<Field>Список.Картинка</Field>
+				<Field>Список.НеобходимаПередачаВФАП</Field>
 				<Field>Список.РелизВыпущен</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
@@ -182,8 +183,8 @@
 	СправочникРелизы.ДатаРелиза &lt; &amp;ТекДата КАК ВыпускРелизаПросрочен,
 	СправочникРелизы.ДатаНачала КАК ДатаНачала,
 	&amp;ТекДата МЕЖДУ СправочникРелизы.ДатаНачала И СправочникРелизы.ДатаРелиза КАК АктуальныйРелиз,
-	ЕСТЬNULL(ВложенныйЗапрос.Оценка, 0) 
-	  КАК Оценка
+	ЕСТЬNULL(ВложенныйЗапрос.Оценка, 0) КАК Оценка,
+	СправочникРелизы.НеобходимаПередачаВФАП КАК НеобходимаПередачаВФАП
 ИЗ
 	Справочник.Релизы КАК СправочникРелизы
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
@@ -270,6 +271,31 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>Шрифт</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.НеобходимаПередачаВФАП</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFE5DC</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFE5DC</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
