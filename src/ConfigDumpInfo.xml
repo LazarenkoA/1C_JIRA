@@ -524,8 +524,8 @@
 		<Metadata name="InformationRegister.СписаниеВремени.ManagerModule" id="593b750c-049c-474a-ad02-525c2ce9dfde.2" configVersion="d4c228c29563704abff6734badeb252300000000"/>
 		<Metadata name="Language.Русский" id="daabf7c0-df24-49a3-9b2a-e703407ae987" configVersion="afad2bbb952e854abbfd759b377bcad800000000"/>
 		<Metadata name="Report.ДиаграммаОбъектПользователь" id="dc9ee94e-c1ed-4c62-a147-9707af1ec8e8" configVersion="4c131b70e6c9474e9cb596bf009b85ab00000000"/>
-		<Metadata name="Report.ДиаграммаОбъектПользователь.Template.ОсновнаяСхемаКомпоновкиДанных" id="2f2234f4-492a-40ba-9097-e57104cc80dc" configVersion="18d9dd6bfc1580438a9a766e49126f6700000000"/>
-		<Metadata name="Report.ДиаграммаОбъектПользователь.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="2f2234f4-492a-40ba-9097-e57104cc80dc.0" configVersion="42f8af8a4aeb9947bef212db3f2fb55300000000"/>
+		<Metadata name="Report.ДиаграммаОбъектПользователь.Template.ОсновнаяСхемаКомпоновкиДанных" id="2f2234f4-492a-40ba-9097-e57104cc80dc" configVersion="ea6e2f436b5f614b976bd4316a63964700000000"/>
+		<Metadata name="Report.ДиаграммаОбъектПользователь.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="2f2234f4-492a-40ba-9097-e57104cc80dc.0" configVersion="150b0a9bb6d60c45a4a20277d2e3c1d300000000"/>
 		<Metadata name="Report.ДиаграммаПоБюджетам" id="221c8542-42f4-4dcc-b0ea-2703840db4a1" configVersion="3bf715ea168e884ab69aa7376a6dcaab00000000"/>
 		<Metadata name="Report.ДиаграммаПоБюджетам.Template.ОсновнаяСхемаКомпоновкиДанных" id="e1ebdc25-95b9-4344-8d72-c86c98ceb125" configVersion="9efd5dc1b8317c4f9e6860a1d7386bab00000000"/>
 		<Metadata name="Report.ДиаграммаПоБюджетам.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="e1ebdc25-95b9-4344-8d72-c86c98ceb125.0" configVersion="0a68a1cfbcf89942bee6d8e37e1d1cfe00000000"/>
