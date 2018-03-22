@@ -267,7 +267,7 @@
 		<Metadata name="CommonPicture.СинхронизацияДанныхДлительнаяОперация49.Picture" id="7f61e24c-d1a5-445b-b5c2-dfd9bb09590a.0" configVersion="a460136ca8fdb641949ee87b98b55e6500000000"/>
 		<Metadata name="CommonPicture.ТипыРевизий" id="70ffe57e-b2a7-455c-a46e-26d48d3cce66" configVersion="70932e2bff2bad45a065b85318583e5900000000"/>
 		<Metadata name="CommonPicture.ТипыРевизий.Picture" id="70ffe57e-b2a7-455c-a46e-26d48d3cce66.0" configVersion="4a00d41e4c86c64cab5d744cbe66611000000000"/>
-		<Metadata name="Configuration.АРМ_JIRA" id="25e2be19-aa77-4533-af14-07c397374b74" configVersion="3813649f93446f47a22cc97ef676add000000000"/>
+		<Metadata name="Configuration.АРМ_JIRA" id="25e2be19-aa77-4533-af14-07c397374b74" configVersion="3546457e30e8c8409744f3f3340724d900000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.ClientApplicationInterface" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.b" configVersion="10d7963b3d53e64e8df8ad66586955db00000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.HomePageWorkArea" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.8" configVersion="01f97a3b34371a4b91902a1457e9116b00000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.ManagedApplicationModule" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.6" configVersion="46dbd76a0b426f4fb0b7efb2034fb2d900000000"/>
@@ -523,6 +523,9 @@
 		<Metadata name="InformationRegister.СписаниеВремени.Form.ФормаСписка.Form" id="a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a.0" configVersion="5642b33e5b7d6449846c23cc15e7f16d00000000"/>
 		<Metadata name="InformationRegister.СписаниеВремени.ManagerModule" id="593b750c-049c-474a-ad02-525c2ce9dfde.2" configVersion="d4c228c29563704abff6734badeb252300000000"/>
 		<Metadata name="Language.Русский" id="daabf7c0-df24-49a3-9b2a-e703407ae987" configVersion="afad2bbb952e854abbfd759b377bcad800000000"/>
+		<Metadata name="Report.ДиаграммаОбъектПользователь" id="dc9ee94e-c1ed-4c62-a147-9707af1ec8e8" configVersion="4c131b70e6c9474e9cb596bf009b85ab00000000"/>
+		<Metadata name="Report.ДиаграммаОбъектПользователь.Template.ОсновнаяСхемаКомпоновкиДанных" id="2f2234f4-492a-40ba-9097-e57104cc80dc" configVersion="ec56d5ac29358547bd5e503cb73e964500000000"/>
+		<Metadata name="Report.ДиаграммаОбъектПользователь.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="2f2234f4-492a-40ba-9097-e57104cc80dc.0" configVersion="40ac7fb4570375489f639964a5d2e64100000000"/>
 		<Metadata name="Report.ДиаграммаПоБюджетам" id="221c8542-42f4-4dcc-b0ea-2703840db4a1" configVersion="3bf715ea168e884ab69aa7376a6dcaab00000000"/>
 		<Metadata name="Report.ДиаграммаПоБюджетам.Template.ОсновнаяСхемаКомпоновкиДанных" id="e1ebdc25-95b9-4344-8d72-c86c98ceb125" configVersion="9efd5dc1b8317c4f9e6860a1d7386bab00000000"/>
 		<Metadata name="Report.ДиаграммаПоБюджетам.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="e1ebdc25-95b9-4344-8d72-c86c98ceb125.0" configVersion="0a68a1cfbcf89942bee6d8e37e1d1cfe00000000"/>

@@ -108,6 +108,7 @@ acbfbc2e-d466-4a58-8c99-4f5b79184cbe:6B806463ACB96E415E5A7D8AE429FDB9:2:Informat
 a83a9369-33f4-485b-8314-cb13ab37183e:17C666A456D4935EC4CDFDA7DC5D5DF8:2:InformationRegisters\ИсторияИзмененияСтатусов.xml
 593b750c-049c-474a-ad02-525c2ce9dfde:B2949DB4FB732A1F3A4402C8F5BBA450:2:InformationRegisters\СписаниеВремени.xml
 daabf7c0-df24-49a3-9b2a-e703407ae987:EFF946AA8AEEC303E5F7E565EA09C643:2:Languages\Русский.xml
+dc9ee94e-c1ed-4c62-a147-9707af1ec8e8:EB26ED352A6F9BA1C905B07B3ED94760:2:Reports\ДиаграммаОбъектПользователь.xml
 221c8542-42f4-4dcc-b0ea-2703840db4a1:F57489126DD5BBE8130F4D5323F5803F:2:Reports\ДиаграммаПоБюджетам.xml
 f1a9fac8-b58c-42bc-a000-8e1530db2b96:0923DBB6F5F6AE77FD03A845E1C5C07D:2:Reports\ОтчетПоКорректировкиСписаний.xml
 aa50de0a-cbc3-4847-a27f-acc5708647e7:3E133F70696478831AE76B9ED4E7EAE5:2:Reports\ОтчетПоХранилищу.xml
@@ -265,6 +266,7 @@ a83a9369-33f4-485b-8314-cb13ab37183e_ManagerModule.bsl:5B917210F50EDD2984EFBE19C
 57b31ad6-0770-48a4-8c7a-1c27ac2b15b9:58CAB1330D741E3F52CF22C817A366B8:4:InformationRegisters\ИсторияИзмененияСтатусов\Forms\ФормаСписка.xml
 593b750c-049c-474a-ad02-525c2ce9dfde_ManagerModule.bsl:49C2449D052D65E7D1555F19B0F585F9:4:InformationRegisters\СписаниеВремени\Ext\ManagerModule.bsl
 a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a:CAA288F82747759DD211C450265905AA:4:InformationRegisters\СписаниеВремени\Forms\ФормаСписка.xml
+2f2234f4-492a-40ba-9097-e57104cc80dc:44CE9972BE5087A3421768CDBC5E990A:4:Reports\ДиаграммаОбъектПользователь\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 e1ebdc25-95b9-4344-8d72-c86c98ceb125:462AC0BD8376C857BEEFF51B71449EE9:4:Reports\ДиаграммаПоБюджетам\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
 fb3ed2fb-c31e-4f85-87f1-3e154cdd5211:55D928289697EFAA350E812C98BDCF64:4:Reports\ОтчетПоКорректировкиСписаний\Forms\ФормаОтчета.xml
 97a31fc3-0e2f-4806-864c-ce2b064b9c38:9927BDDDDFEE21EA673964301E286E78:4:Reports\ОтчетПоКорректировкиСписаний\Templates\ОсновнаяСхемаКомпоновкиДанных.xml
@@ -381,6 +383,7 @@ a8fe7b72-14c5-48cb-a086-673a0ced47d8_Form.xml:865F77D29FBFA991AEEAE19971D26105:6
 0845ffb2-1a9c-4ad9-85a9-88f453f9f42c_Form.xml:A8A62BE113490AB98E3F5D514C99FBCC:6:InformationRegisters\ЖурналОтправкиУведомлений\Forms\ФормаСписка\Ext\Form.xml
 57b31ad6-0770-48a4-8c7a-1c27ac2b15b9_Form.xml:5815A377885BBEAD76A002B3D36920B8:6:InformationRegisters\ИсторияИзмененияСтатусов\Forms\ФормаСписка\Ext\Form.xml
 a397bab7-7b96-4cd7-95d3-bcbfaaf44f5a_Form.xml:6055251784050A682B4DB7998CB4F105:6:InformationRegisters\СписаниеВремени\Forms\ФормаСписка\Ext\Form.xml
+2f2234f4-492a-40ba-9097-e57104cc80dc_Template.xml:C41D541A50411C961404FB1926811879:6:Reports\ДиаграммаОбъектПользователь\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 e1ebdc25-95b9-4344-8d72-c86c98ceb125_Template.xml:0DEA8C2AC5A4EB23011086EF47A110AD:6:Reports\ДиаграммаПоБюджетам\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 fb3ed2fb-c31e-4f85-87f1-3e154cdd5211_Form.xml:962B518A3AF044B33EB3C1DD545A2503:6:Reports\ОтчетПоКорректировкиСписаний\Forms\ФормаОтчета\Ext\Form.xml
 97a31fc3-0e2f-4806-864c-ce2b064b9c38_Template.xml:355DA505F9C2572C114D2E0EC4CF0279:6:Reports\ОтчетПоКорректировкиСписаний\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
