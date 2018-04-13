@@ -32,7 +32,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Hierarchical>true</Hierarchical>
+			<Hierarchical>false</Hierarchical>
 			<HierarchyType>HierarchyOfItems</HierarchyType>
 			<LimitLevelCount>true</LimitLevelCount>
 			<LevelCount>2</LevelCount>

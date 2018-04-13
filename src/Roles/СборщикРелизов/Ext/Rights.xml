@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Catalog.БФТ_Сборки.Command.НаборыИзменений</name>
+		<name>Catalog.Патчи.Command.НаборыИзменений</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

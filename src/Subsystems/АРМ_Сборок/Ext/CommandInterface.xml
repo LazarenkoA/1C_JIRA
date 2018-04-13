@@ -38,7 +38,7 @@
 		<Command name="InformationRegister.БФТ_ХранилищеМакетов.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
-		<Command name="Catalog.БФТ_Сборки.StandardCommand.OpenList">
+		<Command name="Catalog.Патчи.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 	</CommandsOrder>

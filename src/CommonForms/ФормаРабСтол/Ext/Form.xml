@@ -385,6 +385,239 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="Команда" id="380">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КомандаРасширеннаяПодсказка" id="381"/>
+			<ChildItems>
+				<UsualGroup name="Лазаренко" id="382">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лазаренко</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лазаренко</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#A6FF9D</BackColor>
+					<ExtendedTooltip name="ЛазаренкоРасширеннаяПодсказка" id="383"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация1" id="384">
+							<Width>10</Width>
+							<Height>5</Height>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.jpg</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="385"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="386"/>
+						</PictureDecoration>
+						<ProgressBarField name="ПрогрессЛ" id="387">
+							<DataPath>НаборКонстант</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>10</Width>
+							<ShowPercent>true</ShowPercent>
+							<ContextMenu name="ПрогрессЛКонтекстноеМеню" id="388"/>
+							<ExtendedTooltip name="ПрогрессЛРасширеннаяПодсказка" id="389"/>
+						</ProgressBarField>
+						<UsualGroup name="Группа9" id="390">
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="391"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация2" id="392">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В работе - </v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="393"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="394"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация3" id="395">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>2 шт</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="396"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="397"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация11" id="398">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>из</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="399"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="400"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация12" id="401">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>10 шт</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация12КонтекстноеМеню" id="402"/>
+									<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="403"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа10" id="404">
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="405"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация4" id="406">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Общая оценка -</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="407"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="408"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация5" id="409">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>100 ч</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="410"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="411"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Лазаренко1" id="412">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лазаренко</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лазаренко</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#FF4141</BackColor>
+					<ExtendedTooltip name="Лазаренко1РасширеннаяПодсказка" id="413"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация6" id="414">
+							<Width>10</Width>
+							<Height>5</Height>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Abs>Picture.jpg</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация6КонтекстноеМеню" id="415"/>
+							<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="416"/>
+						</PictureDecoration>
+						<ProgressBarField name="ПрогрессЛ1" id="417">
+							<DataPath>НаборКонстант</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>10</Width>
+							<ShowPercent>true</ShowPercent>
+							<ContextMenu name="ПрогрессЛ1КонтекстноеМеню" id="418"/>
+							<ExtendedTooltip name="ПрогрессЛ1РасширеннаяПодсказка" id="419"/>
+						</ProgressBarField>
+						<UsualGroup name="Группа11" id="420">
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="421"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация7" id="422">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В работе - </v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="423"/>
+									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="424"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация8" id="425">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>2 шт</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация8КонтекстноеМеню" id="426"/>
+									<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="427"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа12" id="428">
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="429"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация9" id="430">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Общая оценка -</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<ContextMenu name="Декорация9КонтекстноеМеню" id="431"/>
+									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="432"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация10" id="433">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>100 ч</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация10КонтекстноеМеню" id="434"/>
+									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="435"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="грРегламентноеЗадание" id="208">
 			<Visible>false</Visible>
 			<Title>

@@ -51,6 +51,7 @@
 		</CheckBoxField>
 		<InputField name="Комментарий" id="59">
 			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="60"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="61"/>
@@ -65,6 +66,7 @@
 				</v8:item>
 			</ToolTip>
 			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<ContextMenu name="ШаблонКонтекстноеМеню" id="33"/>
 			<ExtendedTooltip name="ШаблонРасширеннаяПодсказка" id="34"/>
 			<Events>
@@ -75,6 +77,7 @@
 			<DataPath>Предпросмотр</DataPath>
 			<TitleLocation>Top</TitleLocation>
 			<Width>50</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<BackColor>style:FormBackColor</BackColor>
 			<BorderColor>style:FormBackColor</BorderColor>

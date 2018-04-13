@@ -23,6 +23,7 @@
 			<DataPath>Команда</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>Top</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="КомандаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КомандаРасширеннаяПодсказка" id="3"/>

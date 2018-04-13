@@ -128,7 +128,7 @@
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>DontUse</ModalityUseMode>
-			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<CompatibilityMode>Version8_3_11</CompatibilityMode>
 			<DefaultConstantsForm/>
@@ -153,6 +153,8 @@
 			<CommonPicture>ИконкиРелизов</CommonPicture>
 			<CommonPicture>ВажностьСтрок</CommonPicture>
 			<CommonPicture>ДлительнаяОперация48</CommonPicture>
+			<CommonPicture>ВажностьНовостиОченьВажная</CommonPicture>
+			<CommonPicture>Предупреждение</CommonPicture>
 			<SessionParameter>JIRA_Cookies</SessionParameter>
 			<Role>Администратор</Role>
 			<Role>СборщикРелизов</Role>
@@ -163,6 +165,8 @@
 			<CommonModule>ВзаимодействиеC_JIRA_КлиентСервер</CommonModule>
 			<CommonModule>ВзаимодействиеC_JIRA_Сервер</CommonModule>
 			<CommonModule>ГлобальныеНаСервере</CommonModule>
+			<CommonModule>ДлительныеОперации</CommonModule>
+			<CommonModule>ДлительныеОперацииКлиент</CommonModule>
 			<CommonModule>ОбработкаРегламентныхЗаданий</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
@@ -174,12 +178,10 @@
 			<CommonModule>РегламентныеЗаданияСлужебный</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>УведомленияСервер</CommonModule>
+			<CommonModule>УтилитыDOM</CommonModule>
 			<CommonModule>УтилитыГлобальныеНаКлиенте</CommonModule>
 			<CommonModule>УтилитыГлобальныеНаСервере</CommonModule>
-			<CommonModule>УтилитыDOM</CommonModule>
 			<CommonModule>УтилитыЧтенияXML</CommonModule>
-			<CommonModule>ДлительныеОперации</CommonModule>
-			<CommonModule>ДлительныеОперацииКлиент</CommonModule>
 			<ScheduledJob>ПолучениеЗадач</ScheduledJob>
 			<ScheduledJob>ОповещениеПоЗадачам</ScheduledJob>
 			<ScheduledJob>ПолучениеСписаниеВремени</ScheduledJob>
@@ -225,10 +227,10 @@
 			<Catalog>БФТ_МетодыРаботыСРепозиторием</Catalog>
 			<Catalog>БФТ_НаборыИзменений</Catalog>
 			<Catalog>БФТ_НастройкаПодключенияКРепозиторию</Catalog>
-			<Catalog>БФТ_Сборки</Catalog>
 			<Catalog>БюджетыПУ</Catalog>
 			<Catalog>Задачи</Catalog>
 			<Catalog>ОграничениеПоБюджетам</Catalog>
+			<Catalog>Патчи</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>Приоритеты</Catalog>
 			<Catalog>Релизы</Catalog>

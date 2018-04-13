@@ -73,6 +73,7 @@
 			<BasedOn/>
 			<DataLockFields>
 				<xr:Field>Catalog.Пользователи.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Пользователи.Attribute.ФИО</xr:Field>
 			</DataLockFields>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>

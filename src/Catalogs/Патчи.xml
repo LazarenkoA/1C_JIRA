@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<Catalog uuid="9f75ce71-ef70-4317-b940-f0c2cf7af959">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.БФТ_Сборки" category="Object">
+			<xr:GeneratedType name="CatalogObject.Патчи" category="Object">
 				<xr:TypeId>c2b8062a-336b-45da-b9f1-6e562d49339f</xr:TypeId>
 				<xr:ValueId>5fe53bdd-bee5-4649-84dd-849f715c2dc2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.БФТ_Сборки" category="Ref">
+			<xr:GeneratedType name="CatalogRef.Патчи" category="Ref">
 				<xr:TypeId>b299274b-dbaf-4b1b-9913-f019504d2f49</xr:TypeId>
 				<xr:ValueId>f490a745-3a52-4689-9276-f5bee82ceff8</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.БФТ_Сборки" category="Selection">
+			<xr:GeneratedType name="CatalogSelection.Патчи" category="Selection">
 				<xr:TypeId>72bc75f7-1730-426d-a72a-b3c1b73f32e2</xr:TypeId>
 				<xr:ValueId>891c45f2-97ff-47e2-ade0-624cd71f9303</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.БФТ_Сборки" category="List">
+			<xr:GeneratedType name="CatalogList.Патчи" category="List">
 				<xr:TypeId>f8b20da6-3c62-4dce-9444-f37111ba23ae</xr:TypeId>
 				<xr:ValueId>8dc708c9-1743-468a-a5d6-75942ca49fec</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.БФТ_Сборки" category="Manager">
+			<xr:GeneratedType name="CatalogManager.Патчи" category="Manager">
 				<xr:TypeId>0571442d-186c-4864-b02a-e1d93af90d51</xr:TypeId>
 				<xr:ValueId>0e4bac8e-756b-4b87-9c6e-aa82aaca348f</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>БФТ_Сборки</Name>
+			<Name>Патчи</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сборки</v8:content>
+					<v8:content>Патчи</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -38,15 +38,17 @@
 			<LevelCount>2</LevelCount>
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
-			<Owners/>
+			<Owners>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Релизы</xr:Item>
+			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
-			<CodeLength>5</CodeLength>
-			<DescriptionLength>150</DescriptionLength>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>25</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
-			<CodeSeries>WholeCatalog</CodeSeries>
+			<CodeSeries>WithinOwnerSubordination</CodeSeries>
 			<CheckUnique>true</CheckUnique>
-			<Autonumbering>false</Autonumbering>
+			<Autonumbering>true</Autonumbering>
 			<DefaultPresentation>AsDescription</DefaultPresentation>
 			<StandardAttributes>
 				<xr:StandardAttribute name="PredefinedDataName">
@@ -300,14 +302,14 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.БФТ_Сборки.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Патчи.StandardAttribute.Description</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.БФТ_Сборки.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultObjectForm>Catalog.Патчи.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm>Catalog.БФТ_Сборки.Form.ФормаСписка</DefaultListForm>
+			<DefaultListForm>Catalog.Патчи.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -316,7 +318,9 @@
 			<AuxiliaryChoiceForm/>
 			<AuxiliaryFolderChoiceForm/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
-			<BasedOn/>
+			<BasedOn>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Релизы</xr:Item>
+			</BasedOn>
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
@@ -668,11 +672,11 @@
 			</Attribute>
 			<TabularSection uuid="9c535839-9269-4f5a-b409-a50d9a7c91ec">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.БФТ_Сборки.НаборыИзменений" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.Патчи.НаборыИзменений" category="TabularSection">
 						<xr:TypeId>d21b7124-334f-4319-9acb-94ed262d4579</xr:TypeId>
 						<xr:ValueId>e9a27fc2-e8d5-49e0-8e23-baaefbbb2437</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.БФТ_Сборки.НаборыИзменений" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.Патчи.НаборыИзменений" category="TabularSectionRow">
 						<xr:TypeId>2ca7f444-aa56-4c11-a5c7-1f3ebfb39fc6</xr:TypeId>
 						<xr:ValueId>1854e519-630c-469d-9f54-2ab5aa3ce461</xr:ValueId>
 					</xr:GeneratedType>
@@ -862,7 +866,7 @@
 					<Comment/>
 					<Group>FormNavigationPanelImportant</Group>
 					<CommandParameterType>
-						<v8:Type>cfg:CatalogRef.БФТ_Сборки</v8:Type>
+						<v8:Type>cfg:CatalogRef.Патчи</v8:Type>
 					</CommandParameterType>
 					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>

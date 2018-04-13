@@ -89,7 +89,7 @@
 					<ExtendedTooltip name="ПатчРасширеннаяПодсказка" id="18"/>
 					<ChildItems>
 						<LabelField name="Родитель" id="10">
-							<DataPath>Объект.Parent</DataPath>
+							<DataPath>1/-4</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>

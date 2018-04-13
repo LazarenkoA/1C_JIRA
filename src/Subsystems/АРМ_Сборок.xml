@@ -25,7 +25,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаКлиенте</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БФТ_ОбщиеМетодыАРМаСборокНаСервере</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.БФТ_РежимВводаПараметра</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.БФТ_Сборки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Патчи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВысокаяВажность</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Важность</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.БФТ_ХранилищеМакетов</xr:Item>
@@ -68,6 +68,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипИзмененийОбъекта</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоХранилищу</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ДиаграммаОбъектПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВажностьНовостиОченьВажная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">bca22a3d-9209-4b0c-b58f-de98f8d555b8</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">a7024412-e8c5-41c8-8740-d31979d95995</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

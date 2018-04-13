@@ -8,12 +8,20 @@
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
 				<CommandName>Form.Command.Назад</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
 				<ExtendedTooltip name="ФормаНазадРасширеннаяПодсказка" id="43"/>
 			</Button>
 			<Button name="ФормаДалее" id="40">
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
 				<CommandName>Form.Command.Далее</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.MoveRight</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
 				<ExtendedTooltip name="ФормаДалееРасширеннаяПодсказка" id="41"/>
 			</Button>
 		</ChildItems>
@@ -94,6 +102,7 @@
 											<DataPath>ТекущийСтатус</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<BorderColor>style:TableHeaderTextColor</BorderColor>
 											<TextColor>#800000</TextColor>
 											<Font ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
@@ -118,6 +127,10 @@
 												</v8:item>
 											</ToolTip>
 											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьНовостиОченьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
 											<ContextMenu name="КартинкаПредупреждениеВысокоеКонтекстноеМеню" id="67"/>
 											<ExtendedTooltip name="КартинкаПредупреждениеВысокоеРасширеннаяПодсказка" id="68"/>
 											<Events>
@@ -174,6 +187,10 @@
 												</v8:item>
 											</ToolTip>
 											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
 											<ContextMenu name="КартинкаПредупреждениеСлияниеКонтекстноеМеню" id="72"/>
 											<ExtendedTooltip name="КартинкаПредупреждениеСлияниеРасширеннаяПодсказка" id="73"/>
 											<Events>
@@ -219,15 +236,29 @@
 									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 								</InputField>
-								<InputField name="ЛокальныйПутьКСборке" id="79">
-									<DataPath>Объект.ЛокальныйПутьКСборке</DataPath>
-									<ChoiceButton>true</ChoiceButton>
-									<ContextMenu name="ЛокальныйПутьКСборкеКонтекстноеМеню" id="80"/>
-									<ExtendedTooltip name="ЛокальныйПутьКСборкеРасширеннаяПодсказка" id="81"/>
-									<Events>
-										<Event name="StartChoice">ЛокальныйПутьКСборкеНачалоВыбора</Event>
-									</Events>
-								</InputField>
+								<UsualGroup name="Группа1" id="96">
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="97"/>
+									<ChildItems>
+										<InputField name="ЛокальныйПутьКСборке" id="79">
+											<DataPath>Объект.ЛокальныйПутьКСборке</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Путь к локальному каталогу синхронизации с репозиторием, к директории ... \ЦПК\Сборки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="ЛокальныйПутьКСборкеКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ЛокальныйПутьКСборкеРасширеннаяПодсказка" id="81"/>
+											<Events>
+												<Event name="StartChoice">ЛокальныйПутьКСборкеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
 								<InputField name="НастройкиРаботыСРепозиторием" id="49">
 									<DataPath>Объект.НастройкиРаботыСРепозиторием</DataPath>
 									<ContextMenu name="НастройкиРаботыСРепозиториемКонтекстноеМеню" id="50"/>
@@ -280,6 +311,10 @@
 												</v8:item>
 											</ToolTip>
 											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
 											<ContextMenu name="КартинкаПредупреждениеКонтекстноеМеню" id="62"/>
 											<ExtendedTooltip name="КартинкаПредупреждениеРасширеннаяПодсказка" id="63"/>
 											<Events>
@@ -288,6 +323,17 @@
 										</PictureDecoration>
 									</ChildItems>
 								</UsualGroup>
+								<LabelField name="Владелец" id="98">
+									<DataPath>Объект.Owner</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Релиз</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВладелецКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="100"/>
+								</LabelField>
 								<Table name="НаборыИзменений" id="11">
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<EnableStartDrag>true</EnableStartDrag>
@@ -389,6 +435,7 @@
 									<DataPath>Объект.Лог</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<MultiLine>true</MultiLine>
 									<ContextMenu name="ЛогКонтекстноеМеню" id="59"/>
 									<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="60"/>
@@ -408,7 +455,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:CatalogObject.БФТ_Сборки</v8:Type>
+				<v8:Type>cfg:CatalogObject.Патчи</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
