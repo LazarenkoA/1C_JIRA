@@ -182,6 +182,7 @@
 			<CommonModule>УтилитыГлобальныеНаКлиенте</CommonModule>
 			<CommonModule>УтилитыГлобальныеНаСервере</CommonModule>
 			<CommonModule>УтилитыЧтенияXML</CommonModule>
+			<CommonModule>ОбщегоНазначенияСерверПовтИсп</CommonModule>
 			<ScheduledJob>ПолучениеЗадач</ScheduledJob>
 			<ScheduledJob>ОповещениеПоЗадачам</ScheduledJob>
 			<ScheduledJob>ПолучениеСписаниеВремени</ScheduledJob>
@@ -237,6 +238,7 @@
 			<Catalog>РФК</Catalog>
 			<Catalog>ТипыЗадач</Catalog>
 			<Catalog>ШаблоныУведомлений</Catalog>
+			<Catalog>Команда</Catalog>
 			<Enum>БФТ_РежимВводаПараметра</Enum>
 			<Enum>БФТ_СтатусИзмененийРепозитория</Enum>
 			<Enum>БФТ_ТипИзменений</Enum>

@@ -5,6 +5,7 @@ be344122-af54-45af-a429-a0622a916dfa:557F40CCFE360C6FECC05A7D265DF2BF:2:Catalogs
 4eb7a997-cc19-4949-a55e-3aa78fe165a8:56BB574C949A9A931D9BA257B8645383:2:Catalogs\БФТ_НастройкаПодключенияКРепозиторию.xml
 066f724e-3d83-4830-8c7c-2583f019f381:28F0A683CE0FCCF3FC4750CA6541082B:2:Catalogs\БюджетыПУ.xml
 2716f5be-aba9-4e91-b166-7b52f71d7975:3BD63EAAEA282FFFCB1CB1D38F5BD951:2:Catalogs\Задачи.xml
+716add2e-2f8e-448d-8472-2638da4d43b9:29983348E7377E04F88D03565F8A9767:2:Catalogs\Команда.xml
 50b5a48e-0cc3-4045-9bb6-b78d8c1c17e1:A1396966046ACA20CCB5F79939EB584A:2:Catalogs\ОграничениеПоБюджетам.xml
 9f75ce71-ef70-4317-b940-f0c2cf7af959:C17B85916F22EE1891D1A410084D5B2A:2:Catalogs\Патчи.xml
 567a1f5a-f4c9-4247-933a-0a89239a1b02:9CBE463736EB9D6B14C9BE94F7919D4D:2:Catalogs\Пользователи.xml
@@ -39,6 +40,7 @@ a55f6dcc-9419-45e4-94aa-53c3c080f774:A0EF10D215F5A5B63D60CD131B12415C:2:CommonMo
 9ae530c9-0dae-40a2-a38c-8f0d21e1a247:5EC93DBA0C5FED098ECFA8926B1AD5F2:2:CommonModules\ОбщегоНазначенияКлиент.xml
 025154a6-587f-4c21-b130-712e4daa53c2:08BF10205DD26EE7BDBC58F809A2D466:2:CommonModules\ОбщегоНазначенияКлиентСервер.xml
 d76af95c-105b-4a54-b136-9b9a629611c0:AA134B03ABD0FCF6DA11F234F2412FB6:2:CommonModules\ОбщегоНазначенияСервер.xml
+380db81b-f832-449e-b24b-de4d166283a4:A0A69ABAEAAB8C663EC4FE519857C3F8:2:CommonModules\ОбщегоНазначенияСерверПовтИсп.xml
 77a6056b-d3ed-40db-9545-f4614af1177d:52F53F50C2BDC545A51FA2EA9D8F6726:2:CommonModules\РаботаСПочтовымиСообщениями.xml
 92d012cc-bf7d-4d1f-911f-7f87116e9fc9:CB5024FDE13F706EEE0877EBE0C3392B:2:CommonModules\РаботаСПочтовымиСообщениямиКлиентСервер.xml
 e771fd51-f2c7-4d2a-a152-74e3803ce737:3E9DDF47296DD0F29F72C01300DB2B22:2:CommonModules\РазборФайловHTML.xml
@@ -206,6 +208,7 @@ a55f6dcc-9419-45e4-94aa-53c3c080f774_Module.bsl:AEE72C9C3FD2BA56CD6D5F46B8E1B3AB
 9ae530c9-0dae-40a2-a38c-8f0d21e1a247_Module.bsl:7AA69DD0700B7834B31F9C5E275D4382:4:CommonModules\ОбщегоНазначенияКлиент\Ext\Module.bsl
 025154a6-587f-4c21-b130-712e4daa53c2_Module.bsl:47F69B5DAD7DE1D6BC2441C72BBF7FFE:4:CommonModules\ОбщегоНазначенияКлиентСервер\Ext\Module.bsl
 d76af95c-105b-4a54-b136-9b9a629611c0_Module.bsl:0311B1276A4362A82ED9EE9397D26178:4:CommonModules\ОбщегоНазначенияСервер\Ext\Module.bsl
+380db81b-f832-449e-b24b-de4d166283a4_Module.bsl:3AAE3AAEAA6533824A848451A062BEF3:4:CommonModules\ОбщегоНазначенияСерверПовтИсп\Ext\Module.bsl
 77a6056b-d3ed-40db-9545-f4614af1177d_Module.bsl:C89559CCFC8B5F058320A05FD4D9596A:4:CommonModules\РаботаСПочтовымиСообщениями\Ext\Module.bsl
 92d012cc-bf7d-4d1f-911f-7f87116e9fc9_Module.bsl:81DCF5BCE36A5E1093F9DB9439408C45:4:CommonModules\РаботаСПочтовымиСообщениямиКлиентСервер\Ext\Module.bsl
 e771fd51-f2c7-4d2a-a152-74e3803ce737_Module.bsl:15BCA9DCA691A35694465566B8787C11:4:CommonModules\РазборФайловHTML\Ext\Module.bsl
@@ -421,7 +424,6 @@ abc3bc78-48ed-4c44-aabe-0059a60455d7_Form\Module.bsl:645788D5D71F2CEFBC1D36DA046
 2bb302ad-c207-4e9c-b687-6de8e36e24b6_Form\Module.bsl:49185D18FF65B45C077EC6E040B29F9D:7:Catalogs\Релизы\Forms\ФормаСписка\Ext\Form\Module.bsl
 21f5bea6-79da-47cd-8c8b-f3ba9c60e64d_Form\Module.bsl:79A3108BA43A03AC87AFAB5D5266A1C5:7:Catalogs\ШаблоныУведомлений\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 3c0730e4-6e95-4a93-9c2c-a596f1370097_Form\Items\Декорация1\Picture.jpg:20E239E07CCBE4BB8F9FDDCBE02BBF54:7:CommonForms\ФормаРабСтол\Ext\Form\Items\Декорация1\Picture.jpg
-3c0730e4-6e95-4a93-9c2c-a596f1370097_Form\Items\Декорация6\Picture.jpg:B3F3FA6F0E76EF106907A788339CED9C:7:CommonForms\ФормаРабСтол\Ext\Form\Items\Декорация6\Picture.jpg
 b73b572c-9573-4d86-92f8-d1e2e8b70b83_Form\Module.bsl:5240F03D9218E89B57929A2069338D6E:7:DataProcessors\БФТ_ВыгрузкаКонфигурации\Forms\Форма\Ext\Form\Module.bsl
 b73b572c-9573-4d86-92f8-d1e2e8b70b83_Help\ru.html:AB7E648E6D28D73954A2B72C2BFA193F:7:DataProcessors\БФТ_ВыгрузкаКонфигурации\Forms\Форма\Ext\Help\ru.html
 a0b64c66-6092-4b17-820a-6b7d35e74911_Form\Module.bsl:924DEA69E8DCEF8398D18CBA94F017C6:7:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных\Forms\ВыборИзЗапроса\Ext\Form\Module.bsl

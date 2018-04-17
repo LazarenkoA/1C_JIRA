@@ -80,7 +80,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаАнализДополнительныхКоммитов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДлительнаяОперация48</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ДлительнаяОперация</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">3de6c80b-67b9-468f-9025-38e108dd3ca4</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Команда</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

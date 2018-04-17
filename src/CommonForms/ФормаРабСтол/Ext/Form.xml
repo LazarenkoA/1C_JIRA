@@ -385,23 +385,26 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="Команда" id="380">
-			<Visible>false</Visible>
+		<UsualGroup name="Команды" id="380">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда</v8:content>
+					<v8:content>Команды</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда</v8:content>
+					<v8:content>Команды</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="КомандаРасширеннаяПодсказка" id="381"/>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КомандыРасширеннаяПодсказка" id="381"/>
 			<ChildItems>
 				<UsualGroup name="Лазаренко" id="382">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -420,17 +423,53 @@
 					<BackColor>#A6FF9D</BackColor>
 					<ExtendedTooltip name="ЛазаренкоРасширеннаяПодсказка" id="383"/>
 					<ChildItems>
-						<PictureDecoration name="Декорация1" id="384">
-							<Width>10</Width>
-							<Height>5</Height>
-							<PictureSize>Proportionally</PictureSize>
-							<Picture>
-								<xr:Abs>Picture.jpg</xr:Abs>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="Декорация1КонтекстноеМеню" id="385"/>
-							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="386"/>
-						</PictureDecoration>
+						<UsualGroup name="Группа11" id="415">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="416"/>
+							<ChildItems>
+								<ProgressBarField name="Реквизит2" id="417">
+									<DataPath>Реквизит2</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>5</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Orientation>Vertical</Orientation>
+									<ShowPercent>true</ShowPercent>
+									<ContextMenu name="Реквизит2КонтекстноеМеню" id="418"/>
+									<ExtendedTooltip name="Реквизит2РасширеннаяПодсказка" id="419"/>
+								</ProgressBarField>
+								<PictureDecoration name="Декорация1" id="384">
+									<Width>10</Width>
+									<Height>5</Height>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>Proportionally</PictureSize>
+									<Picture>
+										<xr:Abs>Picture.jpg</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="385"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="386"/>
+									<Events>
+										<Event name="Click">Декорация1Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<ProgressBarField name="Реквизит3" id="420">
+									<DataPath>Реквизит3</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>6</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Orientation>Vertical</Orientation>
+									<ShowPercent>true</ShowPercent>
+									<ContextMenu name="Реквизит3КонтекстноеМеню" id="421"/>
+									<ExtendedTooltip name="Реквизит3РасширеннаяПодсказка" id="422"/>
+								</ProgressBarField>
+							</ChildItems>
+						</UsualGroup>
 						<ProgressBarField name="ПрогрессЛ" id="387">
 							<DataPath>НаборКонстант</DataPath>
 							<TitleLocation>None</TitleLocation>
@@ -517,103 +556,17 @@
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
-					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="Лазаренко1" id="412">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Лазаренко</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Лазаренко</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
-					<HorizontalAlign>Center</HorizontalAlign>
-					<ShowTitle>false</ShowTitle>
-					<BackColor>#FF4141</BackColor>
-					<ExtendedTooltip name="Лазаренко1РасширеннаяПодсказка" id="413"/>
-					<ChildItems>
-						<PictureDecoration name="Декорация6" id="414">
-							<Width>10</Width>
-							<Height>5</Height>
-							<PictureSize>Proportionally</PictureSize>
-							<Picture>
-								<xr:Abs>Picture.jpg</xr:Abs>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="Декорация6КонтекстноеМеню" id="415"/>
-							<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="416"/>
-						</PictureDecoration>
-						<ProgressBarField name="ПрогрессЛ1" id="417">
-							<DataPath>НаборКонстант</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<Width>10</Width>
-							<ShowPercent>true</ShowPercent>
-							<ContextMenu name="ПрогрессЛ1КонтекстноеМеню" id="418"/>
-							<ExtendedTooltip name="ПрогрессЛ1РасширеннаяПодсказка" id="419"/>
-						</ProgressBarField>
-						<UsualGroup name="Группа11" id="420">
-							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-							<Group>Horizontal</Group>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="421"/>
-							<ChildItems>
-								<LabelDecoration name="Декорация7" id="422">
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>В работе - </v8:content>
-										</v8:item>
-									</Title>
-									<ContextMenu name="Декорация7КонтекстноеМеню" id="423"/>
-									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="424"/>
-								</LabelDecoration>
-								<LabelDecoration name="Декорация8" id="425">
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>2 шт</v8:content>
-										</v8:item>
-									</Title>
-									<Hyperlink>true</Hyperlink>
-									<ContextMenu name="Декорация8КонтекстноеМеню" id="426"/>
-									<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="427"/>
-								</LabelDecoration>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="Группа12" id="428">
-							<Group>Horizontal</Group>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="429"/>
-							<ChildItems>
-								<LabelDecoration name="Декорация9" id="430">
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Общая оценка -</v8:content>
-										</v8:item>
-									</Title>
-									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-									<ContextMenu name="Декорация9КонтекстноеМеню" id="431"/>
-									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="432"/>
-								</LabelDecoration>
-								<LabelDecoration name="Декорация10" id="433">
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>100 ч</v8:content>
-										</v8:item>
-									</Title>
-									<ContextMenu name="Декорация10КонтекстноеМеню" id="434"/>
-									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="435"/>
-								</LabelDecoration>
-							</ChildItems>
-						</UsualGroup>
+						<TrackBarField name="Реквизит1" id="412">
+							<DataPath>Реквизит1</DataPath>
+							<Visible>false</Visible>
+							<Height>1</Height>
+							<MinValue>1</MinValue>
+							<ContextMenu name="Реквизит1КонтекстноеМеню" id="413"/>
+							<ExtendedTooltip name="Реквизит1РасширеннаяПодсказка" id="414"/>
+							<Events>
+								<Event name="OnChange">Реквизит1ПриИзменении</Event>
+							</Events>
+						</TrackBarField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -746,6 +699,127 @@
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
+		<Table name="НовыеЗадачи" id="271">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>НовыеЗадачи</DataPath>
+			<RowPictureDataPath>НовыеЗадачи.Картинка</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
+			<CommandSet>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+			</CommandSet>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="НовыеЗадачиКонтекстноеМеню" id="272"/>
+			<AutoCommandBar name="НовыеЗадачиКоманднаяПанель" id="273">
+				<ChildItems>
+					<Button name="ДеревоЗадачНовыеПринятьЗадачу" id="265">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПринятьЗадачу</CommandName>
+						<ExtendedTooltip name="ДеревоЗадачНовыеПринятьЗадачуРасширеннаяПодсказка" id="266"/>
+					</Button>
+					<Button name="ДеревоЗадачНовыеОткрытьСписокВJIRA_Новые" id="263">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ОткрытьСписокВJIRA_Новые</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Magnifier</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ДеревоЗадачНовыеОткрытьСписокВJIRA_НовыеРасширеннаяПодсказка" id="264"/>
+					</Button>
+					<Button name="НовыеЗадачиРаспределитьЗадачиПоВерсиям" id="369">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РаспределитьЗадачиПоВерсиям</CommandName>
+						<ExtendedTooltip name="НовыеЗадачиРаспределитьЗадачиПоВерсиямРасширеннаяПодсказка" id="370"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="НовыеЗадачиРасширеннаяПодсказка" id="274"/>
+			<SearchStringAddition name="НовыеЗадачиСтрокаПоиска" id="275">
+				<AdditionSource>
+					<Item>НовыеЗадачи</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НовыеЗадачиСтрокаПоискаКонтекстноеМеню" id="276"/>
+				<ExtendedTooltip name="НовыеЗадачиСтрокаПоискаРасширеннаяПодсказка" id="277"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НовыеЗадачиСостояниеПросмотра" id="278">
+				<AdditionSource>
+					<Item>НовыеЗадачи</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НовыеЗадачиСостояниеПросмотраКонтекстноеМеню" id="279"/>
+				<ExtendedTooltip name="НовыеЗадачиСостояниеПросмотраРасширеннаяПодсказка" id="280"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НовыеЗадачиУправлениеПоиском" id="281">
+				<AdditionSource>
+					<Item>НовыеЗадачи</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НовыеЗадачиУправлениеПоискомКонтекстноеМеню" id="282"/>
+				<ExtendedTooltip name="НовыеЗадачиУправлениеПоискомРасширеннаяПодсказка" id="283"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">НовыеЗадачиВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="НовыеЗадачиТип" id="302">
+					<DataPath>НовыеЗадачи.Тип</DataPath>
+					<ContextMenu name="НовыеЗадачиТипКонтекстноеМеню" id="303"/>
+					<ExtendedTooltip name="НовыеЗадачиТипРасширеннаяПодсказка" id="304"/>
+				</LabelField>
+				<LabelField name="НовыеЗадачиНомер" id="296">
+					<DataPath>НовыеЗадачи.Номер</DataPath>
+					<ContextMenu name="НовыеЗадачиНомерКонтекстноеМеню" id="297"/>
+					<ExtendedTooltip name="НовыеЗадачиНомерРасширеннаяПодсказка" id="298"/>
+				</LabelField>
+				<LabelField name="НовыеЗадачиЗаголовок" id="290">
+					<DataPath>НовыеЗадачи.Заголовок</DataPath>
+					<ContextMenu name="НовыеЗадачиЗаголовокКонтекстноеМеню" id="291"/>
+					<ExtendedTooltip name="НовыеЗадачиЗаголовокРасширеннаяПодсказка" id="292"/>
+				</LabelField>
+				<LabelField name="НовыеЗадачиДатаСоздания" id="287">
+					<DataPath>НовыеЗадачи.ДатаСоздания</DataPath>
+					<ContextMenu name="НовыеЗадачиДатаСозданияКонтекстноеМеню" id="288"/>
+					<ExtendedTooltip name="НовыеЗадачиДатаСозданияРасширеннаяПодсказка" id="289"/>
+				</LabelField>
+				<LabelField name="НовыеЗадачиИсполнитель" id="305">
+					<DataPath>НовыеЗадачи.Исполнитель</DataPath>
+					<ContextMenu name="НовыеЗадачиИсполнительКонтекстноеМеню" id="306"/>
+					<ExtendedTooltip name="НовыеЗадачиИсполнительРасширеннаяПодсказка" id="307"/>
+				</LabelField>
+				<LabelField name="НовыеЗадачиАвтор" id="284">
+					<DataPath>НовыеЗадачи.Автор</DataPath>
+					<ContextMenu name="НовыеЗадачиАвторКонтекстноеМеню" id="285"/>
+					<ExtendedTooltip name="НовыеЗадачиАвторРасширеннаяПодсказка" id="286"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
 		<Pages name="Вкладки" id="311">
 			<Title>
 				<v8:item>
@@ -998,127 +1072,6 @@
 				</Page>
 			</ChildItems>
 		</Pages>
-		<Table name="НовыеЗадачи" id="271">
-			<UseAlternationRowColor>true</UseAlternationRowColor>
-			<EnableStartDrag>true</EnableStartDrag>
-			<DataPath>НовыеЗадачи</DataPath>
-			<RowPictureDataPath>НовыеЗадачи.Картинка</RowPictureDataPath>
-			<RowsPicture>
-				<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</RowsPicture>
-			<CommandSet>
-				<ExcludedCommand>CancelSearch</ExcludedCommand>
-				<ExcludedCommand>Change</ExcludedCommand>
-				<ExcludedCommand>Copy</ExcludedCommand>
-				<ExcludedCommand>Create</ExcludedCommand>
-				<ExcludedCommand>Find</ExcludedCommand>
-				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
-				<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
-				<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-				<ExcludedCommand>SearchHistory</ExcludedCommand>
-				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-			</CommandSet>
-			<ViewStatusLocation>None</ViewStatusLocation>
-			<AutoRefresh>false</AutoRefresh>
-			<AutoRefreshPeriod>60</AutoRefreshPeriod>
-			<Period>
-				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-			</Period>
-			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-			<RestoreCurrentRow>false</RestoreCurrentRow>
-			<TopLevelParent xsi:nil="true"/>
-			<ShowRoot>true</ShowRoot>
-			<AllowRootChoice>false</AllowRootChoice>
-			<UpdateOnDataChange>Auto</UpdateOnDataChange>
-			<ContextMenu name="НовыеЗадачиКонтекстноеМеню" id="272"/>
-			<AutoCommandBar name="НовыеЗадачиКоманднаяПанель" id="273">
-				<ChildItems>
-					<Button name="ДеревоЗадачНовыеПринятьЗадачу" id="265">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ПринятьЗадачу</CommandName>
-						<ExtendedTooltip name="ДеревоЗадачНовыеПринятьЗадачуРасширеннаяПодсказка" id="266"/>
-					</Button>
-					<Button name="ДеревоЗадачНовыеОткрытьСписокВJIRA_Новые" id="263">
-						<Type>CommandBarButton</Type>
-						<Representation>PictureAndText</Representation>
-						<CommandName>Form.Command.ОткрытьСписокВJIRA_Новые</CommandName>
-						<Picture>
-							<xr:Ref>StdPicture.Magnifier</xr:Ref>
-							<xr:LoadTransparent>true</xr:LoadTransparent>
-						</Picture>
-						<ExtendedTooltip name="ДеревоЗадачНовыеОткрытьСписокВJIRA_НовыеРасширеннаяПодсказка" id="264"/>
-					</Button>
-					<Button name="НовыеЗадачиРаспределитьЗадачиПоВерсиям" id="369">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.РаспределитьЗадачиПоВерсиям</CommandName>
-						<ExtendedTooltip name="НовыеЗадачиРаспределитьЗадачиПоВерсиямРасширеннаяПодсказка" id="370"/>
-					</Button>
-				</ChildItems>
-			</AutoCommandBar>
-			<ExtendedTooltip name="НовыеЗадачиРасширеннаяПодсказка" id="274"/>
-			<SearchStringAddition name="НовыеЗадачиСтрокаПоиска" id="275">
-				<AdditionSource>
-					<Item>НовыеЗадачи</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="НовыеЗадачиСтрокаПоискаКонтекстноеМеню" id="276"/>
-				<ExtendedTooltip name="НовыеЗадачиСтрокаПоискаРасширеннаяПодсказка" id="277"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="НовыеЗадачиСостояниеПросмотра" id="278">
-				<AdditionSource>
-					<Item>НовыеЗадачи</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="НовыеЗадачиСостояниеПросмотраКонтекстноеМеню" id="279"/>
-				<ExtendedTooltip name="НовыеЗадачиСостояниеПросмотраРасширеннаяПодсказка" id="280"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="НовыеЗадачиУправлениеПоиском" id="281">
-				<AdditionSource>
-					<Item>НовыеЗадачи</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="НовыеЗадачиУправлениеПоискомКонтекстноеМеню" id="282"/>
-				<ExtendedTooltip name="НовыеЗадачиУправлениеПоискомРасширеннаяПодсказка" id="283"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="Selection">НовыеЗадачиВыбор</Event>
-			</Events>
-			<ChildItems>
-				<LabelField name="НовыеЗадачиТип" id="302">
-					<DataPath>НовыеЗадачи.Тип</DataPath>
-					<ContextMenu name="НовыеЗадачиТипКонтекстноеМеню" id="303"/>
-					<ExtendedTooltip name="НовыеЗадачиТипРасширеннаяПодсказка" id="304"/>
-				</LabelField>
-				<LabelField name="НовыеЗадачиНомер" id="296">
-					<DataPath>НовыеЗадачи.Номер</DataPath>
-					<ContextMenu name="НовыеЗадачиНомерКонтекстноеМеню" id="297"/>
-					<ExtendedTooltip name="НовыеЗадачиНомерРасширеннаяПодсказка" id="298"/>
-				</LabelField>
-				<LabelField name="НовыеЗадачиЗаголовок" id="290">
-					<DataPath>НовыеЗадачи.Заголовок</DataPath>
-					<ContextMenu name="НовыеЗадачиЗаголовокКонтекстноеМеню" id="291"/>
-					<ExtendedTooltip name="НовыеЗадачиЗаголовокРасширеннаяПодсказка" id="292"/>
-				</LabelField>
-				<LabelField name="НовыеЗадачиДатаСоздания" id="287">
-					<DataPath>НовыеЗадачи.ДатаСоздания</DataPath>
-					<ContextMenu name="НовыеЗадачиДатаСозданияКонтекстноеМеню" id="288"/>
-					<ExtendedTooltip name="НовыеЗадачиДатаСозданияРасширеннаяПодсказка" id="289"/>
-				</LabelField>
-				<LabelField name="НовыеЗадачиИсполнитель" id="305">
-					<DataPath>НовыеЗадачи.Исполнитель</DataPath>
-					<ContextMenu name="НовыеЗадачиИсполнительКонтекстноеМеню" id="306"/>
-					<ExtendedTooltip name="НовыеЗадачиИсполнительРасширеннаяПодсказка" id="307"/>
-				</LabelField>
-				<LabelField name="НовыеЗадачиАвтор" id="284">
-					<DataPath>НовыеЗадачи.Автор</DataPath>
-					<ContextMenu name="НовыеЗадачиАвторКонтекстноеМеню" id="285"/>
-					<ExtendedTooltip name="НовыеЗадачиАвторРасширеннаяПодсказка" id="286"/>
-				</LabelField>
-			</ChildItems>
-		</Table>
 		<UsualGroup name="Группа5" id="340">
 			<Group>Horizontal</Group>
 			<ShowTitle>false</ShowTitle>
@@ -1571,6 +1524,36 @@
 			</Title>
 			<Type>
 				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизит1" id="15">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизит2" id="16">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизит3" id="17">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
