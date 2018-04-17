@@ -443,8 +443,9 @@
 								<PictureDecoration name="Декорация1" id="384">
 									<Width>10</Width>
 									<Height>5</Height>
-									<Hyperlink>true</Hyperlink>
 									<PictureSize>Proportionally</PictureSize>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
 									<Picture>
 										<xr:Abs>Picture.jpg</xr:Abs>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -453,6 +454,7 @@
 									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="386"/>
 									<Events>
 										<Event name="Click">Декорация1Нажатие</Event>
+										<Event name="DragEnd">Декорация1ОкончаниеПеретаскивания</Event>
 									</Events>
 								</PictureDecoration>
 								<ProgressBarField name="Реквизит3" id="420">
@@ -701,7 +703,6 @@
 		</UsualGroup>
 		<Table name="НовыеЗадачи" id="271">
 			<UseAlternationRowColor>true</UseAlternationRowColor>
-			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>НовыеЗадачи</DataPath>
 			<RowPictureDataPath>НовыеЗадачи.Картинка</RowPictureDataPath>
 			<RowsPicture>
