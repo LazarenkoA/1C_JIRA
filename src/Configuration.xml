@@ -213,6 +213,7 @@
 			<Constant>ПользовательБазыПроверкиРезиза</Constant>
 			<Constant>ПарольБазыПроверкиРезиза</Constant>
 			<Constant>КоличествоДнейДляПроверкиРелиза</Constant>
+			<Constant>ПутьККаталогуШаблонов</Constant>
 			<CommonForm>ФормаРабСтол</CommonForm>
 			<CommonForm>ФормаНастроекГрафикаРаботы</CommonForm>
 			<CommonForm>ФормаНастроекЭлектроннойПочты</CommonForm>
