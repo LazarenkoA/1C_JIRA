@@ -265,7 +265,6 @@
 			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>
 			<InformationRegister>СписаниеВремени</InformationRegister>
 			<InformationRegister>ИзмененияРевизии</InformationRegister>
-			<InformationRegister>БлокировкаПользователей</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

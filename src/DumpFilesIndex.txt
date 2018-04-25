@@ -105,7 +105,6 @@ ed410b80-2b86-44ec-bc7b-044583b18515:B9B1088D05D87D949D803D42E0A97879:2:Enums\Б
 25e2be19-aa77-4533-af14-07c397374b74_HomePageWorkArea.xml:D2BF4CF8682316F4CF7FB6470223F545:2:Ext\HomePageWorkArea.xml
 25e2be19-aa77-4533-af14-07c397374b74_ManagedApplicationModule.bsl:09DFD557F9A06D0041661E0DB6740E08:2:Ext\ManagedApplicationModule.bsl
 25e2be19-aa77-4533-af14-07c397374b74_SessionModule.bsl:CEBA51882B33AA0FF46DEA7A0F286A35:2:Ext\SessionModule.bsl
-34799062-96e4-40e4-a9b3-fb304dced1f5:705F25F4632EDD4BE9E2D35FB924A320:2:InformationRegisters\БлокировкаПользователей.xml
 070a034b-5f03-416d-95ac-835c10da2d8a:891F9F47FEC2BF9A1B903C8B1AF60742:2:InformationRegisters\БФТ_ИзмененияРепозитория.xml
 8474b336-a7f2-4014-88f3-27700ebd9447:9928CE657D408F2CEF7F1853A41223C5:2:InformationRegisters\БФТ_ОчередьВыгрузкиРевизийКонфигурации1С.xml
 56a475bb-c503-4bdf-b2fe-488317db9526:E61DEEDD7D6E8E1CDDD07926D392119B:2:InformationRegisters\БФТ_ХранилищеМакетов.xml
