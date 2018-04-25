@@ -353,6 +353,38 @@
 												</PictureDecoration>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="Группа12" id="423">
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="424"/>
+											<ChildItems>
+												<Button name="ДатыВерсии" id="425">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ДатыВерсии</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Не соответствия дат и версий в задаче</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ДатыВерсииРасширеннаяПодсказка" id="426"/>
+												</Button>
+												<PictureDecoration name="ДекорацияПредупреждениеДаты" id="427">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация предупреждение даты</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияПредупреждениеДатыКонтекстноеМеню" id="428"/>
+													<ExtendedTooltip name="ДекорацияПредупреждениеДатыРасширеннаяПодсказка" id="429"/>
+												</PictureDecoration>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -1887,6 +1919,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КоммитыПослеВыпуска</Action>
+		</Command>
+		<Command name="ДатыВерсии" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даты версии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даты версии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДатыВерсии</Action>
 		</Command>
 	</Commands>
 </Form>
