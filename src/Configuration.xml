@@ -137,6 +137,7 @@
 			<Language>Русский</Language>
 			<Subsystem>АРМ_JIRA</Subsystem>
 			<Subsystem>АРМ_Сборок</Subsystem>
+			<Subsystem>СистемныеОбъекты</Subsystem>
 			<CommonPicture>Приоритеты</CommonPicture>
 			<CommonPicture>Связь</CommonPicture>
 			<CommonPicture>ВажностьВажная</CommonPicture>
@@ -264,6 +265,7 @@
 			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>
 			<InformationRegister>СписаниеВремени</InformationRegister>
 			<InformationRegister>ИзмененияРевизии</InformationRegister>
+			<InformationRegister>БлокировкаПользователей</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

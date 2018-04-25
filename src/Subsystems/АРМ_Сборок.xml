@@ -70,6 +70,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ДиаграммаОбъектПользователь</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВажностьНовостиОченьВажная</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьККаталогуШаблонов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРасхождениеПоДатам</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
