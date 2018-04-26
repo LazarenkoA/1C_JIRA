@@ -477,6 +477,7 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаВводаСпискаЗадач</Form>
 			<Command uuid="4ce32fda-5353-4a54-b43f-a1770545d25e">
 				<Properties>
 					<Name>СвязанныеНаборыИзменений</Name>

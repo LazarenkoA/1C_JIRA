@@ -143,6 +143,7 @@ e83d2f8a-b1b6-4b55-bffd-d0a2b652fcd0:B5F3DD651A38E65AE52D005E5B54D606:4:Catalogs
 71bf0f06-f565-4aec-b7b8-aa95033c3975_Help.xml:742EFC99210AC215B7E20D91D2BAC90F:4:Catalogs\БФТ_НаборыИзменений\Ext\Help.xml
 71bf0f06-f565-4aec-b7b8-aa95033c3975_ManagerModule.bsl:6AB8332BA06AAE9DC8BD7F475BC8FDCE:4:Catalogs\БФТ_НаборыИзменений\Ext\ManagerModule.bsl
 71bf0f06-f565-4aec-b7b8-aa95033c3975_ObjectModule.bsl:E33D5ADE313312EB9A6E9168E9AFBE52:4:Catalogs\БФТ_НаборыИзменений\Ext\ObjectModule.bsl
+f0f71adf-438f-4155-b374-7ba206479cf1:5D966571543DA597CBB3B78761E8C8B5:4:Catalogs\БФТ_НаборыИзменений\Forms\ФормаВводаСпискаЗадач.xml
 c8bbf394-7140-4fd3-b815-587659a55470:447AF6403C7DCDDFD0B0C670C49C95C3:4:Catalogs\БФТ_НаборыИзменений\Forms\ФормаВыбора.xml
 71f93e50-a195-4a8a-84a4-9b731f55e5db:5B890E79A93CA9CB5A28FAC18124474D:4:Catalogs\БФТ_НаборыИзменений\Forms\ФормаСписка.xml
 ac0b2070-0fa2-487e-83b6-031cf4618050:DC92F0A0E9F298133607F22F333FACE6:4:Catalogs\БФТ_НаборыИзменений\Forms\ФормаЭлемента.xml
@@ -343,6 +344,7 @@ d990c83f-0224-47f3-a18c-8a7d501fdace_Help\ru.html:59F19C84E28FA923A7C95E63346A96
 e83d2f8a-b1b6-4b55-bffd-d0a2b652fcd0_Form.xml:E6F440EAAD58BEC6EE8E62093B8DD796:6:Catalogs\БФТ_МетодыРаботыСРепозиторием\Forms\ФормаВыводаРезультатаТеста\Ext\Form.xml
 96eec220-808b-45b8-bbd8-c46be58fe81c_Form.xml:12502EB6B74947E916F07E43205FF8D7:6:Catalogs\БФТ_МетодыРаботыСРепозиторием\Forms\ФормаЭлемента\Ext\Form.xml
 4ce32fda-5353-4a54-b43f-a1770545d25e:87FC4010C4723DD40578D5158552FD2C:6:Catalogs\БФТ_НаборыИзменений\Commands\СвязанныеНаборыИзменений\Ext\CommandModule.bsl
+f0f71adf-438f-4155-b374-7ba206479cf1_Form.xml:3F63B2175DD9740328A74D73FC62661A:6:Catalogs\БФТ_НаборыИзменений\Forms\ФормаВводаСпискаЗадач\Ext\Form.xml
 c8bbf394-7140-4fd3-b815-587659a55470_Form.xml:9CEAA76665BE506E15B25DD698B1D1FD:6:Catalogs\БФТ_НаборыИзменений\Forms\ФормаВыбора\Ext\Form.xml
 71f93e50-a195-4a8a-84a4-9b731f55e5db_Form.xml:4AF81185F9D5D54257FC9258F01A1FB5:6:Catalogs\БФТ_НаборыИзменений\Forms\ФормаСписка\Ext\Form.xml
 ac0b2070-0fa2-487e-83b6-031cf4618050_Form.xml:FC67079072A8E71647DCEDA039A65638:6:Catalogs\БФТ_НаборыИзменений\Forms\ФормаЭлемента\Ext\Form.xml
@@ -409,6 +411,7 @@ a848967f-3126-4852-8a2d-c3bbcc84ef73_Form.xml:8F5348844332AFD049A68E61C3B5402C:6
 1fe99126-0d98-445b-bb58-f0d7157b33b7_Template.xml:9A07FBB347B874C478098DF2BD72D6D3:6:Reports\СтатистинаНовыхЗадач\Templates\ОсновнаяСхемаКомпоновкиДанных\Ext\Template.xml
 e83d2f8a-b1b6-4b55-bffd-d0a2b652fcd0_Form\Module.bsl:9597ABB0060D2DF4B272C6604B0E12D1:7:Catalogs\БФТ_МетодыРаботыСРепозиторием\Forms\ФормаВыводаРезультатаТеста\Ext\Form\Module.bsl
 96eec220-808b-45b8-bbd8-c46be58fe81c_Form\Module.bsl:2F8A235C8EDFE6F49268149241B33A52:7:Catalogs\БФТ_МетодыРаботыСРепозиторием\Forms\ФормаЭлемента\Ext\Form\Module.bsl
+f0f71adf-438f-4155-b374-7ba206479cf1_Form\Module.bsl:FE25E7BA237E951450D00F48D2D8639A:7:Catalogs\БФТ_НаборыИзменений\Forms\ФормаВводаСпискаЗадач\Ext\Form\Module.bsl
 c8bbf394-7140-4fd3-b815-587659a55470_Form\Module.bsl:B974B626580D07F2C7C1E17E32AF67D3:7:Catalogs\БФТ_НаборыИзменений\Forms\ФормаВыбора\Ext\Form\Module.bsl
 71f93e50-a195-4a8a-84a4-9b731f55e5db_Form\Module.bsl:2645D9633244B4449BA7BB47C4BEE643:7:Catalogs\БФТ_НаборыИзменений\Forms\ФормаСписка\Ext\Form\Module.bsl
 ac0b2070-0fa2-487e-83b6-031cf4618050_Form\Module.bsl:DE8D49064FEF34937D010B69CCA3895B:7:Catalogs\БФТ_НаборыИзменений\Forms\ФормаЭлемента\Ext\Form\Module.bsl

@@ -1,6 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ФормаГруппа1" id="26">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Поиск задач</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="27"/>
+				<ChildItems>
+					<Button name="СписокПоискЗадач" id="24">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоискЗадач</CommandName>
+						<ExtendedTooltip name="СписокПоискЗадачРасширеннаяПодсказка" id="25"/>
+					</Button>
+					<Button name="ФормаСброситьПараметры" id="28">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СброситьПараметры</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сбросить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаСброситьПараметрыРасширеннаяПодсказка" id="29"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -108,7 +138,7 @@
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<QueryText>ВЫБРАТЬ
+				<QueryText>ВЫБРАТЬ РАЗЛИЧНЫЕ
 	Подзапрос.Картинка КАК Картинка,
 	Подзапрос.Ссылка КАК Ссылка
 ИЗ
@@ -155,7 +185,24 @@
 					И БФТ_НаборыИзмененийНаборИзменений.Ссылка = &amp;ОтобратьСвязанныеПо
 				ИЛИ &amp;ОтобратьСвязанныеПо = НЕОПРЕДЕЛЕНО)) КАК Подзапрос
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.БФТ_НаборыИзменений КАК БФТ_НаборыИзменений
-		ПО Подзапрос.Ссылка = БФТ_НаборыИзменений.Ссылка</QueryText>
+			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+				Задачи.Код КАК НомерЗадачи,
+				Сабтаск.Код КАК НомерСабтаска
+			ИЗ
+				Справочник.Задачи КАК Задачи
+					ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Задачи КАК Сабтаск
+					ПО Задачи.Ссылка = Сабтаск.Родитель
+			ГДЕ
+				&amp;ОтборПоЗадачам
+				И Задачи.Код В(&amp;НомераЗадач)) КАК Задачи
+			ПО (БФТ_НаборыИзменений.Код = Задачи.НомерЗадачи
+					ИЛИ Задачи.НомерСабтаска &lt;&gt; ""
+						И БФТ_НаборыИзменений.Код = Задачи.НомерСабтаска)
+		ПО Подзапрос.Ссылка = БФТ_НаборыИзменений.Ссылка
+ГДЕ
+	(НЕ &amp;ОтборПоЗадачам
+			ИЛИ (НЕ Задачи.НомерЗадачи ЕСТЬ NULL
+				ИЛИ НЕ Задачи.НомерЗадачи ЕСТЬ NULL))</QueryText>
 				<MainTable>Catalog.БФТ_НаборыИзменений</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -176,4 +223,36 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПоискЗадач" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск задач</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск задач с учетом сабтасков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискЗадач</Action>
+		</Command>
+		<Command name="СброситьПараметры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СброситьПараметры</Action>
+		</Command>
+	</Commands>
 </Form>
