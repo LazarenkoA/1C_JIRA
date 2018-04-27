@@ -78,6 +78,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<HorizontalSpacing>None</HorizontalSpacing>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="грНастройкиJIRAРасширеннаяПодсказка" id="4"/>
@@ -117,6 +118,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<HorizontalSpacing>None</HorizontalSpacing>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="грНастройкиГрафикаРасширеннаяПодсказка" id="173"/>
@@ -156,6 +158,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<HorizontalSpacing>None</HorizontalSpacing>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="грНастройкиЭлектроннойПочтыРасширеннаяПодсказка" id="186"/>
@@ -194,6 +197,7 @@
 											<v8:content>Гр настройки СВ</v8:content>
 										</v8:item>
 									</ToolTip>
+									<HorizontalSpacing>None</HorizontalSpacing>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="грНастройкиСВРасширеннаяПодсказка" id="353"/>
@@ -276,6 +280,7 @@
 									<ExtendedTooltip name="грДополнительноРасширеннаяПодсказка" id="201"/>
 									<ChildItems>
 										<UsualGroup name="Группа4" id="335">
+											<HorizontalSpacing>None</HorizontalSpacing>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="336"/>
 											<ChildItems>
@@ -301,6 +306,7 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="Группа3" id="330">
+											<HorizontalSpacing>None</HorizontalSpacing>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="331"/>
@@ -328,6 +334,7 @@
 										</UsualGroup>
 										<UsualGroup name="Группа8" id="371">
 											<Visible>false</Visible>
+											<HorizontalSpacing>None</HorizontalSpacing>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="372"/>
@@ -354,6 +361,7 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="Группа12" id="423">
+											<HorizontalSpacing>None</HorizontalSpacing>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="424"/>
