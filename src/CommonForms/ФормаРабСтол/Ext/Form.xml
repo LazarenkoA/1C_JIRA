@@ -332,34 +332,6 @@
 												</PictureDecoration>
 											</ChildItems>
 										</UsualGroup>
-										<UsualGroup name="Группа8" id="371">
-											<Visible>false</Visible>
-											<HorizontalSpacing>None</HorizontalSpacing>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="372"/>
-											<ChildItems>
-												<Button name="КоммитыПослеВыпуска" id="373">
-													<Type>Hyperlink</Type>
-													<CommandName>Form.Command.КоммитыПослеВыпуска</CommandName>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Коммиты после выпуска</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="КоммитыПослеВыпускаРасширеннаяПодсказка" id="374"/>
-												</Button>
-												<PictureDecoration name="ДекорацияПредупреждениеКоммиты" id="375">
-													<Picture>
-														<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
-													</Picture>
-													<ContextMenu name="ДекорацияПредупреждениеКоммитыКонтекстноеМеню" id="376"/>
-													<ExtendedTooltip name="ДекорацияПредупреждениеКоммитыРасширеннаяПодсказка" id="377"/>
-												</PictureDecoration>
-											</ChildItems>
-										</UsualGroup>
 										<UsualGroup name="Группа12" id="423">
 											<HorizontalSpacing>None</HorizontalSpacing>
 											<Representation>None</Representation>
@@ -390,6 +362,33 @@
 													</Picture>
 													<ContextMenu name="ДекорацияПредупреждениеДатыКонтекстноеМеню" id="428"/>
 													<ExtendedTooltip name="ДекорацияПредупреждениеДатыРасширеннаяПодсказка" id="429"/>
+												</PictureDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа8" id="371">
+											<HorizontalSpacing>None</HorizontalSpacing>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="372"/>
+											<ChildItems>
+												<Button name="КоммитыПослеВыпуска" id="373">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.КоммитыПослеВыпуска</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Коммиты после выпуска</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="КоммитыПослеВыпускаРасширеннаяПодсказка" id="374"/>
+												</Button>
+												<PictureDecoration name="ДекорацияПредупреждениеКоммиты" id="375">
+													<Picture>
+														<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияПредупреждениеКоммитыКонтекстноеМеню" id="376"/>
+													<ExtendedTooltip name="ДекорацияПредупреждениеКоммитыРасширеннаяПодсказка" id="377"/>
 												</PictureDecoration>
 											</ChildItems>
 										</UsualGroup>

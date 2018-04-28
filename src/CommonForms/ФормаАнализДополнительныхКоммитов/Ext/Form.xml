@@ -7,12 +7,11 @@
 				<CommandName>Form.Command.Закрыть</CommandName>
 				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="27"/>
 			</Button>
-			<Button name="ФормаПеренестиЗадачу" id="37">
+			<Button name="ФормаДобавитьВерсиюВЗадачу" id="37">
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
-				<DefaultItem>true</DefaultItem>
-				<CommandName>Form.Command.ПеренестиЗадачу</CommandName>
-				<ExtendedTooltip name="ФормаПеренестиЗадачуРасширеннаяПодсказка" id="38"/>
+				<CommandName>Form.Command.ДобавитьВерсиюВЗадачу</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьВерсиюВЗадачуРасширеннаяПодсказка" id="38"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -20,37 +19,20 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<LabelDecoration name="Декорация1" id="28">
+		<InputField name="Пояснение" id="39">
+			<DataPath>Пояснение</DataPath>
 			<AutoMaxWidth>false</AutoMaxWidth>
-			<HorizontalStretch>true</HorizontalStretch>
+			<MultiLine>true</MultiLine>
 			<TextColor>#999999</TextColor>
+			<BorderColor>style:FormBackColor</BorderColor>
 			<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>В данном списке показаны задачи, по которым возможно требуется ручной перенос. Задача пропадает из списка, когда в задачу добавить актуальную версию (ту версию в которую по факту попал коммит, т.е. дата коммита лежит в интервале от даты начала до даты окончания релиза)</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="Декорация1КонтекстноеМеню" id="29"/>
-			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="30"/>
-		</LabelDecoration>
-		<LabelDecoration name="Декорация2" id="31">
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<HorizontalStretch>true</HorizontalStretch>
-			<TextColor>#999999</TextColor>
-			<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Что бы задача пропала из данного списка, нужно в JIRA к задаче добавить нужную версию. Версия должна быть +1 к той в период, которой попал коммит. т.е. если коммит был в периоде с 01.01-14.01 и по графику выпуска версий это версия 7, но в задачу нужно добавлять 8, т.к. в этом периоде 7 была на тестировании, а в разработке 8</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="Декорация2КонтекстноеМеню" id="32"/>
-			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="33"/>
-		</LabelDecoration>
+			<ContextMenu name="ПояснениеКонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="41"/>
+		</InputField>
 		<Table name="Список" id="1">
 			<Representation>Tree</Representation>
 			<ReadOnly>true</ReadOnly>
+			<DefaultItem>true</DefaultItem>
 			<ChangeRowSet>false</ChangeRowSet>
 			<ChangeRowOrder>false</ChangeRowOrder>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -105,23 +87,23 @@
 				<Event name="Selection">СписокВыбор</Event>
 			</Events>
 			<ChildItems>
+				<InputField name="СписокРелиз" id="45">
+					<DataPath>Список.Релиз</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокРелизКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="СписокРелизРасширеннаяПодсказка" id="47"/>
+				</InputField>
 				<InputField name="СписокЗадача" id="14">
 					<DataPath>Список.Задача</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="СписокЗадачаКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="СписокЗадачаРасширеннаяПодсказка" id="16"/>
 				</InputField>
-				<InputField name="СписокРелизВЗадаче" id="17">
-					<DataPath>Список.РелизВЗадаче</DataPath>
+				<InputField name="СписокДатаОкончанияВерсииВЗадаче" id="42">
+					<DataPath>Список.ДатаОкончанияВерсииВЗадаче</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="СписокРелизВЗадачеКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="СписокРелизВЗадачеРасширеннаяПодсказка" id="19"/>
-				</InputField>
-				<InputField name="СписокРелизКоммита" id="34">
-					<DataPath>Список.РелизКоммита</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="СписокРелизКоммитаКонтекстноеМеню" id="35"/>
-					<ExtendedTooltip name="СписокРелизКоммитаРасширеннаяПодсказка" id="36"/>
+					<ContextMenu name="СписокДатаОкончанияВерсииВЗадачеКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="СписокДатаОкончанияВерсииВЗадачеРасширеннаяПодсказка" id="44"/>
 				</InputField>
 				<InputField name="СписокДатаКоммита" id="23">
 					<DataPath>Список.ДатаКоммита</DataPath>
@@ -155,17 +137,6 @@
 						<v8:Type>cfg:CatalogRef.Задачи</v8:Type>
 					</Type>
 				</Column>
-				<Column name="РелизВЗадаче" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Релиз в задаче</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Релизы</v8:Type>
-					</Type>
-				</Column>
 				<Column name="ДатаКоммита" id="4">
 					<Title>
 						<v8:item>
@@ -180,11 +151,62 @@
 						</v8:DateQualifiers>
 					</Type>
 				</Column>
-				<Column name="РелизКоммита" id="3">
+				<Column name="ДатаОкончанияВерсииВЗадаче" id="2">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Коммит был в релизе</v8:content>
+							<v8:content>Дата окончания версии в задаче</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерЗадачи" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер задачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РелизВыпущен" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Релиз выпущен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РелизСобран" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Релиз собран</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Релиз" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Релиз</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -192,6 +214,21 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="Пояснение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -210,17 +247,17 @@
 			</ToolTip>
 			<Action>_Закрыть</Action>
 		</Command>
-		<Command name="ПеренестиЗадачу" id="2">
+		<Command name="ДобавитьВерсиюВЗадачу" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перенести задачу</v8:content>
+					<v8:content>Добавить версию в задачу</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перенести задачу</v8:content>
+					<v8:content>В задачу будет добавлена версия соответствующая дате последнего коммита</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ПеренестиЗадачу</Action>
