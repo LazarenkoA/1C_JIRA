@@ -570,8 +570,8 @@
 		<Metadata name="Report.СтатистинаНовыхЗадач.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="1fe99126-0d98-445b-bb58-f0d7157b33b7.0" configVersion="4662275ba70b4046a765017fa392381600000000"/>
 		<Metadata name="Role.Администратор" id="dcfb1b84-df82-48c5-ae69-fd107a2307c0" configVersion="4657ef01d0bff74a9c2b892cf8e121ee00000000"/>
 		<Metadata name="Role.Администратор.Rights" id="dcfb1b84-df82-48c5-ae69-fd107a2307c0.0" configVersion="458a0d32d02c5148b0b2151eebfa114000000000"/>
-		<Metadata name="Role.СборщикРелизов" id="72ddc45f-36fc-4d8e-88bb-6a3569ddb335" configVersion="f1f351cae3fe4a438b3be6164819800d00000000"/>
-		<Metadata name="Role.СборщикРелизов.Rights" id="72ddc45f-36fc-4d8e-88bb-6a3569ddb335.0" configVersion="3333098ccf468c4f9c2d6380898c44c400000000"/>
+		<Metadata name="Role.СборщикРелизов" id="72ddc45f-36fc-4d8e-88bb-6a3569ddb335" configVersion="e89a2610acba244f8233c8d17a1cc3c700000000"/>
+		<Metadata name="Role.СборщикРелизов.Rights" id="72ddc45f-36fc-4d8e-88bb-6a3569ddb335.0" configVersion="97340868b11dc649af9617f2773a997200000000"/>
 		<Metadata name="ScheduledJob.АнализИзмененийХранилища1С" id="51d2fa7d-89b7-43a0-95fc-57196810e475" configVersion="8711bc724905294799b83ce66d61a3a800000000"/>
 		<Metadata name="ScheduledJob.АнализИзмененийХранилища1С.Schedule" id="51d2fa7d-89b7-43a0-95fc-57196810e475.0" configVersion="972141fb62c05346a0e28b35d7f3e42800000000"/>
 		<Metadata name="ScheduledJob.ВыгрузкаИзмененийИзSVN" id="e38f4c8d-b060-44dc-8293-0bc5bae9a84f" configVersion="42eec57c621ccf4d98009483ae31c7cf00000000"/>
