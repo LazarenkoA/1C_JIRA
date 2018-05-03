@@ -308,7 +308,9 @@
 			<AuxiliaryFolderChoiceForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<BasedOn/>
-			<DataLockFields/>
+			<DataLockFields>
+				<xr:Field>Catalog.Задачи.StandardAttribute.Code</xr:Field>
+			</DataLockFields>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
 			<ObjectPresentation/>

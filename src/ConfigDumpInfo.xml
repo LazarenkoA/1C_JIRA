@@ -46,7 +46,7 @@
 		<Metadata name="Catalog.БФТ_НастройкаПодключенияКРепозиторию.ObjectModule" id="4eb7a997-cc19-4949-a55e-3aa78fe165a8.0" configVersion="be35e26a345a4a4b957783ea1b74032900000000"/>
 		<Metadata name="Catalog.БюджетыПУ" id="066f724e-3d83-4830-8c7c-2583f019f381" configVersion="f1a4c973e7ea49498467380850f356d600000000"/>
 		<Metadata name="Catalog.БюджетыПУ.ManagerModule" id="066f724e-3d83-4830-8c7c-2583f019f381.3" configVersion="447f7a9aae76bc4fbbefea7b1707d82800000000"/>
-		<Metadata name="Catalog.Задачи" id="2716f5be-aba9-4e91-b166-7b52f71d7975" configVersion="632d99eb5498fe4a89511dbf1386abd200000000">
+		<Metadata name="Catalog.Задачи" id="2716f5be-aba9-4e91-b166-7b52f71d7975" configVersion="53d80a8186e1da4fb3b4201fdbed410f00000000">
 			<Metadata name="Catalog.Задачи.Attribute.Оценка" id="069355f8-9f20-4ef2-836c-6bf491cb9067"/>
 			<Metadata name="Catalog.Задачи.Attribute.Бюджет" id="200f79b7-f815-436f-a48d-18e44bc41e00"/>
 			<Metadata name="Catalog.Задачи.Attribute.Автор" id="22a95ad9-1b1d-4de1-b6ca-785d48842694"/>
@@ -65,7 +65,7 @@
 		<Metadata name="Catalog.Задачи.Form.ФормаСписка.Form" id="e6b02722-a5bd-4dea-93fd-c9b2dd81b76d.0" configVersion="439687cbbf81f44389318ba60a66406900000000"/>
 		<Metadata name="Catalog.Задачи.Form.ФормаЭлемента" id="f6129a5f-5e41-4de9-a43b-37db791aa32f" configVersion="ccbda31e1cb9c54fa1e7e45f9783af0300000000"/>
 		<Metadata name="Catalog.Задачи.Form.ФормаЭлемента.Form" id="f6129a5f-5e41-4de9-a43b-37db791aa32f.0" configVersion="b8f6f5db510d1142886692385c84648a00000000"/>
-		<Metadata name="Catalog.Задачи.ManagerModule" id="2716f5be-aba9-4e91-b166-7b52f71d7975.3" configVersion="be3ec1674e64774780e1c46ebdd167a200000000"/>
+		<Metadata name="Catalog.Задачи.ManagerModule" id="2716f5be-aba9-4e91-b166-7b52f71d7975.3" configVersion="1dc8e42269467541948b7f1fabb6378f00000000"/>
 		<Metadata name="Catalog.Команда" id="716add2e-2f8e-448d-8472-2638da4d43b9" configVersion="f4206c10ed7c4344a12838ce99a98cb100000000">
 			<Metadata name="Catalog.Команда.TabularSection.Состав.Attribute.Сотрудник" id="0da0ee83-4f50-4faf-a459-3f21653b4803"/>
 			<Metadata name="Catalog.Команда.TabularSection.Состав" id="ce410224-6f6b-4acc-b93b-ba5a72234d81"/>
@@ -146,8 +146,8 @@
 		<Metadata name="Catalog.Релизы.Form.ФормаЗаполненияГрафика.Form" id="4f7d5a75-366d-4b34-ab8a-0ae59330a55c.0" configVersion="d0a67bff4b9c744a9bffd8be123b7dcf00000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаРаспределенияЗадачПоВерсиям" id="23ae4f00-d24a-42fb-8665-2c58b676d7b7" configVersion="17d942bcb04eb64abc8172ade8f5a4e100000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаРаспределенияЗадачПоВерсиям.Form" id="23ae4f00-d24a-42fb-8665-2c58b676d7b7.0" configVersion="4f3e9acda6e75b4a8acf7da36c528df700000000"/>
-		<Metadata name="Catalog.Релизы.Form.ФормаРелиза" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5" configVersion="4837bd6b3ea85e4ca01c12c493a17de000000000"/>
-		<Metadata name="Catalog.Релизы.Form.ФормаРелиза.Form" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5.0" configVersion="ee2e9401bc5b024bb018b9c5a7f9864400000000"/>
+		<Metadata name="Catalog.Релизы.Form.ФормаРелиза" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5" configVersion="571d77a52fd542428198315dce9867d000000000"/>
+		<Metadata name="Catalog.Релизы.Form.ФормаРелиза.Form" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5.0" configVersion="cc6c0041bf3ad84eaebc8e328bb78eac00000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6" configVersion="2eb31aa5186f9e4c969047686dd7101200000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка.Form" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6.0" configVersion="5eac7f9096361747a0affec508dba00a00000000"/>
 		<Metadata name="Catalog.Релизы.ManagerModule" id="10f1768a-5779-4327-afb4-c1ead1e62f7d.3" configVersion="c3755e3de425cf4782a53bac5586baf200000000"/>
@@ -173,8 +173,8 @@
 		<Metadata name="CommonForm.ДлительнаяОперация.Form" id="94021785-be49-46fe-b76d-6c4012d8c573.0" configVersion="a30df97cbd2ebd488b9aa86aeb49cb9300000000"/>
 		<Metadata name="CommonForm.НастройкиПодключенияКХранилищу" id="0113348e-b0a3-4a90-8b62-cad58e41f91e" configVersion="3b13d49a08930944874f47698912fc7500000000"/>
 		<Metadata name="CommonForm.НастройкиПодключенияКХранилищу.Form" id="0113348e-b0a3-4a90-8b62-cad58e41f91e.0" configVersion="bb2263c4b0565f4b93b0387c5e9061f300000000"/>
-		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd" configVersion="e6454378da60af4b9c3dd8a8cd13e71400000000"/>
-		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов.Form" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd.0" configVersion="630d3f7a98370641b2ee9a8a62b51c2f00000000"/>
+		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd" configVersion="ff9c08a56254e14a844ffe43acad84c900000000"/>
+		<Metadata name="CommonForm.ФормаАнализДополнительныхКоммитов.Form" id="106bb8b6-f6f8-4687-aa22-4fd44415f6cd.0" configVersion="2dea0de61cec6242b39dd4dc2c4b2bd200000000"/>
 		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615" configVersion="69ed1f0b4e1356448f3954b396a7bd4100000000"/>
 		<Metadata name="CommonForm.ФормаВводаИсходнойОценкиПоЗадаче.Form" id="c84ef3b5-7448-41a2-a91f-a082ec9bf615.0" configVersion="6b0412512184be4286007652d336f0b100000000"/>
 		<Metadata name="CommonForm.ФормаДиаграмм" id="8b67967d-2cde-464a-9573-da7016d6cc6a" configVersion="9b793bfd37c12d49a9f78bc60d0fa02900000000"/>
@@ -187,8 +187,8 @@
 		<Metadata name="CommonForm.ФормаНастроекЭлектроннойПочты.Form" id="68c402e2-6b10-4cdc-9baa-e47e17ac6c47.0" configVersion="6fa98cce1e0a1140943f760d5999154b00000000"/>
 		<Metadata name="CommonForm.ФормаПревышениеСроков" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e" configVersion="f84a220bb9d8214d9b9f794096f933ae00000000"/>
 		<Metadata name="CommonForm.ФормаПревышениеСроков.Form" id="2bf3c7c7-26e0-48fc-ae23-6cb7cf73c67e.0" configVersion="da19ac60368d754cb9bb824c2ac5dac900000000"/>
-		<Metadata name="CommonForm.ФормаРабСтол" id="3c0730e4-6e95-4a93-9c2c-a596f1370097" configVersion="ad06fafd1563244480894887b7ecf1fa00000000"/>
-		<Metadata name="CommonForm.ФормаРабСтол.Form" id="3c0730e4-6e95-4a93-9c2c-a596f1370097.0" configVersion="9bee293a14409045bf6f83ac7efa4a9c00000000"/>
+		<Metadata name="CommonForm.ФормаРабСтол" id="3c0730e4-6e95-4a93-9c2c-a596f1370097" configVersion="a17b1f1965f7244b918f4909d07b831100000000"/>
+		<Metadata name="CommonForm.ФормаРабСтол.Form" id="3c0730e4-6e95-4a93-9c2c-a596f1370097.0" configVersion="e600884301c3ea47b61cf248652d997300000000"/>
 		<Metadata name="CommonForm.ФормаРазницаОценкиОсновнойИСабтасков" id="520dd270-1917-4ead-9210-320f0978f9bd" configVersion="56c1597c9e0e284c94ad89a0851473d800000000"/>
 		<Metadata name="CommonForm.ФормаРазницаОценкиОсновнойИСабтасков.Form" id="520dd270-1917-4ead-9210-320f0978f9bd.0" configVersion="15618045c341004aa747816693a49d7800000000"/>
 		<Metadata name="CommonForm.ФормаРасхождениеПоДатам" id="2a853ec3-54da-4a0c-bf51-816218e14854" configVersion="6553b438d8a3984d99edf42e6dd9ec3000000000"/>
