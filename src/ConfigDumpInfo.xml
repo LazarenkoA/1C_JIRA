@@ -219,8 +219,8 @@
 		<Metadata name="CommonModule.ОбщегоНазначенияКлиент.Module" id="9ae530c9-0dae-40a2-a38c-8f0d21e1a247.0" configVersion="a19d42b4db296f4095aa5de528bf0c9200000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер" id="025154a6-587f-4c21-b130-712e4daa53c2" configVersion="0e18dfe4e93e8e4a8859ea77d95a6f5d00000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер.Module" id="025154a6-587f-4c21-b130-712e4daa53c2.0" configVersion="604ded5ac1ab2c43ab1d255e2002cc0700000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначенияСервер" id="d76af95c-105b-4a54-b136-9b9a629611c0" configVersion="019086f0fc6a1e4189290f3d003d03b400000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначенияСервер.Module" id="d76af95c-105b-4a54-b136-9b9a629611c0.0" configVersion="1479820b7a002741998175dac844379300000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияСервер" id="d76af95c-105b-4a54-b136-9b9a629611c0" configVersion="53175ef3cbe3dd47a6e31079ca74f68400000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияСервер.Module" id="d76af95c-105b-4a54-b136-9b9a629611c0.0" configVersion="907dc13fc403244585af573cf1f59cd300000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияСерверПовтИсп" id="380db81b-f832-449e-b24b-de4d166283a4" configVersion="6b536cd676220e40a0939b54d92214e600000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияСерверПовтИсп.Module" id="380db81b-f832-449e-b24b-de4d166283a4.0" configVersion="60ef3dbd9a0c5c41aa32b9ae24e119a700000000"/>
 		<Metadata name="CommonModule.РаботаСПочтовымиСообщениями" id="77a6056b-d3ed-40db-9545-f4614af1177d" configVersion="e909fd80ac886244956df33c3393a04900000000"/>
