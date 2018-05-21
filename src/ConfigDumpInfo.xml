@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
 	<ConfigVersions>
-		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием" id="be344122-af54-45af-a429-a0622a916dfa" configVersion="11d583aae9cda7439ee393814efe743600000000">
+		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием" id="be344122-af54-45af-a429-a0622a916dfa" configVersion="ec3f81dc2199fd4397a761796011524c00000000">
 			<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Attribute.Комментарий" id="05119a7a-6321-447d-a978-9f465994e4d0"/>
 			<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.TabularSection.ПараметрыВыполнения.Attribute.ЗначениеПараметра" id="386efdd0-bbd0-418f-82c7-a03a7ca1a361"/>
 			<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.TabularSection.ПараметрыВыполнения.Attribute.РежимВводаПараметра" id="4116a497-d71a-4911-9cd8-9762c9cb0b02"/>
@@ -13,10 +13,10 @@
 		</Metadata>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Form.ФормаВыводаРезультатаТеста" id="e83d2f8a-b1b6-4b55-bffd-d0a2b652fcd0" configVersion="d29babc84a26e24cbcdc3f48e27aca2b00000000"/>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Form.ФормаВыводаРезультатаТеста.Form" id="e83d2f8a-b1b6-4b55-bffd-d0a2b652fcd0.0" configVersion="956958e2f41c5a4980c83f1c8827f95f00000000"/>
-		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Form.ФормаЭлемента" id="96eec220-808b-45b8-bbd8-c46be58fe81c" configVersion="8c0ec29fbbfa0c4b957c0819f678dece00000000"/>
-		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Form.ФормаЭлемента.Form" id="96eec220-808b-45b8-bbd8-c46be58fe81c.0" configVersion="ab4fae2a8aa8094fa7e00444eb48611b00000000"/>
+		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Form.ФормаЭлемента" id="96eec220-808b-45b8-bbd8-c46be58fe81c" configVersion="4d7ddf6ae78c3849890c99129870d63800000000"/>
+		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Form.ФормаЭлемента.Form" id="96eec220-808b-45b8-bbd8-c46be58fe81c.0" configVersion="bef7d75a2de90c4b9effbbea8f344e2100000000"/>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.Help" id="be344122-af54-45af-a429-a0622a916dfa.1" configVersion="9cd3bb14389b824faeee344140cfc76600000000"/>
-		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.ManagerModule" id="be344122-af54-45af-a429-a0622a916dfa.3" configVersion="aca9f8cd3b80a94e92858ae8e76b3fff00000000"/>
+		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.ManagerModule" id="be344122-af54-45af-a429-a0622a916dfa.3" configVersion="e533d367e7fe4541b62d33210420439400000000"/>
 		<Metadata name="Catalog.БФТ_МетодыРаботыСРепозиторием.ObjectModule" id="be344122-af54-45af-a429-a0622a916dfa.0" configVersion="2d2f2ea4bcfe374fa2783e28607aee3e00000000"/>
 		<Metadata name="Catalog.БФТ_НаборыИзменений" id="71bf0f06-f565-4aec-b7b8-aa95033c3975" configVersion="be75d67dad51d24ca3a3142120ce00b900000000">
 			<Metadata name="Catalog.БФТ_НаборыИзменений.TabularSection.НаборИзменений.Attribute.НомерРевизии" id="0497d871-705f-4136-b18d-3acc9f6c2181"/>
@@ -441,9 +441,10 @@
 		<Metadata name="DataProcessor.КонсольЗаданий.Form.Форма.Form" id="08c8ca3c-14c7-4a67-b5c0-d857e2a180c2.0" configVersion="918760f3d6b0e340968c675d5ad3b9f700000000"/>
 		<Metadata name="DataProcessor.КонсольЗаданий.Form.ФормаРегламентногоЗадания" id="6478c023-a376-425d-bcd2-fd9c882c5361" configVersion="de812a3492fdc64095f39f2f3f6eb3c700000000"/>
 		<Metadata name="DataProcessor.КонсольЗаданий.Form.ФормаРегламентногоЗадания.Form" id="6478c023-a376-425d-bcd2-fd9c882c5361.0" configVersion="d06c93d7d7898f4d823157930bca633600000000"/>
-		<Metadata name="Enum.БФТ_РежимВводаПараметра" id="e1aa58f3-1c9f-4943-a185-b6529e9ac9ba" configVersion="cb3eb5ca19ddc34782084761c2039e6b00000000">
+		<Metadata name="Enum.БФТ_РежимВводаПараметра" id="e1aa58f3-1c9f-4943-a185-b6529e9ac9ba" configVersion="47ce43449787a84da7f4f5add9be316500000000">
 			<Metadata name="Enum.БФТ_РежимВводаПараметра.EnumValue.ВнешнийПараметр" id="0f719ad9-3893-4398-b104-921cb71022cd"/>
 			<Metadata name="Enum.БФТ_РежимВводаПараметра.EnumValue.Произвольно" id="930b4030-1a9e-4a77-a240-19be1682703b"/>
+			<Metadata name="Enum.БФТ_РежимВводаПараметра.EnumValue.ЗначениеКонстанты" id="ac7ade78-8402-483e-a35f-91786bb1af50"/>
 			<Metadata name="Enum.БФТ_РежимВводаПараметра.EnumValue.ВыборФайла" id="ac8537a0-d274-4801-895e-c5da4924a197"/>
 			<Metadata name="Enum.БФТ_РежимВводаПараметра.EnumValue.ВыборКаталога" id="af1a9802-530c-4d25-a4a5-200dab07fe34"/>
 			<Metadata name="Enum.БФТ_РежимВводаПараметра.EnumValue.ВыполнитьМетод" id="d9072e8d-8be0-4461-a8a5-f8146b4f7c44"/>
