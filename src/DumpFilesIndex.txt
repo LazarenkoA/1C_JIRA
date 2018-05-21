@@ -20,6 +20,7 @@ be344122-af54-45af-a429-a0622a916dfa:557F40CCFE360C6FECC05A7D265DF2BF:2:Catalogs
 106bb8b6-f6f8-4687-aa22-4fd44415f6cd:A716FA50F9BD4674786D478252D59317:2:CommonForms\ФормаАнализДополнительныхКоммитов.xml
 c84ef3b5-7448-41a2-a91f-a082ec9bf615:ECB64BC650DD3B110E0E2C599EFEA776:2:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче.xml
 8b67967d-2cde-464a-9573-da7016d6cc6a:E3F45CFF9BCC05B293240345C3C93E9A:2:CommonForms\ФормаДиаграмм.xml
+84a7e87a-710e-4ef3-97f7-f728d47d4c56:37759ACA97F391C7630FD53BF5B84C9B:2:CommonForms\ФормаКонстант.xml
 626a74fe-ca34-4bd1-a865-e8e311a6fc45:EE8B2AA814145E0D0CE29CCBF2840461:2:CommonForms\ФормаНастроекJIRA.xml
 b18dde47-52db-48a3-a5dd-a3a6931184c9:44103F321E8620245A45FCFCDA7EE90C:2:CommonForms\ФормаНастроекГрафикаРаботы.xml
 68c402e2-6b10-4cdc-9baa-e47e17ac6c47:7222ED037F2A493FB88C67EB9F9A6D2D:2:CommonForms\ФормаНастроекЭлектроннойПочты.xml
@@ -85,6 +86,7 @@ da5bd42d-fb48-4c53-9dc6-4ce5bead956e:79151D5CD66EBC14C7A9E95B6A802907:2:Constant
 3b6d4b2c-c27e-441a-a627-986b5f8dbc9b:7F9A61BA739CAB5C6E33AB23BA3BBE09:2:Constants\ПользовательНастроек.xml
 9b0b2dd8-7fad-4a8c-9e35-9872756db003:5B5560F25EEDD9B1DCD9E843D12F7288:2:Constants\ПользовательХранилища.xml
 729fe674-1454-47ab-8fc5-062a01686c36:28835789760C761DD608AD7274956A06:2:Constants\ПортSMTP.xml
+3c24f987-b455-4388-9c02-5664efabb9b2:CF86DE73D8A2A9A5135A6DD087C85D5D:2:Constants\ПутьККаталогуSVN.xml
 c7c1f339-f11d-48e0-a83c-9499e32e6cc6:FAFEB05F7056ECADFC1594ECAA1C21D9:2:Constants\ПутьККаталогуСФайламиРасширений.xml
 713cfed9-c700-4b32-8b4a-ce71adc28290:006068FD558B207C555820F23B695A10:2:Constants\ПутьККаталогуШаблонов.xml
 deb372e9-226b-4632-bcfb-d5bc58981378:2442DD2C3FCBBC4A80C0D9992FC70D0A:2:Constants\РабочаяНеделя.xml
@@ -191,6 +193,7 @@ ae9e2429-001d-430e-b662-894232456d18:D1F6BB5C0BC832F5674918F739980E07:4:Catalogs
 106bb8b6-f6f8-4687-aa22-4fd44415f6cd_Form.xml:93316067212C464C0B8758F090E3354C:4:CommonForms\ФормаАнализДополнительныхКоммитов\Ext\Form.xml
 c84ef3b5-7448-41a2-a91f-a082ec9bf615_Form.xml:1FD584454D9D4031C087BAF65DAFBBE7:4:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче\Ext\Form.xml
 8b67967d-2cde-464a-9573-da7016d6cc6a_Form.xml:1AB2B29982208AB01C69B1901082816F:4:CommonForms\ФормаДиаграмм\Ext\Form.xml
+84a7e87a-710e-4ef3-97f7-f728d47d4c56_Form.xml:58FE68B3E4E21B4CB075825E87C6DFB9:4:CommonForms\ФормаКонстант\Ext\Form.xml
 626a74fe-ca34-4bd1-a865-e8e311a6fc45_Form.xml:3EFE45C874AACF4C13D97AC100607E3A:4:CommonForms\ФормаНастроекJIRA\Ext\Form.xml
 b18dde47-52db-48a3-a5dd-a3a6931184c9_Form.xml:C51D329C342D7122C9C9246A497BA8D2:4:CommonForms\ФормаНастроекГрафикаРаботы\Ext\Form.xml
 68c402e2-6b10-4cdc-9baa-e47e17ac6c47_Form.xml:C1F221E1B1BB59CCB7325EAFAFD5165E:4:CommonForms\ФормаНастроекЭлектроннойПочты\Ext\Form.xml
@@ -313,6 +316,7 @@ be344122-af54-45af-a429-a0622a916dfa_Help\ru.html:E5CC9ED20CBB128B27E8142EB602CF
 106bb8b6-f6f8-4687-aa22-4fd44415f6cd_Form\Module.bsl:AACD1183704DEEA46069EB76457FDDD5:5:CommonForms\ФормаАнализДополнительныхКоммитов\Ext\Form\Module.bsl
 c84ef3b5-7448-41a2-a91f-a082ec9bf615_Form\Module.bsl:444192B3CB7A0D4A94760F2EBB860D28:5:CommonForms\ФормаВводаИсходнойОценкиПоЗадаче\Ext\Form\Module.bsl
 8b67967d-2cde-464a-9573-da7016d6cc6a_Form\Module.bsl:9322AF32354684639A5F2A6915121425:5:CommonForms\ФормаДиаграмм\Ext\Form\Module.bsl
+84a7e87a-710e-4ef3-97f7-f728d47d4c56_Form\Module.bsl:2B88480844BF1B313DE6877B13ED07E6:5:CommonForms\ФормаКонстант\Ext\Form\Module.bsl
 626a74fe-ca34-4bd1-a865-e8e311a6fc45_Form\Module.bsl:2DB929A031CA3C24D3120B6E750BBC18:5:CommonForms\ФормаНастроекJIRA\Ext\Form\Module.bsl
 b18dde47-52db-48a3-a5dd-a3a6931184c9_Form\Module.bsl:27768B414EA31105F98DC73AA135677A:5:CommonForms\ФормаНастроекГрафикаРаботы\Ext\Form\Module.bsl
 68c402e2-6b10-4cdc-9baa-e47e17ac6c47_Form\Module.bsl:694D5E2A41E7C0D6FF6B58625E9FFF68:5:CommonForms\ФормаНастроекЭлектроннойПочты\Ext\Form\Module.bsl

@@ -28,7 +28,7 @@
 				</v8:StringQualifiers>
 			</Type>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаКонстант</DefaultForm>
 			<ExtendedPresentation/>
 			<Explanation>
 				<v8:item>

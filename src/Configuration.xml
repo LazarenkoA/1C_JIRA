@@ -195,26 +195,27 @@
 			<CommonCommand>ОткрытьНастройкиПодключенияКХранилищу</CommonCommand>
 			<Constant>JIRA_JQL</Constant>
 			<Constant>JIRA_URL</Constant>
+			<Constant>АдресХранилища</Constant>
 			<Constant>АдресЭлектроннойПочты</Constant>
 			<Constant>ИмяОтправителя</Constant>
+			<Constant>КоличествоДнейДляПроверкиРелиза</Constant>
+			<Constant>ПарольБазыПроверкиРезиза</Constant>
+			<Constant>ПарольХранилища</Constant>
 			<Constant>ПарольЭлектроннойПочты</Constant>
+			<Constant>ПользовательБазыПроверкиРезиза</Constant>
 			<Constant>ПользовательИсходящейПочты</Constant>
 			<Constant>ПользовательНастроек</Constant>
+			<Constant>ПользовательХранилища</Constant>
 			<Constant>ПортSMTP</Constant>
+			<Constant>ПутьККаталогуСФайламиРасширений</Constant>
+			<Constant>ПутьККаталогуШаблонов</Constant>
 			<Constant>РабочаяНеделя</Constant>
 			<Constant>РабочийДень</Constant>
-			<Constant>СерверИсходящейПочтыSMTP</Constant>
-			<Constant>СВ_Сервер</Constant>
 			<Constant>СВ_АдресЭлектроннойПочты</Constant>
-			<Constant>АдресХранилища</Constant>
-			<Constant>ПарольХранилища</Constant>
-			<Constant>ПользовательХранилища</Constant>
-			<Constant>ПутьККаталогуСФайламиРасширений</Constant>
+			<Constant>СВ_Сервер</Constant>
+			<Constant>СерверИсходящейПочтыSMTP</Constant>
 			<Constant>СтрокаПодключенияКБазеПроверкиРезиза</Constant>
-			<Constant>ПользовательБазыПроверкиРезиза</Constant>
-			<Constant>ПарольБазыПроверкиРезиза</Constant>
-			<Constant>КоличествоДнейДляПроверкиРелиза</Constant>
-			<Constant>ПутьККаталогуШаблонов</Constant>
+			<Constant>ПутьККаталогуSVN</Constant>
 			<CommonForm>ФормаРабСтол</CommonForm>
 			<CommonForm>ФормаНастроекГрафикаРаботы</CommonForm>
 			<CommonForm>ФормаНастроекЭлектроннойПочты</CommonForm>
@@ -228,6 +229,7 @@
 			<CommonForm>ФормаАнализДополнительныхКоммитов</CommonForm>
 			<CommonForm>ДлительнаяОперация</CommonForm>
 			<CommonForm>ФормаРасхождениеПоДатам</CommonForm>
+			<CommonForm>ФормаКонстант</CommonForm>
 			<Catalog>БФТ_МетодыРаботыСРепозиторием</Catalog>
 			<Catalog>БФТ_НаборыИзменений</Catalog>
 			<Catalog>БФТ_НастройкаПодключенияКРепозиторию</Catalog>

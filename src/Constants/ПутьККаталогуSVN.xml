@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Constant uuid="713cfed9-c700-4b32-8b4a-ce71adc28290">
+	<Constant uuid="3c24f987-b455-4388-9c02-5664efabb9b2">
 		<InternalInfo>
-			<xr:GeneratedType name="ConstantManager.ПутьККаталогуШаблонов" category="Manager">
-				<xr:TypeId>e16fcffe-a3e1-4f5e-b2ee-99280cc83c11</xr:TypeId>
-				<xr:ValueId>052deae0-d328-465e-8a6d-d95a93e59b59</xr:ValueId>
+			<xr:GeneratedType name="ConstantManager.ПутьККаталогуSVN" category="Manager">
+				<xr:TypeId>bc64d4b5-da6c-417e-9e45-21aaa7aa1780</xr:TypeId>
+				<xr:ValueId>f0af517d-bf1f-45e5-86cf-4dca71f60ee7</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ConstantValueManager.ПутьККаталогуШаблонов" category="ValueManager">
-				<xr:TypeId>e7f4beeb-053b-4ae2-a933-ab3c2fa3811c</xr:TypeId>
-				<xr:ValueId>f7642d66-bcfb-4f67-85da-b80b338a0719</xr:ValueId>
+			<xr:GeneratedType name="ConstantValueManager.ПутьККаталогуSVN" category="ValueManager">
+				<xr:TypeId>d27af94b-27fe-4eb3-9a93-8014a47a651e</xr:TypeId>
+				<xr:ValueId>e06c8d9d-f127-426e-9898-98884d0117d4</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПутьККаталогуШаблонов</Name>
+			<Name>ПутьККаталогуSVN</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Путь к каталогу шаблонов</v8:content>
+					<v8:content>Путь к каталогу SVN</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
