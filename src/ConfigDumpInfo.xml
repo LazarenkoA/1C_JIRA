@@ -361,8 +361,8 @@
 		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.Form.Форма.Help" id="863040f4-ee81-4169-a7ad-c306f66e8287.1" configVersion="9ee019b5127c7e44b5cd847a04a44dd900000000"/>
 		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.Help" id="d990c83f-0224-47f3-a18c-8a7d501fdace.1" configVersion="3ad95a0689f8a9498842ecd930d03d7100000000"/>
 		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.ObjectModule" id="d990c83f-0224-47f3-a18c-8a7d501fdace.0" configVersion="d636e75b9d06654e8c534dd8ef3acbb300000000"/>
-		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.Template.НастройкиАРМаСборок" id="93fb6992-7df6-496f-a073-1c3f9825019c" configVersion="c36e3c368131964397ca8f2e70b6245700000000"/>
-		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.Template.НастройкиАРМаСборок.Template" id="93fb6992-7df6-496f-a073-1c3f9825019c.0" configVersion="cde117f93e4f8b4c9e38a1b997a4cd7d00000000"/>
+		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.Template.НастройкиАРМаСборок" id="93fb6992-7df6-496f-a073-1c3f9825019c" configVersion="b9b015755bd1334eb9e379d49e276fce00000000"/>
+		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.Template.НастройкиАРМаСборок.Template" id="93fb6992-7df6-496f-a073-1c3f9825019c.0" configVersion="0bd8c6f50dfd384e8f5e632b5e838a4000000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов" id="52fad43e-568b-47b3-bd1c-13e5879f106b" configVersion="0cd2feb34aff0b48906cea46f5e648a600000000">
 			<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.TabularSection.Запросы.Attribute.Текст" id="0bea5475-678f-4cfd-93e8-b3fbe2fe31af"/>
 			<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.TabularSection.Параметры.Attribute.Идентификатор" id="16e157ba-eab3-4999-8f26-7dfa22846f46"/>
