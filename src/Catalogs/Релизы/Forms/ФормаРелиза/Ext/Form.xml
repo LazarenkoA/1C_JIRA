@@ -813,6 +813,13 @@
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
+		<CheckBoxField name="РелизВыпущен" id="226">
+			<DataPath>Объект.РелизВыпущен</DataPath>
+			<Visible>false</Visible>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РелизВыпущенКонтекстноеМеню" id="227"/>
+			<ExtendedTooltip name="РелизВыпущенРасширеннаяПодсказка" id="228"/>
+		</CheckBoxField>
 		<CheckBoxField name="РелизСобран" id="218">
 			<DataPath>Объект.РелизСобран</DataPath>
 			<Visible>false</Visible>
