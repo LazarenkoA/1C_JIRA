@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ФормаГруппа1" id="26">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Поиск задач</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="27"/>
+				<ChildItems>
+					<Button name="СписокПоискЗадач" id="24">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоискЗадач</CommandName>
+						<ExtendedTooltip name="СписокПоискЗадачРасширеннаяПодсказка" id="25"/>
+					</Button>
+					<Button name="ФормаСброситьПараметры" id="28">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СброситьПараметры</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сбросить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаСброситьПараметрыРасширеннаяПодсказка" id="29"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<UsualGroup name="грРодитель" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр родитель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр родитель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="грРодительРасширеннаяПодсказка" id="20"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.Картинка</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Ссылка" id="21">
+					<DataPath>Список.Ссылка</DataPath>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="23"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	Подзапрос.Картинка КАК Картинка,
+	Подзапрос.Ссылка КАК Ссылка
+ИЗ
+	(ВЫБРАТЬ РАЗЛИЧНЫЕ
+		ВЫБОР
+			КОГДА НЕ СвязанныеНаборы.Ссылка ЕСТЬ NULL
+				ТОГДА 3
+			ИНАЧЕ 2
+		КОНЕЦ КАК Картинка,
+		ВЫБОР
+			КОГДА &amp;ОтобратьСвязанныеПо &lt;&gt; НЕОПРЕДЕЛЕНО
+					И НЕ СвязанныеНаборы.СсылкаСвязь ЕСТЬ NULL
+				ТОГДА СвязанныеНаборы.СсылкаСвязь
+			КОГДА &amp;ОтобратьСвязанныеПо = НЕОПРЕДЕЛЕНО
+				ТОГДА БФТ_НаборыИзменений.Ссылка
+			ИНАЧЕ NULL
+		КОНЕЦ КАК Ссылка
+	ИЗ
+		Справочник.БФТ_НаборыИзменений КАК БФТ_НаборыИзменений
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.БФТ_НаборыИзменений.НаборИзменений КАК БФТ_НаборыИзмененийНаборИзменений
+			ПО (БФТ_НаборыИзмененийНаборИзменений.Ссылка = БФТ_НаборыИзменений.Ссылка)
+			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+				БФТ_НаборыИзмененийНаборИзменений1.Ссылка КАК СсылкаСвязь,
+				БФТ_НаборыИзмененийНаборИзменений.Ссылка КАК Ссылка
+			ИЗ
+				Справочник.БФТ_НаборыИзменений.НаборИзменений КАК БФТ_НаборыИзмененийНаборИзменений
+					ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.БФТ_НаборыИзменений.НаборИзменений КАК БФТ_НаборыИзмененийНаборИзменений1
+					ПО БФТ_НаборыИзмененийНаборИзменений.НомерРевизии = БФТ_НаборыИзмененийНаборИзменений1.НомерРевизии
+						И БФТ_НаборыИзмененийНаборИзменений.Ссылка &lt;&gt; БФТ_НаборыИзмененийНаборИзменений1.Ссылка
+						И БФТ_НаборыИзмененийНаборИзменений.ИзменениеКонфигурации = БФТ_НаборыИзмененийНаборИзменений1.ИзменениеКонфигурации
+			
+			СГРУППИРОВАТЬ ПО
+				БФТ_НаборыИзмененийНаборИзменений1.Ссылка,
+				БФТ_НаборыИзмененийНаборИзменений.Ссылка
+			
+			ИМЕЮЩИЕ
+				КОЛИЧЕСТВО(*) &gt; 0) КАК СвязанныеНаборы
+			ПО (СвязанныеНаборы.Ссылка = БФТ_НаборыИзменений.Ссылка)
+	ГДЕ
+		(&amp;НомерРевизии &lt;&gt; НЕОПРЕДЕЛЕНО
+					И БФТ_НаборыИзмененийНаборИзменений.НомерРевизии = &amp;НомерРевизии
+				ИЛИ &amp;НомерРевизии = НЕОПРЕДЕЛЕНО)
+		И (&amp;ОтобратьСвязанныеПо &lt;&gt; НЕОПРЕДЕЛЕНО
+					И БФТ_НаборыИзмененийНаборИзменений.Ссылка = &amp;ОтобратьСвязанныеПо
+				ИЛИ &amp;ОтобратьСвязанныеПо = НЕОПРЕДЕЛЕНО)) КАК Подзапрос
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.БФТ_НаборыИзменений КАК БФТ_НаборыИзменений
+			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+				Задачи.Код КАК НомерЗадачи,
+				Сабтаск.Код КАК НомерСабтаска
+			ИЗ
+				Справочник.Задачи КАК Задачи
+					ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Задачи КАК Сабтаск
+					ПО Задачи.Ссылка = Сабтаск.Родитель
+			ГДЕ
+				&amp;ОтборПоЗадачам
+				И Задачи.Код В(&amp;НомераЗадач)) КАК Задачи
+			ПО (БФТ_НаборыИзменений.Код = Задачи.НомерЗадачи
+					ИЛИ Задачи.НомерСабтаска &lt;&gt; ""
+						И БФТ_НаборыИзменений.Код = Задачи.НомерСабтаска)
+		ПО Подзапрос.Ссылка = БФТ_НаборыИзменений.Ссылка
+ГДЕ
+	(НЕ &amp;ОтборПоЗадачам
+			ИЛИ (НЕ Задачи.НомерЗадачи ЕСТЬ NULL
+				ИЛИ НЕ Задачи.НомерЗадачи ЕСТЬ NULL))</QueryText>
+				<MainTable>Catalog.БФТ_НаборыИзменений</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоискЗадач" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск задач</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск задач с учетом сабтасков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискЗадач</Action>
+		</Command>
+		<Command name="СброситьПараметры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СброситьПараметры</Action>
+		</Command>
+	</Commands>
+</Form>
