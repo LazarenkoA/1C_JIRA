@@ -287,6 +287,12 @@
 												<Button name="ОткрытьФормуКонфликтов" id="202">
 													<Type>Hyperlink</Type>
 													<CommandName>Form.Command.ОткрытьФормуКонфликтов</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Открыть форму превышение сроков</v8:content>
+														</v8:item>
+													</Title>
 													<ExtendedTooltip name="ОткрытьФормуКонфликтовРасширеннаяПодсказка" id="203"/>
 												</Button>
 												<PictureDecoration name="ДекорацияПредупреждениеКонфликтДат" id="337">
