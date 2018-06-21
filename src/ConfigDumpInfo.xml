@@ -599,6 +599,6 @@
 		<Metadata name="Subsystem.АРМ_Сборок" id="fe063888-0dc3-4702-9b66-d8bd4f176251" configVersion="26858911ab5c744c8bb76d6120701a3300000000"/>
 		<Metadata name="Subsystem.АРМ_Сборок.CommandInterface" id="fe063888-0dc3-4702-9b66-d8bd4f176251.1" configVersion="491e34c80b17964695ec5673cdd17dcc00000000"/>
 		<Metadata name="Subsystem.АРМ_Сборок.Subsystem.ПоставляемыеДанные" id="6a6211ed-54c3-47c0-ac10-c2212c529172" configVersion="c7bb127c32e46f4cb810dfacb2cf813600000000"/>
-		<Metadata name="Subsystem.СистемныеОбъекты" id="62668a77-da3a-45bc-b460-5e7a84085509" configVersion="ed974832efb4bd4db9aa84365060017600000000"/>
+		<Metadata name="Subsystem.СистемныеОбъекты" id="62668a77-da3a-45bc-b460-5e7a84085509" configVersion="542505870c854c4db102b4601bd3129d00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
