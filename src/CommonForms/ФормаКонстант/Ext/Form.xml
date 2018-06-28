@@ -30,6 +30,18 @@
 				<Event name="StartChoice">ПутьККаталогуSVNНачалоВыбора</Event>
 			</Events>
 		</InputField>
+		<InputField name="СетевойККаталогуSVN" id="16">
+			<DataPath>1/0:b8875dcb-b932-4875-9a49-0a85d8f56d0f</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь доступный по локальной сети</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="СетевойККаталогуSVNКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СетевойККаталогуSVNРасширеннаяПодсказка" id="18"/>
+		</InputField>
 		<InputField name="ПутьККаталогуСФайламиРасширений" id="1">
 			<DataPath>НаборКонстант.ПутьККаталогуСФайламиРасширений</DataPath>
 			<TitleLocation>Top</TitleLocation>
