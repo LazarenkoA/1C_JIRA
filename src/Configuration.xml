@@ -267,6 +267,7 @@
 			<InformationRegister>ИсторияИзмененияСтатусов</InformationRegister>
 			<InformationRegister>СписаниеВремени</InformationRegister>
 			<InformationRegister>ИзмененияРевизии</InformationRegister>
+			<InformationRegister>БазыДляАвтоОбновления</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

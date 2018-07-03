@@ -72,7 +72,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьККаталогуШаблонов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРасхождениеПоДатам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьККаталогуSVN</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">b8875dcb-b932-4875-9a49-0a85d8f56d0f</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.БазыДляАвтоОбновления</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
