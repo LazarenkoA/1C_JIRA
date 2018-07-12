@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<CommandSet>
+		<ExcludedCommand>Write</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Закрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="26"/>
+			</Button>
+			<Button name="ФормаАктивировать" id="20">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>Form.Command.Активировать</CommandName>
+				<ExtendedTooltip name="ФормаАктивироватьРасширеннаяПодсказка" id="21"/>
+			</Button>
+			<Button name="ФормаОтменаАктивации" id="30">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтменаАктивации</CommandName>
+				<ExtendedTooltip name="ФормаОтменаАктивацииРасширеннаяПодсказка" id="31"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ИмяИБ" id="22">
+			<DataPath>ИмяИБ</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ИмяИБКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИмяИБРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="НаборКонстантСВ_Сервер" id="1">
+			<DataPath>НаборКонстант.СВ_Сервер</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НаборКонстантСВ_СерверКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаборКонстантСВ_СерверРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="НаборКонстантСВ_АдресЭлектроннойПочты" id="4">
+			<DataPath>НаборКонстант.СВ_АдресЭлектроннойПочты</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес электронной почты</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НаборКонстантСВ_АдресЭлектроннойПочтыКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаборКонстантСВ_АдресЭлектроннойПочтыРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">НаборКонстантСВ_АдресЭлектроннойПочтыПриИзменении</Event>
+				<Event name="TextEditEnd">НаборКонстантСВ_АдресЭлектроннойПочтыОкончаниеВводаТекста</Event>
+			</Events>
+		</InputField>
+		<InputField name="КодАктивации" id="27">
+			<DataPath>КодАктивации</DataPath>
+			<ContextMenu name="КодАктивацииКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="КодАктивацииРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="16">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="НаборКонстантСВ_КодАктивации" id="7">
+					<DataPath>1/0:59453c39-d038-4f7e-8539-18489944d011</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код активации</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НаборКонстантСВ_КодАктивацииКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="НаборКонстантСВ_КодАктивацииРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<UsualGroup name="Группа2" id="18">
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="13">
+							<TextColor>#C0C0C0</TextColor>
+							<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код придет на email</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="15"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИмяИБ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодАктивации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код активации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Активировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Активировать</Action>
+		</Command>
+		<Command name="Закрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Закрыть_</Action>
+		</Command>
+		<Command name="ОтменаАктивации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена активации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена активации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменаАктивации</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаНазад" id="42">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.Назад</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаНазадРасширеннаяПодсказка" id="43"/>
+			</Button>
+			<Button name="ФормаДалее" id="40">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.Далее</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.MoveRight</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаДалееРасширеннаяПодсказка" id="41"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="грОбщее" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр общее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр общее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="грОбщееРасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<Pages name="Вкладки" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вкладки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вкладки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ВкладкиРасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<Page name="Основное" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основное</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основное</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="55"/>
+							<ChildItems>
+								<UsualGroup name="грСтатус" id="64">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр статус</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр статус</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грСтатусРасширеннаяПодсказка" id="65"/>
+									<ChildItems>
+										<LabelField name="ТекущийСтатус" id="44">
+											<DataPath>ТекущийСтатус</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<BorderColor>style:TableHeaderTextColor</BorderColor>
+											<TextColor>#800000</TextColor>
+											<Font ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="ТекущийСтатусКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ТекущийСтатусРасширеннаяПодсказка" id="46"/>
+										</LabelField>
+										<PictureDecoration name="КартинкаПредупреждениеВысокое" id="66">
+											<Width>2</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Существуют конфликты. Для подробностей, нажмите</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьНовостиОченьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаПредупреждениеВысокоеКонтекстноеМеню" id="67"/>
+											<ExtendedTooltip name="КартинкаПредупреждениеВысокоеРасширеннаяПодсказка" id="68"/>
+											<Events>
+												<Event name="Click">КартинкаПредупреждениеВысокоеНажатие</Event>
+											</Events>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="грКонфликтыСлияния" id="69">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр конфликты слияния</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр конфликты слияния</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грКонфликтыСлиянияРасширеннаяПодсказка" id="70"/>
+									<ChildItems>
+										<Button name="ОбработатьКонфликтыСлияния" id="77">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОбработатьКонфликтыСлияния</CommandName>
+											<TextColor>#FF0000</TextColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При слиянии обнаружены конфликты</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОбработатьКонфликтыСлиянияРасширеннаяПодсказка" id="78"/>
+										</Button>
+										<PictureDecoration name="КартинкаПредупреждениеСлияние" id="71">
+											<Width>2</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Некоторые наборы изменений не привязаны к задачам. Нажмите что бы привязать</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.ВажностьВажная</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаПредупреждениеСлияниеКонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="КартинкаПредупреждениеСлияниеРасширеннаяПодсказка" id="73"/>
+											<Events>
+												<Event name="Click">КартинкаПредупреждениеСлияниеНажатие</Event>
+											</Events>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="грКодДата" id="88">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр код дата</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр код дата</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грКодДатаРасширеннаяПодсказка" id="89"/>
+									<ChildItems>
+										<InputField name="Дата" id="85">
+											<DataPath>Объект.Дата</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ContextMenu name="ДатаКонтекстноеМеню" id="86"/>
+											<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="87"/>
+										</InputField>
+										<InputField name="Код" id="82">
+											<DataPath>Объект.Code</DataPath>
+											<ContextMenu name="КодКонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="КодРасширеннаяПодсказка" id="84"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<UsualGroup name="Группа1" id="96">
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="97"/>
+									<ChildItems>
+										<InputField name="ЛокальныйПутьКСборке" id="79">
+											<DataPath>Объект.ЛокальныйПутьКСборке</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Путь к локальному каталогу синхронизации с репозиторием, к директории ... \ЦПК\Сборки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="ЛокальныйПутьКСборкеКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ЛокальныйПутьКСборкеРасширеннаяПодсказка" id="81"/>
+											<Events>
+												<Event name="StartChoice">ЛокальныйПутьКСборкеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="НастройкиРаботыСРепозиторием" id="49">
+									<DataPath>Объект.НастройкиРаботыСРепозиторием</DataPath>
+									<ContextMenu name="НастройкиРаботыСРепозиториемКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="НастройкиРаботыСРепозиториемРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<UsualGroup name="грНомерБазовойРевизии" id="33">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр номер базовой ревизии</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр номер базовой ревизии</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="грНомерБазовойРевизииРасширеннаяПодсказка" id="34"/>
+									<ChildItems>
+										<LabelField name="БазовыйНомерРевизии" id="30">
+											<DataPath>Объект.БазовыйНомерРевизии</DataPath>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="БазовыйНомерРевизииКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="БазовыйНомерРевизииРасширеннаяПодсказка" id="32"/>
+										</LabelField>
+										<Button name="ВыбратьБазовуюРевизию" id="35">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.УстановитьБазовуюРевизию</CommandName>
+											<ExtendedTooltip name="ВыбратьБазовуюРевизиюРасширеннаяПодсказка" id="36"/>
+										</Button>
+										<PictureDecoration name="КартинкаПредупреждение" id="61">
+											<Width>2</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка предупреждение</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Некоторые наборы изменений не привязаны к задачам. Нажмите что бы привязать</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаПредупреждениеКонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="КартинкаПредупреждениеРасширеннаяПодсказка" id="63"/>
+											<Events>
+												<Event name="Click">КартинкаПредупреждениеНажатие</Event>
+											</Events>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelField name="Владелец" id="98">
+									<DataPath>Объект.Owner</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Релиз</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВладелецКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="100"/>
+								</LabelField>
+								<Table name="НаборыИзменений" id="11">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.НаборыИзменений</DataPath>
+									<RowPictureDataPath>Объект.НаборыИзменений.ЗадачаНеАктуальна</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Ref>CommonPicture.Важность</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="НаборыИзмененийКонтекстноеМеню" id="12"/>
+									<AutoCommandBar name="НаборыИзмененийКоманднаяПанель" id="13"/>
+									<ExtendedTooltip name="НаборыИзмененийРасширеннаяПодсказка" id="14"/>
+									<SearchStringAddition name="НаборыИзмененийСтрокаПоиска" id="15">
+										<AdditionSource>
+											<Item>НаборыИзменений</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НаборыИзмененийСтрокаПоискаКонтекстноеМеню" id="16"/>
+										<ExtendedTooltip name="НаборыИзмененийСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="НаборыИзмененийСостояниеПросмотра" id="18">
+										<AdditionSource>
+											<Item>НаборыИзменений</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НаборыИзмененийСостояниеПросмотраКонтекстноеМеню" id="19"/>
+										<ExtendedTooltip name="НаборыИзмененийСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="НаборыИзмененийУправлениеПоиском" id="21">
+										<AdditionSource>
+											<Item>НаборыИзменений</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="НаборыИзмененийУправлениеПоискомКонтекстноеМеню" id="22"/>
+										<ExtendedTooltip name="НаборыИзмененийУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">НаборыИзмененийПередНачаломДобавления</Event>
+										<Event name="BeforeDeleteRow">НаборыИзмененийПередУдалением</Event>
+										<Event name="OnChange">НаборыИзмененийПриИзменении</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="НаборыИзмененийНомерСтроки" id="24">
+											<DataPath>Объект.НаборыИзменений.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НаборыИзмененийНомерСтрокиКонтекстноеМеню" id="25"/>
+											<ExtendedTooltip name="НаборыИзмененийНомерСтрокиРасширеннаяПодсказка" id="26"/>
+										</LabelField>
+										<InputField name="НаборыИзмененийНаборИзменений" id="27">
+											<DataPath>Объект.НаборыИзменений.НаборИзменений</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НаборыИзмененийНаборИзмененийКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="НаборыИзмененийНаборИзмененийРасширеннаяПодсказка" id="29"/>
+											<Events>
+												<Event name="OnChange">НаборыИзмененийНаборИзмененийПриИзменении</Event>
+												<Event name="StartChoice">НаборыИзмененийНаборИзмененийНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<CheckBoxField name="НаборыИзмененийВходитВБазовыйНабор" id="37">
+											<DataPath>Объект.НаборыИзменений.ВходитВБазовыйНабор</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="НаборыИзмененийВходитВБазовыйНаборКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="НаборыИзмененийВходитВБазовыйНаборРасширеннаяПодсказка" id="39"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="Журнал" id="56">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Журнал</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Журнал</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЖурналРасширеннаяПодсказка" id="57"/>
+							<ChildItems>
+								<InputField name="Лог" id="58">
+									<DataPath>Объект.Лог</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ЛогКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="60"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<ProgressBarField name="Прогресс" id="90">
+					<DataPath>Прогресс</DataPath>
+					<ContextMenu name="ПрогрессКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ПрогрессРасширеннаяПодсказка" id="92"/>
+				</ProgressBarField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Патчи</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТекущийСтатус" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Прогресс" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НаборыИзменений</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.НаборыИзменений.ВходитВБазовыйНабор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#DADADA</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НаборыИзмененийНаборИзменений</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.НаборыИзменений.ВходитВБазовыйНабор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьБазовуюРевизию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить базовую ревизию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить базовую ревизию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьБазовуюРевизию</Action>
+		</Command>
+		<Command name="Назад" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Назад</Action>
+		</Command>
+		<Command name="Далее" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Далее</Action>
+		</Command>
+		<Command name="ИнформацияПоУстранениюКонфликтов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация по устранению конфликтов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация по устранению конфликтов</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ОбработатьКонфликтыСлияния" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать конфликты слияния</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать конфликты слияния</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьКонфликтыСлияния</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

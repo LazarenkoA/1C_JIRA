@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТЗРегламентныеЗадания" id="103">
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЗРегламентныеЗадания</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЗРегламентныеЗаданияКонтекстноеМеню" id="104"/>
+			<AutoCommandBar name="ТЗРегламентныеЗаданияКоманднаяПанель" id="105">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ОбновитьСписокРегламентныхЗаданий" id="53">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьСписокРегламентныхЗаданий</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ОбновитьСписокРегламентныхЗаданийРасширеннаяПодсказка" id="54"/>
+					</Button>
+					<Button name="ДобавитьЗадание" id="209">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьЗадание</CommandName>
+						<ExtendedTooltip name="ДобавитьЗаданиеРасширеннаяПодсказка" id="210"/>
+					</Button>
+					<Button name="УдалитьЗадание" id="211">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьЗадание</CommandName>
+						<ExtendedTooltip name="УдалитьЗаданиеРасширеннаяПодсказка" id="212"/>
+					</Button>
+					<Button name="ВыполнитьЗадание" id="207">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыполнитьЗадание</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ВыполнитьЗаданиеРасширеннаяПодсказка" id="208"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТЗРегламентныеЗаданияРасширеннаяПодсказка" id="106"/>
+			<SearchStringAddition name="ТЗРегламентныеЗаданияСтрокаПоиска" id="107">
+				<AdditionSource>
+					<Item>ТЗРегламентныеЗадания</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗРегламентныеЗаданияСтрокаПоискаКонтекстноеМеню" id="108"/>
+				<ExtendedTooltip name="ТЗРегламентныеЗаданияСтрокаПоискаРасширеннаяПодсказка" id="109"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЗРегламентныеЗаданияСостояниеПросмотра" id="110">
+				<AdditionSource>
+					<Item>ТЗРегламентныеЗадания</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗРегламентныеЗаданияСостояниеПросмотраКонтекстноеМеню" id="111"/>
+				<ExtendedTooltip name="ТЗРегламентныеЗаданияСостояниеПросмотраРасширеннаяПодсказка" id="112"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЗРегламентныеЗаданияУправлениеПоиском" id="113">
+				<AdditionSource>
+					<Item>ТЗРегламентныеЗадания</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗРегламентныеЗаданияУправлениеПоискомКонтекстноеМеню" id="114"/>
+				<ExtendedTooltip name="ТЗРегламентныеЗаданияУправлениеПоискомРасширеннаяПодсказка" id="115"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТЗРегламентныеЗаданияВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ТЗРегламентныеЗаданияНомерСтроки" id="116">
+					<DataPath>Объект.ТЗРегламентныеЗадания.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияНомерСтрокиКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияНомерСтрокиРасширеннаяПодсказка" id="118"/>
+				</LabelField>
+				<CheckBoxField name="ТЗРегламентныеЗаданияИспользование" id="119">
+					<DataPath>Объект.ТЗРегламентныеЗадания.Использование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТЗРегламентныеЗаданияИспользованиеКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияИспользованиеРасширеннаяПодсказка" id="121"/>
+				</CheckBoxField>
+				<CheckBoxField name="ТЗРегламентныеЗаданияПредопределенное" id="122">
+					<DataPath>Объект.ТЗРегламентныеЗадания.Предопределенное</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТЗРегламентныеЗаданияПредопределенноеКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияПредопределенноеРасширеннаяПодсказка" id="124"/>
+				</CheckBoxField>
+				<InputField name="ТЗРегламентныеЗаданияНаименование" id="125">
+					<DataPath>Объект.ТЗРегламентныеЗадания.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияНаименованиеКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияНаименованиеРасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияМетаданные" id="128">
+					<DataPath>Объект.ТЗРегламентныеЗадания.Метаданные</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияМетаданныеКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияМетаданныеРасширеннаяПодсказка" id="130"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияИмяПользователя" id="131">
+					<DataPath>Объект.ТЗРегламентныеЗадания.ИмяПользователя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияИмяПользователяКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияИмяПользователяРасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияПоследнееЗадание" id="134">
+					<DataPath>Объект.ТЗРегламентныеЗадания.ПоследнееЗадание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияПоследнееЗаданиеКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияПоследнееЗаданиеРасширеннаяПодсказка" id="136"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияРасписание" id="137">
+					<DataPath>Объект.ТЗРегламентныеЗадания.Расписание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияРасписаниеКонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияРасписаниеРасширеннаяПодсказка" id="139"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияИнтервалПовтораПриАварийномЗавершении" id="140">
+					<DataPath>Объект.ТЗРегламентныеЗадания.ИнтервалПовтораПриАварийномЗавершении</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияИнтервалПовтораПриАварийномЗавершенииКонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияИнтервалПовтораПриАварийномЗавершенииРасширеннаяПодсказка" id="142"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияКоличествоПовторовПриАварийномЗавершении" id="143">
+					<DataPath>Объект.ТЗРегламентныеЗадания.КоличествоПовторовПриАварийномЗавершении</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияКоличествоПовторовПриАварийномЗавершенииКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияКоличествоПовторовПриАварийномЗавершенииРасширеннаяПодсказка" id="145"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияКлюч" id="146">
+					<DataPath>Объект.ТЗРегламентныеЗадания.Ключ</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияКлючКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияКлючРасширеннаяПодсказка" id="148"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияПараметры" id="149">
+					<DataPath>Объект.ТЗРегламентныеЗадания.Параметры</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияПараметрыКонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияПараметрыРасширеннаяПодсказка" id="151"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияРазделениеДанных" id="152">
+					<DataPath>Объект.ТЗРегламентныеЗадания.РазделениеДанных</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияРазделениеДанныхКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияРазделениеДанныхРасширеннаяПодсказка" id="154"/>
+				</InputField>
+				<InputField name="ТЗРегламентныеЗаданияУникальныйИдентификатор" id="155">
+					<DataPath>Объект.ТЗРегламентныеЗадания.УникальныйИдентификатор</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРегламентныеЗаданияУникальныйИдентификаторКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="ТЗРегламентныеЗаданияУникальныйИдентификаторРасширеннаяПодсказка" id="157"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ТЗФоновыеЗадания" id="158">
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЗФоновыеЗадания</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЗФоновыеЗаданияКонтекстноеМеню" id="159"/>
+			<AutoCommandBar name="ТЗФоновыеЗаданияКоманднаяПанель" id="160">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ОбновитьСписокФоновыхЗаданий" id="101">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьСписокФоновыхЗаданий</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ОбновитьСписокФоновыхЗаданийРасширеннаяПодсказка" id="102"/>
+					</Button>
+					<Button name="ОтменитьЗадание" id="213">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьЗадание</CommandName>
+						<ExtendedTooltip name="ОтменитьЗаданиеРасширеннаяПодсказка" id="214"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТЗФоновыеЗаданияРасширеннаяПодсказка" id="161"/>
+			<SearchStringAddition name="ТЗФоновыеЗаданияСтрокаПоиска" id="162">
+				<AdditionSource>
+					<Item>ТЗФоновыеЗадания</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗФоновыеЗаданияСтрокаПоискаКонтекстноеМеню" id="163"/>
+				<ExtendedTooltip name="ТЗФоновыеЗаданияСтрокаПоискаРасширеннаяПодсказка" id="164"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЗФоновыеЗаданияСостояниеПросмотра" id="165">
+				<AdditionSource>
+					<Item>ТЗФоновыеЗадания</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗФоновыеЗаданияСостояниеПросмотраКонтекстноеМеню" id="166"/>
+				<ExtendedTooltip name="ТЗФоновыеЗаданияСостояниеПросмотраРасширеннаяПодсказка" id="167"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЗФоновыеЗаданияУправлениеПоиском" id="168">
+				<AdditionSource>
+					<Item>ТЗФоновыеЗадания</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗФоновыеЗаданияУправлениеПоискомКонтекстноеМеню" id="169"/>
+				<ExtendedTooltip name="ТЗФоновыеЗаданияУправлениеПоискомРасширеннаяПодсказка" id="170"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТЗФоновыеЗаданияНомерСтроки" id="171">
+					<DataPath>Объект.ТЗФоновыеЗадания.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияНомерСтрокиКонтекстноеМеню" id="172"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияНомерСтрокиРасширеннаяПодсказка" id="173"/>
+				</LabelField>
+				<InputField name="ТЗФоновыеЗаданияНаименование" id="174">
+					<DataPath>Объект.ТЗФоновыеЗадания.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияНаименованиеКонтекстноеМеню" id="175"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияНаименованиеРасширеннаяПодсказка" id="176"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияРегламентноеЗадание" id="177">
+					<DataPath>Объект.ТЗФоновыеЗадания.РегламентноеЗадание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияРегламентноеЗаданиеКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияРегламентноеЗаданиеРасширеннаяПодсказка" id="179"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияСостояние" id="180">
+					<DataPath>Объект.ТЗФоновыеЗадания.Состояние</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияСостояниеКонтекстноеМеню" id="181"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияСостояниеРасширеннаяПодсказка" id="182"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияНачало" id="183">
+					<DataPath>Объект.ТЗФоновыеЗадания.Начало</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияНачалоКонтекстноеМеню" id="184"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияНачалоРасширеннаяПодсказка" id="185"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияКонец" id="186">
+					<DataPath>Объект.ТЗФоновыеЗадания.Конец</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияКонецКонтекстноеМеню" id="187"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияКонецРасширеннаяПодсказка" id="188"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияИнформацияОбОшибке" id="189">
+					<DataPath>Объект.ТЗФоновыеЗадания.ИнформацияОбОшибке</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияИнформацияОбОшибкеКонтекстноеМеню" id="190"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияИнформацияОбОшибкеРасширеннаяПодсказка" id="191"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияИмяМетода" id="192">
+					<DataPath>Объект.ТЗФоновыеЗадания.ИмяМетода</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияИмяМетодаКонтекстноеМеню" id="193"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияИмяМетодаРасширеннаяПодсказка" id="194"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияКлюч" id="195">
+					<DataPath>Объект.ТЗФоновыеЗадания.Ключ</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияКлючКонтекстноеМеню" id="196"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияКлючРасширеннаяПодсказка" id="197"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияРазделениеДанных" id="198">
+					<DataPath>Объект.ТЗФоновыеЗадания.РазделениеДанных</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияРазделениеДанныхКонтекстноеМеню" id="199"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияРазделениеДанныхРасширеннаяПодсказка" id="200"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияРасположение" id="201">
+					<DataPath>Объект.ТЗФоновыеЗадания.Расположение</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияРасположениеКонтекстноеМеню" id="202"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияРасположениеРасширеннаяПодсказка" id="203"/>
+				</InputField>
+				<InputField name="ТЗФоновыеЗаданияУникальныйИдентификатор" id="204">
+					<DataPath>Объект.ТЗФоновыеЗадания.УникальныйИдентификатор</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗФоновыеЗаданияУникальныйИдентификаторКонтекстноеМеню" id="205"/>
+					<ExtendedTooltip name="ТЗФоновыеЗаданияУникальныйИдентификаторРасширеннаяПодсказка" id="206"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонсольЗаданий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСписокРегламентныхЗаданий" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список регламентных заданий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСписокРегламентныхЗаданий</Action>
+		</Command>
+		<Command name="ОбновитьСписокФоновыхЗаданий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список фоновых заданий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список фоновых заданий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСписокФоновыхЗаданий</Action>
+		</Command>
+		<Command name="ВыполнитьЗадание" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьЗадание</Action>
+		</Command>
+		<Command name="ДобавитьЗадание" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьЗадание</Action>
+		</Command>
+		<Command name="УдалитьЗадание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьЗадание</Action>
+		</Command>
+		<Command name="ОтменитьЗадание" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтменитьЗадание</Action>
+		</Command>
+	</Commands>
+</Form>

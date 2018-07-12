@@ -315,6 +315,7 @@ a63940b1-3195-4168-9104-418fbbca3894_Schedule.xml:9095F433EB61EECE1CF4B14EB3CCB1
 d65b923f-2aca-47c3-8d96-23a2ac8b5e18:CCFDB8BCCD7B2AB1E22ACDC078B7FB8D:4:Subsystems\АРМ_JIRA\Subsystems\СистемаВзаимодействия.xml
 fe063888-0dc3-4702-9b66-d8bd4f176251_CommandInterface.xml:38FD5F1014915D13454EBCC7936673B6:4:Subsystems\АРМ_Сборок\Ext\CommandInterface.xml
 6a6211ed-54c3-47c0-ac10-c2212c529172:C691797C37BA028A49ABB69A087D9C95:4:Subsystems\АРМ_Сборок\Subsystems\ПоставляемыеДанные.xml
+ce844da3-d2b9-40e9-b1cd-3557fac70d95:9C6F0A488D6A769291D6E3EE579F7364:4:Subsystems\СистемныеОбъекты\Subsystems\PatternIterator.xml
 be344122-af54-45af-a429-a0622a916dfa_Help\ru.html:E5CC9ED20CBB128B27E8142EB602CFE3:5:Catalogs\БФТ_МетодыРаботыСРепозиторием\Ext\Help\ru.html
 71bf0f06-f565-4aec-b7b8-aa95033c3975_Help\ru.html:FC5132F959F8A0076D3AE7375C23D626:5:Catalogs\БФТ_НаборыИзменений\Ext\Help\ru.html
 4eb7a997-cc19-4949-a55e-3aa78fe165a8_Help\ru.html:DA945393A8DF0D4BC72E0D73F16B0FAB:5:Catalogs\БФТ_НастройкаПодключенияКРепозиторию\Ext\Help\ru.html
