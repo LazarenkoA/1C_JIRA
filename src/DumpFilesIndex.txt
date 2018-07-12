@@ -99,6 +99,9 @@ a1b9374b-90a9-4602-b54b-2d2ae78f9de3:EE5D96958B67F016D5C581C6CE968CB5:2:Constant
 d990c83f-0224-47f3-a18c-8a7d501fdace:2111566D7B78E3D120C5E09DF8985EB9:2:DataProcessors\ВыгрузкаЗагрузкаПоставляемыхДанных.xml
 52fad43e-568b-47b3-bd1c-13e5879f106b:73101309BC2BD6E09D1F8A48229B9C05:2:DataProcessors\ИнструментыРазработчикаКонсольЗапросов.xml
 76a5e179-32a3-4973-97d0-2d0522316957:3ED85C76A735F29D3D09A9860C1581A6:2:DataProcessors\КонсольЗаданий.xml
+d38d9bbc-545f-4807-947f-67f87180b050:9423E89C3B2919D3C5B38C37C64D415D:2:DataProcessors\КурсорИнтерфейс.xml
+5d70c44c-02ce-4e1f-ba54-c29e7eedef11:95D6195E28E8C51603B9232EBCB51AF4:2:DataProcessors\КурсорМассив.xml
+a8b5d67a-6454-46a1-9e65-0d4091946812:E0B80D81E13258FE46EF111B6F7FF6F3:2:DataProcessors\КурсорТаблицаЗначений.xml
 e1aa58f3-1c9f-4943-a185-b6529e9ac9ba:C934BE91C505F28E08C6A8E7771E84AE:2:Enums\БФТ_РежимВводаПараметра.xml
 ed410b80-2b86-44ec-bc7b-044583b18515:B9B1088D05D87D949D803D42E0A97879:2:Enums\БФТ_СтатусИзмененийРепозитория.xml
 35196f89-6e39-49c1-a7ca-a9891e66ea02:6D150CDF963E8E2D620331DCB54FEDE5:2:Enums\БФТ_ТипИзменений.xml
@@ -269,6 +272,9 @@ f32cafc5-e192-411f-8671-3d6329eebdd8:07796076BA9A0BAFDCF04E37F79A047D:4:DataProc
 d1ef11b2-8fb5-4b5e-b7c4-e095d82019d3:5ABD9047F54FF9D7514707B008A997D2:4:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Templates\РезультатВыполненияЗапроса.xml
 08c8ca3c-14c7-4a67-b5c0-d857e2a180c2:D3DB5B46128F304FC3399BDEAF2C1F56:4:DataProcessors\КонсольЗаданий\Forms\Форма.xml
 6478c023-a376-425d-bcd2-fd9c882c5361:7648A1B81ECA62421BD82828AB120BE2:4:DataProcessors\КонсольЗаданий\Forms\ФормаРегламентногоЗадания.xml
+d38d9bbc-545f-4807-947f-67f87180b050_ObjectModule.bsl:E156615C267D82218BD8A98CD786974D:4:DataProcessors\КурсорИнтерфейс\Ext\ObjectModule.bsl
+5d70c44c-02ce-4e1f-ba54-c29e7eedef11_ObjectModule.bsl:293367DF2D8081C9018A3C3BAA30EAA5:4:DataProcessors\КурсорМассив\Ext\ObjectModule.bsl
+a8b5d67a-6454-46a1-9e65-0d4091946812_ObjectModule.bsl:BE1C8FE5CAFB88522BCF53F2463DC167:4:DataProcessors\КурсорТаблицаЗначений\Ext\ObjectModule.bsl
 0651d2e0-24f9-407e-8f9e-e2aac5384bce:12D3CD0D34F309E8C8BC5EA86053133B:4:InformationRegisters\БазыДляАвтоОбновления\Forms\ФормаЗаписи.xml
 070a034b-5f03-416d-95ac-835c10da2d8a_ManagerModule.bsl:2F419BAD2395DAF9C11C413C0D36457B:4:InformationRegisters\БФТ_ИзмененияРепозитория\Ext\ManagerModule.bsl
 c98d489c-1593-48ad-afd3-a6fbe6996e3f:6B0F8EDB9BB1D4F19EF2586628905AD7:4:InformationRegisters\БФТ_ИзмененияРепозитория\Forms\ФормаЗаписи.xml

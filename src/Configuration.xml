@@ -259,6 +259,9 @@
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаПоставляемыхДанных</DataProcessor>
+			<DataProcessor>КурсорИнтерфейс</DataProcessor>
+			<DataProcessor>КурсорМассив</DataProcessor>
+			<DataProcessor>КурсорТаблицаЗначений</DataProcessor>
 			<InformationRegister>БФТ_ИзмененияРепозитория</InformationRegister>
 			<InformationRegister>БФТ_ОчередьВыгрузкиРевизийКонфигурации1С</InformationRegister>
 			<InformationRegister>БФТ_ХранилищеМакетов</InformationRegister>

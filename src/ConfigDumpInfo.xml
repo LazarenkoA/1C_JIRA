@@ -281,7 +281,7 @@
 		<Metadata name="CommonPicture.СинхронизацияДанныхДлительнаяОперация49.Picture" id="7f61e24c-d1a5-445b-b5c2-dfd9bb09590a.0" configVersion="a460136ca8fdb641949ee87b98b55e6500000000"/>
 		<Metadata name="CommonPicture.ТипыРевизий" id="70ffe57e-b2a7-455c-a46e-26d48d3cce66" configVersion="70932e2bff2bad45a065b85318583e5900000000"/>
 		<Metadata name="CommonPicture.ТипыРевизий.Picture" id="70ffe57e-b2a7-455c-a46e-26d48d3cce66.0" configVersion="4a00d41e4c86c64cab5d744cbe66611000000000"/>
-		<Metadata name="Configuration.АРМ_JIRA" id="25e2be19-aa77-4533-af14-07c397374b74" configVersion="5201a04f07c5d142849e37324bf946d800000000"/>
+		<Metadata name="Configuration.АРМ_JIRA" id="25e2be19-aa77-4533-af14-07c397374b74" configVersion="91f3d2c8ff16494cabb7c907aa83819400000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.ClientApplicationInterface" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.b" configVersion="10d7963b3d53e64e8df8ad66586955db00000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.HomePageWorkArea" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.8" configVersion="01f97a3b34371a4b91902a1457e9116b00000000"/>
 		<Metadata name="Configuration.АРМ_JIRA.ManagedApplicationModule" id="a4ddd416-8cee-4e46-93a9-4cf870f180d3.6" configVersion="46dbd76a0b426f4fb0b7efb2034fb2d900000000"/>
@@ -439,6 +439,17 @@
 		<Metadata name="DataProcessor.КонсольЗаданий.Form.Форма.Form" id="08c8ca3c-14c7-4a67-b5c0-d857e2a180c2.0" configVersion="918760f3d6b0e340968c675d5ad3b9f700000000"/>
 		<Metadata name="DataProcessor.КонсольЗаданий.Form.ФормаРегламентногоЗадания" id="6478c023-a376-425d-bcd2-fd9c882c5361" configVersion="de812a3492fdc64095f39f2f3f6eb3c700000000"/>
 		<Metadata name="DataProcessor.КонсольЗаданий.Form.ФормаРегламентногоЗадания.Form" id="6478c023-a376-425d-bcd2-fd9c882c5361.0" configVersion="d06c93d7d7898f4d823157930bca633600000000"/>
+		<Metadata name="DataProcessor.КурсорИнтерфейс" id="d38d9bbc-545f-4807-947f-67f87180b050" configVersion="ea4625b96f02a2409427f982e5b89d2300000000">
+			<Metadata name="DataProcessor.КурсорИнтерфейс.Attribute.РеализующийОбъект" id="0f9b71f2-92ce-436c-a655-2bc0d891d72a"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КурсорИнтерфейс.ObjectModule" id="d38d9bbc-545f-4807-947f-67f87180b050.0" configVersion="9ccba87dcfaed3408d8c2e05683fd58100000000"/>
+		<Metadata name="DataProcessor.КурсорМассив" id="5d70c44c-02ce-4e1f-ba54-c29e7eedef11" configVersion="fd5c4997b5a2794f9d1165d5f06ad3dd00000000"/>
+		<Metadata name="DataProcessor.КурсорМассив.ObjectModule" id="5d70c44c-02ce-4e1f-ba54-c29e7eedef11.0" configVersion="a27aac38f837534196b06cd02fa5b40600000000"/>
+		<Metadata name="DataProcessor.КурсорТаблицаЗначений" id="a8b5d67a-6454-46a1-9e65-0d4091946812" configVersion="fd88813bafeef54b8649fc6f8955746600000000">
+			<Metadata name="DataProcessor.КурсорТаблицаЗначений.Attribute.ТекущийИндекс" id="5cf444e8-8d7e-4652-915d-6e9cceb27257"/>
+			<Metadata name="DataProcessor.КурсорТаблицаЗначений.Attribute.Таблица" id="dcf1ec6b-3423-4b06-9602-74ed8a78593d"/>
+		</Metadata>
+		<Metadata name="DataProcessor.КурсорТаблицаЗначений.ObjectModule" id="a8b5d67a-6454-46a1-9e65-0d4091946812.0" configVersion="bf56bf40a10bd843a5075267637a0e4000000000"/>
 		<Metadata name="Enum.БФТ_РежимВводаПараметра" id="e1aa58f3-1c9f-4943-a185-b6529e9ac9ba" configVersion="47ce43449787a84da7f4f5add9be316500000000">
 			<Metadata name="Enum.БФТ_РежимВводаПараметра.EnumValue.ВнешнийПараметр" id="0f719ad9-3893-4398-b104-921cb71022cd"/>
 			<Metadata name="Enum.БФТ_РежимВводаПараметра.EnumValue.Произвольно" id="930b4030-1a9e-4a77-a240-19be1682703b"/>
