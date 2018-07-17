@@ -221,7 +221,7 @@
 	</totalField>
 	<totalField>
 		<dataPath>Оценка</dataPath>
-		<expression>Сумма(Оценка)</expression>
+		<expression>Максимум(Оценка)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>ДнейВРаботе</dataPath>

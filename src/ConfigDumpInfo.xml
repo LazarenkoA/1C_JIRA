@@ -579,8 +579,8 @@
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета" id="ee3c76fb-601c-428a-96e9-1eb4590590b1" configVersion="477a0b38ce3b3042b0bf4fe7611f9b8200000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.Form.ФормаОтчета.Form" id="ee3c76fb-601c-428a-96e9-1eb4590590b1.0" configVersion="9e830a678a148040b9d3f543165450a700000000"/>
 		<Metadata name="Report.ОтчетСписаноЗатрачено.ObjectModule" id="e54f1bfc-2c30-4158-8f07-4df242c569fb.0" configVersion="e7191c4321b5474cb8fc1a09ee9b8c7d00000000"/>
-		<Metadata name="Report.ОтчетСписаноЗатрачено.Template.ОсновнаяСхемаКомпоновкиДанных" id="43e8a577-6f9b-4fac-9c6d-fa53af6b3a61" configVersion="2c142bc6cd1a2c41a1369d1aabc601f900000000"/>
-		<Metadata name="Report.ОтчетСписаноЗатрачено.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="43e8a577-6f9b-4fac-9c6d-fa53af6b3a61.0" configVersion="5eb6aae54ce0734992ac4db4e772b1da00000000"/>
+		<Metadata name="Report.ОтчетСписаноЗатрачено.Template.ОсновнаяСхемаКомпоновкиДанных" id="43e8a577-6f9b-4fac-9c6d-fa53af6b3a61" configVersion="3e86b2383b13154d86ba4369f428b91a00000000"/>
+		<Metadata name="Report.ОтчетСписаноЗатрачено.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="43e8a577-6f9b-4fac-9c6d-fa53af6b3a61.0" configVersion="5e32eacd859c9745ad6663ce1a50fa2400000000"/>
 		<Metadata name="Report.СписаниеПоСотрудникам" id="898b1109-d8d9-4e35-8fdc-a562a06ce273" configVersion="19c8a1ef657e8b4da0c125400ab5810f00000000"/>
 		<Metadata name="Report.СписаниеПоСотрудникам.Template.ОсновнаяСхемаКомпоновкиДанных" id="4d84163c-c1e1-42f5-b604-099416fac615" configVersion="77ca2f7298d1b341a81ec26ab570102e00000000"/>
 		<Metadata name="Report.СписаниеПоСотрудникам.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="4d84163c-c1e1-42f5-b604-099416fac615.0" configVersion="e0ff7b7cb45c2d45ad0f2c6406e88c8700000000"/>
