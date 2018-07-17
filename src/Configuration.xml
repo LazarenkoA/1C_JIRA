@@ -184,6 +184,7 @@
 			<CommonModule>УтилитыГлобальныеНаСервере</CommonModule>
 			<CommonModule>УтилитыЧтенияXML</CommonModule>
 			<CommonModule>ОбщегоНазначенияСерверПовтИсп</CommonModule>
+			<CommonModule>БФТ_УтилитыJSON</CommonModule>
 			<ScheduledJob>ПолучениеЗадач</ScheduledJob>
 			<ScheduledJob>ОповещениеПоЗадачам</ScheduledJob>
 			<ScheduledJob>ПолучениеСписаниеВремени</ScheduledJob>

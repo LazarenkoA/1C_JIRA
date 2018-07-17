@@ -33,6 +33,7 @@ fe084d4c-13db-47cc-b810-f88da97964a6:66D0669D1F84729181DDA687EF737A10:2:CommonMo
 8b57a466-8d50-4ae4-8fb5-63b8a07ff489:D9FE907D0545D9E9B475EA5A97CF2095:2:CommonModules\БФТ_ОбщиеМетодыАРМаСборокНаКлиенте.xml
 115b091f-f022-4823-98fd-cc87b966e440:8C760B45651455863B9506232507B12B:2:CommonModules\БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере.xml
 82552372-90db-4a19-8d15-1151262ab757:5FC0BC3D9DFCA00A16EFB7AFF35B8EB6:2:CommonModules\БФТ_ОбщиеМетодыАРМаСборокНаСервере.xml
+17bcb08c-eccb-4d97-ab97-f37ede4ec792:252D21E9A7C8E7E15C1E22A6DEDD198D:2:CommonModules\БФТ_УтилитыJSON.xml
 ba082b88-9a47-4621-bc6a-59d210d2951c:09E098639952720CFD6E1F3849322391:2:CommonModules\ВзаимодействиеC_JIRA_КлиентСервер.xml
 b808e125-1bd7-4c9b-9295-a586e9583039:6B2057FD242B3CC0AEAB6A3350EED22E:2:CommonModules\ВзаимодействиеC_JIRA_Сервер.xml
 f5711c7e-d8d7-4457-a2ed-346912f2283d:8D3E71440A6091B62548B95E04D6355D:2:CommonModules\ГлобальныеНаСервере.xml
@@ -210,6 +211,7 @@ fe084d4c-13db-47cc-b810-f88da97964a6_Module.bsl:466704648DC17F40771D25CD3893CB84
 8b57a466-8d50-4ae4-8fb5-63b8a07ff489_Module.bsl:799DB024ACF570802FC91EF9BF3F42FA:4:CommonModules\БФТ_ОбщиеМетодыАРМаСборокНаКлиенте\Ext\Module.bsl
 115b091f-f022-4823-98fd-cc87b966e440_Module.bsl:8D8E0AC1540F8A3698171CCD34840BC4:4:CommonModules\БФТ_ОбщиеМетодыАРМаСборокНаКлиентеНаСервере\Ext\Module.bsl
 82552372-90db-4a19-8d15-1151262ab757_Module.bsl:8EEDCB97917FB6087FDBA80F38610E79:4:CommonModules\БФТ_ОбщиеМетодыАРМаСборокНаСервере\Ext\Module.bsl
+17bcb08c-eccb-4d97-ab97-f37ede4ec792_Module.bsl:647B062091465135C8BC11D29978BE45:4:CommonModules\БФТ_УтилитыJSON\Ext\Module.bsl
 ba082b88-9a47-4621-bc6a-59d210d2951c_Module.bsl:31486BB3D1301A97DAF51618AF259EFD:4:CommonModules\ВзаимодействиеC_JIRA_КлиентСервер\Ext\Module.bsl
 b808e125-1bd7-4c9b-9295-a586e9583039_Module.bsl:F1DEECB02DB7A2F5C3F776BC5077492A:4:CommonModules\ВзаимодействиеC_JIRA_Сервер\Ext\Module.bsl
 f5711c7e-d8d7-4457-a2ed-346912f2283d_Module.bsl:93BE0011109691F16C2DF902E01DA937:4:CommonModules\ГлобальныеНаСервере\Ext\Module.bsl
