@@ -256,6 +256,7 @@
 			<Report>ДиаграммаПоБюджетам</Report>
 			<Report>ОтчетПоХранилищу</Report>
 			<Report>ДиаграммаОбъектПользователь</Report>
+			<Report>ДельтаПлановойОценкиИФактической</Report>
 			<DataProcessor>ИнструментыРазработчикаКонсольЗапросов</DataProcessor>
 			<DataProcessor>КонсольЗаданий</DataProcessor>
 			<DataProcessor>БФТ_ВыгрузкаКонфигурации</DataProcessor>
