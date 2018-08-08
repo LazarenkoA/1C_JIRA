@@ -131,7 +131,7 @@
 		<Metadata name="Catalog.РФК" id="5ff9e8b8-4631-44e8-835d-2dfa9423046b" configVersion="ec56d7d7f9c47641a14f029da98ade9c00000000">
 			<Metadata name="Catalog.РФК.Attribute.Ставка" id="fa53c6ba-2ab0-4d83-8aeb-5b9a44a88435"/>
 		</Metadata>
-		<Metadata name="Catalog.Релизы" id="10f1768a-5779-4327-afb4-c1ead1e62f7d" configVersion="43fed0c1bc84064cb06cd4c6483601bf00000000">
+		<Metadata name="Catalog.Релизы" id="10f1768a-5779-4327-afb4-c1ead1e62f7d" configVersion="c07894dbf6c8ce43abbb8a2ce474df4e00000000">
 			<Metadata name="Catalog.Релизы.Attribute.НеобходимаПередачаВФАП" id="08b134ea-817c-434c-924e-94332924d999"/>
 			<Metadata name="Catalog.Релизы.Attribute.ДатаНачала" id="4182d4d3-4dd7-40ab-9e80-df8feace62df"/>
 			<Metadata name="Catalog.Релизы.Attribute.РелизСобран" id="65ea2e54-b8b8-4b5b-9f97-9ba13b70ab60"/>
@@ -148,7 +148,7 @@
 		<Metadata name="Catalog.Релизы.Form.ФормаРелиза.Form" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5.0" configVersion="bf1fafdd7f1fdb48a0d116fff88f01fb00000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6" configVersion="2eb31aa5186f9e4c969047686dd7101200000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка.Form" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6.0" configVersion="5eac7f9096361747a0affec508dba00a00000000"/>
-		<Metadata name="Catalog.Релизы.ManagerModule" id="10f1768a-5779-4327-afb4-c1ead1e62f7d.3" configVersion="c3755e3de425cf4782a53bac5586baf200000000"/>
+		<Metadata name="Catalog.Релизы.ManagerModule" id="10f1768a-5779-4327-afb4-c1ead1e62f7d.3" configVersion="8b7c3528d5947c42bf6208b2582cd11f00000000"/>
 		<Metadata name="Catalog.Релизы.ObjectModule" id="10f1768a-5779-4327-afb4-c1ead1e62f7d.0" configVersion="9e5306c899e4644b9c3eeb5947359a6d00000000"/>
 		<Metadata name="Catalog.ТипыЗадач" id="68d3c970-41bb-4d7e-943c-9ee23dbedfcc" configVersion="09e42d95f621cd4ba731ee364f5500a900000000"/>
 		<Metadata name="Catalog.ТипыЗадач.ManagerModule" id="68d3c970-41bb-4d7e-943c-9ee23dbedfcc.3" configVersion="a7f479c08d30b44cab1759c4e11b323600000000"/>
