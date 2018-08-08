@@ -833,7 +833,7 @@
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ВЫБОР
 		КОГДА Задачи.Родитель = ЗНАЧЕНИЕ(Справочник.Задачи.ПустаяСсылка)
