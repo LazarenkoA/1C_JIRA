@@ -363,7 +363,7 @@
 		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.ObjectModule" id="d990c83f-0224-47f3-a18c-8a7d501fdace.0" configVersion="d636e75b9d06654e8c534dd8ef3acbb300000000"/>
 		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.Template.НастройкиАРМаСборок" id="93fb6992-7df6-496f-a073-1c3f9825019c" configVersion="b9b015755bd1334eb9e379d49e276fce00000000"/>
 		<Metadata name="DataProcessor.ВыгрузкаЗагрузкаПоставляемыхДанных.Template.НастройкиАРМаСборок.Template" id="93fb6992-7df6-496f-a073-1c3f9825019c.0" configVersion="0bd8c6f50dfd384e8f5e632b5e838a4000000000"/>
-		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов" id="52fad43e-568b-47b3-bd1c-13e5879f106b" configVersion="0cd2feb34aff0b48906cea46f5e648a600000000">
+		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов" id="52fad43e-568b-47b3-bd1c-13e5879f106b" configVersion="99ac5b7611bd934da8769c01198f712800000000">
 			<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.TabularSection.Запросы.Attribute.Текст" id="0bea5475-678f-4cfd-93e8-b3fbe2fe31af"/>
 			<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.TabularSection.Параметры.Attribute.Идентификатор" id="16e157ba-eab3-4999-8f26-7dfa22846f46"/>
 			<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.TabularSection.Запросы.Attribute.АдресРезультата" id="173f09df-2d88-492e-b7e7-93eeef0efde7"/>
@@ -399,12 +399,15 @@
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.ПланВыполненияЗапроса.Form" id="931ec0b3-7128-45ee-bd01-e19be4e4159d.0" configVersion="3b3368e073aa0e4e8e26d833426100fd00000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.РезультатЗапроса" id="0b0a3952-b304-4d46-b6ba-ba4cd848d650" configVersion="b3e0c66d80e6654c996c009c45f4678700000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.РезультатЗапроса.Form" id="0b0a3952-b304-4d46-b6ba-ba4cd848d650.0" configVersion="86be04cf597e264fb208e6df4fdd3b4100000000"/>
+		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.СтруктураБД" id="41b333f2-6801-4c1c-b7a5-53f1fdd60eaf" configVersion="b687e330349f644a89daa704bd80cd2c00000000"/>
+		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.СтруктураБД.Form" id="41b333f2-6801-4c1c-b7a5-53f1fdd60eaf.0" configVersion="78c84ff18f397641bd811d18c1c30c5d00000000"/>
+		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.СтруктураБД.Help" id="41b333f2-6801-4c1c-b7a5-53f1fdd60eaf.1" configVersion="f5686202b6ceb64080c8f2088e459a3200000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.ТаблицаЗначений" id="073f235e-2647-4bae-aca1-a3718e9b75be" configVersion="082182362140934bac72743d56c4f27400000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.ТаблицаЗначений.Form" id="073f235e-2647-4bae-aca1-a3718e9b75be.0" configVersion="6c5b0c02f690b34d9043e3a48e5629ea00000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.ТекстЗапросаДляКонфигуратора" id="364c1ab5-fcf9-416c-a46a-8af4f9f0d2a6" configVersion="faebf30589c1994b94464836492fccef00000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.ТекстЗапросаДляКонфигуратора.Form" id="364c1ab5-fcf9-416c-a46a-8af4f9f0d2a6.0" configVersion="fe3483259524094ea2800ab2b648ecbb00000000"/>
-		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.Форма" id="480b57f1-10f3-4483-befd-21bdad68bb29" configVersion="f9c106b3a1f12941bdb7fcaed2d4827700000000"/>
-		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.Форма.Form" id="480b57f1-10f3-4483-befd-21bdad68bb29.0" configVersion="c1c70d0b30b134439fc8249d2b490a3000000000"/>
+		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.Форма" id="480b57f1-10f3-4483-befd-21bdad68bb29" configVersion="50383986e8f21f4fa344899301b6b13900000000"/>
+		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Form.Форма.Form" id="480b57f1-10f3-4483-befd-21bdad68bb29.0" configVersion="5ee7f889abaf2c44a1dff61ff4e18ef400000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Help" id="52fad43e-568b-47b3-bd1c-13e5879f106b.1" configVersion="b754e229491b8c42b99ec7c9212996c400000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.ObjectModule" id="52fad43e-568b-47b3-bd1c-13e5879f106b.0" configVersion="e7dbc67117ee8048846a97a9792a24ce00000000"/>
 		<Metadata name="DataProcessor.ИнструментыРазработчикаКонсольЗапросов.Template.РезультатВыполненияЗапроса" id="d1ef11b2-8fb5-4b5e-b7c4-e095d82019d3" configVersion="630eed50a79d884993722c4a9a9cf6b700000000"/>

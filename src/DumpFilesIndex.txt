@@ -269,6 +269,7 @@ f32cafc5-e192-411f-8671-3d6329eebdd8:07796076BA9A0BAFDCF04E37F79A047D:4:DataProc
 4d32e508-0e3e-4b84-b4e9-8b4e2640f278:7F0EB2006117C713D618C6315325A67F:4:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\Настройки.xml
 931ec0b3-7128-45ee-bd01-e19be4e4159d:88EA75AAD1382942AACA9648BD14F671:4:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ПланВыполненияЗапроса.xml
 0b0a3952-b304-4d46-b6ba-ba4cd848d650:47F636391FEC26039CD201196B12E9AF:4:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\РезультатЗапроса.xml
+41b333f2-6801-4c1c-b7a5-53f1fdd60eaf:4217D4E0E2E72E208D99BD6D73E42887:4:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\СтруктураБД.xml
 073f235e-2647-4bae-aca1-a3718e9b75be:FFC1E8DDFE680C7CDB1EC992D1514C16:4:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ТаблицаЗначений.xml
 364c1ab5-fcf9-416c-a46a-8af4f9f0d2a6:F20B84C6C39B52A14D2D8B8BFB356747:4:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ТекстЗапросаДляКонфигуратора.xml
 480b57f1-10f3-4483-befd-21bdad68bb29:02C67B396A80F5C5B0125E31E7643848:4:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\Форма.xml
@@ -402,6 +403,8 @@ f32cafc5-e192-411f-8671-3d6329eebdd8_Form.xml:F6A0650F8CC0F7F19C6FE5CEBFF8CFBE:6
 4d32e508-0e3e-4b84-b4e9-8b4e2640f278_Form.xml:88A7E9CFA5C3ADE7DEBCB9F459029F51:6:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\Настройки\Ext\Form.xml
 931ec0b3-7128-45ee-bd01-e19be4e4159d_Form.xml:5E66864B7487B6389281D0598F0E3BCC:6:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ПланВыполненияЗапроса\Ext\Form.xml
 0b0a3952-b304-4d46-b6ba-ba4cd848d650_Form.xml:4DB46AE068EF65BAC125DED533D3AEB1:6:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\РезультатЗапроса\Ext\Form.xml
+41b333f2-6801-4c1c-b7a5-53f1fdd60eaf_Form.xml:D802A31A9E65F9BC947D34D07F28C329:6:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\СтруктураБД\Ext\Form.xml
+41b333f2-6801-4c1c-b7a5-53f1fdd60eaf_Help.xml:53D413A6B6F024236C4929F09F63C865:6:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\СтруктураБД\Ext\Help.xml
 073f235e-2647-4bae-aca1-a3718e9b75be_Form.xml:F452CC0BB81F5E19BB16EF2ED492B3DF:6:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ТаблицаЗначений\Ext\Form.xml
 364c1ab5-fcf9-416c-a46a-8af4f9f0d2a6_Form.xml:C2B3284E2F2420E9167EA219C258B2FD:6:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ТекстЗапросаДляКонфигуратора\Ext\Form.xml
 480b57f1-10f3-4483-befd-21bdad68bb29_Form.xml:A1EBAB88536A932702FAAB9332F45A5C:6:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\Форма\Ext\Form.xml
@@ -464,6 +467,8 @@ f32cafc5-e192-411f-8671-3d6329eebdd8_Form\Module.bsl:A89DD69E354620FC825F9C9D706
 4d32e508-0e3e-4b84-b4e9-8b4e2640f278_Form\Module.bsl:B2229B196273F29FD3876CAA4A7EB4CD:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\Настройки\Ext\Form\Module.bsl
 931ec0b3-7128-45ee-bd01-e19be4e4159d_Form\Module.bsl:293F230889DC3D1D66FA7674BE4917E8:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ПланВыполненияЗапроса\Ext\Form\Module.bsl
 0b0a3952-b304-4d46-b6ba-ba4cd848d650_Form\Module.bsl:965FE3C81B2E0421058BA7378EF91F87:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\РезультатЗапроса\Ext\Form\Module.bsl
+41b333f2-6801-4c1c-b7a5-53f1fdd60eaf_Form\Module.bsl:A434EAB0C5557FE48F8F608B8A29C4D5:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\СтруктураБД\Ext\Form\Module.bsl
+41b333f2-6801-4c1c-b7a5-53f1fdd60eaf_Help\ru.html:55EF0908DAEC11EE97B7EEB67089795E:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\СтруктураБД\Ext\Help\ru.html
 073f235e-2647-4bae-aca1-a3718e9b75be_Form\Module.bsl:948B3C887C389B0964897E57EFD14523:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ТаблицаЗначений\Ext\Form\Module.bsl
 364c1ab5-fcf9-416c-a46a-8af4f9f0d2a6_Form\Module.bsl:03D049BB9EC1E97CCE113FA156475CA4:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\ТекстЗапросаДляКонфигуратора\Ext\Form\Module.bsl
 480b57f1-10f3-4483-befd-21bdad68bb29_Form\Module.bsl:3DC5EC5A6C50428F3A706DBF2B3D8C31:7:DataProcessors\ИнструментыРазработчикаКонсольЗапросов\Forms\Форма\Ext\Form\Module.bsl

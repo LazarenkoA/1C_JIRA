@@ -905,6 +905,7 @@
 			<Form>Граница</Form>
 			<Form>РезультатЗапроса</Form>
 			<Form>ПланВыполненияЗапроса</Form>
+			<Form>СтруктураБД</Form>
 			<Template>РезультатВыполненияЗапроса</Template>
 		</ChildObjects>
 	</DataProcessor>

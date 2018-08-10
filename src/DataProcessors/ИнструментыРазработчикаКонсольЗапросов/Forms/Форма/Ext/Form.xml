@@ -57,6 +57,11 @@
 				</Title>
 				<ExtendedTooltip name="ФормаДобавитьExtendedTooltip" id="63"/>
 			</Button>
+			<Button name="ФормаСтруктураБД" id="185">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СтруктураБД</CommandName>
+				<ExtendedTooltip name="ФормаСтруктураБДРасширеннаяПодсказка" id="186"/>
+			</Button>
 			<ButtonGroup name="ГруппаКнопокПараметры" id="32">
 				<EnableContentChange>true</EnableContentChange>
 				<Title>
@@ -998,6 +1003,21 @@
 			</ToolTip>
 			<Shortcut>Ctrl+Shift+Num /</Shortcut>
 			<Action>Раскомментировать</Action>
+		</Command>
+		<Command name="СтруктураБД" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтруктураБД</Action>
 		</Command>
 	</Commands>
 	<Parameters>
