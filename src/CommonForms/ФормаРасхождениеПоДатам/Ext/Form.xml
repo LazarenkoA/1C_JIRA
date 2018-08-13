@@ -9,6 +9,12 @@
 				<CommandName>Form.Command.АктуализироватьДаты</CommandName>
 				<ExtendedTooltip name="ФормаАктуализироватьДатуРасширеннаяПодсказка" id="27"/>
 			</Button>
+			<Button name="ФормаДобавитьВерсиюВЗадачу" id="30">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ДобавитьВерсиюВЗадачу</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьВерсиюВЗадачуРасширеннаяПодсказка" id="31"/>
+			</Button>
 			<Button name="ФормаЗакрыть" id="28">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.Закрыть</CommandName>
@@ -20,6 +26,18 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="Пояснение" id="32">
+			<TextColor>#999999</TextColor>
+			<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только по выделенным строкам</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПояснениеКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="34"/>
+		</LabelDecoration>
 		<Table name="Таблица" id="1">
 			<Representation>List</Representation>
 			<ReadOnly>true</ReadOnly>
@@ -216,6 +234,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Закрыть_</Action>
+		</Command>
+		<Command name="ДобавитьВерсиюВЗадачу" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить версию в задачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить версию в задачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВерсиюВЗадачу</Action>
 		</Command>
 	</Commands>
 </Form>
