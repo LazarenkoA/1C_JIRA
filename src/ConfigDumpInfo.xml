@@ -142,8 +142,8 @@
 		<Metadata name="Catalog.Релизы.Form.ФормаВыбора.Form" id="8d33f080-07d7-481c-8f2e-b3e9b9c19244.0" configVersion="4ab6ed71bf19ba4ca71fe95a9afcaaa500000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаЗаполненияГрафика" id="4f7d5a75-366d-4b34-ab8a-0ae59330a55c" configVersion="033b997a563c944b832029f4b73e527000000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаЗаполненияГрафика.Form" id="4f7d5a75-366d-4b34-ab8a-0ae59330a55c.0" configVersion="d0a67bff4b9c744a9bffd8be123b7dcf00000000"/>
-		<Metadata name="Catalog.Релизы.Form.ФормаРаспределенияЗадачПоВерсиям" id="23ae4f00-d24a-42fb-8665-2c58b676d7b7" configVersion="ae8ec2743a80cf449a1a02cf2be85b5500000000"/>
-		<Metadata name="Catalog.Релизы.Form.ФормаРаспределенияЗадачПоВерсиям.Form" id="23ae4f00-d24a-42fb-8665-2c58b676d7b7.0" configVersion="010e9a3166828748b786243ffad157fd00000000"/>
+		<Metadata name="Catalog.Релизы.Form.ФормаРаспределенияЗадачПоВерсиям" id="23ae4f00-d24a-42fb-8665-2c58b676d7b7" configVersion="0f44cca7df8ffa44860d566beda0295500000000"/>
+		<Metadata name="Catalog.Релизы.Form.ФормаРаспределенияЗадачПоВерсиям.Form" id="23ae4f00-d24a-42fb-8665-2c58b676d7b7.0" configVersion="dd495f622daee246aec4aed05e96355000000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаРелиза" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5" configVersion="83a01451575237449fb5e43920b1745900000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаРелиза.Form" id="89ea4664-86cb-4406-bf5c-cb5ff30a58c5.0" configVersion="b5628783d26ff74ba7ab7c0e19cf1a2400000000"/>
 		<Metadata name="Catalog.Релизы.Form.ФормаСписка" id="2bb302ad-c207-4e9c-b687-6de8e36e24b6" configVersion="2eb31aa5186f9e4c969047686dd7101200000000"/>
