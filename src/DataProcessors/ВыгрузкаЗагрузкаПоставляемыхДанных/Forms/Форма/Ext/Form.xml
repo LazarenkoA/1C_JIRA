@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -168,6 +168,7 @@
 											<AutoInsertNewRow>true</AutoInsertNewRow>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>ДеревоПодсистем</DataPath>
 											<RowPictureDataPath>ДеревоПодсистем.Картинка</RowPictureDataPath>
 											<CommandSet>
@@ -241,6 +242,7 @@
 											<InitialTreeView>ExpandAllLevels</InitialTreeView>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>Объект.ДеревоМетаданных</DataPath>
 											<RowPictureDataPath>Объект.ДеревоМетаданных.ИндексКартинки</RowPictureDataPath>
 											<RowsPicture>
@@ -368,6 +370,7 @@
 											<AutoInsertNewRow>true</AutoInsertNewRow>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>Объект.ДополнительныеОбъектыДляВыгрузки</DataPath>
 											<CommandSet>
 												<ExcludedCommand>Copy</ExcludedCommand>
@@ -759,6 +762,7 @@
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ЛогКонтекстноеМеню" id="214"/>
 									<AutoCommandBar name="ЛогКоманднаяПанель" id="215"/>
@@ -846,6 +850,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>СписокМакетов</DataPath>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
@@ -1298,6 +1303,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыгрузитьДанные</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗагрузитьДанные" id="2">
 			<Title>
@@ -1313,6 +1319,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьДанные</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПересчитатьВыгружаемыеПоСсылке" id="3">
 			<Title>
@@ -1333,6 +1340,7 @@
 			</Picture>
 			<Action>ПересчитатьВыгружаемыеПоСсылке</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОчиститьДополнительныеОбъектыВыгрузки" id="4">
 			<Title>
@@ -1349,6 +1357,7 @@
 			</ToolTip>
 			<Action>ОчиститьДополнительныеОбъектыВыгрузки</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ДобавитьИзЗапроса" id="5">
 			<Title>
@@ -1364,6 +1373,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьИзЗапроса</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="НастройкиКонсолиЗапросов" id="6">
 			<Title>
@@ -1379,6 +1389,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НастройкиКонсолиЗапросов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВосстановитьИзМакетов" id="7">
 			<Title>
@@ -1394,6 +1405,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВосстановитьИзМакетов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВыбратьВсеМакеты" id="8">
 			<Title>
@@ -1409,6 +1421,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыбратьВсеМакеты</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СнятьВыборМакетов" id="9">
 			<Title>
@@ -1424,6 +1437,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СнятьВыборМакетов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
