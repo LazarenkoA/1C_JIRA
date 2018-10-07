@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация" id="10">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<TextColor>#999999</TextColor>
+			<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь следует указывать с учетом файловой системы на сервере</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДекорацияРасширеннаяПодсказка" id="12"/>
+		</LabelDecoration>
+		<InputField name="ПутьККаталогуSVN" id="13">
+			<DataPath>НаборКонстант.ПутьККаталогуSVN</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ПутьККаталогуSVNКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПутьККаталогуSVNРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="StartChoice">ПутьККаталогуSVNНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="СетевойККаталогуSVN" id="16">
+			<DataPath>1/0:b8875dcb-b932-4875-9a49-0a85d8f56d0f</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь доступный по локальной сети</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="СетевойККаталогуSVNКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СетевойККаталогуSVNРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ПутьККаталогуСФайламиРасширений" id="1">
+			<DataPath>НаборКонстант.ПутьККаталогуСФайламиРасширений</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Относительный путь (относительно корня)</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ПутьККаталогуСФайламиРасширенийКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПутьККаталогуСФайламиРасширенийРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">ПутьККаталогуСФайламиРасширенийНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ПутьККаталогуШаблонов" id="4">
+			<DataPath>НаборКонстант.ПутьККаталогуШаблонов</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Относительный путь (относительно корня)</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ПутьККаталогуШаблоновКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПутьККаталогуШаблоновРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="StartChoice">ПутьККаталогуШаблоновНачалоВыбора</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.ПутьККаталогуSVN</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ПутьККаталогуСФайламиРасширений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к каталогу с файлами расширений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьККаталогуШаблонов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к каталогу шаблонов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

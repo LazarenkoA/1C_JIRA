@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<CommandSet>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПолучитьОбновления" id="28">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>Form.Command.ПолучитьОбновления</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьОбновленияРасширеннаяПодсказка" id="29"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+			</CommandSet>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="Задача" id="64">
+					<DataPath>Список.Задача</DataPath>
+					<ContextMenu name="ЗадачаКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+				<ColumnGroup name="Группа1" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пробыл в исходном статусе</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ShowInHeader>true</ShowInHeader>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<LabelField name="ДнейПробылВИсходномСтатусе" id="44">
+							<DataPath>Список.ДнейПробылВИсходномСтатусе</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дней</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДнейПробылВИсходномСтатусеКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ДнейПробылВИсходномСтатусеРасширеннаяПодсказка" id="46"/>
+						</LabelField>
+						<LabelField name="ЧасовПробылВИсходномСтатусе" id="50">
+							<DataPath>Список.ЧасовПробылВИсходномСтатусе</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Часов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЧасовПробылВИсходномСтатусеКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ЧасовПробылВИсходномСтатусеРасширеннаяПодсказка" id="52"/>
+						</LabelField>
+						<LabelField name="МинутПробылВИсходномСтатусе" id="61">
+							<DataPath>Список.МинутПробылВИсходномСтатусе</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Минут</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="МинутПробылВИсходномСтатусеКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="МинутПробылВИсходномСтатусеРасширеннаяПодсказка" id="63"/>
+						</LabelField>
+						<LabelField name="СекундПробылВИсходномСтатусе" id="47">
+							<DataPath>Список.СекундПробылВИсходномСтатусе</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Секунд</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СекундПробылВИсходномСтатусеКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="СекундПробылВИсходномСтатусеРасширеннаяПодсказка" id="49"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="грСтатусы" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр статусы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр статусы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грСтатусыРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<LabelField name="ИсходныйСтатус" id="55">
+							<DataPath>Список.ИсходныйСтатус</DataPath>
+							<ContextMenu name="ИсходныйСтатусКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ИсходныйСтатусРасширеннаяПодсказка" id="57"/>
+						</LabelField>
+						<LabelField name="КонечныйСтатус" id="58">
+							<DataPath>Список.КонечныйСтатус</DataPath>
+							<ContextMenu name="КонечныйСтатусКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="КонечныйСтатусРасширеннаяПодсказка" id="60"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="Автор" id="22">
+					<DataPath>Список.Автор</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="АвторКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="ДатаСобытия" id="25">
+					<DataPath>Список.ДатаСобытия</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаСобытияКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДатаСобытияРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийИсторияИзмененияСтатусов.Задача КАК Задача,
+	РегистрСведенийИсторияИзмененияСтатусов.НомерЗаписи КАК НомерЗаписи,
+	РегистрСведенийИсторияИзмененияСтатусов.МинутПробылВИсходномСтатусе КАК МинутПробылВИсходномСтатусе,
+	РегистрСведенийИсторияИзмененияСтатусов.МинутПробылВИсходномСтатусе / 60 / 24 КАК ДнейПробылВИсходномСтатусе,
+	РегистрСведенийИсторияИзмененияСтатусов.МинутПробылВИсходномСтатусе * 60 КАК СекундПробылВИсходномСтатусе,
+	РегистрСведенийИсторияИзмененияСтатусов.МинутПробылВИсходномСтатусе / 60 КАК ЧасовПробылВИсходномСтатусе,
+	РегистрСведенийИсторияИзмененияСтатусов.Автор КАК Автор,
+	РегистрСведенийИсторияИзмененияСтатусов.ДатаСобытия КАК ДатаСобытия,
+	РегистрСведенийИсторияИзмененияСтатусов.ИсходныйСтатус КАК ИсходныйСтатус,
+	РегистрСведенийИсторияИзмененияСтатусов.КонечныйСтатус КАК КонечныйСтатус
+ИЗ
+	РегистрСведений.ИсторияИзмененияСтатусов КАК РегистрСведенийИсторияИзмененияСтатусов</QueryText>
+				<MainTable>InformationRegister.ИсторияИзмененияСтатусов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьОбновления" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить обновления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить обновления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьОбновления</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
