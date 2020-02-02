@@ -9,10 +9,17 @@
     * Много других полезных плюшек.
 
 **Скрины:**
-![](img/mstsc_29O55KSvkA.png "Планирование задач")
-![](img/mstsc_BdsDDwhoAf.png "Выпуск и сбка релизов")
 ![](img/mstsc_HZkf6DCRdk.png "Рабочий стол")
-![](img/mstsc_MlLJcs0KLW.png "Настройка команд для работы с svn / git")
-![](img/mstsc_VEZc3nohip.png "Пример отчета")
+
+![](img/mstsc_29O55KSvkA.png "Планирование задач")
+
+![](img/mstsc_BdsDDwhoAf.png "Выпуск и сбка релизов")
 ![](img/mstsc_VZ3INyegAE.png "Окно выпуска релиза")
+
+
+![](img/mstsc_MlLJcs0KLW.png "Настройка команд для работы с svn / git")
+![](img/mstsc_W617WnecVt.png "Настройка команд для работы с svn / git")
+
+![](img/mstsc_VEZc3nohip.png "Пример отчета")
 ![](img/mstsc_ZWYJSCCAvk.png "Диаграмма")
+
